@@ -2,6 +2,7 @@ import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
   devIndicators: false,
+  allowedDevOrigins: ["*"],
   images: {
     remotePatterns: [
       {
@@ -18,16 +19,6 @@ const nextConfig: NextConfig = {
       use: ["@svgr/webpack"],
     });
     return config;
-  },
-  experimental: {
-    turbo: {
-      rules: {
-        "*.svg": {
-          loaders: ["@svgr/webpack"],
-          as: "*.js",
-        },
-      },
-    },
   },
   async headers() {
     return [
