@@ -1,0 +1,90 @@
+# Amara - Next.js Project
+
+## Overview
+Amara is a Next.js 15 application built with TypeScript, featuring a modern web design portfolio. The project uses React 19, Tailwind CSS for styling, GSAP for animations, and Firebase for backend services.
+
+## Project Architecture
+
+### Tech Stack
+- **Framework**: Next.js 15.5.2 (App Router)
+- **Language**: TypeScript 5
+- **Styling**: Tailwind CSS 4, Sass
+- **Animations**: GSAP 3.13 with @gsap/react
+- **Smooth Scrolling**: Lenis
+- **Backend**: Firebase (storage, authentication, database)
+- **Build Tool**: Next.js (Turbopack disabled in Replit environment)
+- **Code Quality**: ESLint, Prettier, Husky, Lint-staged
+
+### Project Structure
+```
+.
+├── app/                 # Next.js App Router pages
+│   ├── blog/           # Blog pages with dynamic routes
+│   ├── landing/        # Landing page
+│   ├── philosophy/     # Philosophy page
+│   ├── projects/       # Projects pages with dynamic routes
+│   ├── studio/         # Studio page
+│   └── page.tsx        # Homepage
+├── components/         # Reusable React components
+├── helpers/            # Utility functions
+├── hooks/              # Custom React hooks
+├── lib/                # Library configurations
+├── public/             # Static assets
+│   ├── audio/
+│   ├── fonts/
+│   ├── images/
+│   └── videos/
+├── styles/             # Global styles and Sass files
+└── types/              # TypeScript type definitions
+```
+
+## Replit Configuration
+
+### Development Environment
+- **Port**: 5000 (configured for Replit's webview)
+- **Host**: 0.0.0.0 (allows external connections)
+- **Workflow**: "Next.js Dev Server" runs `npm run dev`
+- **Turbopack**: Disabled (incompatible with Replit's symlink structure)
+- **Allowed Origins**: Configured to accept all dev origins for Replit proxy
+
+### Key Configuration Changes for Replit
+1. **next.config.ts**: Added `allowedDevOrigins: ["*"]` to allow Replit's proxy
+2. **next.config.ts**: Added cache-control headers to prevent caching issues
+3. **package.json**: Updated dev script to use port 5000 with host 0.0.0.0
+4. **package.json**: Removed `--turbopack` flag from dev and build scripts
+
+### Environment Setup
+The project uses Node.js 20 with npm as the package manager.
+
+## Firebase Integration
+The application uses Firebase for:
+- Image storage (firebasestorage.googleapis.com)
+- Authentication
+- Database
+
+Firebase configuration is stored in the project and images are served from:
+`https://firebasestorage.googleapis.com/v0/b/amara-72893.firebasestorage.app/o/**`
+
+## Deployment
+Configured for autoscale deployment on Replit with:
+- **Build**: `npm run build`
+- **Run**: `npm start`
+- **Target**: Autoscale (stateless web application)
+
+## Scripts
+- `npm run dev`: Start development server on port 5000
+- `npm run build`: Build for production
+- `npm start`: Start production server
+- `npm run lint`: Run ESLint
+- `npm run format`: Format code with Prettier
+
+## Known Issues
+- Large SVG files (hero-balance.svg) exceed 500KB and cause Babel optimization warnings
+- Turbopack is disabled due to symlink issues in Replit environment
+
+## Recent Changes
+- **2024-12-03**: Initial Replit setup
+  - Configured Next.js to run on port 5000 with 0.0.0.0 host
+  - Disabled Turbopack to fix symlink errors
+  - Added allowedDevOrigins for Replit proxy compatibility
+  - Configured deployment settings for autoscale
