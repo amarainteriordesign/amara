@@ -1,0 +1,232 @@
+"use client";
+import SoundIcon from "@/components/icons/sound.svg";
+import PauseIcon from "@/components/icons/pause.svg";
+import { formatTimeForOffset } from "@/helpers/time";
+import { useEffect, useState, useRef } from "react";
+import Link from "next/link";
+import { useLenis } from "lenis/react";
+import Menu from "@/components/layout/Menu";
+import { useGSAP } from "@gsap/react";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { useWindowSize } from "@/hooks/useWindowSize";
+
+gsap.registerPlugin(ScrollTrigger);
+
+export default function Footer() {
+  const [now, setNow] = useState<Date>(new Date());
+  const [isMuted, setIsMuted] = useState(true);
+  const audioRef = useRef<HTMLAudioElement>(null);
+  const lenis = useLenis();
+  const screenSize = useWindowSize();
+
+  function onLogoClick(event: React.MouseEvent<HTMLAnchorElement, MouseEvent>) {
+    event.preventDefault();
+    lenis?.scrollTo(0, { duration: 1, easing: (t) => t });
+    // Navigate to the home page
+  }
+
+  function onContactButtonClick(event: React.MouseEvent<HTMLButtonElement, MouseEvent>) {
+    event.preventDefault();
+    // Navigate to the contact page
+  }
+
+  const handleAudioToggle = (event: React.MouseEvent<HTMLButtonElement, MouseEvent>) => {
+    event.stopPropagation();
+
+    if (audioRef.current) {
+      if (audioRef.current.paused) {
+        audioRef.current.play();
+        setIsMuted(false);
+      } else {
+        audioRef.current.pause();
+        setIsMuted(true);
+      }
+    }
+  };
+
+  useEffect(() => {
+    const intervalId = setInterval(() => setNow(new Date()), 30000);
+    return () => clearInterval(intervalId);
+  }, []);
+
+  useGSAP(() => {
+    ScrollTrigger.create({
+      trigger: ".footer-container",
+      start: "top bottom",
+      end: "bottom bottom",
+      onEnter: () => {},
+      onLeaveBack: () => {
+        gsap.to("header", {
+          yPercent: 0,
+          duration: 1,
+          ease: "power3.out",
+        });
+      },
+    });
+  });
+
+  return (
+    <footer className="footer-container sticky top-0 z-[2] flex w-full items-end gap-[443px] overflow-hidden">
+      <div className="max-xmd:hidden relative flex h-[528px] w-full items-end justify-center">
+        <div className="max-xmd:pt-[62px] absolute top-0 z-[2] mx-auto flex w-full max-w-[1440px] items-center py-[18px] pr-[18px] pl-[42px]">
+          {/* Logo */}
+          <div className="max-xmd:mr-auto flex items-center">
+            <Link
+              href="/"
+              onClick={onLogoClick}
+              className="font-sans text-[16px] leading-[20px] font-medium tracking-[-0.5px] text-[#BCB19B]"
+            >
+              <span className="text-[#FFF]">Amara</span> Boutique Design Studio
+            </Link>
+          </div>
+
+          {/* nav links */}
+          <div className="mr-[237px] ml-auto flex max-h-[30px] items-center gap-[34px] overflow-hidden">
+            <Link
+              href="/"
+              className="font-sans text-[15px] leading-[26px] font-normal tracking-[-3%] text-[#262626] underline"
+            >
+              Projects
+            </Link>
+
+            <Link
+              href="/"
+              className="font-sans text-[15px] leading-[26px] tracking-[-0.4px] text-[#262626] underline"
+            >
+              Studio
+            </Link>
+
+            <Link
+              href="/philosophy"
+              className="font-sans text-[15px] leading-[26px] tracking-[-0.4px] text-[#262626] underline"
+            >
+              Philosophy
+            </Link>
+
+            <Link
+              href="/"
+              className="overflow-hidden font-sans text-[15px] leading-[26px] tracking-[-0.4px] text-[#262626] underline"
+            >
+              <span>Blog</span>
+            </Link>
+          </div>
+
+          {/* Contact Button */}
+          <div className="max-xmd:hidden flex items-center">
+            <button
+              onClick={onContactButtonClick}
+              className="font-regular cursor-pointer rounded-[20px] border border-[#BDBDBD] bg-[#FFFFFF66] px-[18px] py-[6px] text-[16px] leading-[26px] font-bold text-[#81E1B3] transition-colors hover:bg-gray-200/70 focus:ring-2 focus:ring-gray-400 focus:ring-offset-2 focus:outline-none"
+            >
+              Contact
+            </button>
+          </div>
+        </div>
+
+        <svg
+          className="absolute top-0 left-0 z-[-1] h-full w-full"
+          width={screenSize?.width || 1440}
+          height="528"
+          viewBox={`0 0 ${screenSize?.width || 1440} 528`}
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <defs>
+            <mask id="menu-mask" maskUnits="userSpaceOnUse">
+              <rect width={screenSize?.width || 1440} height="528" fill="white" />
+
+              <g transform="translate(43,217)">
+                <path
+                  d="M99 115.553H153.297L197.032 115V157.592H208V217H163.046V158.367H156.005H148.964L148.422 217H99V115.553Z"
+                  fill="black"
+                />
+                <path
+                  d="M0 0H43.836H88V89.9237V217H51.7068V144.351H43.836H39.9006V217H0V0Z"
+                  fill="black"
+                />
+                <path
+                  d="M219 0H262.836H307V42.2683V102H270.707V67.8517H262.836H258.901V102H219V0Z"
+                  fill="black"
+                />
+                <path
+                  d="M219 115H262.836H307V157.268V217H270.707V182.852H262.836H258.901V217H219V115Z"
+                  fill="black"
+                />
+                <path
+                  d="M109.833 0H197.614L208 102H175.278L177.958 42.8889H164.78L168.577 102H138.87L141.662 43H129.377L131.499 102H99L107.711 21.5556L109.833 0Z"
+                  fill="black"
+                />
+              </g>
+            </mask>
+          </defs>
+
+          <rect
+            width={screenSize?.width || 1440}
+            height="528"
+            fill="#F1EBDF"
+            mask="url(#menu-mask)"
+          />
+        </svg>
+
+        <div className="mx-auto w-full max-w-[1440px]">
+          <div className="mr-[240px] ml-auto flex w-fit max-w-[380px] flex-col items-start pb-[35px]">
+            <div className="relative z-[3] flex w-full items-center pb-[20px]">
+              <button onClick={handleAudioToggle} className="cursor-pointer">
+                {isMuted ? (
+                  <SoundIcon width={28} height={30} color="#262626" />
+                ) : (
+                  <PauseIcon width={28} height={30} color="#262626" />
+                )}
+              </button>
+              <button onClick={handleAudioToggle} className="cursor-pointer">
+                {isMuted ? (
+                  <SoundIcon width={28} height={30} color="#262626" className="ml-[-4.5755px]" />
+                ) : (
+                  <PauseIcon width={28} height={30} color="#262626" className="ml-[-4.5755px]" />
+                )}
+              </button>
+            </div>
+            <p className="w-full pb-[40px] font-sans text-[20px] leading-[20px] font-medium tracking-[-3%] text-[#262626]">
+              An immersive journey inspired by the story of the four{" "}
+              <span className="text-[#737373]">elements</span>{" "}
+            </p>
+
+            <div className="flex items-center gap-[30px]">
+              {[
+                {
+                  title: "Dubai",
+                  offset: 4,
+                },
+                {
+                  title: "Miami",
+                  offset: -5,
+                },
+                {
+                  title: "Paris",
+                  offset: 1,
+                },
+              ].map((item) => (
+                <div className="flex items-center gap-[8px]" key={item.title}>
+                  <p className="font-sans text-[14px] leading-[20px] font-normal tracking-[-3%] text-[#737373]">
+                    {formatTimeForOffset(now, item.offset)}
+                  </p>
+                  <p className="font-sans leading-[20px] font-medium tracking-[-3%] text-[#262626]">
+                    {item.title}
+                  </p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div className="max-xmd:flex hidden w-full">
+        <Menu now={now} />
+      </div>
+
+      <audio ref={audioRef} preload="metadata">
+        <source src="/audio/our_design_philosophy_.mp3" type="audio/mpeg" />
+        Your browser does not support the audio element.
+      </audio>
+    </footer>
+  );
+}

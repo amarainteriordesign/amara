@@ -1,0 +1,259 @@
+"use client";
+import Image from "next/image";
+import { useState } from "react";
+
+const FORM_TITLE = "Let's get in Touch";
+const SUCCESS_MESSAGE = "✓ Message sent successfully! We'll be in touch soon.";
+const DISCLAIMER_TEXT = 'By clicking on "Send Your Inquiry" you agree to the terms and conditions';
+
+const EMAIL_REGEX = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+export default function ContactSection() {
+  const [formData, setFormData] = useState({
+    email: "",
+    phone: "",
+    message: "",
+  });
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [submitStatus, setSubmitStatus] = useState<"idle" | "success" | "error">("idle");
+  const [validationErrors, setValidationErrors] = useState<{
+    email?: string;
+    phone?: string;
+    message?: string;
+  }>({});
+
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+    const { name, value } = e.target;
+    setFormData((prev) => ({
+      ...prev,
+      [name]: value,
+    }));
+    // Clear validation error for this field when user starts typing
+    if (validationErrors[name as keyof typeof validationErrors]) {
+      setValidationErrors((prev) => ({
+        ...prev,
+        [name]: undefined,
+      }));
+    }
+  };
+
+  const validateForm = (): boolean => {
+    const errors: typeof validationErrors = {};
+
+    // Email validation
+    if (!formData.email.trim()) {
+      errors.email = "Email is required";
+    } else if (!EMAIL_REGEX.test(formData.email)) {
+      errors.email = "Please enter a valid email address";
+    }
+
+    // Phone validation
+    if (!formData.phone.trim()) {
+      errors.phone = "Phone number is required";
+    } else if (formData.phone.trim().length < 8) {
+      errors.phone = "Please enter a valid phone number";
+    }
+
+    // Message validation
+    if (!formData.message.trim()) {
+      errors.message = "Your message is required";
+    } else if (formData.message.trim().length < 10) {
+      errors.message = "Message must be at least 10 characters";
+    }
+
+    setValidationErrors(errors);
+    return Object.keys(errors).length === 0;
+  };
+
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+
+    // Validate form before submission
+    if (!validateForm()) {
+      return;
+    }
+
+    setIsSubmitting(true);
+    setSubmitStatus("idle");
+
+    try {
+      // Formspree endpoint
+      const FORMSPREE_ENDPOINT = "https://formspree.io/f/xgvdoere";
+
+      const response = await fetch(FORMSPREE_ENDPOINT, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
+      });
+
+      if (response.ok) {
+        setSubmitStatus("success");
+        setFormData({
+          email: "",
+          phone: "",
+          message: "",
+        });
+        setValidationErrors({});
+        // Open calendar link in new tab
+        window.open("https://calendar.app.google/mDqB7oH4P1jt3wTd9", "_blank");
+        // Reset success message after 3 seconds
+        setTimeout(() => setSubmitStatus("idle"), 3000);
+      } else {
+        setSubmitStatus("error");
+      }
+    } catch (error) {
+      console.error("Form submission error:", error);
+      setSubmitStatus("error");
+    } finally {
+      setIsSubmitting(false);
+    }
+  };
+
+  return (
+    <section className="w-full bg-[#F5F1ED] py-[100px] max-md:py-[80px] max-sm:py-[60px]">
+      <div className="mx-auto flex max-w-[1000px] justify-center px-[20px] max-sm:px-[12px]">
+        {/* Contact Form Container */}
+        <div className="flex w-full gap-[0px] rounded-[24px] bg-[#E8E0D6] max-md:flex-col max-md:gap-[30px] max-sm:gap-[20px]">
+          {/* Image */}
+          <div className="w-[55%] px-[6px] pt-[12px] pb-[12px] max-md:w-full max-md:px-[6px] max-md:pt-[12px] max-md:pb-[12px] max-sm:px-[4px] max-sm:pt-[8px] max-sm:pb-[8px]">
+            <Image
+              src="/images/pages/landing/contact.png"
+              width={400}
+              height={400}
+              alt="Interior design showcase"
+              className="h-full w-full rounded-[20px] object-cover"
+            />
+          </div>
+
+          {/* Form */}
+          <div className="flex w-[45%] flex-col justify-center px-[40px] py-[40px] max-md:w-full max-md:px-[30px] max-md:py-[30px] max-sm:px-[20px] max-sm:py-[20px]">
+            <h3 className="mb-[32px] font-serif text-[24px] leading-[32px] font-normal tracking-[-0.8px] text-[#0a0a0a] max-sm:text-[20px]">
+              {FORM_TITLE}
+            </h3>
+
+            <form onSubmit={handleSubmit} className="flex flex-col gap-[20px]">
+              <div>
+                <input
+                  type="email"
+                  name="email"
+                  placeholder="Email"
+                  value={formData.email}
+                  onChange={handleChange}
+                  className={`w-full border-b bg-transparent py-[12px] font-sans text-[14px] leading-[20px] font-normal text-[#0a0a0a] placeholder-[#666] transition-colors outline-none ${
+                    validationErrors.email ? "border-red-500" : "border-[#444]"
+                  }`}
+                />
+                {validationErrors.email && (
+                  <p className="mt-[4px] font-sans text-[11px] leading-[14px] font-normal text-red-600">
+                    {validationErrors.email}
+                  </p>
+                )}
+              </div>
+
+              <div>
+                <input
+                  type="tel"
+                  name="phone"
+                  placeholder="Phone number"
+                  value={formData.phone}
+                  onChange={handleChange}
+                  className={`w-full border-b bg-transparent py-[12px] font-sans text-[14px] leading-[20px] font-normal text-[#0a0a0a] placeholder-[#666] transition-colors outline-none ${
+                    validationErrors.phone ? "border-red-500" : "border-[#444]"
+                  }`}
+                />
+                {validationErrors.phone && (
+                  <p className="mt-[4px] font-sans text-[11px] leading-[14px] font-normal text-red-600">
+                    {validationErrors.phone}
+                  </p>
+                )}
+              </div>
+
+              <div>
+                <textarea
+                  name="message"
+                  placeholder="Your message"
+                  value={formData.message}
+                  onChange={handleChange}
+                  rows={4}
+                  className={`w-full resize-none border-b bg-transparent py-[12px] font-sans text-[14px] leading-[20px] font-normal text-[#0a0a0a] placeholder-[#666] transition-colors outline-none ${
+                    validationErrors.message ? "border-red-500" : "border-[#444]"
+                  }`}
+                />
+                {validationErrors.message && (
+                  <p className="mt-[4px] font-sans text-[11px] leading-[14px] font-normal text-red-600">
+                    {validationErrors.message}
+                  </p>
+                )}
+              </div>
+
+              <button
+                type="submit"
+                disabled={isSubmitting}
+                className="mt-[20px] flex items-center justify-center gap-[8px] rounded-full bg-[#9B9284] px-[32px] py-[12px] font-sans text-[14px] leading-[20px] font-normal text-[#FFF] transition-all duration-300 hover:bg-[#8B8170] disabled:cursor-not-allowed disabled:opacity-50"
+              >
+                {isSubmitting ? (
+                  "Sending..."
+                ) : (
+                  <>
+                    <span>Send Your Inquiry</span>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="20"
+                      height="20"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      strokeWidth="2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      className="text-[#FFF]"
+                    >
+                      <path d="M5 12h14" />
+                      <path d="m12 5 7 7-7 7" />
+                    </svg>
+                  </>
+                )}
+              </button>
+
+              {submitStatus === "success" && (
+                <p className="pt-[8px] font-sans text-[12px] leading-[16px] font-normal text-green-600">
+                  {SUCCESS_MESSAGE}
+                </p>
+              )}
+
+              {submitStatus === "error" && (
+                <p className="pt-[8px] font-sans text-[12px] leading-[16px] font-normal text-red-600">
+                  &cross; Error sending message. Please try again.
+                </p>
+              )}
+
+              <p className="pt-[12px] font-sans text-[11px] leading-[16px] font-normal text-[#555]">
+                {DISCLAIMER_TEXT}
+              </p>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      {/* Description Section */}
+      <div className="mt-[80px] flex w-full flex-col items-center justify-center px-[20px] text-center max-sm:mt-[60px]">
+        <div className="max-h-fit overflow-hidden">
+          <h2 className="text-bg-img mb-[8px] bg-[url(/images/pages/home/text-background.png)] pb-[8px] font-serif text-[28px] leading-[36px] font-normal tracking-[-0.8px] italic max-sm:text-[22px] max-sm:tracking-[-0.6px]">
+            From Concept to Delivery
+          </h2>
+        </div>
+
+        <p className="mb-[68px] font-sans text-[12px] leading-[20px] font-normal tracking-[0.4px] text-[#262626] uppercase max-sm:mb-[27px]">
+          WE SHAPE INTERIORS WITH PURPOSE
+        </p>
+
+        <p className="text-gradient-vertical mx-auto max-w-[565px] pb-[43px] font-serif text-[28px] leading-[37px] font-normal tracking-[-0.8px] max-sm:max-w-[311px] max-sm:pb-[27px] max-sm:text-[18px] max-sm:leading-[28px] max-sm:tracking-[-0.5px]">
+          Amara is a multidisciplinary interior design and procurement studio crafting refined
+          spaces through concept design, detailing, sourcing, and project coordination.
+        </p>
+      </div>
+    </section>
+  );
+}
