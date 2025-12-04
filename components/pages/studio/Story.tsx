@@ -99,11 +99,11 @@ export default function Story() {
         <div className="flex h-full flex-col justify-between py-[120px] max-sm:py-0">
           <div className="flex max-w-[438px] flex-col gap-[25px] max-sm:max-w-[315px] max-sm:gap-[15px]">
             <Image
-              src="/images/pages/studio/story1.jpg"
+              src="/images/pages/studio/story1-new.png"
               width={900}
               height={1000}
               className="h-[530px] w-full object-cover max-sm:h-[450px]"
-              alt="Miami"
+              alt="Design materials selection"
             />
             <div className="flex w-full flex-col items-start gap-[6px]">
               <p className="font-sans text-[14px] leading-[30px] font-medium tracking-[1.8px] text-[#262626] uppercase max-sm:hidden">
