@@ -132,13 +132,13 @@ export default function ContactSection() {
       </div>
 
       {/* Founders Image */}
-      <div className="mx-auto mb-[60px] flex max-w-[600px] justify-center px-[20px] max-sm:mb-[40px] max-sm:px-[12px]">
+      <div className="mb-[60px] w-full max-sm:mb-[40px]">
         <Image
           src="/images/pages/home/studio.png"
-          width={600}
-          height={800}
+          width={1920}
+          height={1080}
           alt="Amara founders"
-          className="h-auto w-full rounded-[20px] object-cover"
+          className="h-auto w-full object-cover"
         />
       </div>
 
