@@ -113,6 +113,24 @@ export default function ContactSection() {
 
   return (
     <section className="w-full bg-[#F5F1ED] py-[60px] max-md:py-[50px] max-sm:py-[40px]">
+      {/* Description Section */}
+      <div className="mb-[60px] flex w-full flex-col items-center justify-center px-[20px] text-center max-sm:mb-[40px]">
+        <div className="max-h-fit overflow-hidden">
+          <h2 className="text-bg-img mb-[8px] bg-[url(/images/pages/home/text-background.png)] pb-[8px] font-serif text-[28px] leading-[36px] font-normal tracking-[-0.8px] italic max-sm:text-[22px] max-sm:tracking-[-0.6px]">
+            From Concept to Delivery
+          </h2>
+        </div>
+
+        <p className="mb-[40px] font-sans text-[12px] leading-[20px] font-normal tracking-[0.4px] text-[#262626] uppercase max-sm:mb-[24px]">
+          WE SHAPE INTERIORS WITH PURPOSE
+        </p>
+
+        <p className="text-gradient-vertical mx-auto max-w-[565px] font-serif text-[28px] leading-[37px] font-normal tracking-[-0.8px] max-sm:max-w-[311px] max-sm:text-[18px] max-sm:leading-[28px] max-sm:tracking-[-0.5px]">
+          Amara is a multidisciplinary interior design and procurement studio crafting refined
+          spaces through concept design, detailing, sourcing, and project coordination.
+        </p>
+      </div>
+
       <div className="mx-auto flex max-w-[800px] justify-center px-[20px] max-sm:px-[12px]">
         {/* Contact Form Container */}
         <div className="flex w-full gap-[0px] rounded-[20px] bg-[#E8E0D6] max-md:flex-col max-md:gap-[20px] max-sm:gap-[16px]">
@@ -262,24 +280,6 @@ export default function ContactSection() {
             </form>
           </div>
         </div>
-      </div>
-
-      {/* Description Section */}
-      <div className="mt-[80px] flex w-full flex-col items-center justify-center px-[20px] text-center max-sm:mt-[60px]">
-        <div className="max-h-fit overflow-hidden">
-          <h2 className="text-bg-img mb-[8px] bg-[url(/images/pages/home/text-background.png)] pb-[8px] font-serif text-[28px] leading-[36px] font-normal tracking-[-0.8px] italic max-sm:text-[22px] max-sm:tracking-[-0.6px]">
-            From Concept to Delivery
-          </h2>
-        </div>
-
-        <p className="mb-[68px] font-sans text-[12px] leading-[20px] font-normal tracking-[0.4px] text-[#262626] uppercase max-sm:mb-[27px]">
-          WE SHAPE INTERIORS WITH PURPOSE
-        </p>
-
-        <p className="text-gradient-vertical mx-auto max-w-[565px] pb-[43px] font-serif text-[28px] leading-[37px] font-normal tracking-[-0.8px] max-sm:max-w-[311px] max-sm:pb-[27px] max-sm:text-[18px] max-sm:leading-[28px] max-sm:tracking-[-0.5px]">
-          Amara is a multidisciplinary interior design and procurement studio crafting refined
-          spaces through concept design, detailing, sourcing, and project coordination.
-        </p>
       </div>
     </section>
   );
