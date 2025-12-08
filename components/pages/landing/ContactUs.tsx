@@ -4,7 +4,7 @@ import Linkedin from "@/components/icons/linkedin.svg";
 
 export default function ContactUs() {
   return (
-    <section className="mx-auto flex w-full max-w-[1440px] flex-col items-center px-[20px] pb-[132px] max-md:pb-[70px]">
+    <section className="mx-auto flex w-full max-w-[1440px] flex-col items-center bg-[#F5F1ED] px-[20px] pb-[132px] max-md:pb-[70px]">
       <div
         id="contact"
         className="flex w-full items-end justify-center gap-[20px] pt-[80px] max-md:flex-col max-md:gap-[30px] max-sm:pt-[60px]"
