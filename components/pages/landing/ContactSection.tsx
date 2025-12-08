@@ -112,28 +112,28 @@ export default function ContactSection() {
   };
 
   return (
-    <section className="w-full bg-[#F5F1ED] py-[100px] max-md:py-[80px] max-sm:py-[60px]">
-      <div className="mx-auto flex max-w-[1000px] justify-center px-[20px] max-sm:px-[12px]">
+    <section className="w-full bg-[#F5F1ED] py-[60px] max-md:py-[50px] max-sm:py-[40px]">
+      <div className="mx-auto flex max-w-[800px] justify-center px-[20px] max-sm:px-[12px]">
         {/* Contact Form Container */}
-        <div className="flex w-full gap-[0px] rounded-[24px] bg-[#E8E0D6] max-md:flex-col max-md:gap-[30px] max-sm:gap-[20px]">
+        <div className="flex w-full gap-[0px] rounded-[20px] bg-[#E8E0D6] max-md:flex-col max-md:gap-[20px] max-sm:gap-[16px]">
           {/* Image */}
-          <div className="w-[55%] px-[6px] pt-[12px] pb-[12px] max-md:w-full max-md:px-[6px] max-md:pt-[12px] max-md:pb-[12px] max-sm:px-[4px] max-sm:pt-[8px] max-sm:pb-[8px]">
+          <div className="w-[50%] px-[5px] pt-[10px] pb-[10px] max-md:w-full max-md:px-[5px] max-md:pt-[10px] max-md:pb-[10px] max-sm:px-[4px] max-sm:pt-[6px] max-sm:pb-[6px]">
             <Image
               src="/images/pages/landing/contact.png"
-              width={400}
-              height={400}
+              width={350}
+              height={350}
               alt="Interior design showcase"
-              className="h-full w-full rounded-[20px] object-cover"
+              className="h-full w-full rounded-[16px] object-cover"
             />
           </div>
 
           {/* Form */}
-          <div className="flex w-[45%] flex-col justify-center px-[40px] py-[40px] max-md:w-full max-md:px-[30px] max-md:py-[30px] max-sm:px-[20px] max-sm:py-[20px]">
-            <h3 className="mb-[32px] font-serif text-[24px] leading-[32px] font-normal tracking-[-0.8px] text-[#0a0a0a] max-sm:text-[20px]">
+          <div className="flex w-[50%] flex-col justify-center px-[30px] py-[30px] max-md:w-full max-md:px-[24px] max-md:py-[24px] max-sm:px-[16px] max-sm:py-[16px]">
+            <h3 className="mb-[24px] font-serif text-[22px] leading-[28px] font-normal tracking-[-0.8px] text-[#0a0a0a] max-sm:text-[18px]">
               {FORM_TITLE}
             </h3>
 
-            <form onSubmit={handleSubmit} className="flex flex-col gap-[20px]">
+            <form onSubmit={handleSubmit} className="flex flex-col gap-[16px]">
               <div>
                 <input
                   type="email"
@@ -176,7 +176,7 @@ export default function ContactSection() {
                   placeholder="Your message"
                   value={formData.message}
                   onChange={handleChange}
-                  rows={4}
+                  rows={3}
                   className={`w-full resize-none border-b bg-transparent py-[12px] font-sans text-[14px] leading-[20px] font-normal text-[#0a0a0a] placeholder-[#666] transition-colors outline-none ${
                     validationErrors.message ? "border-red-500" : "border-[#444]"
                   }`}
@@ -188,11 +188,11 @@ export default function ContactSection() {
                 )}
               </div>
 
-              <div className="mt-[20px] flex flex-wrap items-center gap-[12px]">
+              <div className="mt-[16px] flex flex-wrap items-center gap-[10px]">
                 <button
                   type="submit"
                   disabled={isSubmitting}
-                  className="flex items-center justify-center gap-[8px] rounded-full bg-[#9B9284] px-[32px] py-[12px] font-sans text-[14px] leading-[20px] font-normal text-[#FFF] transition-all duration-300 hover:bg-[#8B8170] disabled:cursor-not-allowed disabled:opacity-50"
+                  className="flex items-center justify-center gap-[6px] rounded-full bg-[#9B9284] px-[24px] py-[10px] font-sans text-[13px] leading-[18px] font-normal text-[#FFF] transition-all duration-300 hover:bg-[#8B8170] disabled:cursor-not-allowed disabled:opacity-50"
                 >
                   {isSubmitting ? (
                     "Sending..."
@@ -201,8 +201,8 @@ export default function ContactSection() {
                       <span>Send Your Inquiry</span>
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
-                        width="20"
-                        height="20"
+                        width="16"
+                        height="16"
                         viewBox="0 0 24 24"
                         fill="none"
                         stroke="currentColor"
@@ -222,12 +222,12 @@ export default function ContactSection() {
                   href="https://calendar.app.google/mDqB7oH4P1jt3wTd9"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center justify-center gap-[8px] rounded-full border border-[#9B9284] bg-transparent px-[32px] py-[12px] font-sans text-[14px] leading-[20px] font-normal text-[#9B9284] transition-all duration-300 hover:bg-[#9B9284] hover:text-[#FFF]"
+                  className="flex items-center justify-center gap-[6px] rounded-full border border-[#9B9284] bg-transparent px-[24px] py-[10px] font-sans text-[13px] leading-[18px] font-normal text-[#9B9284] transition-all duration-300 hover:bg-[#9B9284] hover:text-[#FFF]"
                 >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
-                    width="18"
-                    height="18"
+                    width="14"
+                    height="14"
                     viewBox="0 0 24 24"
                     fill="none"
                     stroke="currentColor"
