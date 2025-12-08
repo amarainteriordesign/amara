@@ -7,7 +7,7 @@ export default function ContactUs() {
     <section className="mx-auto flex w-full max-w-[1440px] flex-col items-center bg-[#F5F1ED] px-[20px] pb-[132px] max-md:pb-[70px]">
       <div
         id="contact"
-        className="flex w-full items-end justify-center gap-[20px] pt-[80px] max-md:flex-col max-md:gap-[30px] max-sm:pt-[60px]"
+        className="flex w-full items-end justify-center gap-[20px] pt-[40px] max-md:flex-col max-md:gap-[30px] max-sm:pt-[30px]"
       >
         <div className="max-xmd:mr-0 mr-[55px] flex min-h-[63vh] w-full max-w-[423px] flex-col items-start justify-between max-md:min-h-fit max-md:max-w-full max-md:pb-[30px]">
           <div className="max-xmd:items-start flex w-full flex-wrap items-end justify-between gap-[40px] pt-[51px] max-md:justify-normal max-md:gap-[60px] max-sm:w-full max-sm:gap-[20px]">
