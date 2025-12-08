@@ -1,6 +1,7 @@
 "use client";
 import Image from "next/image";
 import { useState } from "react";
+import Projects from "@/components/pages/landing/Projects";
 
 const FORM_TITLE = "Let's get in Touch";
 const SUCCESS_MESSAGE = "✓ Message sent successfully! We'll be in touch soon.";
@@ -132,7 +133,7 @@ export default function ContactSection() {
       </div>
 
       {/* Founders Image */}
-      <div className="mb-[60px] w-full max-sm:mb-[40px]">
+      <div className="w-full">
         <Image
           src="/images/pages/home/studio.png"
           width={1920}
@@ -142,7 +143,10 @@ export default function ContactSection() {
         />
       </div>
 
-      <div className="mx-auto flex max-w-[800px] justify-center px-[20px] max-sm:px-[12px]">
+      {/* Projects Section */}
+      <Projects />
+
+      <div className="mx-auto flex max-w-[800px] justify-center px-[20px] pt-[60px] max-sm:px-[12px] max-sm:pt-[40px]">
         {/* Contact Form Container */}
         <div className="flex w-full gap-[0px] rounded-[20px] bg-[#E8E0D6] max-md:flex-col max-md:gap-[20px] max-sm:gap-[16px]">
           {/* Image */}
