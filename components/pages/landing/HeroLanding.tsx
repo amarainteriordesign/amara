@@ -43,13 +43,13 @@ export default function HeroLanding() {
 
             <Copy delay={1.7} animateOnScroll={false}>
               <p className="text-center font-serif text-[28px] leading-[36px] font-normal tracking-[-0.8px] text-[#FFF] max-sm:text-[24px] max-sm:tracking-[-0.7px]">
-                Where Interior Design & Procurement
+                Where Bespoke Interior Design
               </p>
             </Copy>
 
             <div className="max-h-fit w-full overflow-hidden text-center">
               <p className="hero-center-text-space text-bg-img bg-[url(/images/pages/home/text-background.png)] pb-[8px] font-serif text-[28px] leading-[36px] tracking-[-0.8px] italic max-sm:text-[24px] max-sm:tracking-[-0.7px]">
-                create soulful spaces
+                creates soulful spaces
               </p>
             </div>
 
