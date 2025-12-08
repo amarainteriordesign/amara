@@ -145,7 +145,9 @@ export default function ContactSection() {
       </div>
 
       {/* Studio Section (Black Block) */}
-      <Studio />
+      <div className="mb-[60px] max-sm:mb-[40px]">
+        <Studio />
+      </div>
 
       {/* Projects Section */}
       <Projects />
