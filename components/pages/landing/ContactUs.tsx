@@ -8,7 +8,7 @@ const CONTACT_INTRO =
 export default function ContactUs() {
   return (
     <section className="mx-auto flex w-full max-w-[1440px] flex-col items-center px-[20px] pb-[132px] max-md:pb-[70px]">
-      <div className="flex w-full justify-center pt-[160px] max-sm:pt-[100px]">
+      <div className="flex w-full justify-center pt-[80px] max-sm:pt-[60px]">
         <Image
           src="/images/pages/studio/drawing.png"
           alt="Drawing"
