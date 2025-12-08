@@ -133,7 +133,7 @@ export default function ContactSection() {
       </div>
 
       {/* Founders Image */}
-      <div className="w-full">
+      <div className="mb-[80px] w-full max-sm:mb-[60px]">
         <Image
           src="/images/pages/home/studio.png"
           width={1920}
