@@ -2,36 +2,14 @@ import Image from "next/image";
 import Mail from "@/components/icons/mail.svg";
 import Linkedin from "@/components/icons/linkedin.svg";
 
-const CONTACT_INTRO =
-  "We'd love to hear from you. Reach out to us anytime, we're here to listen, guide, and transform your vision into something truly extraordinary.";
-
 export default function ContactUs() {
   return (
     <section className="mx-auto flex w-full max-w-[1440px] flex-col items-center px-[20px] pb-[132px] max-md:pb-[70px]">
-      <div className="flex w-full justify-center pt-[80px] max-sm:pt-[60px]">
-        <Image
-          src="/images/pages/studio/drawing.png"
-          alt="Drawing"
-          width={1020}
-          height={432}
-          className="w-full max-w-[520px]"
-        />
-      </div>
-
       <div
         id="contact"
-        className="flex w-full items-end justify-center gap-[20px] pt-[225px] max-md:flex-col max-md:gap-[30px] max-sm:pt-[86px]"
+        className="flex w-full items-end justify-center gap-[20px] pt-[80px] max-md:flex-col max-md:gap-[30px] max-sm:pt-[60px]"
       >
         <div className="max-xmd:mr-0 mr-[55px] flex min-h-[63vh] w-full max-w-[423px] flex-col items-start justify-between max-md:min-h-fit max-md:max-w-full max-md:pb-[30px]">
-          <div className="w-full max-md:border-b-[1px] max-md:border-[#DDD7CE] max-md:pb-[40px]">
-            <p className="font-sans text-[14px] leading-[30px] font-medium tracking-[1.8px] text-[#262626] max-md:hidden max-md:pb-[7px]">
-              CONTACT US
-            </p>
-
-            <p className="max-w-[234px] font-serif text-[12px] leading-[18px] font-normal tracking-[0.3px] text-[#262626] max-md:max-w-[450px] max-sm:max-w-[350px]">
-              {CONTACT_INTRO}
-            </p>
-          </div>
           <div className="max-xmd:items-start flex w-full flex-wrap items-end justify-between gap-[40px] pt-[51px] max-md:justify-normal max-md:gap-[60px] max-sm:w-full max-sm:gap-[20px]">
             <div className="flex flex-col">
               <p className="pb-[7px] font-sans text-[14px] leading-[30px] font-medium tracking-[1.8px] text-[#262626] max-md:pb-[15px]">
