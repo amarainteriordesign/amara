@@ -131,6 +131,17 @@ export default function ContactSection() {
         </p>
       </div>
 
+      {/* Founders Image */}
+      <div className="mx-auto mb-[60px] flex max-w-[600px] justify-center px-[20px] max-sm:mb-[40px] max-sm:px-[12px]">
+        <Image
+          src="/images/pages/home/studio.png"
+          width={600}
+          height={800}
+          alt="Amara founders"
+          className="h-auto w-full rounded-[20px] object-cover"
+        />
+      </div>
+
       <div className="mx-auto flex max-w-[800px] justify-center px-[20px] max-sm:px-[12px]">
         {/* Contact Form Container */}
         <div className="flex w-full gap-[0px] rounded-[20px] bg-[#E8E0D6] max-md:flex-col max-md:gap-[20px] max-sm:gap-[16px]">
