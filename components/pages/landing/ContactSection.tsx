@@ -2,6 +2,7 @@
 import Image from "next/image";
 import { useState } from "react";
 import Projects from "@/components/pages/landing/Projects";
+import Studio from "@/components/pages/landing/Studio";
 
 const FORM_TITLE = "Let's get in Touch";
 const SUCCESS_MESSAGE = "✓ Message sent successfully! We'll be in touch soon.";
@@ -133,7 +134,7 @@ export default function ContactSection() {
       </div>
 
       {/* Founders Image */}
-      <div className="mb-[80px] w-full max-sm:mb-[60px]">
+      <div className="w-full">
         <Image
           src="/images/pages/home/studio.png"
           width={1920}
@@ -142,6 +143,9 @@ export default function ContactSection() {
           className="h-auto w-full object-cover"
         />
       </div>
+
+      {/* Studio Section (Black Block) */}
+      <Studio />
 
       {/* Projects Section */}
       <Projects />

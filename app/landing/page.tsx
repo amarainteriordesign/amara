@@ -1,7 +1,6 @@
 import Header from "@/components/layout/Header";
 import HeroLanding from "@/components/pages/landing/HeroLanding";
 import ContactSection from "@/components/pages/landing/ContactSection";
-import Studio from "@/components/pages/landing/Studio";
 import ContactUs from "@/components/pages/landing/ContactUs";
 import ImageFooter from "@/components/layout/ImageFooter";
 import type { Metadata } from "next";
@@ -20,8 +19,6 @@ export default function Landing() {
       <HeroLanding />
 
       <ContactSection />
-
-      <Studio />
 
       <ContactUs />
 
