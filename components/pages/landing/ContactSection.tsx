@@ -171,7 +171,7 @@ export default function ContactSection() {
       {/* Projects Section */}
       <Projects />
 
-      <div className="mx-auto flex max-w-[800px] justify-center px-[20px] pt-[60px] max-sm:px-[12px] max-sm:pt-[40px]">
+      <div className="mx-auto flex max-w-[800px] justify-center px-[20px] pt-[42px] max-sm:px-[12px] max-sm:pt-[28px]">
         {/* Contact Form Container */}
         <div className="flex w-full gap-[0px] rounded-[20px] bg-[#E8E0D6] max-md:flex-col max-md:gap-[20px] max-sm:gap-[16px]">
           {/* Image */}
