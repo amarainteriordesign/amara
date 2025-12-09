@@ -1,0 +1,72 @@
+5:28:32 PM: Deploy site                                                   
+5:28:32 PM: ────────────────────────────────────────────────────────────────
+5:28:32 PM: ​
+5:28:32 PM: Starting to deploy site from '.next'
+5:28:33 PM: Calculating files to upload
+5:28:34 PM: 0 new file(s) to upload
+5:28:34 PM: 1 new function(s) to upload
+5:28:34 PM: Failed to upload file: ___netlify-server-handler
+5:28:34 PM: Section completed: deploying
+5:28:34 PM: ​
+5:28:34 PM: Error deploying                                               
+5:28:34 PM: ────────────────────────────────────────────────────────────────
+5:28:34 PM: ​
+5:28:34 PM:   Error message
+5:28:34 PM:   Deploy did not succeed with HTTP Error 400: [PUT /deploys/{deploy_id}/functions/{name}][400] uploadDeployFunction default  &{Code:400 Message:
+5:28:34 PM: ​
+5:28:34 PM:   You're currently using a version of Next.js affected by a critical security vulnerability. To protect your project, we're blocking further deploys until you update your Next.js version.
+5:28:34 PM: ​
+5:28:34 PM:   Refer to https://ntl.fyi/cve-2025-55182 for more information.
+5:28:34 PM: ​
+5:28:34 PM:   }
+5:28:34 PM: ​
+5:28:34 PM:   Error location
+5:28:34 PM:   At deploy the stage with HTTP status code '400'
+5:28:34 PM: ​
+5:28:34 PM:   Resolved config
+5:28:34 PM:   build:
+5:28:34 PM:     command: npm run build
+5:28:34 PM:     commandOrigin: ui
+5:28:34 PM:     environment:
+5:28:34 PM:       - NEXT_PUBLIC_FIREBASE_API_KEY
+5:28:34 PM:       - NEXT_PUBLIC_FIREBASE_APP_ID
+5:28:34 PM:       - NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN
+5:28:34 PM:       - NEXT_PUBLIC_FIREBASE_MESSAGING_SENDER_ID
+5:28:34 PM:       - NEXT_PUBLIC_FIREBASE_PROJECT_ID
+5:28:34 PM:       - NEXT_PUBLIC_FIREBASE_STORAGE_BUCKET
+5:28:34 PM:     publish: /opt/build/repo/.next
+5:28:34 PM:     publishOrigin: ui
+5:28:34 PM:   headers:
+5:28:34 PM:     - for: /_next/static/*
+      values:
+        Cache-Control: public, max-age=31536000, immutable
+  headersOrigin: inline
+  plugins:
+    - inputs: {}
+      origin: ui
+      package: "@netlify/plugin-nextjs"
+  redirects:
+    - from: /_next/image
+      query:
+        q: :quality
+        url: :url
+        w: :width
+      status: 200
+      to: /.netlify/images?url=:url&w=:width&q=:quality
+    - from: /_ipx/*
+      query:
+        q: :quality
+        url: :url
+        w: :width
+      status: 200
+      to: /.netlify/images?url=:url&w=:width&q=:quality
+  redirectsOrigin: inline
+5:28:34 PM: 
+
+You're currently using a version of Next.js affected by a critical security vulnerability. To protect your project, we're blocking further deploys until you update your Next.js version.
+
+Refer to https://ntl.fyi/cve-2025-55182 for more information.
+
+5:28:34 PM: Failed during stage 'building site': Build script returned non-zero exit code: 2 (https://ntl.fyi/exit-code-2)
+5:28:34 PM: Build failed due to a user error: Build script returned non-zero exit code: 2
+5:28:34 PM: Failing build: Failed to build site
