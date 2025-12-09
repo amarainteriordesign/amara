@@ -1,0 +1,80 @@
+PM: Netlify Build                                                 
+7:27:04 PM: ────────────────────────────────────────────────────────────────
+7:27:04 PM: ​
+7:27:04 PM: ❯ Version
+7:27:04 PM:   @netlify/build 35.5.5
+7:27:04 PM: ​
+7:27:04 PM: ❯ Flags
+7:27:04 PM:   accountId: 69382272f1954f5a1beb3f9d
+7:27:04 PM:   baseRelDir: true
+7:27:04 PM:   buildId: 69383fb470d23d0008534e9e
+7:27:04 PM:   deployId: 69383fb470d23d0008534ea0
+7:27:04 PM: ​
+7:27:04 PM: ❯ Current directory
+7:27:04 PM:   /opt/build/repo
+7:27:04 PM: ​
+7:27:04 PM: ❯ Config file
+7:27:04 PM:   No config file was defined: using default values.
+7:27:04 PM: ​
+7:27:04 PM: ❯ Context
+7:27:04 PM:   production
+7:27:05 PM: ​
+7:27:05 PM: ❯ Using Next.js Runtime - v5.14.7
+7:27:06 PM: No Next.js cache to restore
+7:27:06 PM: ​
+7:27:06 PM: Build command from Netlify app                                
+7:27:06 PM: ────────────────────────────────────────────────────────────────
+7:27:06 PM: ​
+7:27:06 PM: $ npm run build
+7:27:06 PM: > amara@0.1.0 build
+7:27:06 PM: > next build
+7:27:06 PM: ⚠ No build cache found. Please configure build caching for faster rebuilds. Read more: https://nextjs.org/docs/messages/no-cache
+7:27:06 PM:    ▲ Next.js 16.0.8 (Turbopack)
+7:27:06 PM:    Creating an optimized production build ...
+7:27:07 PM: Failed during stage 'building site': Build script returned non-zero exit code: 2 (https://ntl.fyi/exit-code-2)
+7:27:07 PM:  ⨯ ERROR: This build is using Turbopack, with a `webpack` config and no `turbopack` config.
+7:27:07 PM:    This may be a mistake.
+7:27:07 PM:    As of Next.js 16 Turbopack is enabled by default and
+7:27:07 PM:    custom webpack configurations may need to be migrated to Turbopack.
+7:27:07 PM:    NOTE: your `webpack` config may have been added by a configuration plugin.
+7:27:07 PM:    To configure Turbopack, see https://nextjs.org/docs/app/api-reference/next-config-js/turbopack
+7:27:07 PM:    TIP: Many applications work fine under Turbopack with no configuration,
+7:27:07 PM:    if that is the case for you, you can silence this error by passing the
+7:27:07 PM:    `--turbopack` or `--webpack` flag explicitly or simply setting an
+7:27:07 PM:    empty turbopack config in your Next config file (e.g. `turbopack: {}`).
+7:27:07 PM: > Build error occurred
+7:27:07 PM: Error: Call retries were exceeded
+7:27:07 PM:     at ignore-listed frames {
+7:27:07 PM:   type: 'WorkerError'
+7:27:07 PM: }
+7:27:07 PM: ​
+7:27:07 PM: "build.command" failed                                        
+7:27:07 PM: ────────────────────────────────────────────────────────────────
+7:27:07 PM: ​
+7:27:07 PM:   Error message
+7:27:07 PM:   Command failed with exit code 1: npm run build (https://ntl.fyi/exit-code-1)
+7:27:07 PM: ​
+7:27:07 PM:   Error location
+7:27:07 PM:   In Build command from Netlify app:
+7:27:07 PM:   npm run build
+7:27:07 PM: ​
+7:27:07 PM:   Resolved config
+7:27:07 PM:   build:
+7:27:07 PM:     command: npm run build
+7:27:07 PM:     commandOrigin: ui
+7:27:07 PM:     environment:
+7:27:07 PM:       - NEXT_PUBLIC_FIREBASE_API_KEY
+7:27:07 PM:       - NEXT_PUBLIC_FIREBASE_APP_ID
+7:27:07 PM:       - NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN
+7:27:07 PM:       - NEXT_PUBLIC_FIREBASE_MESSAGING_SENDER_ID
+7:27:07 PM:       - NEXT_PUBLIC_FIREBASE_PROJECT_ID
+7:27:07 PM:       - NEXT_PUBLIC_FIREBASE_STORAGE_BUCKET
+7:27:07 PM:     publish: /opt/build/repo/.next
+7:27:07 PM:     publishOrigin: ui
+7:27:07 PM:   plugins:
+7:27:07 PM:     - inputs: {}
+7:27:07 PM:       origin: ui
+7:27:07 PM:       package: "@netlify/plugin-nextjs"
+7:27:07 PM: Build failed due to a user error: Build script returned non-zero exit code: 2
+7:27:07 PM: Failing build: Failed to build site
+7:27:07 PM: Finished processing build request in 22.482s
