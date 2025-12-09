@@ -6,7 +6,7 @@ Amara is a Next.js 15 application built with TypeScript, featuring a modern web 
 ## Project Architecture
 
 ### Tech Stack
-- **Framework**: Next.js 15.5.2 (App Router)
+- **Framework**: Next.js 16.0.8 (App Router)
 - **Language**: TypeScript 5
 - **Styling**: Tailwind CSS 4, Sass
 - **Animations**: GSAP 3.13 with @gsap/react
