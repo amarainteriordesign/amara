@@ -152,20 +152,23 @@ export default function ContactSection() {
         </a>
       </div>
 
-      {/* Founders Image */}
-      <div className="w-full">
-        <Image
-          src="/images/pages/home/studio.png"
-          width={1920}
-          height={1080}
-          alt="Amara founders"
-          className="h-auto w-full object-cover"
-        />
-      </div>
+      {/* Founders Image + Studio Section Side by Side on Desktop */}
+      <div className="mb-[60px] flex w-full flex-col xl:flex-row max-sm:mb-[40px]">
+        {/* Founders Image */}
+        <div className="w-full xl:w-1/2">
+          <Image
+            src="/images/pages/home/studio.png"
+            width={1920}
+            height={1080}
+            alt="Amara founders"
+            className="h-full w-full object-cover"
+          />
+        </div>
 
-      {/* Studio Section (Black Block) */}
-      <div className="mb-[60px] max-sm:mb-[40px]">
-        <Studio />
+        {/* Studio Section (Black Block) */}
+        <div className="w-full xl:w-1/2">
+          <Studio isDesktopSideBySide />
+        </div>
       </div>
 
       {/* Projects Section */}

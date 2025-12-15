@@ -1,24 +1,28 @@
 import Image from "next/image";
 import ArrowIcon from "@/components/icons/arrow-right.svg";
 
-export default function Studio() {
+interface StudioProps {
+  isDesktopSideBySide?: boolean;
+}
+
+export default function Studio({ isDesktopSideBySide = false }: StudioProps) {
   return (
-    <section className="w-full bg-[#000]">
-      <div className="mx-auto max-w-[800px] px-[40px] pt-[100px] pb-[80px] max-sm:px-[17px] max-sm:pt-[80px] max-sm:pb-[60px]">
+    <section className={`w-full bg-[#000] ${isDesktopSideBySide ? "h-full flex items-center" : ""}`}>
+      <div className={`mx-auto px-[40px] pt-[100px] pb-[80px] max-sm:px-[17px] max-sm:pt-[80px] max-sm:pb-[60px] ${isDesktopSideBySide ? "xl:max-w-full xl:px-[60px] xl:pt-[60px] xl:pb-[60px]" : "max-w-[800px]"}`}>
         <Image
           src="/images/pages/home/drawing.png"
           alt="Drawing"
           width={483}
           height={245}
-          className="mx-auto h-auto w-full max-w-[500px] object-cover pb-[55px] max-sm:pb-[60px]"
+          className={`mx-auto h-auto w-full object-cover pb-[55px] max-sm:pb-[60px] ${isDesktopSideBySide ? "xl:max-w-[400px] xl:pb-[40px]" : "max-w-[500px]"}`}
         />
         <div className="text-center">
-          <p className="font-display text-normal mx-auto max-w-[500px] pb-[18px] text-[42px] leading-[49px] tracking-[0.8px] text-[#FFF] max-sm:max-w-full max-sm:pb-[28px] max-sm:text-[22px] max-sm:leading-[23px] max-sm:tracking-[0.4]">
+          <p className={`font-display text-normal mx-auto pb-[18px] tracking-[0.8px] text-[#FFF] max-sm:max-w-full max-sm:pb-[28px] max-sm:text-[22px] max-sm:leading-[23px] max-sm:tracking-[0.4] ${isDesktopSideBySide ? "xl:max-w-full xl:text-[32px] xl:leading-[38px] xl:pb-[14px]" : "max-w-[500px] text-[42px] leading-[49px]"}`}>
             <span className="max-sm:hidden">Redefining the way we design, Globally</span>
 
             <span className="hidden max-sm:inline"> Redefining Interiors, Globally</span>
           </p>
-          <p className="text-normal mx-auto max-w-[600px] pb-[54px] font-serif text-[16px] leading-[24px] tracking-[-0.4] text-[#FFF] max-sm:max-w-full max-sm:pb-[35px]">
+          <p className={`text-normal mx-auto pb-[54px] font-serif text-[16px] leading-[24px] tracking-[-0.4] text-[#FFF] max-sm:max-w-full max-sm:pb-[35px] ${isDesktopSideBySide ? "xl:max-w-full xl:text-[14px] xl:leading-[22px] xl:pb-[30px]" : "max-w-[600px]"}`}>
             From the vibrant rhythm of Miami to the refined elegance of Paris and the bold energy of
             Dubai, Amara redefines interior design through a distinct voice. We are a boutique
             powerhouse blending artistic depth with technical mastery, crafting spaces that feel
@@ -39,7 +43,7 @@ export default function Studio() {
           </a>
         </div>
 
-        <p className="mt-[50px] text-center font-sans text-[14px] leading-[30px] font-normal tracking-[1.8] text-[#FFF] uppercase max-sm:hidden">
+        <p className={`mt-[50px] text-center font-sans text-[14px] leading-[30px] font-normal tracking-[1.8] text-[#FFF] uppercase max-sm:hidden ${isDesktopSideBySide ? "xl:mt-[30px]" : ""}`}>
           MIAMI - DUBAI - PARIS
         </p>
       </div>
