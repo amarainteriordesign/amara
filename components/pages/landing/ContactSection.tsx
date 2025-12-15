@@ -156,13 +156,15 @@ export default function ContactSection() {
       <div className="mb-[60px] flex w-full flex-col lg:flex-row max-sm:mb-[40px]">
         {/* Founders Image */}
         <div className="w-full lg:w-1/2 lg:flex lg:items-center lg:justify-center lg:bg-[#F5F1ED] lg:p-[40px]">
-          <Image
-            src="/images/pages/home/studio.png"
-            width={1920}
-            height={1080}
-            alt="Amara founders"
-            className="h-auto w-full object-cover lg:max-h-[500px] lg:w-auto lg:max-w-full"
-          />
+          <div className="w-full lg:max-w-[400px]">
+            <Image
+              src="/images/pages/home/studio.png"
+              width={1920}
+              height={1080}
+              alt="Amara founders"
+              className="h-auto w-full object-cover"
+            />
+          </div>
         </div>
 
         {/* Studio Section (Black Block) */}
