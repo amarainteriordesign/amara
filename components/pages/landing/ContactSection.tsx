@@ -153,7 +153,7 @@ export default function ContactSection() {
       </div>
 
       {/* Founders Image + Studio Section Side by Side on Desktop */}
-      <div className="mb-[60px] flex w-full flex-col md:flex-row max-sm:mb-[40px]">
+      <div className="mb-[60px] flex w-full flex-col md:flex-row md:items-stretch max-sm:mb-[40px]">
         {/* Founders Image */}
         <div className="w-full md:w-1/2 md:flex md:items-center md:justify-center md:bg-[#F5F1ED] md:p-[30px]">
           <div className="w-full md:max-w-[350px]">
@@ -168,7 +168,7 @@ export default function ContactSection() {
         </div>
 
         {/* Studio Section (Black Block) */}
-        <div className="w-full md:w-1/2">
+        <div className="w-full md:w-1/2 md:flex md:items-stretch">
           <Studio isDesktopSideBySide />
         </div>
       </div>
