@@ -7,6 +7,10 @@ import { Project } from "@/types/project";
  * @returns Promise<Project[]> - Array of all projects
  */
 export async function fetchAllProjects(): Promise<Project[]> {
+  if (!db) {
+    console.warn("Firebase not configured. Returning empty projects.");
+    return [];
+  }
   try {
     const projectsRef = collection(db, "projects");
 
@@ -36,6 +40,10 @@ export async function fetchAllProjects(): Promise<Project[]> {
  * @returns Promise<Project | null> - The project data or null if not found
  */
 export async function fetchProjectById(projectId: string): Promise<Project | null> {
+  if (!db) {
+    console.warn("Firebase not configured. Cannot fetch project.");
+    return null;
+  }
   try {
     const { doc, getDoc } = await import("firebase/firestore");
     const projectRef = doc(db, "projects", projectId);

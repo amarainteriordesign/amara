@@ -7,6 +7,10 @@ import { Blog } from "@/types/blog";
  * @returns Promise<Blog[]> - Array of all published blog articles
  */
 export async function fetchAllBlogs(): Promise<Blog[]> {
+  if (!db) {
+    console.warn("Firebase not configured. Returning empty blogs.");
+    return [];
+  }
   try {
     const blogsRef = collection(db, "blogs");
 
@@ -34,6 +38,10 @@ export async function fetchAllBlogs(): Promise<Blog[]> {
  * @returns Promise<Blog | null> - The blog data or null if not found
  */
 export async function fetchBlogById(blogId: string): Promise<Blog | null> {
+  if (!db) {
+    console.warn("Firebase not configured. Cannot fetch blog.");
+    return null;
+  }
   try {
     const { doc, getDoc } = await import("firebase/firestore");
     const blogRef = doc(db, "blogs", blogId);
@@ -59,6 +67,10 @@ export async function fetchBlogById(blogId: string): Promise<Blog | null> {
  * @returns Promise<Blog | null> - The blog data or null if not found
  */
 export async function fetchBlogBySlug(slug: string): Promise<Blog | null> {
+  if (!db) {
+    console.warn("Firebase not configured. Cannot fetch blog.");
+    return null;
+  }
   try {
     const blogsRef = collection(db, "blogs");
     const q = query(blogsRef, where("slug", "==", slug));
