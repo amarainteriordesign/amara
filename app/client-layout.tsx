@@ -35,12 +35,12 @@ export default function ClientLayout({
         wheelMultiplier: 1,
       } as LenisOptions)
     : ({
-        duration: 1.2,
+        duration: 0.6,
         easing: (t: number) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
         smooth: true,
         smoothTouch: false,
         touchMultiplier: 2,
-        lerp: 0.1,
+        lerp: 0.25,
         wheelMultiplier: 1,
       } as LenisOptions);
 
