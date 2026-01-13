@@ -82,7 +82,16 @@ Configured for autoscale deployment on Replit with:
 - Large SVG files (hero-balance.svg) exceed 500KB and cause Babel optimization warnings
 - Turbopack is disabled due to symlink issues in Replit environment
 
+## Analytics
+- **Google Tag Manager**: Integrated in `app/layout.tsx`
+  - Container ID: `GTM-5DZD354R`
+  - Script loads on all pages via Next.js Script component
+  - Noscript fallback included for browsers without JavaScript
+
 ## Recent Changes
+- **2025-01-13**: Added Google Tag Manager
+  - GTM script and noscript fallback added to root layout
+  - Loads automatically on all pages
 - **2024-12-03**: Initial Replit setup
   - Configured Next.js to run on port 5000 with 0.0.0.0 host
   - Disabled Turbopack to fix symlink errors
