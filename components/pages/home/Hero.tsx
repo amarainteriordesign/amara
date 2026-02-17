@@ -54,13 +54,13 @@ export default function Hero() {
 
           <div className="hero-overlay absolute top-1/2 z-[1] flex max-h-fit w-full -translate-y-1/2 flex-col items-center justify-center overflow-hidden p-[20px]">
             <Copy animateOnScroll={false} delay={1.55}>
-              <p className="pb-[8px] text-center font-sans text-[12px] leading-[20px] font-normal tracking-[0.3px] text-[#FFF] uppercase max-sm:pb-[12px]">
+              <p className="pb-[8px] text-center font-diranista text-[14px] leading-[20px] font-normal tracking-[1.5px] text-[#FFF] uppercase max-sm:pb-[12px] max-sm:text-[12px]">
                 AMARA BOUTIQUE DESIGN STUDIO
               </p>
             </Copy>
 
             <Copy delay={1.8} animateOnScroll={false}>
-              <p className="pb-[8px] font-sans text-[12px] leading-[20px] font-normal tracking-[0.3px] text-[#FFF] uppercase max-sm:pb-[12px]">
+              <p className="pb-[8px] font-diranista text-[14px] leading-[20px] font-normal tracking-[1.5px] text-[#FFF] uppercase max-sm:pb-[12px] max-sm:text-[12px]">
                 MIAMI - DUBAI - PARIS
               </p>
             </Copy>
