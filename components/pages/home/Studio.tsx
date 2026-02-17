@@ -43,7 +43,7 @@ export default function Studio() {
         </div>
       </section>
 
-      <section className="bg-[#f1ebdf] pt-[180px] pb-[100px] max-md:pt-[140px] max-sm:pt-[100px] max-sm:pb-[70px]">
+      <section className="bg-[#e8dfd2] pt-[180px] pb-[100px] max-md:pt-[140px] max-sm:pt-[100px] max-sm:pb-[70px]">
         <p className="text-center font-display text-[32px] leading-[40px] tracking-[3px] text-[#2a2a2a] uppercase max-sm:text-[18px] max-sm:leading-[26px] max-sm:tracking-[2px]">
           Where Vision Meets Precision.
         </p>
