@@ -97,7 +97,8 @@ export default function Footer({
             </nav>
 
             {/* Col 3 — Social icons (pulled in from right to mirror AMARA cutout distance) */}
-            <div className="grid grid-cols-2 gap-[12px] justify-self-end mr-[130px] max-lg:mr-[60px] max-md:mr-0">
+            <div className="flex justify-end pr-[130px] max-lg:pr-[60px] max-md:pr-0">
+            <div className="grid grid-cols-2 gap-[12px]">
               <a
                 href="mailto:info@amarainteriordesign.com"
                 aria-label="Email"
@@ -130,6 +131,7 @@ export default function Footer({
               >
                 <Linkedin width={16} height={16} color="#FFF" />
               </a>
+            </div>
             </div>
           </div>
 
