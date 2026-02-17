@@ -4,7 +4,7 @@ import Services from "@/components/pages/home/Services";
 import Studio from "@/components/pages/home/Studio";
 import Projects from "@/components/pages/home/Projects";
 import Contact from "@/components/pages/home/Contact";
-import ImageFooter from "@/components/layout/ImageFooter";
+import Footer from "@/components/layout/Footer";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -28,7 +28,7 @@ export default function Home() {
 
       <Contact />
 
-      <ImageFooter addDarkHeader={true} image="/images/pages/home/footer.png" />
+      <Footer />
     </>
   );
 }
