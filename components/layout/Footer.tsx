@@ -51,10 +51,10 @@ export default function Footer({
 
       <footer className="w-full bg-[#7a8070] px-[42px] pt-[60px] pb-[30px] max-md:px-[20px] max-md:pt-[40px]">
         <div className="mx-auto max-w-[1440px]">
-          {/* Main row: AMARA left | nav center | socials right */}
-          <div className="flex items-center justify-between max-md:flex-col max-md:items-start max-md:gap-[40px]">
-            {/* AMARA Cutout — left */}
-            <div className="shrink-0">
+          {/* Main row: 3 equal columns */}
+          <div className="grid grid-cols-3 items-center max-md:flex max-md:flex-col max-md:items-start max-md:gap-[40px]">
+            {/* Col 1 — AMARA Cutout (left-aligned) */}
+            <div className="justify-self-start">
               <div className="relative h-[180px] w-[240px] overflow-hidden max-sm:h-[140px] max-sm:w-[180px]">
                 <svg
                   className="absolute top-0 left-0 h-full w-full"
@@ -83,8 +83,8 @@ export default function Footer({
               </div>
             </div>
 
-            {/* Nav links — center */}
-            <nav className="flex flex-col items-center gap-[8px] max-md:items-start">
+            {/* Col 2 — Nav links (centered) */}
+            <nav className="flex flex-col items-center gap-[8px] justify-self-center max-md:items-start">
               {NAV_LINKS.map((link) => (
                 <Link
                   key={link.url}
@@ -96,8 +96,8 @@ export default function Footer({
               ))}
             </nav>
 
-            {/* Social icons — right */}
-            <div className="grid grid-cols-2 gap-[12px]">
+            {/* Col 3 — Social icons (right-aligned) */}
+            <div className="grid grid-cols-2 gap-[12px] justify-self-end">
               <a
                 href="mailto:info@amarainteriordesign.com"
                 aria-label="Email"
