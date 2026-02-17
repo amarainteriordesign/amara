@@ -3,6 +3,7 @@ import Hero from "@/components/pages/home/Hero";
 import Services from "@/components/pages/home/Services";
 import Studio from "@/components/pages/home/Studio";
 import Projects from "@/components/pages/home/Projects";
+import Contact from "@/components/pages/home/Contact";
 import ImageFooter from "@/components/layout/ImageFooter";
 import type { Metadata } from "next";
 
@@ -24,6 +25,8 @@ export default function Home() {
       <Services />
 
       <Projects />
+
+      <Contact />
 
       <ImageFooter addDarkHeader={true} image="/images/pages/home/footer.png" />
     </>
