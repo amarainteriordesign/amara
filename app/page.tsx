@@ -1,6 +1,5 @@
 import Header from "@/components/layout/Header";
 import Hero from "@/components/pages/home/Hero";
-import Inspiration from "@/components/pages/home/Inspiration";
 import Design from "@/components/pages/home/Design";
 import Studio from "@/components/pages/home/Studio";
 import Elements from "@/components/pages/home/Elements";
@@ -22,8 +21,6 @@ export default function Home() {
       <Hero />
 
       <Studio />
-
-      <Inspiration />
 
       <Design />
 
