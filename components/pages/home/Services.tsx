@@ -2,11 +2,11 @@ export default function Services() {
   return (
     <section className="bg-[#e8dfd2] px-[60px] py-[80px] max-md:px-[40px] max-md:py-[60px] max-sm:px-[17px] max-sm:py-[40px]">
       <div className="mx-auto max-w-[1200px] pb-[40px] max-sm:pb-[28px]">
-        <h2 className="font-display text-normal text-[38px] leading-[46px] tracking-[0.8px] text-[#2a2a2a] max-sm:text-[24px] max-sm:leading-[30px] max-sm:tracking-[0.4px]">
-          BOUTIQUE DESIGN, STRATEGIC SOURCING
+        <h2 className="font-serif italic text-[32px] leading-[40px] tracking-[0.2px] text-[#5a7a8a] max-sm:text-[22px] max-sm:leading-[28px]">
+          Boutique Design, Strategic Sourcing worldwide.
         </h2>
-        <p className="text-normal font-serif text-[15px] leading-[24px] tracking-[-0.3px] text-[#4a4a4a] pt-[8px] max-sm:text-[14px] max-sm:leading-[22px]">
-          worldwide
+        <p className="pt-[10px] text-[13px] uppercase leading-[20px] tracking-[2px] text-[#4a4a4a] max-sm:text-[11px] max-sm:tracking-[1.5px]">
+          BLENDING DESIGN WITH PEACEFUL LIVING.
         </p>
       </div>
       <div className="mx-auto flex max-w-[1200px] gap-[20px] max-md:flex-col">
