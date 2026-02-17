@@ -1,6 +1,14 @@
 export default function Services() {
   return (
     <section className="bg-[#e8dfd2] px-[60px] py-[80px] max-md:px-[40px] max-md:py-[60px] max-sm:px-[17px] max-sm:py-[40px]">
+      <div className="mx-auto max-w-[1200px] pb-[40px] max-sm:pb-[28px]">
+        <h2 className="font-display text-normal text-[38px] leading-[46px] tracking-[0.8px] text-[#2a2a2a] max-sm:text-[24px] max-sm:leading-[30px] max-sm:tracking-[0.4px]">
+          BOUTIQUE DESIGN, STRATEGIC SOURCING
+        </h2>
+        <p className="text-normal font-serif text-[15px] leading-[24px] tracking-[-0.3px] text-[#4a4a4a] pt-[8px] max-sm:text-[14px] max-sm:leading-[22px]">
+          worldwide
+        </p>
+      </div>
       <div className="mx-auto flex max-w-[1200px] gap-[20px] max-md:flex-col">
         <div className="flex w-1/2 flex-col justify-between rounded-[4px] bg-[#3a3632] px-[50px] pt-[50px] pb-[45px] max-md:w-full max-sm:px-[28px] max-sm:pt-[36px] max-sm:pb-[32px]">
           <div>
