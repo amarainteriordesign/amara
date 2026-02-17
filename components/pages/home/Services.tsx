@@ -3,7 +3,18 @@ export default function Services() {
     <>
       <section className="bg-[#e8dfd2] pt-[80px] max-md:pt-[60px] max-sm:pt-[40px]">
         <div className="mx-auto max-w-[1200px] px-[60px] pb-[40px] text-center max-md:px-[40px] max-sm:px-[17px] max-sm:pb-[28px]">
-          <h2 className="text-bg-img bg-[url(/images/pages/home/text-background.png)] !bg-top pb-[9px] font-serif italic text-[32px] leading-[40px] tracking-[0.2px] max-sm:text-[22px] max-sm:leading-[28px]">
+          <h2
+            className="pb-[9px] font-serif italic text-[32px] leading-[40px] tracking-[0.2px] max-sm:text-[22px] max-sm:leading-[28px]"
+            style={{
+              backgroundImage: 'url(/images/pages/home/text-background.png)',
+              backgroundSize: 'cover',
+              backgroundPosition: 'top',
+              backgroundRepeat: 'no-repeat',
+              WebkitBackgroundClip: 'text',
+              backgroundClip: 'text',
+              color: 'transparent',
+            }}
+          >
             Boutique Design, Strategic Sourcing
           </h2>
           <p className="text-center font-sans text-[14px] leading-[18px] font-normal tracking-[0.4px] text-[#262626] uppercase">
