@@ -49,7 +49,7 @@ export default function Footer({
         </div>
       )}
 
-      <footer className="w-full bg-[#676E5C] px-[42px] pt-[60px] pb-[30px] max-md:px-[20px] max-md:pt-[40px]">
+      <footer className="w-full bg-[#7a8070] px-[42px] pt-[60px] pb-[30px] max-md:px-[20px] max-md:pt-[40px]">
         <div className="mx-auto max-w-[1440px]">
           <div className="flex items-start gap-[40px] max-md:flex-col max-md:gap-[40px]">
             {/* Left — AMARA Image */}
