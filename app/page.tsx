@@ -21,11 +21,11 @@ export default function Home() {
 
       <Hero />
 
+      <Studio />
+
       <Inspiration />
 
       <Design />
-
-      <Studio />
 
       <Elements />
 
