@@ -11,7 +11,7 @@ export default function Services() {
           </p>
         </div>
       </section>
-      <div className="bg-gradient-to-b from-[#e8dfd2] from-50% to-[#f1ebdf] to-50% pb-[10px]">
+      <div className="bg-gradient-to-b from-[#e8dfd2] from-50% to-[#f1ebdf] to-50% pb-[40px]">
         <div className="mx-auto flex max-w-[1200px] gap-[20px] px-[60px] max-md:flex-col max-md:px-[40px] max-sm:px-[17px]">
           <div className="flex w-1/2 flex-col justify-between rounded-[4px] bg-[#3a3632] px-[50px] pt-[50px] pb-[45px] max-md:w-full max-sm:px-[28px] max-sm:pt-[36px] max-sm:pb-[32px]">
             <div>
