@@ -51,10 +51,10 @@ export default function Footer({
 
       <footer className="w-full bg-[#7a8070] px-[42px] pt-[60px] pb-[30px] max-md:px-[20px] max-md:pt-[40px]">
         <div className="mx-auto max-w-[1440px]">
-          {/* Main row: AMARA cutout | nav links (centered) | social icons (right) */}
-          <div className="grid grid-cols-[240px_1fr] max-sm:grid-cols-[180px_1fr] max-md:flex max-md:flex-col max-md:gap-[40px]">
-            {/* AMARA Cutout */}
-            <div className="max-md:w-full">
+          {/* Main row: AMARA left | nav center | socials right */}
+          <div className="flex items-center justify-between max-md:flex-col max-md:items-start max-md:gap-[40px]">
+            {/* AMARA Cutout — left */}
+            <div className="shrink-0">
               <div className="relative h-[180px] w-[240px] overflow-hidden max-sm:h-[140px] max-sm:w-[180px]">
                 <svg
                   className="absolute top-0 left-0 h-full w-full"
@@ -83,76 +83,68 @@ export default function Footer({
               </div>
             </div>
 
-            {/* Right area: nav centered + socials right, vertically centered to cutout */}
-            <div className="flex items-center max-md:w-full max-md:flex-col max-md:items-start max-md:gap-[40px]">
-              <div className="flex flex-1 justify-center max-md:justify-start">
-                <nav className="flex flex-col items-center gap-[8px] max-md:items-start">
-                  {NAV_LINKS.map((link) => (
-                    <Link
-                      key={link.url}
-                      href={link.url}
-                      className="font-sans text-[14px] leading-[24px] font-medium tracking-[1.5px] text-[#F5F1ED] uppercase transition-opacity hover:opacity-70"
-                    >
-                      {link.name}
-                    </Link>
-                  ))}
-                </nav>
-              </div>
+            {/* Nav links — center */}
+            <nav className="flex flex-col items-center gap-[8px] max-md:items-start">
+              {NAV_LINKS.map((link) => (
+                <Link
+                  key={link.url}
+                  href={link.url}
+                  className="font-sans text-[14px] leading-[24px] font-medium tracking-[1.5px] text-[#F5F1ED] uppercase transition-opacity hover:opacity-70"
+                >
+                  {link.name}
+                </Link>
+              ))}
+            </nav>
 
-              <div className="shrink-0">
-                <div className="grid grid-cols-2 gap-[12px]">
-                  <a
-                    href="mailto:info@amarainteriordesign.com"
-                    aria-label="Email"
-                    className="flex h-[48px] w-[48px] items-center justify-center rounded-full border border-[#F5F1ED] bg-[#ADADAD4D] transition-opacity hover:opacity-70"
-                  >
-                    <Mail width={20} height={14} color="#FFF" />
-                  </a>
-                  <a
-                    href="https://www.linkedin.com/company/amara-interior-design"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    aria-label="LinkedIn"
-                    className="flex h-[48px] w-[48px] items-center justify-center rounded-full border border-[#F5F1ED] bg-[#ADADAD4D] transition-opacity hover:opacity-70"
-                  >
-                    <Linkedin width={16} height={16} color="#FFF" />
-                  </a>
-                  <a
-                    href="mailto:info@amarainteriordesign.com"
-                    aria-label="Email 2"
-                    className="flex h-[48px] w-[48px] items-center justify-center rounded-full border border-[#F5F1ED] bg-[#ADADAD4D] transition-opacity hover:opacity-70"
-                  >
-                    <Mail width={20} height={14} color="#FFF" />
-                  </a>
-                  <a
-                    href="https://www.linkedin.com/company/amara-interior-design"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    aria-label="LinkedIn 2"
-                    className="flex h-[48px] w-[48px] items-center justify-center rounded-full border border-[#F5F1ED] bg-[#ADADAD4D] transition-opacity hover:opacity-70"
-                  >
-                    <Linkedin width={16} height={16} color="#FFF" />
-                  </a>
-                </div>
-              </div>
+            {/* Social icons — right */}
+            <div className="grid grid-cols-2 gap-[12px]">
+              <a
+                href="mailto:info@amarainteriordesign.com"
+                aria-label="Email"
+                className="flex h-[48px] w-[48px] items-center justify-center rounded-full border border-[#F5F1ED] bg-[#ADADAD4D] transition-opacity hover:opacity-70"
+              >
+                <Mail width={20} height={14} color="#FFF" />
+              </a>
+              <a
+                href="https://www.linkedin.com/company/amara-interior-design"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="LinkedIn"
+                className="flex h-[48px] w-[48px] items-center justify-center rounded-full border border-[#F5F1ED] bg-[#ADADAD4D] transition-opacity hover:opacity-70"
+              >
+                <Linkedin width={16} height={16} color="#FFF" />
+              </a>
+              <a
+                href="mailto:info@amarainteriordesign.com"
+                aria-label="Email 2"
+                className="flex h-[48px] w-[48px] items-center justify-center rounded-full border border-[#F5F1ED] bg-[#ADADAD4D] transition-opacity hover:opacity-70"
+              >
+                <Mail width={20} height={14} color="#FFF" />
+              </a>
+              <a
+                href="https://www.linkedin.com/company/amara-interior-design"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="LinkedIn 2"
+                className="flex h-[48px] w-[48px] items-center justify-center rounded-full border border-[#F5F1ED] bg-[#ADADAD4D] transition-opacity hover:opacity-70"
+              >
+                <Linkedin width={16} height={16} color="#FFF" />
+              </a>
             </div>
           </div>
 
-          {/* City Times — same grid so it aligns to the right-side column */}
-          <div className="mt-[40px] grid grid-cols-[240px_1fr] pt-[20px] max-sm:grid-cols-[180px_1fr] max-md:flex">
-            <div className="max-md:hidden" />
-            <div className="flex justify-center gap-[30px] max-md:justify-start">
-              {CITIES.map((item) => (
-                <div className="flex items-center gap-[8px]" key={item.title}>
-                  <p className="font-sans text-[14px] leading-[20px] font-normal tracking-[-0.4px] text-[#D5D5C8]">
-                    {formatTimeForOffset(now, item.offset)}
-                  </p>
-                  <p className="font-sans text-[14px] leading-[20px] font-medium tracking-[-0.6px] text-[#F5F1ED]">
-                    {item.title}
-                  </p>
-                </div>
-              ))}
-            </div>
+          {/* City Times — centered across full width */}
+          <div className="mt-[40px] flex justify-center gap-[30px] pt-[20px] max-md:justify-start">
+            {CITIES.map((item) => (
+              <div className="flex items-center gap-[8px]" key={item.title}>
+                <p className="font-sans text-[14px] leading-[20px] font-normal tracking-[-0.4px] text-[#D5D5C8]">
+                  {formatTimeForOffset(now, item.offset)}
+                </p>
+                <p className="font-sans text-[14px] leading-[20px] font-medium tracking-[-0.6px] text-[#F5F1ED]">
+                  {item.title}
+                </p>
+              </div>
+            ))}
           </div>
         </div>
       </footer>
