@@ -96,8 +96,8 @@ export default function Footer({
               ))}
             </nav>
 
-            {/* Col 3 — Social icons (right-aligned) */}
-            <div className="grid grid-cols-2 gap-[12px] justify-self-end">
+            {/* Col 3 — Social icons (pulled in from right to mirror AMARA cutout distance) */}
+            <div className="grid grid-cols-2 gap-[12px] justify-self-end mr-[130px] max-lg:mr-[60px] max-md:mr-0">
               <a
                 href="mailto:info@amarainteriordesign.com"
                 aria-label="Email"
