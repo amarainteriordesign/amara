@@ -3,7 +3,7 @@ import Image from "next/image";
 export default function Studio() {
   return (
     <>
-      <section className="relative bg-[#e8dfd2] pb-[280px] max-md:pb-[200px] max-sm:pb-[160px]">
+      <section className="relative bg-[#e8dfd2] pb-[180px] max-md:pb-[140px] max-sm:pb-[100px]">
         <div className="mx-auto flex max-w-[1200px] items-start gap-[60px] px-[60px] pt-[100px] max-md:flex-col max-md:gap-[40px] max-md:px-[40px] max-md:pt-[80px] max-sm:gap-[30px] max-sm:px-[17px] max-sm:pt-[60px]">
           <div className="w-[50%] shrink-0 max-md:w-full">
             <div className="bg-[#000] p-[30px] max-sm:p-[20px]">
@@ -32,7 +32,7 @@ export default function Studio() {
           </div>
         </div>
 
-        <div className="absolute bottom-0 left-1/2 z-10 w-[85%] max-w-[1000px] -translate-x-1/2 translate-y-1/2 max-md:w-[90%] max-sm:w-[calc(100%-34px)]">
+        <div className="absolute bottom-0 left-1/2 z-10 w-[42%] max-w-[500px] -translate-x-1/2 translate-y-1/2 max-md:w-[50%] max-sm:w-[60%]">
           <Image
             src="/images/pages/home/studio.png"
             width={1000}
@@ -43,7 +43,7 @@ export default function Studio() {
         </div>
       </section>
 
-      <section className="bg-[#f1ebdf] pt-[280px] pb-[100px] max-md:pt-[200px] max-sm:pt-[160px] max-sm:pb-[70px]">
+      <section className="bg-[#f1ebdf] pt-[180px] pb-[100px] max-md:pt-[140px] max-sm:pt-[100px] max-sm:pb-[70px]">
         <p className="text-center font-display text-[32px] leading-[40px] tracking-[3px] text-[#2a2a2a] uppercase max-sm:text-[18px] max-sm:leading-[26px] max-sm:tracking-[2px]">
           Where Vision Meets Precision.
         </p>
