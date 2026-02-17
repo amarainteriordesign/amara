@@ -4,7 +4,6 @@ import { useState } from "react";
 
 const FORM_TITLE = "Let's get in Touch";
 const SUCCESS_MESSAGE = "✓ Message sent successfully! We'll be in touch soon.";
-const DISCLAIMER_TEXT = 'By clicking on "Send Your Inquiry" you agree to the terms and conditions';
 const EMAIL_REGEX = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
 const OFFICES = [
@@ -22,6 +21,7 @@ const OFFICES = [
 
 export default function Contact() {
   const [formData, setFormData] = useState({
+    name: "",
     email: "",
     phone: "",
     message: "",
@@ -29,6 +29,7 @@ export default function Contact() {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitStatus, setSubmitStatus] = useState<"idle" | "success" | "error">("idle");
   const [validationErrors, setValidationErrors] = useState<{
+    name?: string;
     email?: string;
     phone?: string;
     message?: string;
@@ -50,6 +51,10 @@ export default function Contact() {
 
   const validateForm = (): boolean => {
     const errors: typeof validationErrors = {};
+
+    if (!formData.name.trim()) {
+      errors.name = "Name is required";
+    }
 
     if (!formData.email.trim()) {
       errors.email = "Email is required";
@@ -97,6 +102,7 @@ export default function Contact() {
       if (response.ok) {
         setSubmitStatus("success");
         setFormData({
+          name: "",
           email: "",
           phone: "",
           message: "",
@@ -152,6 +158,24 @@ export default function Contact() {
           </h3>
 
           <form onSubmit={handleSubmit} className="flex flex-col gap-[16px]">
+            <div>
+              <input
+                type="text"
+                name="name"
+                placeholder="Name"
+                value={formData.name}
+                onChange={handleChange}
+                className={`w-full border-b bg-transparent py-[12px] font-sans text-[14px] leading-[20px] font-normal text-[#0a0a0a] placeholder-[#666] transition-colors outline-none ${
+                  validationErrors.name ? "border-red-500" : "border-[#444]"
+                }`}
+              />
+              {validationErrors.name && (
+                <p className="mt-[4px] font-sans text-[11px] leading-[14px] font-normal text-red-600">
+                  {validationErrors.name}
+                </p>
+              )}
+            </div>
+
             <div>
               <input
                 type="email"
@@ -249,9 +273,6 @@ export default function Contact() {
               </p>
             )}
 
-            <p className="pt-[12px] font-sans text-[11px] leading-[16px] font-normal text-[#555]">
-              {DISCLAIMER_TEXT}
-            </p>
           </form>
         </div>
       </div>
