@@ -6,7 +6,7 @@ export default function Services() {
           Boutique Design, Strategic Sourcing worldwide.
         </h2>
         <p className="pt-[10px] text-[13px] uppercase leading-[20px] tracking-[2px] text-[#4a4a4a] max-sm:text-[11px] max-sm:tracking-[1.5px]">
-          BLENDING DESIGN WITH PEACEFUL LIVING.
+          worldwide
         </p>
       </div>
       <div className="mx-auto flex max-w-[1200px] gap-[20px] px-[60px] max-md:flex-col max-md:px-[40px] max-sm:px-[17px]">
