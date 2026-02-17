@@ -1,7 +1,7 @@
 export default function Services() {
   return (
     <section className="bg-[#e8dfd2] px-[60px] py-[80px] max-md:px-[40px] max-md:py-[60px] max-sm:px-[17px] max-sm:py-[40px]">
-      <div className="mx-auto max-w-[1200px] pb-[40px] max-sm:pb-[28px]">
+      <div className="mx-auto max-w-[1200px] pb-[40px] text-center max-sm:pb-[28px]">
         <h2 className="font-serif italic text-[32px] leading-[40px] tracking-[0.2px] text-[#5a7a8a] max-sm:text-[22px] max-sm:leading-[28px]">
           Boutique Design, Strategic Sourcing worldwide.
         </h2>
