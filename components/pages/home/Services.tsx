@@ -1,0 +1,35 @@
+export default function Services() {
+  return (
+    <section className="bg-[#f1ebdf] px-[60px] py-[80px] max-md:px-[40px] max-md:py-[60px] max-sm:px-[17px] max-sm:py-[40px]">
+      <div className="mx-auto flex max-w-[1200px] gap-[20px] max-md:flex-col">
+        <div className="flex w-1/2 flex-col justify-between rounded-[4px] bg-[#3a3632] px-[50px] pt-[50px] pb-[45px] max-md:w-full max-sm:px-[28px] max-sm:pt-[36px] max-sm:pb-[32px]">
+          <div>
+            <h2 className="font-display text-normal pb-[28px] text-[38px] leading-[46px] tracking-[0.8px] text-[#FFF] max-sm:pb-[20px] max-sm:text-[24px] max-sm:leading-[30px] max-sm:tracking-[0.4px]">
+              Sourcing
+            </h2>
+            <p className="text-normal max-w-[400px] font-serif text-[15px] leading-[24px] tracking-[-0.3px] text-[#d4cfc8] max-md:max-w-full max-sm:text-[14px] max-sm:leading-[22px]">
+              We source with intention, seeking out materials, artisans, and objects that bring
+              character and authenticity to every space. From rare stones to bespoke furnishings,
+              each element is carefully selected to reflect the vision of the project and the
+              identity of the client.
+            </p>
+          </div>
+        </div>
+
+        <div className="flex w-1/2 flex-col justify-between rounded-[4px] bg-[#7a8070] px-[50px] pt-[50px] pb-[45px] max-md:w-full max-sm:px-[28px] max-sm:pt-[36px] max-sm:pb-[32px]">
+          <div>
+            <h2 className="font-display text-normal pb-[28px] text-[38px] leading-[46px] tracking-[0.8px] text-[#FFF] max-sm:pb-[20px] max-sm:text-[24px] max-sm:leading-[30px] max-sm:tracking-[0.4px]">
+              Design
+            </h2>
+            <p className="text-normal max-w-[400px] font-serif text-[15px] leading-[24px] tracking-[-0.3px] text-[#e2e0da] max-md:max-w-full max-sm:text-[14px] max-sm:leading-[22px]">
+              Our approach is deeply rooted in the essence of each place, drawing inspiration from
+              its culture and history. The materials we select, the art we curate, and the design
+              details we incorporate serve as essential parts of a larger narrative: design plays a
+              pivotal role in enhancing overall well-being.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}

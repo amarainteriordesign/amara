@@ -1,6 +1,6 @@
 import Header from "@/components/layout/Header";
 import Hero from "@/components/pages/home/Hero";
-import Design from "@/components/pages/home/Design";
+import Services from "@/components/pages/home/Services";
 import Studio from "@/components/pages/home/Studio";
 import Elements from "@/components/pages/home/Elements";
 import ImageFooter from "@/components/layout/ImageFooter";
@@ -22,7 +22,7 @@ export default function Home() {
 
       <Studio />
 
-      <Design />
+      <Services />
 
       <Elements />
 
