@@ -5,6 +5,7 @@ export default function Services() {
         <div className="mx-auto max-w-[1200px] px-[60px] pb-[40px] text-center max-md:px-[40px] max-sm:px-[17px] max-sm:pb-[28px]">
           <h2
             className="text-bg-img bg-[url(/images/pages/home/text-background.png)] !bg-top pb-[9px] font-serif italic text-[32px] leading-[40px] tracking-[0.2px] max-sm:text-[22px] max-sm:leading-[28px]"
+            style={{ WebkitTextFillColor: 'transparent' }}
           >
             Boutique Design, Strategic Sourcing
           </h2>
