@@ -3,7 +3,7 @@ export default function Services() {
     <section className="bg-[#e8dfd2] py-[80px] max-md:py-[60px] max-sm:py-[40px]">
       <div className="mx-auto max-w-[1200px] px-[60px] pb-[40px] text-center max-md:px-[40px] max-sm:px-[17px] max-sm:pb-[28px]">
         <h2 className="font-serif italic text-[32px] leading-[40px] tracking-[0.2px] text-[#5a7a8a] max-sm:text-[22px] max-sm:leading-[28px]">
-          Boutique Design, Strategic Sourcing worldwide.
+          Boutique Design, Strategic Sourcing.
         </h2>
         <p className="pt-[10px] text-[13px] uppercase leading-[20px] tracking-[2px] text-[#4a4a4a] max-sm:text-[11px] max-sm:tracking-[1.5px]">
           worldwide
