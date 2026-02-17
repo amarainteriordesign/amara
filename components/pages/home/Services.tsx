@@ -1,7 +1,7 @@
 export default function Services() {
   return (
-    <section className="bg-[#e8dfd2] px-[60px] py-[80px] max-md:px-[40px] max-md:py-[60px] max-sm:px-[17px] max-sm:py-[40px]">
-      <div className="mx-auto max-w-[1200px] pb-[40px] text-center max-sm:pb-[28px]">
+    <section className="bg-[#e8dfd2] py-[80px] max-md:py-[60px] max-sm:py-[40px]">
+      <div className="mx-auto max-w-[1200px] px-[60px] pb-[40px] text-center max-md:px-[40px] max-sm:px-[17px] max-sm:pb-[28px]">
         <h2 className="font-serif italic text-[32px] leading-[40px] tracking-[0.2px] text-[#5a7a8a] max-sm:text-[22px] max-sm:leading-[28px]">
           Boutique Design, Strategic Sourcing worldwide.
         </h2>
@@ -9,7 +9,7 @@ export default function Services() {
           BLENDING DESIGN WITH PEACEFUL LIVING.
         </p>
       </div>
-      <div className="mx-auto flex max-w-[1200px] gap-[20px] max-md:flex-col">
+      <div className="mx-auto flex max-w-[1200px] gap-[20px] px-[60px] max-md:flex-col max-md:px-[40px] max-sm:px-[17px]">
         <div className="flex w-1/2 flex-col justify-between rounded-[4px] bg-[#3a3632] px-[50px] pt-[50px] pb-[45px] max-md:w-full max-sm:px-[28px] max-sm:pt-[36px] max-sm:pb-[32px]">
           <div>
             <h2 className="font-display text-normal pb-[28px] text-[38px] leading-[46px] tracking-[0.8px] text-[#FFF] max-sm:pb-[20px] max-sm:text-[24px] max-sm:leading-[30px] max-sm:tracking-[0.4px]">
