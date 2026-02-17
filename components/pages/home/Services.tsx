@@ -1,6 +1,6 @@
 export default function Services() {
   return (
-    <section className="bg-[#f1ebdf] px-[60px] py-[80px] max-md:px-[40px] max-md:py-[60px] max-sm:px-[17px] max-sm:py-[40px]">
+    <section className="bg-[#e8dfd2] px-[60px] py-[80px] max-md:px-[40px] max-md:py-[60px] max-sm:px-[17px] max-sm:py-[40px]">
       <div className="mx-auto flex max-w-[1200px] gap-[20px] max-md:flex-col">
         <div className="flex w-1/2 flex-col justify-between rounded-[4px] bg-[#3a3632] px-[50px] pt-[50px] pb-[45px] max-md:w-full max-sm:px-[28px] max-sm:pt-[36px] max-sm:pb-[32px]">
           <div>
