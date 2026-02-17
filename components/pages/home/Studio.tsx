@@ -1,56 +1,53 @@
 import Image from "next/image";
-import ArrowIcon from "@/components/icons/arrow-right.svg";
-import Link from "next/link";
 
 export default function Studio() {
   return (
-    <section className="max-slg:min-h-[947px] flex min-h-[1010px] w-full max-md:h-auto max-md:max-h-full max-md:min-h-full max-md:flex-col">
-      <div className="max-xmd:pl-[100px] max-xmd:pr-[40px] w-[50%] bg-[#000] pt-[120px] pr-[75px] pb-[87px] pl-[132px] max-md:w-full max-md:pr-[100px] max-sm:px-[17px] max-sm:pt-[80px] max-sm:pb-[75px]">
-        <Image
-          src="/images/pages/home/drawing.png"
-          alt="Drawing"
-          width={483}
-          height={245}
-          className="h-auto w-full object-cover pb-[55px] max-md:w-full max-sm:pb-[60px]"
-        />
-        <div className="pb-[66px] max-sm:pb-0">
-          <p className="font-display text-normal max-w-[337px] pb-[18px] text-[42px] leading-[49px] tracking-[0.8px] text-[#FFF] max-sm:max-w-full max-sm:pb-[28px] max-sm:text-[22px] max-sm:leading-[23px] max-sm:tracking-[0.4]">
-            <span className="max-sm:hidden">Redefining the way we design, Globally</span>
+    <>
+      <section className="relative bg-[#e8dfd2] pb-[280px] max-md:pb-[200px] max-sm:pb-[160px]">
+        <div className="mx-auto flex max-w-[1200px] items-start gap-[60px] px-[60px] pt-[100px] max-md:flex-col max-md:gap-[40px] max-md:px-[40px] max-md:pt-[80px] max-sm:gap-[30px] max-sm:px-[17px] max-sm:pt-[60px]">
+          <div className="w-[50%] shrink-0 max-md:w-full">
+            <div className="bg-[#000] p-[30px] max-sm:p-[20px]">
+              <Image
+                src="/images/pages/home/drawing.png"
+                alt="Architectural drawing"
+                width={483}
+                height={245}
+                className="h-auto w-full object-cover"
+              />
+            </div>
+          </div>
 
-            <span className="hidden max-sm:inline"> Redefining Interiors, Globally</span>
-          </p>
-          <p className="text-normal max-w-[380px] pb-[54px] font-serif text-[16px] leading-[24px] tracking-[-0.4] text-[#FFF] max-sm:max-w-full max-sm:pb-[35px]">
-            From the vibrant rhythm of Miami to the refined elegance of Paris and the bold energy of
-            Dubai, Amara redefines interior design through a distinct voice. We are a boutique
-            powerhouse blending artistic depth with technical mastery, crafting spaces that feel
-            personal, peaceful, and precise. Each project is approached with care, sensitivity, and
-            a strong point of view, balancing global influence with local soul to shape environments
-            that elevate the everyday.
-          </p>
-          <Link
-            href="/studio"
-            className="justify-cter inline-flex h-[43] w-fit items-center gap-[11px] rounded-[30px] bg-white/20 px-[25px] max-sm:h-[34px] max-sm:px-[17]"
-          >
-            <p className="text-normal font-sans text-[14px] leading-[43px] tracking-[-0.4] text-[#FFF] max-sm:leading-[34px]">
-              Discover The Studio
+          <div className="w-[50%] pt-[20px] max-md:w-full max-md:pt-0">
+            <p className="font-display text-normal max-w-[420px] pb-[24px] text-[38px] leading-[46px] tracking-[0.8px] text-[#2a2a2a] max-md:max-w-full max-sm:pb-[20px] max-sm:text-[24px] max-sm:leading-[30px] max-sm:tracking-[0.4px]">
+              Redefining the way we design, Globally
             </p>
-            <ArrowIcon width="19" height="15" className="hidden max-md:block" color="#FFF" />
-          </Link>
+            <p className="text-normal max-w-[420px] font-serif text-[15px] leading-[24px] tracking-[-0.3px] text-[#4a4a4a] max-md:max-w-full max-sm:text-[14px] max-sm:leading-[22px]">
+              From the vibrant rhythm of Miami to the refined elegance of Paris and the bold energy of
+              Dubai, Amara redefines interior design through a distinct voice. We are a boutique
+              powerhouse blending artistic depth with technical mastery, crafting spaces that feel
+              personal, peaceful, and precise. Each project is approached with care, sensitivity, and
+              a strong point of view, balancing global influence with local soul to shape environments
+              that elevate the everyday.
+            </p>
+          </div>
         </div>
 
-        <p className="self-end font-sans text-[14px] leading-[30px] font-normal tracking-[1.8] text-[#FFF] uppercase max-sm:hidden">
-          MIAMI - DUBAI - PARIS
+        <div className="absolute bottom-0 left-1/2 z-10 w-[85%] max-w-[1000px] -translate-x-1/2 translate-y-1/2 max-md:w-[90%] max-sm:w-[calc(100%-34px)]">
+          <Image
+            src="/images/pages/home/studio.png"
+            width={1000}
+            height={600}
+            alt="Amara founders"
+            className="h-auto w-full rounded-[4px] object-cover shadow-lg"
+          />
+        </div>
+      </section>
+
+      <section className="bg-[#f1ebdf] pt-[280px] pb-[100px] max-md:pt-[200px] max-sm:pt-[160px] max-sm:pb-[70px]">
+        <p className="text-center font-display text-[32px] leading-[40px] tracking-[3px] text-[#2a2a2a] uppercase max-sm:text-[18px] max-sm:leading-[26px] max-sm:tracking-[2px]">
+          Where Vision Meets Precision.
         </p>
-      </div>
-      <div className="w-[50%] max-md:w-full">
-        <Image
-          src="/images/pages/home/studio.png"
-          width={719}
-          height={1010}
-          alt={"Studio image"}
-          className="h-full w-full object-cover"
-        />
-      </div>
-    </section>
+      </section>
+    </>
   );
 }
