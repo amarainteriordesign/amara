@@ -1,6 +1,6 @@
 export default function Services() {
   return (
-    <section className="bg-[#e8dfd2] pt-[80px] pb-[40px] max-md:pt-[60px] max-md:pb-[30px] max-sm:pt-[40px] max-sm:pb-[20px]">
+    <section className="bg-[#e8dfd2] pt-[80px] pb-[10px] max-md:pt-[60px] max-md:pb-[10px] max-sm:pt-[40px] max-sm:pb-[10px]">
       <div className="mx-auto max-w-[1200px] px-[60px] pb-[40px] text-center max-md:px-[40px] max-sm:px-[17px] max-sm:pb-[28px]">
         <h2 className="font-serif italic text-[32px] leading-[40px] tracking-[0.2px] text-[#5a7a8a] max-sm:text-[22px] max-sm:leading-[28px]">
           Boutique Design, Strategic Sourcing

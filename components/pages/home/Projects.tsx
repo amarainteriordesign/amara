@@ -57,7 +57,7 @@ export default function Projects() {
 
   return (
     <section className="project-home-ref w-full max-w-full overflow-hidden pb-[181px] max-sm:pb-[93px]">
-      <div className="flex flex-col items-center justify-center px-[20px] pb-[55px] max-sm:pb-[54px]">
+      <div className="flex flex-col items-center justify-center px-[20px] pt-[20px] pb-[55px] max-sm:pt-[10px] max-sm:pb-[54px]">
         <h3 className="text-bg-img bg-[url(/images/pages/home/text-background.png)] !bg-top pb-[9px] text-center font-serif text-[28px] leading-[36px] tracking-[-0.8px] italic max-sm:pb-[16px] max-sm:text-[24px] max-sm:leading-[28px] max-sm:tracking-[-0.6]">
           Discover our Projects worldwide.{" "}
         </h3>
