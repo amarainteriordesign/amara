@@ -28,7 +28,7 @@ export default function Home() {
 
       <Contact />
 
-      <Footer />
+      <Footer showDesertImage={true} />
     </>
   );
 }
