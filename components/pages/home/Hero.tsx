@@ -8,10 +8,9 @@ import Copy from "@/components/common/Copy/Copy";
 gsap.registerPlugin(useGSAP);
 
 const CAROUSEL_IMAGES = [
-  "/images/pages/home/design1.png",
-  "/images/pages/home/design2.png",
-  "/images/pages/home/design3.png",
-  "/images/pages/home/design4.png",
+  "/images/pages/home/hero-1.webp",
+  "/images/pages/home/hero-2.webp",
+  "/images/pages/home/hero-3.webp",
 ];
 
 const CAROUSEL_INTERVAL = 5000;
