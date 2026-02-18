@@ -28,8 +28,8 @@ const slides: Slide[] = [
     id: "project-3",
     img: "/images/pages/home/project3.webp",
     alt: "Project 3",
-    location: "MIAMI, UNITED STATES",
-    title: "THE VILLAGE",
+    location: "ABU DHABI, UNITED ARAB EMIRATES",
+    title: "REEM NINE",
   },
 ];
 
