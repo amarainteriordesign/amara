@@ -4,7 +4,7 @@ import ContactLanding from "@/components/pages/landing/ContactLanding";
 import ContactUs from "@/components/pages/landing/ContactUs";
 import ServicesLanding from "@/components/pages/landing/ServicesLanding";
 import ProjectsLanding from "@/components/pages/landing/ProjectsLanding";
-import ImageFooter from "@/components/layout/ImageFooter";
+import Footer from "@/components/layout/Footer";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -29,7 +29,7 @@ export default function Landing() {
 
       <ProjectsLanding />
 
-      <ImageFooter isDarkHeaderByDefault={true} image="/images/pages/home/hero-2.png" />
+      <Footer />
     </>
   );
 }
