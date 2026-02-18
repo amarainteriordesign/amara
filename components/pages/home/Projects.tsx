@@ -86,7 +86,7 @@ export default function Projects() {
           href="/projects"
           className="h-[39px] self-center rounded-[35px] border-[1px] border-[#26262699] px-[16px] font-sans text-[12px] leading-[39px] font-medium tracking-[0.2px] max-sm:h-[32px] max-sm:px-[14px] max-sm:text-[11px] max-sm:leading-[32px]"
         >
-          DISCOVER PROJECT
+          DISCOVER ALL PROJECTS
         </Link>
       </div>
     </section>
