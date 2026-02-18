@@ -15,7 +15,7 @@ export default function Studio() {
         </div>
 
         <div className="w-[50%] max-md:w-full">
-          <div className="mb-[24px] max-w-[300px] max-sm:max-w-[200px]">
+          <div className="mb-[24px] max-w-[420px] max-md:max-w-full max-sm:max-w-[280px]">
             <Image
               src="/images/pages/home/architecture-sketch.webp"
               width={600}
