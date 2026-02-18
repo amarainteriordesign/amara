@@ -8,7 +8,7 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Landing",
   description:
-    "Amara imagine des espaces d'architecture et d'intérieur où le calme, la matière et la lumière composent des lieux à vivre durables.",
+    "Amara designs interior spaces where calm, material, and light create enduring places to live.",
 };
 
 export default function Landing() {

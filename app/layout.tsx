@@ -81,16 +81,16 @@ const madeMirageThin = localFont({
 export const metadata: Metadata = {
   metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || "http://localhost:3000"),
   title: {
-    default: "Amara — Architecture & Interior Design",
+    default: "Amara — Interior Design",
     template: "%s — Amara",
   },
   description:
-    "Amara conçoit des espaces d’architecture et d’intérieur empreints de calme, d’équilibre et de sens. Découvrez nos projets, notre studio et notre philosophie.",
+    "Amara creates interior spaces defined by calm, balance, and meaning. Discover our projects, our studio, and our philosophy.",
   openGraph: {
     type: "website",
-    title: "Amara — Architecture & Interior Design",
+    title: "Amara — Interior Design",
     description:
-      "Amara conçoit des espaces d’architecture et d’intérieur empreints de calme, d’équilibre et de sens.",
+      "Amara creates interior spaces defined by calm, balance, and meaning.",
     url: "/",
     images: [
       {
@@ -103,9 +103,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Amara — Architecture & Interior Design",
+    title: "Amara — Interior Design",
     description:
-      "Amara conçoit des espaces d’architecture et d’intérieur empreints de calme, d’équilibre et de sens.",
+      "Amara creates interior spaces defined by calm, balance, and meaning.",
     images: ["/images/pages/home/hero-2.png"],
   },
   icons: {
