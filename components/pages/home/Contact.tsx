@@ -187,7 +187,7 @@ export default function Contact() {
               </div>
               <div className="mt-[28px]">
                 <a
-                  href="https://wa.me/971585487150"
+                  href="https://api.whatsapp.com/send?phone=13055604373"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex h-[39px] items-center gap-[8px] rounded-[35px] border-[1px] border-[#26262699] px-[16px] font-sans text-[12px] font-medium tracking-[0.2px] text-[#262626] transition-all hover:bg-[#262626] hover:text-white max-sm:h-[32px] max-sm:px-[14px] max-sm:text-[11px]"
