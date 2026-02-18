@@ -122,15 +122,10 @@ export default function Contact() {
 
   return (
     <section id="contact" className="relative w-full">
+      <div className="absolute inset-0 top-0 h-1/2 bg-[#F1EBDF]" />
+      <div className="absolute inset-0 top-1/2 h-1/2 bg-[#E8E0D6]" />
       <div className="relative z-[2] w-full max-md:h-auto">
-        <Image
-          src="/images/pages/home/footer.png"
-          width={1920}
-          height={1080}
-          alt="Beach landscape"
-          className="absolute inset-0 h-full w-full object-cover"
-        />
-        <div className="relative z-10 px-[20px] py-[80px] max-sm:px-[12px] max-sm:py-[40px]">
+        <div className="px-[20px] py-[80px] max-sm:px-[12px] max-sm:py-[40px]">
           <div className="mx-auto flex max-w-[1200px] gap-[0px] rounded-[20px] bg-[#E8E0D6] max-md:flex-col">
             <div className="w-[33%] shrink-0 px-[5px] py-[10px] max-md:w-full max-md:px-[5px] max-md:py-[5px]">
               <Image
