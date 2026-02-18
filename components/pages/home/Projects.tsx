@@ -2,33 +2,42 @@
 
 import Link from "next/link";
 import Carousel, { type Slide } from "@/components/common/Carousel";
-import { useRef } from "react";
+import { useRef, useState, useCallback } from "react";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import ScrollTrigger from "gsap/ScrollTrigger";
 
 gsap.registerPlugin(ScrollTrigger);
 
-// Original projects data converted to slides format
 const slides: Slide[] = [
   {
     id: "project-1",
     img: "/images/pages/home/project1.png",
     alt: "Project 1",
+    location: "MIAMI, UNITED STATES",
+    title: "THE VILLAGE",
   },
   {
     id: "project-2",
     img: "/images/pages/home/project2.png",
     alt: "Project 2",
+    location: "TULUM, MEXICO",
+    title: "SADHU RETREAT",
   },
   {
     id: "project-3",
     img: "/images/pages/home/project3.png",
     alt: "Project 3",
+    location: "MIAMI, UNITED STATES",
+    title: "THE VILLAGE",
   },
 ];
 
 export default function Projects() {
+  const [activeSlide, setActiveSlide] = useState(slides[1]);
+  const handleSlideChange = useCallback((slide: Slide) => {
+    setActiveSlide(slide);
+  }, []);
   const contextHeaderRef = useRef<gsap.Context>(null);
   useGSAP(() => {
     const headerLogo = document.querySelector("header .logo");
@@ -65,13 +74,13 @@ export default function Projects() {
           BLENDING DESIGN WITH PEACEFUL LIVING.
         </p>
       </div>
-      <Carousel slides={slides} />
+      <Carousel slides={slides} onSlideChange={handleSlideChange} />
       <div className="flex flex-col items-center justify-center px-[20px] pt-[23px] max-sm:pt-[25px]">
         <p className="pb-[7px] font-sans text-[12px] leading-[43px] font-medium tracking-[0.6px] text-[#262626] uppercase max-sm:pb-0 max-sm:text-[10px] max-sm:leading-[30px] max-sm:tracking-[-0.5]">
-          MIAMI, FLORIDA, UNITED STATES
+          {(activeSlide.location as string) || ""}
         </p>
         <h4 className="font-calvino pb-[27px] text-[42px] leading-[43px] font-normal tracking-[0.8px] text-[#262626] uppercase max-sm:pb-[15px] max-sm:text-[22px] max-sm:leading-[32px] max-sm:tracking-[-0.4]">
-          THE VILLAGE
+          {(activeSlide.title as string) || ""}
         </h4>
         <Link
           href="/projects"
