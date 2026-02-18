@@ -15,6 +15,15 @@ export default function Studio() {
         </div>
 
         <div className="w-[50%] max-md:w-full">
+          <div className="mb-[24px] max-w-[300px] max-sm:max-w-[200px]">
+            <Image
+              src="/images/pages/home/architecture-sketch.png"
+              width={600}
+              height={300}
+              alt="Architecture sketch"
+              className="h-auto w-full object-contain"
+            />
+          </div>
           <p className="font-display text-normal max-w-[420px] pb-[24px] text-[38px] leading-[46px] tracking-[0.8px] text-[#2a2a2a] max-md:max-w-full max-sm:pb-[20px] max-sm:text-[24px] max-sm:leading-[30px] max-sm:tracking-[0.4px]">
             Redefining the way we design, Globally
           </p>
