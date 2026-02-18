@@ -5,6 +5,7 @@ import gsap from "gsap";
 import Image from "next/image";
 import Link from "next/link";
 import { horizontalLoop, type HorizontalLoopTimeline } from "@/helpers/horizontalLoop";
+import ArrowIcon from "@/components/icons/arrow-right.svg";
 
 export interface Slide {
   id: string;
@@ -38,7 +39,6 @@ export default function Carousel({
   const [loop, setLoop] = useState<HorizontalLoopTimeline | null>(null);
   const onSlideChangeRef = useRef(onSlideChange);
 
-  // Update the ref when onSlideChange changes
   useEffect(() => {
     onSlideChangeRef.current = onSlideChange;
   }, [onSlideChange]);
@@ -46,7 +46,6 @@ export default function Carousel({
   useLayoutEffect(() => {
     const boxes = gsap.utils.toArray<HTMLElement>(".carousel-slide");
 
-    // Only create the loop if we have slides and boxes
     if (boxes.length === 0 || slides.length === 0) return;
 
     let activeElement: HTMLElement;
@@ -55,27 +54,16 @@ export default function Carousel({
         paused: true,
         center: true,
         onChange: (element: Element) => {
-          boxes.forEach((item) => {
-            if (!item.classList.contains("next-cursor-item")) {
-              item.classList.add("next-cursor-item");
-            }
-
-            if (item.classList.contains("open-cursor-item")) {
-              item.classList.remove("open-cursor-item");
-            }
-          });
-
           if (activeElement) {
             activeElement.classList.remove("opacity-100");
             activeElement.classList.add("opacity-60");
           }
 
-          element.classList.add("opacity-100", "open-cursor-item");
-          element.classList.remove("next-cursor-item");
+          element.classList.add("opacity-100");
+          element.classList.remove("opacity-60");
 
           activeElement = element as HTMLElement;
 
-          // Call parent callback with slide data
           const slideIndex = boxes.indexOf(element as HTMLElement);
           const actualIndex = slideIndex % slides.length;
           if (onSlideChangeRef.current) {
@@ -90,7 +78,6 @@ export default function Carousel({
     loop?.toIndex(initialSlide, { duration: 0, ease: "power1.inOut" });
   }, [loop, initialSlide]);
 
-  // Auto-play functionality
   useEffect(() => {
     if (!autoPlay || !loop) return;
 
@@ -103,12 +90,23 @@ export default function Carousel({
     return () => clearInterval(interval);
   }, [autoPlay, autoPlayInterval, loop, slides.length]);
 
-  const handleHover = (i: number) => {
+  const handleSlideClick = (i: number) => {
     if (!loop) return;
     loop.toIndex(i, { duration: 0.8, ease: "power1.inOut" });
   };
 
-  // Create tripled slides for infinite loop effect
+  const handlePrev = () => {
+    if (!loop) return;
+    const currentIndex = loop.current();
+    loop.toIndex(currentIndex - 1, { duration: 0.8, ease: "power1.inOut" });
+  };
+
+  const handleNext = () => {
+    if (!loop) return;
+    const currentIndex = loop.current();
+    loop.toIndex(currentIndex + 1, { duration: 0.8, ease: "power1.inOut" });
+  };
+
   const totalSlides = [...slides, ...slides, ...slides];
 
   const renderSlide = (slide: Slide, index: number) => {
@@ -124,14 +122,13 @@ export default function Carousel({
       </div>
     );
 
-    // If slide has href, wrap in Link, otherwise use plain div
     if (slide.href) {
       return (
         <Link
           href={slide.href}
           key={`${slide.id}-${index}`}
-          className={`carousel-slide px-[43px] transition-opacity duration-300 ease-in max-md:px-[6px] ${slideClassName} ${loop?.current() === index ? "opacity-100" : "opacity-60"}`}
-          onClick={() => handleHover(index)}
+          className={`carousel-slide cursor-pointer px-[43px] transition-opacity duration-300 ease-in max-md:px-[6px] ${slideClassName} ${loop?.current() === index ? "opacity-100" : "opacity-60"}`}
+          onClick={() => handleSlideClick(index)}
         >
           {slideContent}
         </Link>
@@ -141,8 +138,8 @@ export default function Carousel({
     return (
       <div
         key={`${slide.id}-${index}`}
-        className={`carousel-slide px-[43px] transition-opacity duration-300 ease-in max-md:px-[6px] ${slideClassName} ${loop?.current() === index ? "opacity-100" : "opacity-60"}`}
-        onClick={() => handleHover(index)}
+        className={`carousel-slide cursor-pointer px-[43px] transition-opacity duration-300 ease-in max-md:px-[6px] ${slideClassName} ${loop?.current() === index ? "opacity-100" : "opacity-60"}`}
+        onClick={() => handleSlideClick(index)}
       >
         {slideContent}
       </div>
@@ -150,8 +147,24 @@ export default function Carousel({
   };
 
   return (
-    <div className={`flex w-full items-center ${className}`}>
-      {totalSlides.map((slide, i) => renderSlide(slide, i))}
+    <div className="relative w-full">
+      <div className={`flex w-full items-center ${className}`}>
+        {totalSlides.map((slide, i) => renderSlide(slide, i))}
+      </div>
+      <button
+        onClick={handlePrev}
+        className="absolute top-1/2 left-[20px] z-10 flex h-[44px] w-[44px] -translate-y-1/2 rotate-180 items-center justify-center rounded-full border border-[#26262633] bg-white/80 backdrop-blur-sm transition-colors hover:bg-white max-md:left-[8px] max-md:h-[36px] max-md:w-[36px]"
+        aria-label="Previous slide"
+      >
+        <ArrowIcon width={16} height={12} color="#262626" />
+      </button>
+      <button
+        onClick={handleNext}
+        className="absolute top-1/2 right-[20px] z-10 flex h-[44px] w-[44px] -translate-y-1/2 items-center justify-center rounded-full border border-[#26262633] bg-white/80 backdrop-blur-sm transition-colors hover:bg-white max-md:right-[8px] max-md:h-[36px] max-md:w-[36px]"
+        aria-label="Next slide"
+      >
+        <ArrowIcon width={16} height={12} color="#262626" />
+      </button>
     </div>
   );
 }
