@@ -79,7 +79,7 @@ export default function Menu({ now }: { now: Date }) {
             <p className="font-sans text-[14px] leading-[20px] font-normal tracking-[-0.7px] text-[#737373]">
               {now && formatTimeForOffset(now, item.offset)}
             </p>
-            <p className="font-sans leading-[20px] font-medium tracking-[-0.6px] text-[#262626]">
+            <p className="font-sans text-[14px] leading-[20px] font-medium tracking-[-0.6px] text-[#262626]">
               {item.title}
             </p>
           </div>
