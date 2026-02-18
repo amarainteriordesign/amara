@@ -122,7 +122,7 @@ export default function Contact() {
 
   return (
     <section id="contact" className="relative w-full">
-      <div className="relative z-[2] h-[200vh] w-full max-md:h-auto max-md:min-h-[100vh]">
+      <div className="relative z-[2] h-[100vh] w-full max-md:h-auto max-md:min-h-[100vh]">
         <Image
           src="/images/pages/home/footer.png"
           width={1920}
