@@ -21,10 +21,7 @@ export default function Services() {
                 Design
               </h2>
               <p className="text-normal max-w-[400px] font-serif text-[15px] leading-[24px] tracking-[-0.3px] text-[#e2e0da] max-md:max-w-full max-sm:text-[14px] max-sm:leading-[22px]">
-                Our approach is deeply rooted in the essence of each place, drawing inspiration from
-                its culture and history. The materials we select, the art we curate, and the design
-                details we incorporate serve as essential parts of a larger narrative: design plays a
-                pivotal role in enhancing overall well-being.
+                Luxury interior design services begin with a deep understanding of space, lifestyle, and context. As a global full-service interior design studio with offices in Dubai and Miami, we deliver residential, hospitality, and commercial interior design projects worldwide, guiding every stage from concept development and spatial planning to material selection and precise execution.
               </p>
             </div>
             <div className="mt-[28px]">
@@ -43,10 +40,7 @@ export default function Services() {
                 Sourcing
               </h2>
               <p className="text-normal max-w-[400px] font-serif text-[15px] leading-[24px] tracking-[-0.3px] text-[#d4cfc8] max-md:max-w-full max-sm:text-[14px] max-sm:leading-[22px]">
-                We source with intention, seeking out materials, artisans, and objects that bring
-                character and authenticity to every space. From rare stones to bespoke furnishings,
-                each element is carefully selected to reflect the vision of the project and the
-                identity of the client.
+                Our international furniture sourcing and procurement services support residential, hospitality, and commercial projects worldwide. We partner with premium manufacturers and trusted suppliers, managing consolidated container shipping, global logistics, customs coordination, and on-site installation to ensure quality control, cost efficiency, and seamless project delivery across international markets.
               </p>
             </div>
             <div className="mt-[28px]">
