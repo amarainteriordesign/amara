@@ -336,7 +336,7 @@ export default function ImageFooter({
                 <span className="text-[#737373]">elements</span>{" "}
               </p>
 
-              <div className="flex items-center gap-[30px]">
+              <div className="flex w-full max-w-[340px] items-center justify-between">
                 {[
                   {
                     title: "Dubai",
