@@ -50,7 +50,7 @@ export default function Footer({
         </div>
       )}
 
-      <footer className="w-full bg-[#7a8070] px-[42px] pt-[60px] pb-[30px] max-md:px-[20px] max-md:pt-[40px]">
+      <footer className="w-full bg-[#E8E0D6] px-[42px] pt-[60px] pb-[30px] max-md:px-[20px] max-md:pt-[40px]">
         <div className="mx-auto max-w-[1440px]">
           {/* Main row: 3 equal columns */}
           <div className="grid grid-cols-3 items-center max-md:flex max-md:flex-col max-md:items-start max-md:gap-[40px]">
@@ -90,7 +90,7 @@ export default function Footer({
                 <Link
                   key={link.url}
                   href={link.url}
-                  className="font-sans text-[14px] leading-[24px] font-medium tracking-[1.5px] text-[#F5F1ED] uppercase transition-opacity hover:opacity-70"
+                  className="font-sans text-[14px] leading-[24px] font-medium tracking-[1.5px] text-[#4A4A40] uppercase transition-opacity hover:opacity-70"
                 >
                   {link.name}
                 </Link>
@@ -103,27 +103,27 @@ export default function Footer({
               <a
                 href="mailto:info@amarainteriordesign.com"
                 aria-label="Email"
-                className="flex h-[48px] w-[48px] items-center justify-center rounded-full border border-[#F5F1ED] bg-[#ADADAD4D] transition-opacity hover:opacity-70"
+                className="flex h-[48px] w-[48px] items-center justify-center rounded-full border border-[#9B9284] transition-opacity hover:opacity-70"
               >
-                <Mail width={20} height={14} color="#FFF" />
+                <Mail width={20} height={14} color="#4A4A40" />
               </a>
               <a
                 href="https://www.linkedin.com/company/amara-interior-design"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="LinkedIn"
-                className="flex h-[48px] w-[48px] items-center justify-center rounded-full border border-[#F5F1ED] bg-[#ADADAD4D] transition-opacity hover:opacity-70"
+                className="flex h-[48px] w-[48px] items-center justify-center rounded-full border border-[#9B9284] transition-opacity hover:opacity-70"
               >
-                <Linkedin width={16} height={16} color="#FFF" />
+                <Linkedin width={16} height={16} color="#4A4A40" />
               </a>
               <a
                 href="https://www.instagram.com/amarainteriordesign"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Instagram"
-                className="flex h-[48px] w-[48px] items-center justify-center rounded-full border border-[#F5F1ED] bg-[#ADADAD4D] transition-opacity hover:opacity-70"
+                className="flex h-[48px] w-[48px] items-center justify-center rounded-full border border-[#9B9284] transition-opacity hover:opacity-70"
               >
-                <Instagram width={16} height={16} color="#FFF" />
+                <Instagram width={16} height={16} color="#4A4A40" />
               </a>
             </div>
             </div>
@@ -133,10 +133,10 @@ export default function Footer({
           <div className="mt-[40px] flex justify-center gap-[30px] pt-[20px] max-md:justify-start">
             {CITIES.map((item) => (
               <div className="flex items-center gap-[8px]" key={item.title}>
-                <p className="font-sans text-[14px] leading-[20px] font-normal tracking-[-0.4px] text-[#D5D5C8]">
+                <p className="font-sans text-[14px] leading-[20px] font-normal tracking-[-0.4px] text-[#9B9284]">
                   {formatTimeForOffset(now, item.offset)}
                 </p>
-                <p className="font-sans text-[14px] leading-[20px] font-medium tracking-[-0.6px] text-[#F5F1ED]">
+                <p className="font-sans text-[14px] leading-[20px] font-medium tracking-[-0.6px] text-[#4A4A40]">
                   {item.title}
                 </p>
               </div>
