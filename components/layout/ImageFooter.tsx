@@ -326,7 +326,7 @@ export default function ImageFooter({
           </svg>
 
           <div className="mx-auto w-full max-w-[1440px]">
-            <div className="mr-[240px] ml-auto flex w-fit max-w-[380px] flex-col items-start pb-[35px]">
+            <div className="mr-[240px] ml-auto flex w-full max-w-[380px] flex-col items-start pb-[35px]">
               <div className="relative flex w-full items-center pb-[20px]">
                 <SoundIcon width={28} height={30} color="#262626" />
                 <SoundIcon width={28} height={30} color="#262626" className="ml-[-4.5755px]" />
