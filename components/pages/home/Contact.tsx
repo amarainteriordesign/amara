@@ -1,6 +1,11 @@
 "use client";
 import Image from "next/image";
-import { useState } from "react";
+import { useState, useRef } from "react";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { useGSAP } from "@gsap/react";
+
+gsap.registerPlugin(ScrollTrigger);
 
 const FORM_TITLE = "Let's get in Touch";
 const SUCCESS_MESSAGE = "✓ Message sent successfully! We'll be in touch soon.";
@@ -20,6 +25,33 @@ const OFFICES = [
 ];
 
 export default function Contact() {
+  const contextHeaderRef = useRef<gsap.Context | null>(null);
+
+  useGSAP(() => {
+    const headerLogo = document.querySelector("header .logo");
+    if (!headerLogo) contextHeaderRef.current?.revert();
+
+    contextHeaderRef.current = gsap.context(() => {
+      ScrollTrigger.create({
+        trigger: ".contact-home-ref",
+        start: "top-=80px top",
+        end: "bottom-=80px top",
+        onEnter: () => {
+          headerLogo?.classList.add("dark");
+        },
+        onEnterBack: () => {
+          headerLogo?.classList.add("dark");
+        },
+        onLeaveBack: () => {
+          headerLogo?.classList.remove("dark");
+        },
+        onLeave: () => {
+          headerLogo?.classList.remove("dark");
+        },
+      });
+    });
+  });
+
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -121,7 +153,7 @@ export default function Contact() {
   };
 
   return (
-    <section id="contact" className="relative w-full">
+    <section id="contact" className="contact-home-ref relative w-full">
       <div className="absolute inset-0 top-0 h-1/2 bg-[#F1EBDF]" />
       <div className="absolute inset-0 top-1/2 h-1/2 bg-[#E8E0D6]" />
       <div className="relative z-[2] w-full max-md:h-auto">
