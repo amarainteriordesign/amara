@@ -108,7 +108,7 @@ export default function Footer({
                 <Mail width={20} height={14} color="#4A4A40" />
               </a>
               <a
-                href="https://www.linkedin.com/company/amara-interior-design"
+                href="https://www.linkedin.com/company/amarainteriordesign"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="LinkedIn"
@@ -117,7 +117,7 @@ export default function Footer({
                 <Linkedin width={16} height={16} color="#4A4A40" />
               </a>
               <a
-                href="https://www.instagram.com/amarainteriordesign"
+                href="https://www.instagram.com/amara.interior.design/"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Instagram"
