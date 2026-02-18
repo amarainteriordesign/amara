@@ -5,6 +5,7 @@ import Image from "next/image";
 import { formatTimeForOffset } from "@/helpers/time";
 import Mail from "@/components/icons/mail.svg";
 import Linkedin from "@/components/icons/linkedin.svg";
+import Instagram from "@/components/icons/instagram.svg";
 
 const NAV_LINKS = [
   { name: "PROJECTS", url: "/projects" },
@@ -98,7 +99,7 @@ export default function Footer({
 
             {/* Col 3 — Social icons (pulled in from right to mirror AMARA cutout distance) */}
             <div className="flex justify-end pr-[130px] max-lg:pr-[60px] max-md:pr-0">
-            <div className="grid grid-cols-2 gap-[12px]">
+            <div className="flex gap-[12px]">
               <a
                 href="mailto:info@amarainteriordesign.com"
                 aria-label="Email"
@@ -116,20 +117,13 @@ export default function Footer({
                 <Linkedin width={16} height={16} color="#FFF" />
               </a>
               <a
-                href="mailto:info@amarainteriordesign.com"
-                aria-label="Email 2"
-                className="flex h-[48px] w-[48px] items-center justify-center rounded-full border border-[#F5F1ED] bg-[#ADADAD4D] transition-opacity hover:opacity-70"
-              >
-                <Mail width={20} height={14} color="#FFF" />
-              </a>
-              <a
-                href="https://www.linkedin.com/company/amara-interior-design"
+                href="https://www.instagram.com/amarainteriordesign"
                 target="_blank"
                 rel="noopener noreferrer"
-                aria-label="LinkedIn 2"
+                aria-label="Instagram"
                 className="flex h-[48px] w-[48px] items-center justify-center rounded-full border border-[#F5F1ED] bg-[#ADADAD4D] transition-opacity hover:opacity-70"
               >
-                <Linkedin width={16} height={16} color="#FFF" />
+                <Instagram width={16} height={16} color="#FFF" />
               </a>
             </div>
             </div>
