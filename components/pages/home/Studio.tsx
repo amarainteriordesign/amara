@@ -15,13 +15,13 @@ export default function Studio() {
         </div>
 
         <div className="w-[50%] max-md:w-full">
-          <div className="mb-[24px] overflow-hidden">
+          <div className="mb-[24px]">
             <Image
               src="/images/pages/home/architecture-sketch.webp"
-              width={600}
-              height={300}
+              width={4063}
+              height={1840}
               alt="Architecture sketch"
-              className="ml-[-3%] h-auto w-[106%]"
+              className="h-auto w-full"
             />
           </div>
           <p className="font-display text-normal pb-[24px] text-[38px] leading-[46px] tracking-[0.8px] text-[#2a2a2a] max-sm:pb-[20px] max-sm:text-[24px] max-sm:leading-[30px] max-sm:tracking-[0.4px]">
