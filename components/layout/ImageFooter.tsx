@@ -351,11 +351,11 @@ export default function ImageFooter({
                     offset: 1,
                   },
                 ].map((item) => (
-                  <div className="flex items-end gap-[8px]" key={item.title}>
+                  <div className="flex items-baseline gap-[8px]" key={item.title}>
                     <p className="font-sans text-[14px] leading-[20px] font-normal tracking-[-0.4px] text-[#737373]">
                       {formatTimeForOffset(now, item.offset)}
                     </p>
-                    <p className="pb-[2px] font-sans leading-[20px] font-medium tracking-[-0.6px] text-[#262626]">
+                    <p className="font-sans leading-[20px] font-medium tracking-[-0.6px] text-[#262626]">
                       {item.title}
                     </p>
                   </div>

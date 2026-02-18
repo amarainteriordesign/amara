@@ -132,7 +132,7 @@ export default function Footer({
           {/* City Times — centered across full width */}
           <div className="mx-auto mt-[40px] flex w-full max-w-[340px] justify-between pt-[20px]">
             {CITIES.map((item) => (
-              <div className="flex items-center gap-[8px]" key={item.title}>
+              <div className="flex items-baseline gap-[8px]" key={item.title}>
                 <p className="font-sans text-[14px] leading-[20px] font-normal tracking-[-0.4px] text-[#9B9284]">
                   {formatTimeForOffset(now, item.offset)}
                 </p>

@@ -75,7 +75,7 @@ export default function Menu({ now }: { now: Date }) {
             offset: 1,
           },
         ].map((item) => (
-          <div className="flex items-center gap-[8px]" key={item.title}>
+          <div className="flex items-baseline gap-[8px]" key={item.title}>
             <p className="font-sans text-[14px] leading-[20px] font-normal tracking-[-0.7px] text-[#737373]">
               {now && formatTimeForOffset(now, item.offset)}
             </p>
