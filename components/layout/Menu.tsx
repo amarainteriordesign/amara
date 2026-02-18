@@ -36,9 +36,9 @@ export default function Menu({ now }: { now: Date }) {
       <div className="w-full border-t-[1px] border-[#E8DFD2] pb-[99px]">
         {[
           { name: "Projects", url: "/projects" },
-          { name: "Studio", url: "/studio" },
+          { name: "About Us", url: "/studio" },
           { name: "Philosophy", url: "/philosophy" },
-          { name: "Blog", url: "/blog" },
+          { name: "News", url: "/blog" },
         ].map((page, i) => (
           <Link
             key={i}

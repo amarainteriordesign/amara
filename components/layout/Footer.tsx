@@ -9,9 +9,9 @@ import Instagram from "@/components/icons/instagram.svg";
 
 const NAV_LINKS = [
   { name: "PROJECTS", url: "/projects" },
-  { name: "STUDIO", url: "/studio" },
+  { name: "ABOUT US", url: "/studio" },
   { name: "PHILOSOPHY", url: "/philosophy" },
-  { name: "BLOG", url: "/blog" },
+  { name: "NEWS", url: "/blog" },
 ];
 
 const CITIES = [
