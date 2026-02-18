@@ -1,5 +1,5 @@
 import Header from "@/components/layout/Header";
-import HeroLanding from "@/components/pages/landing/HeroLanding";
+import Hero from "@/components/pages/home/Hero";
 import ContactSection from "@/components/pages/landing/ContactSection";
 import ContactUs from "@/components/pages/landing/ContactUs";
 import ImageFooter from "@/components/layout/ImageFooter";
@@ -17,7 +17,7 @@ export default function Landing() {
       
       <Header />
 
-      <HeroLanding />
+      <Hero />
 
       <ContactSection />
 
