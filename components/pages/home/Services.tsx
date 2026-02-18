@@ -40,7 +40,7 @@ export default function Services() {
             </div>
           </div>
 
-          <div className="flex w-1/2 flex-col justify-between rounded-[4px] bg-[#3a3632] px-[50px] pt-[50px] pb-[45px] max-md:w-full max-sm:px-[28px] max-sm:pt-[36px] max-sm:pb-[32px]">
+          <div className="flex w-1/2 flex-col justify-between rounded-[4px] bg-[#2F3034] px-[50px] pt-[50px] pb-[45px] max-md:w-full max-sm:px-[28px] max-sm:pt-[36px] max-sm:pb-[32px]">
             <div>
               <h2 className="font-display text-normal pb-[28px] text-[38px] leading-[46px] tracking-[0.8px] text-[#FFF] max-sm:pb-[20px] max-sm:text-[24px] max-sm:leading-[30px] max-sm:tracking-[0.4px]">
                 Sourcing
