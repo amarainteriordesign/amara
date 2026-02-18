@@ -137,130 +137,160 @@ export default function Contact() {
               />
             </div>
 
-            <div className="flex w-[33%] flex-col justify-center px-[30px] py-[30px] max-md:w-full max-md:px-[24px] max-md:py-[24px] max-sm:px-[16px] max-sm:py-[20px]">
-              {OFFICES.map((office, i) => (
-                <div key={office.title} className={i > 0 ? "mt-[40px]" : ""}>
-                  <h4 className="font-sans text-[14px] leading-[20px] font-bold tracking-[2px] text-[#262626] uppercase">
-                    {office.title}
-                  </h4>
-                  <p className="mt-[12px] font-serif text-[16px] leading-[24px] font-normal text-[#262626]">
-                    {office.phone}
-                  </p>
-                  <p className="mt-[8px] font-serif text-[16px] leading-[24px] font-normal text-[#262626]">
-                    {office.email}
-                  </p>
-                </div>
-              ))}
+            <div className="flex w-[33%] flex-col justify-between px-[30px] py-[30px] max-md:w-full max-md:px-[24px] max-md:py-[24px] max-sm:px-[16px] max-sm:py-[20px]">
+              <div>
+                {OFFICES.map((office, i) => (
+                  <div key={office.title} className={i > 0 ? "mt-[40px]" : ""}>
+                    <h4 className="font-sans text-[14px] leading-[20px] font-bold tracking-[2px] text-[#262626] uppercase">
+                      {office.title}
+                    </h4>
+                    <p className="mt-[12px] font-serif text-[16px] leading-[24px] font-normal text-[#262626]">
+                      {office.phone}
+                    </p>
+                    <p className="mt-[8px] font-serif text-[16px] leading-[24px] font-normal text-[#262626]">
+                      {office.email}
+                    </p>
+                  </div>
+                ))}
+              </div>
+              <div className="mt-[28px]">
+                <a
+                  href="https://wa.me/971585487150"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center justify-center gap-[6px] rounded-full bg-[#9B9284] px-[24px] py-[10px] font-sans text-[13px] leading-[18px] font-normal text-[#FFF] transition-all duration-300 hover:bg-[#8B8170]"
+                >
+                  <span>Whatsapp</span>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    className="text-[#FFF]"
+                  >
+                    <path d="M5 12h14" />
+                    <path d="m12 5 7 7-7 7" />
+                  </svg>
+                </a>
+              </div>
             </div>
 
-            <div className="flex w-[33%] flex-col justify-center px-[30px] py-[30px] max-md:w-full max-md:px-[24px] max-md:py-[24px] max-sm:px-[16px] max-sm:py-[16px]">
-              <h3 className="mb-[24px] font-serif text-[22px] leading-[28px] font-normal tracking-[-0.8px] text-[#0a0a0a] max-sm:text-[18px]">
-                {FORM_TITLE}
-              </h3>
+            <div className="flex w-[33%] flex-col justify-between px-[30px] py-[30px] max-md:w-full max-md:px-[24px] max-md:py-[24px] max-sm:px-[16px] max-sm:py-[16px]">
+              <div>
+                <h3 className="mb-[24px] font-serif text-[22px] leading-[28px] font-normal tracking-[-0.8px] text-[#0a0a0a] max-sm:text-[18px]">
+                  {FORM_TITLE}
+                </h3>
 
-              <form onSubmit={handleSubmit} className="flex flex-col gap-[16px]">
-                <div>
-                  <input
-                    type="text"
-                    name="name"
-                    placeholder="Name"
-                    value={formData.name}
-                    onChange={handleChange}
-                    className={`w-full border-b bg-transparent py-[12px] font-sans text-[14px] leading-[20px] font-normal text-[#0a0a0a] placeholder-[#666] transition-colors outline-none ${
-                      validationErrors.name ? "border-red-500" : "border-[#444]"
-                    }`}
-                  />
-                  {validationErrors.name && (
-                    <p className="mt-[4px] font-sans text-[11px] leading-[14px] font-normal text-red-600">
-                      {validationErrors.name}
-                    </p>
-                  )}
-                </div>
-
-                <div>
-                  <input
-                    type="email"
-                    name="email"
-                    placeholder="Email"
-                    value={formData.email}
-                    onChange={handleChange}
-                    className={`w-full border-b bg-transparent py-[12px] font-sans text-[14px] leading-[20px] font-normal text-[#0a0a0a] placeholder-[#666] transition-colors outline-none ${
-                      validationErrors.email ? "border-red-500" : "border-[#444]"
-                    }`}
-                  />
-                  {validationErrors.email && (
-                    <p className="mt-[4px] font-sans text-[11px] leading-[14px] font-normal text-red-600">
-                      {validationErrors.email}
-                    </p>
-                  )}
-                </div>
-
-                <div>
-                  <input
-                    type="tel"
-                    name="phone"
-                    placeholder="Phone number"
-                    value={formData.phone}
-                    onChange={handleChange}
-                    className={`w-full border-b bg-transparent py-[12px] font-sans text-[14px] leading-[20px] font-normal text-[#0a0a0a] placeholder-[#666] transition-colors outline-none ${
-                      validationErrors.phone ? "border-red-500" : "border-[#444]"
-                    }`}
-                  />
-                  {validationErrors.phone && (
-                    <p className="mt-[4px] font-sans text-[11px] leading-[14px] font-normal text-red-600">
-                      {validationErrors.phone}
-                    </p>
-                  )}
-                </div>
-
-                <div>
-                  <textarea
-                    name="message"
-                    placeholder="Your message"
-                    value={formData.message}
-                    onChange={handleChange}
-                    rows={3}
-                    className={`w-full resize-none border-b bg-transparent py-[12px] font-sans text-[14px] leading-[20px] font-normal text-[#0a0a0a] placeholder-[#666] transition-colors outline-none ${
-                      validationErrors.message ? "border-red-500" : "border-[#444]"
-                    }`}
-                  />
-                  {validationErrors.message && (
-                    <p className="mt-[4px] font-sans text-[11px] leading-[14px] font-normal text-red-600">
-                      {validationErrors.message}
-                    </p>
-                  )}
-                </div>
-
-                <div className="mt-[16px]">
-                  <button
-                    type="submit"
-                    disabled={isSubmitting}
-                    className="flex items-center justify-center gap-[6px] rounded-full bg-[#9B9284] px-[24px] py-[10px] font-sans text-[13px] leading-[18px] font-normal text-[#FFF] transition-all duration-300 hover:bg-[#8B8170] disabled:cursor-not-allowed disabled:opacity-50"
-                  >
-                    {isSubmitting ? (
-                      "Sending..."
-                    ) : (
-                      <>
-                        <span>Send Your Inquiry</span>
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          width="16"
-                          height="16"
-                          viewBox="0 0 24 24"
-                          fill="none"
-                          stroke="currentColor"
-                          strokeWidth="2"
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          className="text-[#FFF]"
-                        >
-                          <path d="M5 12h14" />
-                          <path d="m12 5 7 7-7 7" />
-                        </svg>
-                      </>
+                <form id="contact-form" onSubmit={handleSubmit} className="flex flex-col gap-[16px]">
+                  <div>
+                    <input
+                      type="text"
+                      name="name"
+                      placeholder="Name"
+                      value={formData.name}
+                      onChange={handleChange}
+                      className={`w-full border-b bg-transparent py-[12px] font-sans text-[14px] leading-[20px] font-normal text-[#0a0a0a] placeholder-[#666] transition-colors outline-none ${
+                        validationErrors.name ? "border-red-500" : "border-[#444]"
+                      }`}
+                    />
+                    {validationErrors.name && (
+                      <p className="mt-[4px] font-sans text-[11px] leading-[14px] font-normal text-red-600">
+                        {validationErrors.name}
+                      </p>
                     )}
-                  </button>
-                </div>
+                  </div>
+
+                  <div>
+                    <input
+                      type="email"
+                      name="email"
+                      placeholder="Email"
+                      value={formData.email}
+                      onChange={handleChange}
+                      className={`w-full border-b bg-transparent py-[12px] font-sans text-[14px] leading-[20px] font-normal text-[#0a0a0a] placeholder-[#666] transition-colors outline-none ${
+                        validationErrors.email ? "border-red-500" : "border-[#444]"
+                      }`}
+                    />
+                    {validationErrors.email && (
+                      <p className="mt-[4px] font-sans text-[11px] leading-[14px] font-normal text-red-600">
+                        {validationErrors.email}
+                      </p>
+                    )}
+                  </div>
+
+                  <div>
+                    <input
+                      type="tel"
+                      name="phone"
+                      placeholder="Phone number"
+                      value={formData.phone}
+                      onChange={handleChange}
+                      className={`w-full border-b bg-transparent py-[12px] font-sans text-[14px] leading-[20px] font-normal text-[#0a0a0a] placeholder-[#666] transition-colors outline-none ${
+                        validationErrors.phone ? "border-red-500" : "border-[#444]"
+                      }`}
+                    />
+                    {validationErrors.phone && (
+                      <p className="mt-[4px] font-sans text-[11px] leading-[14px] font-normal text-red-600">
+                        {validationErrors.phone}
+                      </p>
+                    )}
+                  </div>
+
+                  <div>
+                    <textarea
+                      name="message"
+                      placeholder="Your message"
+                      value={formData.message}
+                      onChange={handleChange}
+                      rows={3}
+                      className={`w-full resize-none border-b bg-transparent py-[12px] font-sans text-[14px] leading-[20px] font-normal text-[#0a0a0a] placeholder-[#666] transition-colors outline-none ${
+                        validationErrors.message ? "border-red-500" : "border-[#444]"
+                      }`}
+                    />
+                    {validationErrors.message && (
+                      <p className="mt-[4px] font-sans text-[11px] leading-[14px] font-normal text-red-600">
+                        {validationErrors.message}
+                      </p>
+                    )}
+                  </div>
+                </form>
+              </div>
+
+              <div className="mt-[16px]">
+                <button
+                  type="submit"
+                  form="contact-form"
+                  disabled={isSubmitting}
+                  className="flex items-center justify-center gap-[6px] rounded-full bg-[#9B9284] px-[24px] py-[10px] font-sans text-[13px] leading-[18px] font-normal text-[#FFF] transition-all duration-300 hover:bg-[#8B8170] disabled:cursor-not-allowed disabled:opacity-50"
+                >
+                  {isSubmitting ? (
+                    "Sending..."
+                  ) : (
+                    <>
+                      <span>Send Your Inquiry</span>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="16"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        strokeWidth="2"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        className="text-[#FFF]"
+                      >
+                        <path d="M5 12h14" />
+                        <path d="m12 5 7 7-7 7" />
+                      </svg>
+                    </>
+                  )}
+                </button>
 
                 {submitStatus === "success" && (
                   <p className="pt-[8px] font-sans text-[12px] leading-[16px] font-normal text-green-600">
@@ -273,8 +303,7 @@ export default function Contact() {
                     &cross; Error sending message. Please try again.
                   </p>
                 )}
-
-              </form>
+              </div>
             </div>
           </div>
         </div>
