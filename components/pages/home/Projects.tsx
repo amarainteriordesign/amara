@@ -12,7 +12,7 @@ gsap.registerPlugin(ScrollTrigger);
 const slides: Slide[] = [
   {
     id: "project-1",
-    img: "/images/pages/home/project1.png",
+    img: "/images/pages/home/project1.webp",
     alt: "Project 1",
     location: "MIAMI, UNITED STATES",
     title: "THE VILLAGE",
