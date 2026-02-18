@@ -130,7 +130,7 @@ export default function Footer({
           </div>
 
           {/* City Times — centered across full width */}
-          <div className="mx-auto mt-[40px] flex w-full max-w-[600px] justify-between pt-[20px] max-md:max-w-full max-md:justify-center max-md:gap-[20px]">
+          <div className="mt-[40px] flex justify-center gap-[30px] pt-[20px] max-md:justify-start">
             {CITIES.map((item) => (
               <div className="flex items-center gap-[8px]" key={item.title}>
                 <p className="font-sans text-[14px] leading-[20px] font-normal tracking-[-0.4px] text-[#9B9284]">

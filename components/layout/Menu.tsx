@@ -60,7 +60,7 @@ export default function Menu({ now }: { now: Date }) {
         Contact Us
       </button>
 
-      <div className="flex w-full justify-between gap-[20px] pt-[130px]">
+      <div className="mx-auto flex w-full max-w-[340px] justify-between gap-[20px] pt-[130px]">
         {[
           {
             title: "Dubai",
