@@ -153,17 +153,17 @@ export default function Carousel({
       </div>
       <button
         onClick={handlePrev}
-        className="absolute top-1/2 left-[20px] z-10 flex h-[44px] w-[44px] -translate-y-1/2 rotate-180 items-center justify-center rounded-full border border-[#26262633] bg-white/80 backdrop-blur-sm transition-colors hover:bg-white max-md:left-[8px] max-md:h-[36px] max-md:w-[36px]"
+        className="absolute top-1/2 left-[24px] z-10 flex -translate-y-1/2 rotate-180 items-center justify-center opacity-50 transition-opacity hover:opacity-100 max-md:left-[12px]"
         aria-label="Previous slide"
       >
-        <ArrowIcon width={16} height={12} color="#262626" />
+        <ArrowIcon width={18} height={14} color="#262626" />
       </button>
       <button
         onClick={handleNext}
-        className="absolute top-1/2 right-[20px] z-10 flex h-[44px] w-[44px] -translate-y-1/2 items-center justify-center rounded-full border border-[#26262633] bg-white/80 backdrop-blur-sm transition-colors hover:bg-white max-md:right-[8px] max-md:h-[36px] max-md:w-[36px]"
+        className="absolute top-1/2 right-[24px] z-10 flex -translate-y-1/2 items-center justify-center opacity-50 transition-opacity hover:opacity-100 max-md:right-[12px]"
         aria-label="Next slide"
       >
-        <ArrowIcon width={16} height={12} color="#262626" />
+        <ArrowIcon width={18} height={14} color="#262626" />
       </button>
     </div>
   );
