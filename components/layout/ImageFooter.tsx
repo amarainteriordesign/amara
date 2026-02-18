@@ -224,7 +224,7 @@ export default function ImageFooter({
                 onClick={onLogoClick}
                 className="font-sans text-[16px] leading-[20px] font-medium tracking-[-0.5px] text-[#262626]"
               >
-                <span className="text-[#737373]">Amara</span> Boutique Design Studio
+                <span className="text-[#737373]">Amara</span> Interior Design Studio
               </Link>
             </div>
 

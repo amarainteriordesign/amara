@@ -58,7 +58,7 @@ export default function Hero() {
             <Copy animateOnScroll={false} delay={1.55}>
               <p className="pb-[12px] text-center font-serif text-[56px] leading-[64px] font-normal tracking-[-0.5px] text-[#FFF] max-sm:pb-[8px] max-sm:text-[40px] max-sm:leading-[48px]" style={{ textShadow: '0 2px 8px rgba(0,0,0,0.4)' }}>
                 <span className="text-white">Amara</span>{" "}
-                <span className="text-white">Boutique Design Studio</span>
+                <span className="text-white">Interior Design Studio</span>
               </p>
             </Copy>
 

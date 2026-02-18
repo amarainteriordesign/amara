@@ -158,7 +158,7 @@ export default function Header({ isDark = false }: { isDark?: boolean }) {
                 }
               >
                 <span className="header-logo text-[#FFF]">Amara</span>{" "}
-                <span className="header-logo-text">Boutique Design Studio</span>
+                <span className="header-logo-text">Interior Design Studio</span>
               </Link>
             </div>
 
