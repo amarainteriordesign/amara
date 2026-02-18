@@ -19,7 +19,7 @@ const slides: Slide[] = [
   },
   {
     id: "project-2",
-    img: "/images/pages/home/project2.png",
+    img: "/images/pages/home/project2.webp",
     alt: "Project 2",
     location: "TULUM, MEXICO",
     title: "SADHU RETREAT",
