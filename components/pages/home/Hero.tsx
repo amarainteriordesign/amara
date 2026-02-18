@@ -55,14 +55,14 @@ export default function Hero() {
 
           <div className="hero-overlay absolute top-1/2 z-[1] flex max-h-fit w-full -translate-y-1/2 flex-col items-center justify-center overflow-hidden p-[20px]">
             <Copy animateOnScroll={false} delay={1.55}>
-              <p className="pb-[12px] text-center font-sans text-[56px] leading-[64px] font-medium tracking-[-0.5px] text-[#FFF] max-sm:pb-[8px] max-sm:text-[40px] max-sm:leading-[48px]" style={{ textShadow: '0 2px 8px rgba(0,0,0,0.4)' }}>
+              <p className="pb-[12px] text-center font-serif text-[56px] leading-[64px] font-normal tracking-[-0.5px] text-[#FFF] max-sm:pb-[8px] max-sm:text-[40px] max-sm:leading-[48px]" style={{ textShadow: '0 2px 8px rgba(0,0,0,0.4)' }}>
                 <span className="text-white">Amara</span>{" "}
                 <span className="text-white">Boutique Design Studio</span>
               </p>
             </Copy>
 
             <Copy delay={1.8} animateOnScroll={false}>
-              <p className="pb-[8px] font-sans text-[28px] leading-[36px] font-normal tracking-[4px] text-white uppercase max-sm:pb-[12px] max-sm:text-[20px]" style={{ textShadow: '0 2px 8px rgba(0,0,0,0.4)' }}>
+              <p className="pb-[8px] font-sans text-[16px] leading-[24px] font-normal tracking-[4px] text-white uppercase max-sm:pb-[12px] max-sm:text-[12px]" style={{ textShadow: '0 2px 8px rgba(0,0,0,0.4)' }}>
                 MIAMI - DUBAI - PARIS
               </p>
             </Copy>
