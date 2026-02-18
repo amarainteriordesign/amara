@@ -130,7 +130,7 @@ export default function Contact() {
           alt="Beach landscape"
           className="absolute inset-0 h-full w-full object-cover"
         />
-        <div className="relative z-10 px-[20px] pt-[80px] max-sm:px-[12px] max-sm:pt-[40px]">
+        <div className="relative z-10 flex h-full items-center px-[20px] max-sm:px-[12px]">
           <div className="mx-auto flex max-w-[1200px] gap-[0px] rounded-[20px] bg-[#E8E0D6] max-md:flex-col">
             <div className="w-[33%] shrink-0 px-[5px] py-[10px] max-md:w-full max-md:px-[5px] max-md:py-[5px]">
               <Image
