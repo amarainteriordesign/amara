@@ -1,8 +1,9 @@
 import Header from "@/components/layout/Header";
 import HeroLanding from "@/components/pages/landing/HeroLanding";
 import ContactLanding from "@/components/pages/landing/ContactLanding";
-
 import ContactUs from "@/components/pages/landing/ContactUs";
+import ServicesLanding from "@/components/pages/landing/ServicesLanding";
+import ProjectsLanding from "@/components/pages/landing/ProjectsLanding";
 import ImageFooter from "@/components/layout/ImageFooter";
 import type { Metadata } from "next";
 
@@ -23,6 +24,10 @@ export default function Landing() {
       <ContactLanding />
 
       <ContactUs />
+
+      <ServicesLanding />
+
+      <ProjectsLanding />
 
       <ImageFooter isDarkHeaderByDefault={true} image="/images/pages/home/hero-2.png" />
     </>
