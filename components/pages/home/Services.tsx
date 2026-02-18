@@ -11,9 +11,6 @@ export default function Services() {
           >
             Boutique Design, Strategic Sourcing
           </h2>
-          <p className="text-center font-sans text-[14px] leading-[18px] font-normal tracking-[0.4px] text-[#262626] uppercase">
-            WORLDWIDE
-          </p>
         </div>
       </section>
       <div className="bg-gradient-to-b from-[#e8dfd2] from-50% to-[#f1ebdf] to-50% pb-[40px]">
