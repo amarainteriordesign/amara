@@ -1,5 +1,6 @@
 import Header from "@/components/layout/Header";
 import Hero from "@/components/pages/home/Hero";
+import Contact from "@/components/pages/home/Contact";
 import ContactSection from "@/components/pages/landing/ContactSection";
 import ContactUs from "@/components/pages/landing/ContactUs";
 import ImageFooter from "@/components/layout/ImageFooter";
@@ -18,6 +19,8 @@ export default function Landing() {
       <Header />
 
       <Hero />
+
+      <Contact />
 
       <ContactSection />
 
