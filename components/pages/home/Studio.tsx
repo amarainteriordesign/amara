@@ -15,7 +15,7 @@ export default function Studio() {
         </div>
 
         <div className="w-[50%] max-md:w-full">
-          <div className="mb-[24px] max-w-[420px] max-md:max-w-full">
+          <div className="mb-[24px]">
             <Image
               src="/images/pages/home/architecture-sketch.webp"
               width={600}
@@ -24,10 +24,10 @@ export default function Studio() {
               className="h-auto w-full"
             />
           </div>
-          <p className="font-display text-normal max-w-[420px] pb-[24px] text-[38px] leading-[46px] tracking-[0.8px] text-[#2a2a2a] max-md:max-w-full max-sm:pb-[20px] max-sm:text-[24px] max-sm:leading-[30px] max-sm:tracking-[0.4px]">
+          <p className="font-display text-normal pb-[24px] text-[38px] leading-[46px] tracking-[0.8px] text-[#2a2a2a] max-sm:pb-[20px] max-sm:text-[24px] max-sm:leading-[30px] max-sm:tracking-[0.4px]">
             Redefining the way we design, Globally
           </p>
-          <p className="text-normal max-w-[420px] font-serif text-[15px] leading-[24px] tracking-[-0.3px] text-[#4a4a4a] max-md:max-w-full max-sm:text-[14px] max-sm:leading-[22px]">
+          <p className="text-normal font-serif text-[15px] leading-[24px] tracking-[-0.3px] text-[#4a4a4a] max-sm:text-[14px] max-sm:leading-[22px]">
             From the vibrant rhythm of Miami to the refined elegance of Paris and the bold energy of
             Dubai, Amara redefines interior design through a distinct voice. We are a boutique
             powerhouse blending artistic depth with technical mastery, crafting spaces that feel
