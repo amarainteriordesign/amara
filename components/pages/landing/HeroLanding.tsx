@@ -48,7 +48,7 @@ export default function HeroLanding() {
             </Copy>
 
             <div className="max-h-fit w-full overflow-hidden text-center">
-              <p className="hero-center-text-space text-bg-img bg-[url(/images/pages/home/text-background.png)] pb-[8px] font-serif text-[28px] leading-[36px] tracking-[-0.8px] italic max-sm:text-[24px] max-sm:tracking-[-0.7px]">
+              <p className="hero-center-text-space text-bg-img bg-[url(/images/pages/home/text-background.webp)] pb-[8px] font-serif text-[28px] leading-[36px] tracking-[-0.8px] italic max-sm:text-[24px] max-sm:tracking-[-0.7px]">
                 creates soulful spaces
               </p>
             </div>

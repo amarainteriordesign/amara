@@ -118,7 +118,7 @@ export default function ContactSection() {
       {/* Description Section */}
       <div className="mb-[60px] flex w-full flex-col items-center justify-center px-[20px] text-center max-sm:mb-[40px]">
         <div className="max-h-fit overflow-hidden">
-          <h2 className="text-bg-img mb-[8px] bg-[url(/images/pages/home/text-background.png)] pb-[8px] font-serif text-[28px] leading-[36px] font-normal tracking-[-0.8px] italic max-sm:text-[22px] max-sm:tracking-[-0.6px]">
+          <h2 className="text-bg-img mb-[8px] bg-[url(/images/pages/home/text-background.webp)] pb-[8px] font-serif text-[28px] leading-[36px] font-normal tracking-[-0.8px] italic max-sm:text-[22px] max-sm:tracking-[-0.6px]">
             From Concept to Delivery
           </h2>
         </div>
@@ -162,7 +162,7 @@ export default function ContactSection() {
         {/* Founders Image - RIGHT on desktop */}
         <div className="w-full md:w-1/2 md:order-2 order-1">
           <Image
-            src="/images/pages/home/studio.png"
+            src="/images/pages/home/studio.webp"
             width={1920}
             height={1080}
             alt="Amara founders"
@@ -180,7 +180,7 @@ export default function ContactSection() {
           {/* Image */}
           <div className="w-[50%] px-[5px] pt-[10px] pb-[10px] max-md:w-full max-md:px-[5px] max-md:pt-[10px] max-md:pb-[10px] max-sm:px-[4px] max-sm:pt-[6px] max-sm:pb-[6px]">
             <Image
-              src="/images/pages/landing/contact.png"
+              src="/images/pages/landing/contact.webp"
               width={350}
               height={350}
               alt="Interior design showcase"

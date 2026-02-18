@@ -122,7 +122,7 @@ export default function Moments() {
         <div className="flex flex-col items-start gap-[63px] pb-[17px] max-md:w-full max-md:gap-[10px]">
           <div className="relative aspect-[0.67] w-full max-w-[331px] overflow-hidden max-md:max-w-full">
             <Image
-              src="/images/pages/home/studio.png"
+              src="/images/pages/home/studio.webp"
               alt="Studio"
               width={1300}
               height={1500}

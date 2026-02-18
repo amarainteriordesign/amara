@@ -77,7 +77,7 @@ export default function Hero() {
                 </h2>
               </Copy>
               <div className="max-h-fit w-full overflow-hidden text-center">
-                <p className="hero-center-text-space text-bg-img bg-[url(/images/pages/home/text-background.png)] text-center font-serif text-[28px] leading-[36px] tracking-[-0.8px] italic max-sm:text-[24px] max-sm:tracking-[-0.6px]">
+                <p className="hero-center-text-space text-bg-img bg-[url(/images/pages/home/text-background.webp)] text-center font-serif text-[28px] leading-[36px] tracking-[-0.8px] italic max-sm:text-[24px] max-sm:tracking-[-0.6px]">
                   Their Rituals, Their Rhythm, Their Dreams
                 </p>
               </div>

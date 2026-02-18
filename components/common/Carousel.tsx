@@ -155,14 +155,14 @@ export default function Carousel({
         className="absolute top-1/2 left-[24px] z-10 flex -translate-y-1/2 rotate-180 items-center justify-center max-md:left-[12px]"
         aria-label="Previous slide"
       >
-        <Image src="/images/arrow-right.png" width={27} height={27} alt="Previous" />
+        <Image src="/images/arrow-right.webp" width={27} height={27} alt="Previous" />
       </button>
       <button
         onClick={handleNext}
         className="absolute top-1/2 right-[24px] z-10 flex -translate-y-1/2 items-center justify-center max-md:right-[12px]"
         aria-label="Next slide"
       >
-        <Image src="/images/arrow-right.png" width={27} height={27} alt="Next" />
+        <Image src="/images/arrow-right.webp" width={27} height={27} alt="Next" />
       </button>
     </div>
   );

@@ -200,7 +200,7 @@ export default function Work() {
           <div className="work-right-anim-container aspect-[0.75] w-full max-w-[487px] max-md:w-full">
             <div className="relative h-full w-full overflow-hidden">
               <Image
-                src="/images/pages/home/studio.png"
+                src="/images/pages/home/studio.webp"
                 alt="Studio "
                 width={487}
                 height={652}

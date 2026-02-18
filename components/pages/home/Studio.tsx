@@ -6,7 +6,7 @@ export default function Studio() {
       <div className="mx-auto flex max-w-[1200px] items-center gap-[60px] px-[60px] max-md:flex-col max-md:gap-[40px] max-md:px-[40px] max-sm:gap-[30px] max-sm:px-[17px]">
         <div className="w-[50%] shrink-0 max-md:w-full">
           <Image
-            src="/images/pages/home/studio.png"
+            src="/images/pages/home/studio.webp"
             width={600}
             height={750}
             alt="Amara founders"
@@ -17,7 +17,7 @@ export default function Studio() {
         <div className="w-[50%] max-md:w-full">
           <div className="mb-[24px] max-w-[300px] max-sm:max-w-[200px]">
             <Image
-              src="/images/pages/home/architecture-sketch.png"
+              src="/images/pages/home/architecture-sketch.webp"
               width={600}
               height={300}
               alt="Architecture sketch"

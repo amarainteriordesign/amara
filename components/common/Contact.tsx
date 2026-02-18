@@ -20,7 +20,7 @@ export default function Contact() {
             Contact Us
           </Link>
         </div>
-        <h3 className="font-display text-bg-img max-slg:text-[225px] max-slg:leading-[240px] max-xmd:text-[165px] max-xmd:leading-[182px] max-xsm:text-[108px] max-xsm:leading-[120px] w-full bg-[url(/images/pages/home/text-background.png)] pb-[26px] text-center text-[255px] leading-[237px] font-normal tracking-[-7%] text-nowrap uppercase max-md:text-[128px] max-md:leading-[142px] max-sm:text-[60px] max-sm:leading-[72px] max-sm:tracking-[-10%]">
+        <h3 className="font-display text-bg-img max-slg:text-[225px] max-slg:leading-[240px] max-xmd:text-[165px] max-xmd:leading-[182px] max-xsm:text-[108px] max-xsm:leading-[120px] w-full bg-[url(/images/pages/home/text-background.webp)] pb-[26px] text-center text-[255px] leading-[237px] font-normal tracking-[-7%] text-nowrap uppercase max-md:text-[128px] max-md:leading-[142px] max-sm:text-[60px] max-sm:leading-[72px] max-sm:tracking-[-10%]">
           LET’s TALK.
         </h3>
       </div>

@@ -53,7 +53,7 @@ export default function Story() {
     <section className="max-xmd:px-[40px] items start mx-auto flex w-full max-w-[1440px] flex-col px-[65px] pt-[178px] max-md:px-[20px] max-sm:pt-[96px]">
       <div className="story-container flex w-full flex-col items-center justify-center px-[20px] pb-[181px] max-sm:pb-[112px]">
         <div className="max-h-fit overflow-hidden text-center">
-          <h3 className="text-bg-img story-text-anim translate-y-[120%] bg-[url(/images/pages/home/text-background.png)] !bg-top pb-[8px] font-serif text-[28px] leading-[36px] tracking-[-0.8px] italic max-sm:text-[22px] max-sm:tracking-[-0.6px]">
+          <h3 className="text-bg-img story-text-anim translate-y-[120%] bg-[url(/images/pages/home/text-background.webp)] !bg-top pb-[8px] font-serif text-[28px] leading-[36px] tracking-[-0.8px] italic max-sm:text-[22px] max-sm:tracking-[-0.6px]">
             Our Founding Story
           </h3>
         </div>
