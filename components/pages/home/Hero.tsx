@@ -8,6 +8,7 @@ import Copy from "@/components/common/Copy/Copy";
 gsap.registerPlugin(useGSAP);
 
 const CAROUSEL_IMAGES = [
+  "/images/pages/home/hero-villa.webp",
   "/images/pages/home/hero-1.webp",
   "/images/pages/home/hero-2.webp",
   "/images/pages/home/hero-3.webp",
