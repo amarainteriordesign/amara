@@ -92,7 +92,7 @@ export default function ContactUs() {
               <p className="font-sans text-[14px] leading-[30px] font-medium tracking-[1.8px] text-[#FEFAF6]">
                 ELOISE CHAUVIERE
               </p>
-              <p className="font-sans text-[11px] leading-[16px] font-normal tracking-[1px] text-[#FEFAF6CC]">
+              <p className="font-sans text-[11px] leading-[16px] font-normal tracking-[1px] text-[#FEFAF6]">
                 Managing Director
               </p>
             </div>
@@ -130,7 +130,7 @@ export default function ContactUs() {
               <p className="font-sans text-[14px] leading-[30px] font-medium tracking-[1.8px] text-[#FEFAF6]">
                 INES BAKKALI
               </p>
-              <p className="font-sans text-[11px] leading-[16px] font-normal tracking-[1px] text-[#FEFAF6CC]">
+              <p className="font-sans text-[11px] leading-[16px] font-normal tracking-[1px] text-[#FEFAF6]">
                 Design Director
               </p>
             </div>
