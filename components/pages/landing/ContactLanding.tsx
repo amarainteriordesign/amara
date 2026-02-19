@@ -135,7 +135,7 @@ export default function ContactLanding() {
               />
             </div>
 
-            <div className="flex w-[33%] flex-col justify-between px-[30px] py-[30px] max-md:order-1 max-md:w-full max-md:px-[24px] max-md:py-[24px] max-sm:px-[16px] max-sm:py-[20px]">
+            <div className="flex w-[33%] flex-col justify-between px-[30px] py-[30px] max-md:order-2 max-md:w-full max-md:px-[24px] max-md:py-[24px] max-sm:px-[16px] max-sm:py-[20px]">
               <div>
                 {OFFICES.map((office, i) => (
                   <div key={office.title} className={i > 0 ? "mt-[40px]" : ""}>
@@ -173,7 +173,7 @@ export default function ContactLanding() {
               </div>
             </div>
 
-            <div className="flex w-[33%] flex-col justify-between px-[30px] py-[30px] max-md:order-2 max-md:w-full max-md:px-[24px] max-md:py-[24px] max-sm:px-[16px] max-sm:py-[16px]">
+            <div className="flex w-[33%] flex-col justify-between px-[30px] py-[30px] max-md:order-1 max-md:w-full max-md:px-[24px] max-md:py-[24px] max-sm:px-[16px] max-sm:py-[16px]">
               <div>
                 <h3 className="mb-[24px] font-serif text-[22px] leading-[28px] font-normal tracking-[-0.8px] text-[#0a0a0a] max-sm:text-[18px]">
                   {FORM_TITLE}
