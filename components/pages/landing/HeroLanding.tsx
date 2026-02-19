@@ -52,7 +52,7 @@ export default function HeroLanding() {
             />
           ))}
 
-          <div className="absolute inset-0 z-0 bg-black/30" />
+          <div className="absolute inset-0 z-0 bg-black/45" />
 
           <div className="hero-overlay-landing absolute top-1/2 z-[1] flex max-h-fit w-full -translate-y-1/2 flex-col items-center justify-center overflow-hidden p-[20px]">
             <Copy animateOnScroll={false} delay={1.55}>
