@@ -56,7 +56,7 @@ export default function HeroLanding() {
 
           <div className="hero-overlay-landing absolute top-1/2 z-[1] flex max-h-fit w-full -translate-y-1/2 flex-col items-center justify-center overflow-hidden p-[20px]">
             <Copy animateOnScroll={false} delay={1.55}>
-              <p className="pb-[12px] text-center font-calvino text-[46px] leading-[54px] font-normal tracking-[-0.5px] uppercase text-[#FFF] max-sm:pb-[8px] max-sm:text-[32px] max-sm:leading-[40px]">
+              <p className="pb-[12px] text-center font-calvino text-[46px] leading-[54px] font-normal tracking-[-0.5px] capitalize text-[#FFF] max-sm:pb-[8px] max-sm:text-[32px] max-sm:leading-[40px]">
                 <span className="text-white">Amara</span>{" "}
                 <span className="text-white">Interior Design Studio</span>
               </p>
