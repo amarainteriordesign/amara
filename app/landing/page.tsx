@@ -32,7 +32,7 @@ export default function Landing() {
 
       <ProjectsLanding />
 
-      <Footer bgColor="#E8E0D6" />
+      <Footer />
     </>
   );
 }
