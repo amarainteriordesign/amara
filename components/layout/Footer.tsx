@@ -50,7 +50,7 @@ export default function Footer({
         </div>
       )}
 
-      <footer className="w-full bg-[#E8E0D6] px-[42px] pt-[60px] pb-[30px] max-md:px-[20px] max-md:pt-[40px]">
+      <footer className="w-full border-t border-[#D5CEC4] bg-[#F1EBDF] px-[42px] pt-[60px] pb-[30px] max-md:px-[20px] max-md:pt-[40px]">
         <div className="mx-auto max-w-[1440px]">
           {/* Main row: 3 equal columns */}
           <div className="grid grid-cols-3 items-center max-md:flex max-md:flex-col max-md:items-start max-md:gap-[40px]">
