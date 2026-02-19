@@ -40,7 +40,7 @@ export default function HeroSourcing() {
 
             <Copy delay={1.8} animateOnScroll={false}>
               <p className="pb-[8px] font-sans text-[16px] leading-[24px] font-normal tracking-[4px] text-white uppercase max-sm:pb-[12px] max-sm:text-[12px]" style={{ textShadow: '0 4px 20px rgba(0,0,0,0.7), 0 2px 8px rgba(0,0,0,0.5)' }}>
-                MIAMI - DUBAI - PARIS
+                Purchasing - Logistics - Installation
               </p>
             </Copy>
           </div>
