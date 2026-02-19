@@ -1,5 +1,6 @@
 import Header from "@/components/layout/Header";
 import HeroLanding from "@/components/pages/landing/HeroLanding";
+import AboutLanding from "@/components/pages/landing/AboutLanding";
 import ContactLanding from "@/components/pages/landing/ContactLanding";
 import ContactUs from "@/components/pages/landing/ContactUs";
 import ServicesLanding from "@/components/pages/landing/ServicesLanding";
@@ -20,6 +21,8 @@ export default function Landing() {
       <Header />
 
       <HeroLanding />
+
+      <AboutLanding />
 
       <ContactLanding />
 
