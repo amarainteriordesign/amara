@@ -334,9 +334,6 @@ export default function Contact() {
             </div>
           </div>
         </div>
-        <div className="mx-auto mt-[60px] max-w-[1200px] max-sm:mt-[30px]">
-          <hr className="border-t border-[#C8BFB3]" />
-        </div>
       </div>
     </section>
   );
