@@ -1,5 +1,6 @@
 import Header from "@/components/layout/Header";
 import Hero from "@/components/pages/sourcing/Hero";
+import AboutSourcing from "@/components/pages/sourcing/AboutSourcing";
 import Services from "@/components/pages/home/Services";
 import Studio from "@/components/pages/home/Studio";
 import Projects from "@/components/pages/home/Projects";
@@ -19,6 +20,8 @@ export default function Sourcing() {
       <Header />
 
       <Hero />
+
+      <AboutSourcing />
 
       <Studio />
 
