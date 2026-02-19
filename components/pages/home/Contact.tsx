@@ -155,7 +155,7 @@ export default function Contact() {
   return (
     <section id="contact" className="contact-home-ref relative w-full">
       <div className="absolute inset-0 top-0 h-1/2 bg-[#F1EBDF]" />
-      <div className="absolute inset-0 top-1/2 h-1/2 bg-[#E8E0D6]" />
+      <div className="absolute inset-0 top-1/2 h-1/2 bg-[#F1EBDF]" />
       <div className="relative z-[2] w-full max-md:h-auto">
         <div className="px-[20px] py-[80px] max-sm:px-[12px] max-sm:py-[40px]">
           <div className="mx-auto flex max-w-[1200px] gap-[0px] rounded-[20px] bg-[#E8E0D6] max-md:flex-col">
