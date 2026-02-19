@@ -17,7 +17,7 @@ export default function ContactUs() {
       <div className="relative z-[2] mx-auto flex w-full max-w-[1440px] flex-col items-center px-[20px] pb-[40px] max-md:pb-[30px]">
       <div
         id="contact"
-        className="flex w-full items-end justify-center gap-[20px] pt-[20px] max-md:flex-col max-md:gap-[30px] max-sm:pt-[16px]"
+        className="flex w-full items-end justify-center gap-[20px] pt-[40px] max-md:flex-col max-md:gap-[30px] max-sm:pt-[20px]"
       >
         <div className="relative flex h-[63vh] w-full max-w-[417px] flex-col justify-between gap-[20px] rounded-[8px] max-md:h-[76vh] max-md:max-w-full max-sm:h-[427px]">
           <Image
