@@ -18,9 +18,9 @@ export default function Studio({ isDesktopSideBySide = false }: StudioProps) {
         />
         <div className="text-center">
           <p className={`font-calvino text-normal mx-auto pb-[18px] tracking-[0.8px] text-[#FFF] max-sm:max-w-full max-sm:pb-[28px] max-sm:text-[22px] max-sm:leading-[23px] max-sm:tracking-[0.4] ${isDesktopSideBySide ? "md:max-w-full md:text-[24px] md:leading-[30px] md:pb-[12px]" : "max-w-[500px] text-[42px] leading-[49px]"}`}>
-            <span className="max-sm:hidden">Designing Between Dubai, Miami & Beyond</span>
+            <span className="max-sm:hidden">Designing Between Miami, Dubai & Beyond</span>
 
-            <span className="hidden max-sm:inline">Designing Between Dubai, Miami & Beyond</span>
+            <span className="hidden max-sm:inline">Designing Between Miami, Dubai & Beyond</span>
           </p>
           <p className={`text-normal mx-auto pb-[54px] font-calvino text-[16px] leading-[24px] tracking-[-0.4] text-[#FFF] max-sm:max-w-full max-sm:pb-[35px] ${isDesktopSideBySide ? "md:max-w-full md:text-[13px] md:leading-[20px] md:pb-[24px]" : "max-w-[600px]"}`}>
             From the vibrant rhythm of Miami to the refined elegance of Paris and the bold energy of
