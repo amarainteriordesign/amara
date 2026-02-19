@@ -121,7 +121,7 @@ export default function ContactLanding() {
   };
 
   return (
-    <section className="relative w-full bg-[#E8E0D6]">
+    <section className="relative w-full bg-[#e8dfd2]">
       <div className="relative z-[2] w-full max-md:h-auto">
         <div className="px-[20px] py-[80px] max-sm:px-[12px] max-sm:py-[40px]">
           <div className="mx-auto flex max-w-[1200px] gap-[0px] rounded-[20px] bg-[#E8E0D6] max-md:flex-col">
