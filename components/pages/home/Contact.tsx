@@ -173,13 +173,13 @@ export default function Contact() {
               <div>
                 {OFFICES.map((office, i) => (
                   <div key={office.title} className={i > 0 ? "mt-[40px]" : ""}>
-                    <h4 className="font-sans text-[14px] leading-[20px] font-bold tracking-[2px] text-[#262626] uppercase">
+                    <h4 className="font-sans text-[14px] leading-[20px] font-normal tracking-[2px] text-[#262626] uppercase">
                       {office.title}
                     </h4>
-                    <p className="mt-[12px] font-sans text-[16px] leading-[24px] font-normal text-[#262626]">
+                    <p className="mt-[12px] font-calvino text-[16px] leading-[24px] font-normal text-[#262626]">
                       {office.phone}
                     </p>
-                    <p className="mt-[8px] font-sans text-[16px] leading-[24px] font-normal text-[#262626]">
+                    <p className="mt-[8px] font-calvino text-[16px] leading-[24px] font-normal text-[#262626]">
                       {office.email}
                     </p>
                   </div>
