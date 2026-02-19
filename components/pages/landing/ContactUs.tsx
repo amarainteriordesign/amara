@@ -12,48 +12,6 @@ export default function ContactUs() {
         id="contact"
         className="flex w-full items-end justify-center gap-[20px] pt-[20px] max-md:flex-col max-md:gap-[30px] max-sm:pt-[16px]"
       >
-        <div className="max-xmd:mr-0 mr-[55px] flex min-h-[63vh] w-full max-w-[423px] flex-col items-start justify-between max-md:min-h-fit max-md:max-w-full max-md:pb-[30px]">
-          <div className="max-xmd:items-start flex w-full flex-wrap items-end justify-between gap-[40px] pt-[51px] max-md:justify-normal max-md:gap-[60px] max-sm:w-full max-sm:gap-[20px]">
-            <div className="flex flex-col">
-              <p className="pb-[7px] font-sans text-[14px] leading-[30px] font-medium tracking-[1.8px] text-[#262626] max-md:pb-[15px]">
-                DUBAI OFFICE
-              </p>
-
-              <a
-                href="tel:+971585487150"
-                className="font-serif text-[12px] leading-[18px] font-normal tracking-[0.3px] text-[#262626]"
-              >
-                +971 58 548 7150
-              </a>
-
-              <a
-                href="mailto:info@amarainteriordesign.com"
-                className="pointer-events-auto pt-[8px] font-serif text-[12px] leading-[18px] font-normal tracking-[0.3px] text-[#262626]"
-              >
-                info@amarainteriordesign.com
-              </a>
-            </div>
-            <div className="flex flex-col">
-              <p className="pb-[7px] font-sans text-[14px] leading-[30px] font-medium tracking-[1.8px] text-[#262626] max-md:pb-[15px]">
-                MIAMI OFFICE
-              </p>
-
-              <a
-                href="tel:+13055604373"
-                className="font-serif text-[12px] leading-[18px] font-normal tracking-[0.3px] text-[#262626]"
-              >
-                +1 (305) 560 4373
-              </a>
-
-              <a
-                href="mailto:info@amarainteriordesign.com"
-                className="pointer-events-auto pt-[8px] font-serif text-[12px] leading-[18px] font-normal tracking-[0.3px] text-[#262626]"
-              >
-                info@amarainteriordesign.com
-              </a>
-            </div>
-          </div>
-        </div>
         <div className="relative flex h-[63vh] w-full max-w-[417px] flex-col justify-between gap-[20px] rounded-[8px] max-md:h-[76vh] max-md:max-w-full max-sm:h-[427px]">
           <Image
             src="/images/pages/studio/eloise.png"
