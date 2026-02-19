@@ -88,7 +88,7 @@ export default function Design() {
     <section className="design-container xmd:pb-[100px] w-full max-w-full pb-[150px] max-sm:pb-[70px]">
       <div className="top-0 mx-auto flex max-w-[1440px] flex-col items-center justify-center px-[20px] pt-[166px] max-sm:pt-[88px]">
         <div className="max-h-fit w-full overflow-hidden text-center">
-          <h3 className="design-text-anim text-bg-img translate-y-[-120%] bg-[url(/images/pages/home/text-background.webp)] !bg-top pb-[9px] font-serif text-[28px] leading-[36px] tracking-[-0.8px] italic max-sm:pb-[7px] max-sm:text-[24px] max-sm:tracking-[-0.6]">
+          <h3 className="design-text-anim text-bg-img translate-y-[-120%] bg-[url(/images/pages/home/text-background.webp)] !bg-top pb-[9px] font-calvino text-[28px] leading-[36px] tracking-[-0.8px] italic max-sm:pb-[7px] max-sm:text-[24px] max-sm:tracking-[-0.6]">
             Designing with stillness in mind
           </h3>
         </div>
@@ -100,7 +100,7 @@ export default function Design() {
         </Copy>
 
         <div className="max-h-fit overflow-hidden text-center">
-          <p className="design-text-anim text-gradient-vertical max-w-[552px] translate-y-[-120%] text-center font-serif text-[28px] leading-[37px] font-normal tracking-[-0.8px] max-sm:max-w-[320px] max-sm:text-[18px] max-sm:leading-[28px] max-sm:tracking-[-0.5]">
+          <p className="design-text-anim text-gradient-vertical max-w-[552px] translate-y-[-120%] text-center font-calvino text-[28px] leading-[37px] font-normal tracking-[-0.8px] max-sm:max-w-[320px] max-sm:text-[18px] max-sm:leading-[28px] max-sm:tracking-[-0.5]">
             “I’ve never seen design as simple decoration. For me, it’s a way of bringing calm, of
             creating space for what truly matters. Each project feels like a quiet dialogue where
             beauty, balance, and emotion come together.”

@@ -6,7 +6,7 @@ export default function Services() {
       <section className="bg-[#e8dfd2] pt-[80px] max-md:pt-[60px] max-sm:pt-[40px]">
         <div className="mx-auto max-w-[1200px] px-[60px] pb-[40px] text-center max-md:px-[40px] max-sm:px-[17px] max-sm:pb-[28px]">
           <h2
-            className="text-bg-img inline bg-[url(/images/pages/home/text-background.webp)] !bg-top pb-[9px] font-serif italic text-[32px] leading-[40px] tracking-[0.2px] max-sm:text-[22px] max-sm:leading-[28px]"
+            className="text-bg-img inline bg-[url(/images/pages/home/text-background.webp)] !bg-top pb-[9px] font-calvino italic text-[32px] leading-[40px] tracking-[0.2px] max-sm:text-[22px] max-sm:leading-[28px]"
             style={{ WebkitTextFillColor: 'transparent' }}
           >
             Boutique Design, Strategic Sourcing
@@ -20,7 +20,7 @@ export default function Services() {
               <h2 className="font-display text-normal pb-[28px] text-[38px] leading-[46px] tracking-[0.8px] text-[#FFF] max-sm:pb-[20px] max-sm:text-[24px] max-sm:leading-[30px] max-sm:tracking-[0.4px]">
                 DESIGN
               </h2>
-              <p className="text-normal max-w-[400px] font-serif text-[15px] leading-[24px] tracking-[-0.3px] text-[#FFF] max-md:max-w-full max-sm:text-[14px] max-sm:leading-[22px]">
+              <p className="text-normal max-w-[400px] font-calvino text-[15px] leading-[24px] tracking-[-0.3px] text-[#FFF] max-md:max-w-full max-sm:text-[14px] max-sm:leading-[22px]">
                 Luxury interior design services begin with a deep understanding of space, lifestyle, and context. As a global full-service interior design studio with offices in Dubai and Miami, we deliver residential, hospitality, and commercial interior design projects worldwide, guiding every stage from concept development and spatial planning to material selection and precise execution.
               </p>
             </div>
@@ -39,7 +39,7 @@ export default function Services() {
               <h2 className="font-display text-normal pb-[28px] text-[38px] leading-[46px] tracking-[0.8px] text-[#FFF] max-sm:pb-[20px] max-sm:text-[24px] max-sm:leading-[30px] max-sm:tracking-[0.4px]">
                 SOURCING
               </h2>
-              <p className="text-normal max-w-[400px] font-serif text-[15px] leading-[24px] tracking-[-0.3px] text-[#FFF] max-md:max-w-full max-sm:text-[14px] max-sm:leading-[22px]">
+              <p className="text-normal max-w-[400px] font-calvino text-[15px] leading-[24px] tracking-[-0.3px] text-[#FFF] max-md:max-w-full max-sm:text-[14px] max-sm:leading-[22px]">
                 Our international furniture sourcing and procurement services support residential, hospitality, and commercial projects worldwide. We partner with premium manufacturers and trusted suppliers, managing consolidated container shipping, global logistics, customs coordination, and on-site installation to ensure quality control, cost efficiency, and seamless project delivery across international markets.
               </p>
             </div>

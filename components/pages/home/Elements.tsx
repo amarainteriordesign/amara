@@ -159,7 +159,7 @@ export default function Elements() {
     <section className="elements-container flex w-full max-w-full flex-col items-center gap-[186px] overflow-hidden pt-[180px] pb-[285px] max-sm:gap-[88px] max-sm:pt-[88px] max-sm:pb-[125px]">
       <div className="flex w-full flex-col items-center justify-center px-[20px]">
         <div className="max-h-fit overflow-hidden text-center">
-          <h3 className="text-bg-img elements-text-anim translate-y-[120%] bg-[url(/images/pages/home/text-background.webp)] !bg-top pb-[8px] font-serif text-[28px] leading-[36px] tracking-[-0.8px] italic max-sm:text-[22px] max-sm:tracking-[-0.6]">
+          <h3 className="text-bg-img elements-text-anim translate-y-[120%] bg-[url(/images/pages/home/text-background.webp)] !bg-top pb-[8px] font-calvino text-[28px] leading-[36px] tracking-[-0.8px] italic max-sm:text-[22px] max-sm:tracking-[-0.6]">
             Mastering Balance
           </h3>
         </div>
@@ -170,7 +170,7 @@ export default function Elements() {
           </p>
         </Copy>
 
-        <p className="elements-text-anim-2 text-gradient-vertical max-w-[565px] pb-[43px] text-center font-serif text-[28px] leading-[37px] font-normal tracking-[-0.8px] opacity-0 max-sm:max-w-[311px] max-sm:pb-[27px] max-sm:text-[18px] max-sm:leading-[28px] max-sm:tracking-[-0.5]">
+        <p className="elements-text-anim-2 text-gradient-vertical max-w-[565px] pb-[43px] text-center font-calvino text-[28px] leading-[37px] font-normal tracking-[-0.8px] opacity-0 max-sm:max-w-[311px] max-sm:pb-[27px] max-sm:text-[18px] max-sm:leading-[28px] max-sm:tracking-[-0.5]">
           Each space we design begins with a quiet conversation between elements. Fire gives
           impulse, earth brings weight, spirit invites meaning, and water softens the edges. We let
           their contrasts guide us, blending instinct and intention to create spaces that breathe,
@@ -192,7 +192,7 @@ export default function Elements() {
 
           <div className="h-[32px] w-[1.5px] rounded-[1px] bg-[#262626] max-sm:h-[29px]"></div>
 
-          <p className="font-serif text-[14px] leading-[36px] font-normal tracking-[-0.4px] text-[#262626] max-sm:text-[13px] max-sm:leading-[16px]">
+          <p className="font-calvino text-[14px] leading-[36px] font-normal tracking-[-0.4px] text-[#262626] max-sm:text-[13px] max-sm:leading-[16px]">
             Listen <span className="max-sm:hidden">to an Excerpt from </span>“Our Founding Story”
           </p>
         </button>
