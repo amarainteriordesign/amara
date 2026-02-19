@@ -17,7 +17,7 @@ export default function Studio({ isDesktopSideBySide = false }: StudioProps) {
           className={`mx-auto h-auto w-full object-cover pb-[55px] max-sm:pb-[60px] ${isDesktopSideBySide ? "md:max-w-[300px] md:pb-[30px]" : "max-w-[500px]"}`}
         />
         <div className="text-center">
-          <p className={`font-display text-normal mx-auto pb-[18px] tracking-[0.8px] text-[#FFF] max-sm:max-w-full max-sm:pb-[28px] max-sm:text-[22px] max-sm:leading-[23px] max-sm:tracking-[0.4] ${isDesktopSideBySide ? "md:max-w-full md:text-[24px] md:leading-[30px] md:pb-[12px]" : "max-w-[500px] text-[42px] leading-[49px]"}`}>
+          <p className={`font-calvino text-normal mx-auto pb-[18px] tracking-[0.8px] text-[#FFF] max-sm:max-w-full max-sm:pb-[28px] max-sm:text-[22px] max-sm:leading-[23px] max-sm:tracking-[0.4] ${isDesktopSideBySide ? "md:max-w-full md:text-[24px] md:leading-[30px] md:pb-[12px]" : "max-w-[500px] text-[42px] leading-[49px]"}`}>
             <span className="max-sm:hidden">Redefining the way we design, Globally</span>
 
             <span className="hidden max-sm:inline"> Redefining Interiors, Globally</span>

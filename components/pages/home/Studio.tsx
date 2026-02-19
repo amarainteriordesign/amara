@@ -24,7 +24,7 @@ export default function Studio() {
               className="h-auto w-full"
             />
           </div>
-          <p className="font-display text-normal pb-[24px] text-[38px] leading-[46px] tracking-[0.8px] text-[#2a2a2a] max-sm:pb-[20px] max-sm:text-[24px] max-sm:leading-[30px] max-sm:tracking-[0.4px]">
+          <p className="font-calvino text-normal pb-[24px] text-[38px] leading-[46px] tracking-[0.8px] text-[#2a2a2a] max-sm:pb-[20px] max-sm:text-[24px] max-sm:leading-[30px] max-sm:tracking-[0.4px]">
             Redefining the way we design, Globally
           </p>
           <p className="text-normal font-calvino text-[15px] leading-[24px] tracking-[-0.3px] text-[#4a4a4a] max-sm:text-[14px] max-sm:leading-[22px]">
