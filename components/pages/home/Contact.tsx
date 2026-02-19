@@ -13,13 +13,13 @@ const EMAIL_REGEX = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
 const OFFICES = [
   {
-    title: "DUBAI OFFICE",
-    phone: "+971 58 548 7150",
+    title: "MIAMI OFFICE",
+    phone: "+1 (305) 560 4373",
     email: "info@amarainteriordesign.com",
   },
   {
-    title: "MIAMI OFFICE",
-    phone: "+1 (305) 560 4373",
+    title: "DUBAI OFFICE",
+    phone: "+971 58 548 7150",
     email: "info@amarainteriordesign.com",
   },
 ];
