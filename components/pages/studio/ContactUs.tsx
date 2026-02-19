@@ -88,9 +88,14 @@ export default function ContactUs() {
           />
 
           <div className="relative z-[2] flex h-full w-full justify-between py-[15px] pr-[15px] pl-[26px] max-sm:px-[22px] max-sm:pt-[10px] max-sm:pb-[18px]">
-            <p className="font-sans text-[14px] leading-[30px] font-medium tracking-[1.8px] text-[#FEFAF6]">
-              ELOISE CHAUVIERE
-            </p>
+            <div>
+              <p className="font-sans text-[14px] leading-[30px] font-medium tracking-[1.8px] text-[#FEFAF6]">
+                ELOISE CHAUVIERE
+              </p>
+              <p className="font-sans text-[11px] leading-[16px] font-normal tracking-[1px] text-[#FEFAF6CC]">
+                Managing Director
+              </p>
+            </div>
             <div className="flex items-center gap-[9px] self-end">
               <a
                 href="https://api.whatsapp.com/send?phone=13055604373"
@@ -121,9 +126,14 @@ export default function ContactUs() {
             className="absolute top-0 right-0 h-full w-full overflow-hidden rounded-[8px] object-cover"
           />
           <div className="max-sm: relative z-[2] flex h-full w-full justify-between py-[15px] pr-[15px] pl-[26px] max-sm:px-[22px] max-sm:pt-[10px] max-sm:pb-[18px]">
-            <p className="self-end font-sans text-[14px] leading-[30px] font-medium tracking-[1.8px] text-[#FEFAF6] max-md:self-start">
-              INES BAKKALI
-            </p>
+            <div className="self-end max-md:self-start">
+              <p className="font-sans text-[14px] leading-[30px] font-medium tracking-[1.8px] text-[#FEFAF6]">
+                INES BAKKALI
+              </p>
+              <p className="font-sans text-[11px] leading-[16px] font-normal tracking-[1px] text-[#FEFAF6CC]">
+                Design Director
+              </p>
+            </div>
 
             <div className="flex items-center gap-[9px] self-start max-md:self-end">
               <a
