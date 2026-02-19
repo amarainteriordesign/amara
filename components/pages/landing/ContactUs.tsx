@@ -98,9 +98,6 @@ export default function ContactUs() {
         </div>
       </div>
       </div>
-      <div className="mt-[60px] max-sm:mt-[30px]">
-        <hr className="border-t border-[#C8BFB3]" />
-      </div>
     </section>
   );
 }
