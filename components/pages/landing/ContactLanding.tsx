@@ -2,7 +2,7 @@
 import Image from "next/image";
 import { useState } from "react";
 
-const FORM_TITLE = "Let's get in Touch";
+const FORM_TITLE = "Let's get in touch";
 const SUCCESS_MESSAGE = "✓ Message sent successfully! We'll be in touch soon.";
 const EMAIL_REGEX = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
@@ -123,7 +123,7 @@ export default function ContactLanding() {
   return (
     <section className="relative w-full bg-[#e8dfd2]">
       <div className="relative z-[2] w-full max-md:h-auto">
-        <div className="px-[20px] pt-[60px] pb-[60px] max-sm:px-[12px] max-sm:pt-[30px] max-sm:pb-[30px]">
+        <div className="px-[20px] pt-[60px] pb-[60px] max-sm:px-[12px] max-sm:pt-[20px] max-sm:pb-[30px]">
           <div className="mx-auto flex max-w-[1200px] gap-[0px] rounded-[20px] bg-[#E8E0D6] max-md:flex-col">
             <div className="w-[33%] shrink-0 px-[5px] py-[10px] max-md:order-3 max-md:w-full max-md:px-[5px] max-md:py-[5px]">
               <Image
