@@ -32,7 +32,7 @@ const slides: Slide[] = [
 ];
 
 export default function ProjectsLanding() {
-  const [activeSlide, setActiveSlide] = useState(slides[1]);
+  const [activeSlide, setActiveSlide] = useState(slides[0]);
   const handleSlideChange = useCallback((slide: Slide) => {
     setActiveSlide(slide);
   }, []);
@@ -44,7 +44,7 @@ export default function ProjectsLanding() {
           Discover our Projects worldwide.{" "}
         </h3>
       </div>
-      <Carousel slides={slides} onSlideChange={handleSlideChange} />
+      <Carousel slides={slides} onSlideChange={handleSlideChange} initialSlide={0} />
       <div className="flex flex-col items-center justify-center px-[20px] pt-[23px] max-sm:pt-[25px]">
         <p className="pb-[7px] font-sans text-[12px] leading-[43px] font-medium tracking-[0.6px] text-[#262626] uppercase max-sm:pb-0 max-sm:text-[10px] max-sm:leading-[30px] max-sm:tracking-[-0.5]">
           {(activeSlide.location as string) || ""}
