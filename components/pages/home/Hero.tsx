@@ -52,11 +52,11 @@ export default function Hero() {
             />
           ))}
 
-          <div className="absolute inset-0 z-0 bg-black/45" />
+          <div className="absolute inset-0 z-0 bg-black/30" />
 
           <div className="hero-overlay absolute top-1/2 z-[1] flex max-h-fit w-full -translate-y-1/2 flex-col items-center justify-center overflow-hidden p-[20px]">
             <Copy animateOnScroll={false} delay={1.55}>
-              <p className="pb-[12px] text-center font-display text-[56px] leading-[64px] font-normal tracking-[-0.5px] uppercase text-[#FFF] max-sm:pb-[8px] max-sm:text-[40px] max-sm:leading-[48px]" style={{ textShadow: '0 4px 20px rgba(0,0,0,0.7), 0 2px 8px rgba(0,0,0,0.5)' }}>
+              <p className="pb-[12px] text-center font-calvino text-[56px] leading-[64px] font-normal tracking-[-0.5px] uppercase text-[#FFF] max-sm:pb-[8px] max-sm:text-[40px] max-sm:leading-[48px]">
                 <span className="text-white">Amara</span>{" "}
                 <span className="text-white">Interior Design Studio</span>
               </p>
