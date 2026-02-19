@@ -47,8 +47,8 @@ export default function PrinciplesSourcing() {
         steps.forEach((step, index) => {
           ScrollTrigger.create({
             trigger: ".sourcing-principle-container-anim-main",
-            start: `top top-=${index * 180}px`,
-            end: `+=180px`,
+            start: `top top-=${index * 120}px`,
+            end: `+=120px`,
             onEnter: () => {
               gsap.fromTo(
                 step,
@@ -156,23 +156,23 @@ export default function PrinciplesSourcing() {
   );
 
   return (
-    <section className="bg-background sourcing-principle-container-anim-main relative h-[calc(100vh+1100px)] min-h-[800px] w-full max-md:h-[calc(180vh)] max-md:h-fit max-md:min-h-fit">
-      <div className="max-xmd:py-[60px] mx-auto max-w-[1440px] px-[24px] py-[108px] max-md:py-[18px] max-md:py-[48px]">
-        <h3 className="max-xmd:text-[70px] max-xmd:leading-[70px] font-diranista text-center text-[100px] leading-[100px] font-normal text-[#62513A] max-md:text-[48px] max-md:leading-[48px] max-sm:text-[32px] max-sm:leading-[32px]">
+    <section className="bg-background sourcing-principle-container-anim-main relative h-[calc(100vh+550px)] min-h-[400px] w-full max-md:h-fit max-md:min-h-fit">
+      <div className="max-xmd:py-[30px] mx-auto max-w-[1440px] px-[24px] py-[54px] max-md:py-[18px] max-md:py-[24px]">
+        <h3 className="max-xmd:text-[50px] max-xmd:leading-[50px] font-diranista text-center text-[70px] leading-[70px] font-normal text-[#62513A] max-md:text-[36px] max-md:leading-[36px] max-sm:text-[24px] max-sm:leading-[24px]">
           OUR FOUNDING PRINCIPLES.
         </h3>
       </div>
 
       <div className="hidden max-w-[1440px] px-[24px] max-md:flex">
-        <p className="mx-auto mt-[65px] mb-[147px] max-w-[500px] text-center text-[14px] leading-[21px] text-[#1A1A1E66] max-sm:max-w-[302px] max-sm:text-[11px]">
+        <p className="mx-auto mt-[32px] mb-[74px] max-w-[500px] text-center text-[14px] leading-[21px] text-[#1A1A1E66] max-sm:max-w-[302px] max-sm:text-[11px]">
           We begin each design by listening, to the story, the mood, the soul. What's whispered
           between the lines becomes our guide, so the space can echo something true, something
           deeply lived.
         </p>
       </div>
 
-      <div className="absolute top-[40%] left-[112px] mr-[calc(45vw+80px)] max-w-[600px] max-md:hidden">
-        <div className="flex w-full flex-col items-start gap-[62px]">
+      <div className="absolute top-[35%] left-[112px] mr-[calc(45vw+80px)] max-w-[600px] max-md:hidden">
+        <div className="flex w-full flex-col items-start gap-[32px]">
           <div className="relative pl-[100px]">
             <p className="sourcing-principle-text-anim-step absolute top-0 left-0 text-[14px] leading-[18px] text-[#9B9792]">
               1/4
