@@ -118,7 +118,7 @@ export default function ContactSection() {
       {/* Description Section */}
       <div className="mb-[60px] flex w-full flex-col items-center justify-center px-[20px] text-center max-sm:mb-[40px]">
         <div className="max-h-fit overflow-hidden">
-          <h2 className="text-bg-img mb-[8px] bg-[url(/images/pages/home/text-background.webp)] pb-[8px] font-serif text-[28px] leading-[36px] font-normal tracking-[-0.8px] italic max-sm:text-[22px] max-sm:tracking-[-0.6px]">
+          <h2 className="text-bg-img mb-[8px] bg-[url(/images/pages/home/text-background.webp)] pb-[8px] font-calvino text-[28px] leading-[36px] font-normal tracking-[-0.8px] italic max-sm:text-[22px] max-sm:tracking-[-0.6px]">
             From Concept to Delivery
           </h2>
         </div>
@@ -127,7 +127,7 @@ export default function ContactSection() {
           WE SHAPE INTERIORS WITH PURPOSE
         </p>
 
-        <p className="text-gradient-vertical mx-auto max-w-[565px] font-serif text-[28px] leading-[37px] font-normal tracking-[-0.8px] max-sm:max-w-[311px] max-sm:text-[18px] max-sm:leading-[28px] max-sm:tracking-[-0.5px]">
+        <p className="text-gradient-vertical mx-auto max-w-[565px] font-calvino text-[28px] leading-[37px] font-normal tracking-[-0.8px] max-sm:max-w-[311px] max-sm:text-[18px] max-sm:leading-[28px] max-sm:tracking-[-0.5px]">
           Amara is a multidisciplinary interior design and procurement studio crafting refined
           spaces through concept design, detailing, sourcing, and project coordination.
         </p>
@@ -190,7 +190,7 @@ export default function ContactSection() {
 
           {/* Form */}
           <div className="flex w-[50%] flex-col justify-center px-[30px] py-[30px] max-md:w-full max-md:px-[24px] max-md:py-[24px] max-sm:px-[16px] max-sm:py-[16px]">
-            <h3 className="mb-[24px] font-serif text-[22px] leading-[28px] font-normal tracking-[-0.8px] text-[#0a0a0a] max-sm:text-[18px]">
+            <h3 className="mb-[24px] font-calvino text-[22px] leading-[28px] font-normal tracking-[-0.8px] text-[#0a0a0a] max-sm:text-[18px]">
               {FORM_TITLE}
             </h3>
 

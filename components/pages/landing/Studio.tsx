@@ -22,7 +22,7 @@ export default function Studio({ isDesktopSideBySide = false }: StudioProps) {
 
             <span className="hidden max-sm:inline"> Redefining Interiors, Globally</span>
           </p>
-          <p className={`text-normal mx-auto pb-[54px] font-serif text-[16px] leading-[24px] tracking-[-0.4] text-[#FFF] max-sm:max-w-full max-sm:pb-[35px] ${isDesktopSideBySide ? "md:max-w-full md:text-[13px] md:leading-[20px] md:pb-[24px]" : "max-w-[600px]"}`}>
+          <p className={`text-normal mx-auto pb-[54px] font-calvino text-[16px] leading-[24px] tracking-[-0.4] text-[#FFF] max-sm:max-w-full max-sm:pb-[35px] ${isDesktopSideBySide ? "md:max-w-full md:text-[13px] md:leading-[20px] md:pb-[24px]" : "max-w-[600px]"}`}>
             From the vibrant rhythm of Miami to the refined elegance of Paris and the bold energy of
             Dubai, Amara redefines interior design through a distinct voice. We are a boutique
             powerhouse blending artistic depth with technical mastery, crafting spaces that feel
