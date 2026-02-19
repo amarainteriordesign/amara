@@ -3,7 +3,7 @@ import Link from "next/link";
 export default function ServicesLanding() {
   return (
     <>
-      <section className="bg-[#e8dfd2] pt-[80px] max-md:pt-[60px] max-sm:pt-[40px]">
+      <section className="bg-[#F1EBDF] pt-[80px] max-md:pt-[60px] max-sm:pt-[40px]">
         <div className="mx-auto max-w-[1200px] px-[60px] pb-[40px] text-center max-md:px-[40px] max-sm:px-[17px] max-sm:pb-[28px]">
           <h2
             className="text-bg-img inline bg-[url(/images/pages/home/text-background.webp)] !bg-top pb-[9px] font-calvino italic text-[32px] leading-[40px] tracking-[0.2px] max-sm:text-[22px] max-sm:leading-[28px]"
@@ -13,7 +13,7 @@ export default function ServicesLanding() {
           </h2>
         </div>
       </section>
-      <div className="bg-gradient-to-b from-[#e8dfd2] from-50% to-[#f1ebdf] to-50% pb-[40px]">
+      <div className="bg-gradient-to-b from-[#F1EBDF] from-50% to-[#E8E0D6] to-50% pb-[40px]">
         <div className="mx-auto flex max-w-[1200px] gap-[20px] px-[60px] max-md:flex-col max-md:px-[40px] max-sm:px-[17px]">
           <div className="flex w-1/2 flex-col justify-between rounded-[4px] px-[50px] pt-[50px] pb-[45px] max-md:w-full max-sm:px-[28px] max-sm:pt-[36px] max-sm:pb-[32px]" style={{ backgroundColor: '#92958D' }}>
             <div>
