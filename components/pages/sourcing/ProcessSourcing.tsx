@@ -86,7 +86,7 @@ function ChevronDown({ className }: { className?: string }) {
 
 function ArrowRight() {
   return (
-    <div className="flex items-center justify-center px-[12px] text-[#9a9082] max-md:rotate-90 max-md:py-[8px]">
+    <div className="flex shrink-0 items-center justify-center px-[12px] text-[#9a9082] max-md:rotate-90 max-md:py-[8px]">
       <svg
         width="24"
         height="24"
@@ -106,27 +106,32 @@ function ArrowRight() {
   );
 }
 
-
-function PhaseCard({
-  phase,
+function PhaseColumn({
+  number,
+  title,
+  subtitle,
+  items,
 }: {
-  phase: (typeof sourcingPhases)[0];
+  number: string;
+  title: string;
+  subtitle?: string;
+  items: string[];
 }) {
   return (
-    <div className="flex-1 px-[16px] py-[24px] max-md:px-[0px]">
+    <div className="min-w-0 flex-1 py-[24px]">
       <p className="font-display text-[11px] tracking-[0.5px] text-[#9a9082]">
-        PHASE {phase.number}
+        PHASE {number}
       </p>
-      <h4 className="mt-[8px] font-display text-[16px] leading-[22px] tracking-[0.3px] text-[#262626] max-sm:text-[14px]">
-        {phase.title}
+      <h4 className="mt-[8px] font-display text-[14px] leading-[20px] tracking-[0.3px] text-[#262626] max-sm:text-[13px]">
+        {title}
       </h4>
-      {phase.subtitle && (
+      {subtitle && (
         <p className="mt-[2px] font-sans text-[12px] italic text-[#9a9082]">
-          {phase.subtitle}
+          {subtitle}
         </p>
       )}
       <ul className="mt-[16px] space-y-[8px]">
-        {phase.items.map((item, i) => (
+        {items.map((item, i) => (
           <li
             key={i}
             className="flex items-start gap-[8px] font-sans text-[13px] leading-[20px] text-[#4a4a4a] max-sm:text-[12px]"
@@ -157,12 +162,18 @@ export default function ProcessSourcing() {
           </p>
         </div>
 
-        {/* Collapsed view: narrow Design card + arrow + Phase 4 + arrow + Phase 5 */}
         <div
-          className={`flex items-stretch transition-all duration-500 max-md:flex-col max-md:items-stretch ${isExpanded ? "max-h-0 overflow-hidden opacity-0" : "max-h-[800px] opacity-100"}`}
+          className="flex items-stretch max-md:flex-col"
+          onMouseLeave={() => {
+            if (!isMobile) setIsExpanded(false);
+          }}
         >
+          {/* Design card — grows from narrow to 3/5 of the row */}
           <div
-            className="w-[200px] shrink-0 cursor-pointer rounded-[8px] border border-[#d4cdc2] bg-[#e8dfd2] max-md:w-full"
+            className="cursor-pointer overflow-hidden rounded-[8px] border border-[#d4cdc2] bg-[#e8dfd2] transition-all duration-700 ease-in-out max-md:!w-full"
+            style={{
+              flex: isExpanded ? "3 1 0%" : "0 0 180px",
+            }}
             onMouseEnter={() => {
               if (!isMobile) setIsExpanded(true);
             }}
@@ -170,7 +181,16 @@ export default function ProcessSourcing() {
               if (isMobile) setIsExpanded(!isExpanded);
             }}
           >
-            <div className="flex h-full min-h-[320px] flex-col items-center justify-center px-[20px] py-[40px] max-md:min-h-[200px] max-sm:py-[32px]">
+            {/* Collapsed label — visible when not expanded */}
+            <div
+              className="flex flex-col items-center justify-center px-[20px] py-[40px] transition-all duration-500 max-md:py-[32px]"
+              style={{
+                opacity: isExpanded ? 0 : 1,
+                maxHeight: isExpanded ? "0px" : "400px",
+                padding: isExpanded ? "0 20px" : undefined,
+                overflow: "hidden",
+              }}
+            >
               <p className="font-display text-[11px] tracking-[0.5px] text-[#9a9082]">
                 PHASES 1 – 3
               </p>
@@ -185,65 +205,68 @@ export default function ProcessSourcing() {
               </p>
               <ChevronDown className="mt-[12px] hidden text-[#9a9082] max-md:block" />
             </div>
+
+            {/* Expanded content — phases 1-3 */}
+            <div
+              className="transition-all duration-700 ease-in-out"
+              style={{
+                opacity: isExpanded ? 1 : 0,
+                maxHeight: isExpanded ? "800px" : "0px",
+                overflow: "hidden",
+              }}
+            >
+              <div className="px-[24px] py-[8px] max-sm:px-[16px]">
+                <div className="mb-[8px] flex items-center justify-between">
+                  <p className="font-display text-[11px] tracking-[0.5px] text-[#9a9082]">
+                    DESIGN PHASES
+                  </p>
+                  <button
+                    className="hidden items-center gap-[4px] font-sans text-[12px] text-[#9a9082] max-md:flex"
+                    onClick={(e) => {
+                      e.stopPropagation();
+                      setIsExpanded(false);
+                    }}
+                  >
+                    Collapse
+                    <ChevronDown className="rotate-180 text-[#9a9082]" />
+                  </button>
+                </div>
+                <div className="flex gap-[16px] max-md:flex-col max-md:gap-[20px]">
+                  {designPhases.map((phase) => (
+                    <PhaseColumn
+                      key={phase.number}
+                      number={phase.number}
+                      title={phase.title}
+                      items={phase.items}
+                    />
+                  ))}
+                </div>
+              </div>
+            </div>
           </div>
 
           <ArrowRight />
 
-          <PhaseCard phase={sourcingPhases[0]} />
+          {/* Phase 4 */}
+          <div className="min-w-0 flex-1 px-[16px] max-md:px-[0px]">
+            <PhaseColumn
+              number={sourcingPhases[0].number}
+              title={sourcingPhases[0].title}
+              subtitle={sourcingPhases[0].subtitle}
+              items={sourcingPhases[0].items}
+            />
+          </div>
 
           <ArrowRight />
 
-          <PhaseCard phase={sourcingPhases[1]} />
-        </div>
-
-        {/* Expanded view: all 5 phases equal width */}
-        <div
-          className={`transition-all duration-500 ${isExpanded ? "max-h-[1200px] opacity-100" : "max-h-0 overflow-hidden opacity-0"}`}
-          onMouseLeave={() => {
-            if (!isMobile) setIsExpanded(false);
-          }}
-        >
-          <div className="rounded-[8px] border border-[#d4cdc2] bg-[#e8dfd2] px-[24px] py-[24px] max-sm:px-[16px]">
-            <div className="mb-[16px] flex items-center justify-between">
-              <p className="font-display text-[11px] tracking-[0.5px] text-[#9a9082]">
-                ALL PHASES
-              </p>
-              <button
-                className="hidden items-center gap-[4px] font-sans text-[12px] text-[#9a9082] max-md:flex"
-                onClick={() => setIsExpanded(false)}
-              >
-                Collapse
-                <ChevronDown className="rotate-180 text-[#9a9082]" />
-              </button>
-            </div>
-            <div className="flex gap-[16px] max-md:flex-col max-md:gap-[24px]">
-              {[...designPhases, ...sourcingPhases].map((phase) => (
-                <div key={phase.number} className="flex-1">
-                  <p className="font-display text-[11px] tracking-[0.5px] text-[#9a9082]">
-                    PHASE {phase.number}
-                  </p>
-                  <h4 className="mt-[6px] font-display text-[13px] leading-[18px] tracking-[0.3px] text-[#262626] max-sm:text-[12px]">
-                    {phase.title}
-                  </h4>
-                  {"subtitle" in phase && (phase as typeof sourcingPhases[0]).subtitle && (
-                    <p className="mt-[2px] font-sans text-[11px] italic text-[#9a9082]">
-                      {(phase as typeof sourcingPhases[0]).subtitle}
-                    </p>
-                  )}
-                  <ul className="mt-[12px] space-y-[6px]">
-                    {phase.items.map((item, i) => (
-                      <li
-                        key={i}
-                        className="flex items-start gap-[6px] font-sans text-[12px] leading-[18px] text-[#4a4a4a] max-sm:text-[11px]"
-                      >
-                        <span className="mt-[6px] block h-[3px] w-[3px] shrink-0 rounded-full bg-[#9a9082]" />
-                        {item}
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-              ))}
-            </div>
+          {/* Phase 5 */}
+          <div className="min-w-0 flex-1 px-[16px] max-md:px-[0px]">
+            <PhaseColumn
+              number={sourcingPhases[1].number}
+              title={sourcingPhases[1].title}
+              subtitle={sourcingPhases[1].subtitle}
+              items={sourcingPhases[1].items}
+            />
           </div>
         </div>
       </div>
