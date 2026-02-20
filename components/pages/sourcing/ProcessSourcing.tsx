@@ -217,10 +217,7 @@ export default function ProcessSourcing() {
               }}
             >
               <div className="px-[24px] py-[8px] max-sm:px-[16px]">
-                <div className="mb-[8px] flex items-center justify-between">
-                  <p className="font-display text-[11px] tracking-[0.5px] text-[#9a9082]">
-                    DESIGN PHASES
-                  </p>
+                <div className="mb-[8px] flex items-center justify-end">
                   <button
                     className="hidden items-center gap-[4px] font-sans text-[12px] text-[#9a9082] max-md:flex"
                     onClick={(e) => {
