@@ -212,7 +212,7 @@ export default function PrinciplesSourcing() {
         </div>
       </div>
 
-      <div className="absolute top-[40%] left-[112px] mr-[calc(45vw+80px)] max-w-[600px] max-md:hidden">
+      <div className="absolute top-[calc(50vh-172px)] left-[112px] mr-[calc(45vw+80px)] max-w-[600px] max-md:hidden">
         <div className="flex w-full flex-col items-start gap-[62px]">
           <div>
             <p className="sourcing-principle-text-anim-step font-display text-[14px] leading-[18px] tracking-[2px] uppercase text-[#9B9792] mb-[10px]">
