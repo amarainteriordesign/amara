@@ -172,7 +172,7 @@ export default function ProcessSourcing() {
           <div
             className="cursor-pointer overflow-hidden rounded-[8px] border border-[#e0d8cc] bg-[#ece5d9] transition-all duration-700 ease-in-out max-md:!w-full"
             style={{
-              flex: isExpanded ? "3 1 0%" : "0 0 180px",
+              flex: isExpanded ? "3 1 0%" : "1 1 0%",
             }}
             onMouseEnter={() => {
               if (!isMobile) setIsExpanded(true);
