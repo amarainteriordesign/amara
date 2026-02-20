@@ -15,7 +15,7 @@ export default function AboutSourcing() {
             rel="noopener noreferrer"
             className="inline-block h-[39px] rounded-[35px] border-[1px] border-[#26262699] px-[16px] font-sans text-[12px] leading-[39px] font-medium tracking-[0.2px] text-[#262626] max-sm:h-[32px] max-sm:px-[14px] max-sm:text-[11px] max-sm:leading-[32px]"
           >
-            WORK WITH US
+            CONTACT US
           </a>
         </div>
       </div>
