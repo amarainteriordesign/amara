@@ -252,18 +252,18 @@ export default function PrinciplesSourcing() {
             </div>
           </div>
 
-          <div className="relative flex h-full w-[45vw] items-center justify-center overflow-hidden max-md:w-full">
-            <div className="overlow-hidden absolute">
+          <div className="relative flex w-[45vw] items-center justify-center max-md:w-full">
+            <div className="absolute inset-0 overflow-hidden">
               <Image
                 src="/images/pages/philosophy/principles-bg.png"
                 width={1000}
                 height={2000}
                 alt="Principles"
-                className="sourcing-principle-image-box-anim-bg h-[120%] w-full scale-[1.4] object-cover blur-[30px]"
+                className="sourcing-principle-image-box-anim-bg h-full w-full scale-[1.4] object-cover blur-[30px]"
               />
             </div>
 
-            <div className="relative z-[1] h-[345px] max-h-full w-[321px] max-w-full overflow-hidden max-sm:h-[165px] max-sm:w-[165px]">
+            <div className="relative z-[1] h-[345px] w-[321px] max-w-full overflow-hidden my-[40px] max-sm:h-[165px] max-sm:w-[165px]">
               <div className="absolute h-full w-full overflow-hidden">
                 <Image
                   src="/images/pages/philosophy/principles.jpg"
