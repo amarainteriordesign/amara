@@ -194,7 +194,7 @@ export default function ProcessSourcing() {
               <p className="font-display text-[11px] tracking-[0.5px] text-[#9a9082]">
                 PHASES 1 – 3
               </p>
-              <h3 className="mt-[12px] font-display text-[28px] tracking-[0.5px] text-[#262626] max-sm:text-[22px]">
+              <h3 className="mt-[12px] font-display text-[16px] leading-[22px] tracking-[0.3px] text-[#262626] max-sm:text-[14px]">
                 DESIGN
               </h3>
               <p className="mt-[8px] font-sans text-[13px] text-[#9a9082] max-md:hidden">
@@ -245,30 +245,28 @@ export default function ProcessSourcing() {
             </div>
           </div>
 
+          <ArrowRight />
+
           {/* Phase 4 */}
-          <div className="flex min-w-0 flex-1 items-stretch max-md:flex-col">
-            <ArrowRight />
-            <div className="flex-1 px-[8px] max-md:px-[0px]">
-              <PhaseColumn
-                number={sourcingPhases[0].number}
-                title={sourcingPhases[0].title}
-                subtitle={sourcingPhases[0].subtitle}
-                items={sourcingPhases[0].items}
-              />
-            </div>
+          <div className="min-w-0 flex-1 px-[16px] max-md:px-[0px]">
+            <PhaseColumn
+              number={sourcingPhases[0].number}
+              title={sourcingPhases[0].title}
+              subtitle={sourcingPhases[0].subtitle}
+              items={sourcingPhases[0].items}
+            />
           </div>
 
+          <ArrowRight />
+
           {/* Phase 5 */}
-          <div className="flex min-w-0 flex-1 items-stretch max-md:flex-col">
-            <ArrowRight />
-            <div className="flex-1 px-[8px] max-md:px-[0px]">
-              <PhaseColumn
-                number={sourcingPhases[1].number}
-                title={sourcingPhases[1].title}
-                subtitle={sourcingPhases[1].subtitle}
-                items={sourcingPhases[1].items}
-              />
-            </div>
+          <div className="min-w-0 flex-1 px-[16px] max-md:px-[0px]">
+            <PhaseColumn
+              number={sourcingPhases[1].number}
+              title={sourcingPhases[1].title}
+              subtitle={sourcingPhases[1].subtitle}
+              items={sourcingPhases[1].items}
+            />
           </div>
         </div>
       </div>
