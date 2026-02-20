@@ -170,7 +170,7 @@ export default function ProcessSourcing() {
         >
           {/* Design card — grows from narrow to 3/5 of the row */}
           <div
-            className="cursor-pointer overflow-hidden rounded-[8px] border border-[#e0d8cc] bg-[#ece5d9] transition-all duration-700 ease-in-out max-md:!w-full"
+            className="cursor-pointer overflow-hidden rounded-[8px] border border-[#262626] bg-transparent transition-all duration-700 ease-in-out max-md:!w-full"
             style={{
               flex: isExpanded ? "3 1 0%" : "0 0 auto",
               width: isExpanded ? undefined : "15%",
