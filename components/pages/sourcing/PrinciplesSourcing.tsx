@@ -213,10 +213,10 @@ export default function PrinciplesSourcing() {
         <div className="relative flex h-full max-h-full w-full max-w-full items-center justify-center overflow-hidden">
           <div className="overlow-hidden absolute">
             <Image
-              src="/images/pages/sourcing/container-ladies.png"
+              src="/images/pages/sourcing/water-bg.jpg"
               width={1000}
               height={2000}
-              alt="Amara team at shipping container"
+              alt="Water background"
               className="sourcing-principle-image-box-anim-bg h-[120%] w-full scale-[1.4] object-cover blur-[30px]"
             />
           </div>
