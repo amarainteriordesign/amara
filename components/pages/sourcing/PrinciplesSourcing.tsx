@@ -252,8 +252,8 @@ export default function PrinciplesSourcing() {
         </div>
       </div>
 
-      <div className="sourcing-principle-container-anim sticky top-0 ml-auto h-screen w-[45vw] max-md:relative max-md:h-[100vw] max-md:w-full">
-        <div className="relative flex h-full max-h-full w-full max-w-full items-center justify-center overflow-hidden">
+      <div className="sourcing-principle-container-anim absolute top-0 right-0 h-full w-[45vw] max-md:relative max-md:h-[100vw] max-md:w-full max-md:static">
+        <div className="sticky top-0 flex h-screen w-full items-center justify-center overflow-hidden">
           <div className="overlow-hidden absolute">
             <Image
               src="/images/pages/philosophy/principles-bg.png"
