@@ -157,92 +157,94 @@ export default function ProcessSourcing() {
           </p>
         </div>
 
-        <div className="flex items-stretch gap-[0px] max-md:flex-col max-md:items-stretch">
-          {/* Design Card - collapsible */}
+        {/* Collapsed view: narrow Design card + arrow + Phase 4 + arrow + Phase 5 */}
+        <div
+          className={`flex items-stretch transition-all duration-500 max-md:flex-col max-md:items-stretch ${isExpanded ? "max-h-0 overflow-hidden opacity-0" : "max-h-[800px] opacity-100"}`}
+        >
           <div
-            className="group relative flex-1 cursor-pointer"
+            className="w-[200px] shrink-0 cursor-pointer rounded-[8px] border border-[#d4cdc2] bg-[#e8dfd2] max-md:w-full"
             onMouseEnter={() => {
               if (!isMobile) setIsExpanded(true);
-            }}
-            onMouseLeave={() => {
-              if (!isMobile) setIsExpanded(false);
             }}
             onClick={() => {
               if (isMobile) setIsExpanded(!isExpanded);
             }}
           >
-            {/* Collapsed state */}
-            <div
-              className={`relative overflow-hidden rounded-[8px] border border-[#d4cdc2] bg-[#e8dfd2] transition-all duration-500 ease-in-out ${
-                isExpanded ? "max-h-0 opacity-0 p-0 border-0" : "max-h-[500px] opacity-100"
-              }`}
-            >
-              <div className="flex h-full min-h-[320px] flex-col items-center justify-center px-[32px] py-[40px] max-sm:min-h-[240px] max-sm:py-[32px]">
-                <p className="font-display text-[11px] tracking-[0.5px] text-[#9a9082]">
-                  PHASES 1 – 3
-                </p>
-                <h3 className="mt-[12px] font-display text-[28px] tracking-[0.5px] text-[#262626] max-sm:text-[22px]">
-                  DESIGN
-                </h3>
-                <p className="mt-[8px] font-sans text-[13px] text-[#9a9082] max-md:hidden">
-                  Hover to explore
-                </p>
-                <p className="mt-[8px] hidden font-sans text-[13px] text-[#9a9082] max-md:block">
-                  Tap to explore
-                </p>
-                <ChevronDown className="mt-[12px] hidden text-[#9a9082] transition-transform max-md:block" />
-              </div>
-            </div>
-
-            {/* Expanded state */}
-            <div
-              className={`overflow-hidden rounded-[8px] border border-[#d4cdc2] bg-[#e8dfd2] transition-all duration-500 ease-in-out ${
-                isExpanded ? "max-h-[1200px] opacity-100" : "max-h-0 opacity-0 p-0 border-0"
-              }`}
-            >
-              <div className="px-[24px] py-[24px] max-sm:px-[16px]">
-                <div className="mb-[16px] flex items-center justify-between">
-                  <p className="font-display text-[11px] tracking-[0.5px] text-[#9a9082]">
-                    DESIGN PHASES
-                  </p>
-                  <ChevronDown className="rotate-180 text-[#9a9082] md:hidden" />
-                </div>
-                <div className="flex gap-[16px] max-md:flex-col max-md:gap-[24px]">
-                  {designPhases.map((phase) => (
-                    <div key={phase.number} className="flex-1">
-                      <p className="font-display text-[11px] tracking-[0.5px] text-[#9a9082]">
-                        PHASE {phase.number}
-                      </p>
-                      <h4 className="mt-[6px] font-display text-[13px] leading-[18px] tracking-[0.3px] text-[#262626] max-sm:text-[12px]">
-                        {phase.title}
-                      </h4>
-                      <ul className="mt-[12px] space-y-[6px]">
-                        {phase.items.map((item, i) => (
-                          <li
-                            key={i}
-                            className="flex items-start gap-[6px] font-sans text-[12px] leading-[18px] text-[#4a4a4a] max-sm:text-[11px]"
-                          >
-                            <span className="mt-[6px] block h-[3px] w-[3px] shrink-0 rounded-full bg-[#9a9082]" />
-                            {item}
-                          </li>
-                        ))}
-                      </ul>
-                    </div>
-                  ))}
-                </div>
-              </div>
+            <div className="flex h-full min-h-[320px] flex-col items-center justify-center px-[20px] py-[40px] max-md:min-h-[200px] max-sm:py-[32px]">
+              <p className="font-display text-[11px] tracking-[0.5px] text-[#9a9082]">
+                PHASES 1 – 3
+              </p>
+              <h3 className="mt-[12px] font-display text-[28px] tracking-[0.5px] text-[#262626] max-sm:text-[22px]">
+                DESIGN
+              </h3>
+              <p className="mt-[8px] font-sans text-[13px] text-[#9a9082] max-md:hidden">
+                Hover to explore
+              </p>
+              <p className="mt-[8px] hidden font-sans text-[13px] text-[#9a9082] max-md:block">
+                Tap to explore
+              </p>
+              <ChevronDown className="mt-[12px] hidden text-[#9a9082] max-md:block" />
             </div>
           </div>
 
           <ArrowRight />
 
-          {/* Step 4 */}
           <PhaseCard phase={sourcingPhases[0]} />
 
           <ArrowRight />
 
-          {/* Step 5 */}
           <PhaseCard phase={sourcingPhases[1]} />
+        </div>
+
+        {/* Expanded view: all 5 phases equal width */}
+        <div
+          className={`transition-all duration-500 ${isExpanded ? "max-h-[1200px] opacity-100" : "max-h-0 overflow-hidden opacity-0"}`}
+          onMouseLeave={() => {
+            if (!isMobile) setIsExpanded(false);
+          }}
+        >
+          <div className="rounded-[8px] border border-[#d4cdc2] bg-[#e8dfd2] px-[24px] py-[24px] max-sm:px-[16px]">
+            <div className="mb-[16px] flex items-center justify-between">
+              <p className="font-display text-[11px] tracking-[0.5px] text-[#9a9082]">
+                ALL PHASES
+              </p>
+              <button
+                className="hidden items-center gap-[4px] font-sans text-[12px] text-[#9a9082] max-md:flex"
+                onClick={() => setIsExpanded(false)}
+              >
+                Collapse
+                <ChevronDown className="rotate-180 text-[#9a9082]" />
+              </button>
+            </div>
+            <div className="flex gap-[16px] max-md:flex-col max-md:gap-[24px]">
+              {[...designPhases, ...sourcingPhases].map((phase) => (
+                <div key={phase.number} className="flex-1">
+                  <p className="font-display text-[11px] tracking-[0.5px] text-[#9a9082]">
+                    PHASE {phase.number}
+                  </p>
+                  <h4 className="mt-[6px] font-display text-[13px] leading-[18px] tracking-[0.3px] text-[#262626] max-sm:text-[12px]">
+                    {phase.title}
+                  </h4>
+                  {"subtitle" in phase && (phase as typeof sourcingPhases[0]).subtitle && (
+                    <p className="mt-[2px] font-sans text-[11px] italic text-[#9a9082]">
+                      {(phase as typeof sourcingPhases[0]).subtitle}
+                    </p>
+                  )}
+                  <ul className="mt-[12px] space-y-[6px]">
+                    {phase.items.map((item, i) => (
+                      <li
+                        key={i}
+                        className="flex items-start gap-[6px] font-sans text-[12px] leading-[18px] text-[#4a4a4a] max-sm:text-[11px]"
+                      >
+                        <span className="mt-[6px] block h-[3px] w-[3px] shrink-0 rounded-full bg-[#9a9082]" />
+                        {item}
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              ))}
+            </div>
+          </div>
         </div>
       </div>
     </section>
