@@ -172,7 +172,8 @@ export default function ProcessSourcing() {
           <div
             className="cursor-pointer overflow-hidden rounded-[8px] border border-[#e0d8cc] bg-[#ece5d9] transition-all duration-700 ease-in-out max-md:!w-full"
             style={{
-              flex: isExpanded ? "3 1 0%" : "1 1 0%",
+              flex: isExpanded ? "3 1 0%" : "0 0 auto",
+              width: isExpanded ? undefined : "18%",
             }}
             onMouseEnter={() => {
               if (!isMobile) setIsExpanded(true);
@@ -194,7 +195,7 @@ export default function ProcessSourcing() {
               <p className="font-display text-[11px] tracking-[0.5px] text-[#9a9082]">
                 PHASES 1 – 3
               </p>
-              <h3 className="mt-[12px] font-display text-[14px] leading-[20px] tracking-[0.3px] text-[#262626] max-sm:text-[13px]">
+              <h3 className="mt-[8px] font-display text-[14px] leading-[20px] tracking-[0.3px] text-[#262626] max-sm:text-[13px]">
                 DESIGN
               </h3>
               <p className="mt-[8px] font-sans text-[13px] text-[#9a9082] max-md:hidden">
