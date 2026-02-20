@@ -212,67 +212,67 @@ export default function PrinciplesSourcing() {
         </div>
       </div>
 
-      <div className="absolute top-[calc(50vh-172px)] left-[112px] mr-[calc(45vw+80px)] max-w-[600px] max-md:hidden">
-        <div className="flex w-full flex-col items-start gap-[62px]">
-          <div>
-            <p className="sourcing-principle-text-anim-step font-display text-[14px] leading-[18px] tracking-[2px] uppercase text-[#9B9792] mb-[10px]">
-              Cost Efficiency
-            </p>
-            <p className="sourcing-principle-text-anim-step-text w-full font-sans text-[16px] leading-[21px] text-[#1A1A1E66]">
-              Save up to 30% compared to traditional sourcing. We work directly with our UAE partner factory — no middlemen, no markups, just quality at better prices.
-            </p>
+      <div className="sourcing-principle-container-anim sticky top-0 h-screen w-full max-md:relative max-md:h-[100vw]">
+        <div className="flex h-full w-full items-center max-md:justify-center">
+          <div className="flex w-[55vw] flex-col items-start gap-[48px] pl-[112px] pr-[80px] max-md:hidden">
+            <div>
+              <p className="sourcing-principle-text-anim-step font-display text-[14px] leading-[18px] tracking-[2px] uppercase text-[#9B9792] mb-[10px]">
+                Cost Efficiency
+              </p>
+              <p className="sourcing-principle-text-anim-step-text w-full font-sans text-[16px] leading-[21px] text-[#1A1A1E66]">
+                Save up to 30% compared to traditional sourcing. We work directly with our UAE partner factory — no middlemen, no markups, just quality at better prices.
+              </p>
+            </div>
+
+            <div>
+              <p className="sourcing-principle-text-anim-step font-display text-[14px] leading-[18px] tracking-[2px] uppercase text-[#9B9792] mb-[10px]">
+                Top-Tier Quality
+              </p>
+              <p className="sourcing-principle-text-anim-step-text w-full font-sans text-[16px] leading-[21px] text-[#1A1A1E66]">
+                Premium materials, direct from source. We use only top-quality materials from trusted global suppliers — no shortcuts, just standout results.
+              </p>
+            </div>
+
+            <div>
+              <p className="sourcing-principle-text-anim-step font-display text-[14px] leading-[18px] tracking-[2px] uppercase text-[#9B9792] mb-[10px]">
+                Fast Delivery & Execution
+              </p>
+              <p className="sourcing-principle-text-anim-step-text w-full font-sans text-[16px] leading-[21px] text-[#1A1A1E66]">
+                Up to 40% faster than standard timelines. Our streamlined local production delivers high-end materials quickly — keeping your project on schedule.
+              </p>
+            </div>
+
+            <div>
+              <p className="sourcing-principle-text-anim-step font-display text-[14px] leading-[18px] tracking-[2px] uppercase text-[#9B9792] mb-[10px]">
+                Global Reach & Logistics
+              </p>
+              <p className="sourcing-principle-text-anim-step-text w-full font-sans text-[16px] leading-[21px] text-[#1A1A1E66]">
+                Skip the local shelf, go worldwide. Wherever your project is, we handle fast, reliable sourcing and export through our global network.
+              </p>
+            </div>
           </div>
 
-          <div>
-            <p className="sourcing-principle-text-anim-step font-display text-[14px] leading-[18px] tracking-[2px] uppercase text-[#9B9792] mb-[10px]">
-              Top-Tier Quality
-            </p>
-            <p className="sourcing-principle-text-anim-step-text w-full font-sans text-[16px] leading-[21px] text-[#1A1A1E66]">
-              Premium materials, direct from source. We use only top-quality materials from trusted global suppliers — no shortcuts, just standout results.
-            </p>
-          </div>
-
-          <div>
-            <p className="sourcing-principle-text-anim-step font-display text-[14px] leading-[18px] tracking-[2px] uppercase text-[#9B9792] mb-[10px]">
-              Fast Delivery & Execution
-            </p>
-            <p className="sourcing-principle-text-anim-step-text w-full font-sans text-[16px] leading-[21px] text-[#1A1A1E66]">
-              Up to 40% faster than standard timelines. Our streamlined local production delivers high-end materials quickly — keeping your project on schedule.
-            </p>
-          </div>
-
-          <div>
-            <p className="sourcing-principle-text-anim-step font-display text-[14px] leading-[18px] tracking-[2px] uppercase text-[#9B9792] mb-[10px]">
-              Global Reach & Logistics
-            </p>
-            <p className="sourcing-principle-text-anim-step-text w-full font-sans text-[16px] leading-[21px] text-[#1A1A1E66]">
-              Skip the local shelf, go worldwide. Wherever your project is, we handle fast, reliable sourcing and export through our global network.
-            </p>
-          </div>
-        </div>
-      </div>
-
-      <div className="sourcing-principle-container-anim absolute top-[320px] right-0 bottom-0 w-[45vw] max-md:relative max-md:top-0 max-md:h-[100vw] max-md:w-full max-md:static">
-        <div className="sticky top-0 flex h-screen w-full items-center justify-center overflow-hidden">
-          <div className="overlow-hidden absolute">
-            <Image
-              src="/images/pages/philosophy/principles-bg.png"
-              width={1000}
-              height={2000}
-              alt="Principles"
-              className="sourcing-principle-image-box-anim-bg h-[120%] w-full scale-[1.4] object-cover blur-[30px]"
-            />
-          </div>
-
-          <div className="relative z-[1] h-[345px] max-h-full w-[321px] max-w-full overflow-hidden max-sm:h-[165px] max-sm:w-[165px]">
-            <div className="absolute h-full w-full overflow-hidden">
+          <div className="relative flex h-full w-[45vw] items-center justify-center overflow-hidden max-md:w-full">
+            <div className="overlow-hidden absolute">
               <Image
-                src="/images/pages/philosophy/principles.jpg"
-                width={500}
-                height={1000}
+                src="/images/pages/philosophy/principles-bg.png"
+                width={1000}
+                height={2000}
                 alt="Principles"
-                className="sourcing-principle-image-box-anim h-[120%] w-full object-cover"
+                className="sourcing-principle-image-box-anim-bg h-[120%] w-full scale-[1.4] object-cover blur-[30px]"
               />
+            </div>
+
+            <div className="relative z-[1] h-[345px] max-h-full w-[321px] max-w-full overflow-hidden max-sm:h-[165px] max-sm:w-[165px]">
+              <div className="absolute h-full w-full overflow-hidden">
+                <Image
+                  src="/images/pages/philosophy/principles.jpg"
+                  width={500}
+                  height={1000}
+                  alt="Principles"
+                  className="sourcing-principle-image-box-anim h-[120%] w-full object-cover"
+                />
+              </div>
             </div>
           </div>
         </div>
