@@ -119,14 +119,14 @@ function PhaseColumn({
 }) {
   return (
     <div className="min-w-0 flex-1 py-[24px]">
-      <p className="font-display text-[11px] tracking-[0.5px] text-[#9a9082]">
+      <p className="font-display text-[11px] tracking-[0.5px] text-[#262626]">
         PHASE {number}
       </p>
       <h4 className="mt-[8px] font-display text-[14px] leading-[20px] tracking-[0.3px] text-[#262626] max-sm:text-[13px]">
         {title}
       </h4>
       {subtitle && (
-        <p className="mt-[2px] font-sans text-[12px] italic text-[#9a9082]">
+        <p className="mt-[2px] font-sans text-[12px] italic text-[#262626]">
           {subtitle}
         </p>
       )}
@@ -134,9 +134,9 @@ function PhaseColumn({
         {items.map((item, i) => (
           <li
             key={i}
-            className="flex items-start gap-[8px] font-sans text-[13px] leading-[20px] text-[#4a4a4a] max-sm:text-[12px]"
+            className="flex items-start gap-[8px] font-sans text-[13px] leading-[20px] text-[#262626] max-sm:text-[12px]"
           >
-            <span className="mt-[7px] block h-[4px] w-[4px] shrink-0 rounded-full bg-[#9a9082]" />
+            <span className="mt-[7px] block h-[4px] w-[4px] shrink-0 rounded-full bg-[#262626]" />
             {item}
           </li>
         ))}
@@ -184,7 +184,7 @@ export default function ProcessSourcing() {
           >
             {/* Collapsed label — visible when not expanded */}
             <div
-              className="flex flex-col items-center justify-center px-[20px] py-[40px] transition-all duration-500 max-md:py-[32px]"
+              className="flex flex-col px-[20px] py-[24px] transition-all duration-500"
               style={{
                 opacity: isExpanded ? 0 : 1,
                 maxHeight: isExpanded ? "0px" : "400px",
@@ -192,19 +192,19 @@ export default function ProcessSourcing() {
                 overflow: "hidden",
               }}
             >
-              <p className="font-display text-[11px] tracking-[0.5px] text-[#9a9082]">
+              <p className="font-display text-[11px] tracking-[0.5px] text-[#262626]">
                 PHASES 1 – 3
               </p>
               <h3 className="mt-[8px] font-display text-[14px] leading-[20px] tracking-[0.3px] text-[#262626] max-sm:text-[13px]">
                 DESIGN
               </h3>
-              <p className="mt-[8px] font-sans text-[13px] text-[#9a9082] max-md:hidden">
+              <p className="mt-[8px] font-sans text-[13px] text-[#262626] max-md:hidden">
                 Hover to explore
               </p>
-              <p className="mt-[8px] hidden font-sans text-[13px] text-[#9a9082] max-md:block">
+              <p className="mt-[8px] hidden font-sans text-[13px] text-[#262626] max-md:block">
                 Tap to explore
               </p>
-              <ChevronDown className="mt-[12px] hidden text-[#9a9082] max-md:block" />
+              <ChevronDown className="mt-[12px] hidden text-[#262626] max-md:block" />
             </div>
 
             {/* Expanded content — phases 1-3 */}
