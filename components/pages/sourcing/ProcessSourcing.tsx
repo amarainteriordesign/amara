@@ -40,7 +40,6 @@ const sourcingPhases = [
   {
     number: "4",
     title: "PROCUREMENT & LOGISTICS",
-    subtitle: "(Optional)",
     items: [
       "Full FF&E schedule",
       "Lighting & OS&E sourcing",
@@ -52,7 +51,6 @@ const sourcingPhases = [
   {
     number: "5",
     title: "SITE & INSTALLATION SUPERVISION",
-    subtitle: "(Optional)",
     items: [
       "Site visits",
       "Contractor coordination",
@@ -198,13 +196,12 @@ export default function ProcessSourcing() {
               <h3 className="mt-[8px] font-display text-[18px] leading-[24px] tracking-[0.3px] text-[#262626] max-sm:text-[15px] max-sm:leading-[20px]">
                 DESIGN
               </h3>
-              <p className="mt-[8px] font-sans text-[16px] text-[#262626] max-md:hidden max-sm:text-[14px]">
-                Hover to explore
+              <p className="mt-[12px] font-sans text-[13px] italic text-[#262626] opacity-50 max-md:hidden">
+                Hover to explore →
               </p>
-              <p className="mt-[8px] hidden font-sans text-[16px] text-[#262626] max-md:block max-sm:text-[14px]">
-                Tap to explore
+              <p className="mt-[12px] hidden font-sans text-[13px] italic text-[#262626] opacity-50 max-md:block">
+                Tap to explore →
               </p>
-              <ChevronDown className="mt-[12px] hidden text-[#262626] max-md:block" />
             </div>
 
             {/* Expanded content — phases 1-3 */}
