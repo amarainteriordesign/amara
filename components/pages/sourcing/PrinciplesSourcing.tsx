@@ -172,7 +172,7 @@ export default function PrinciplesSourcing() {
       <div className="absolute top-[40%] left-[112px] mr-[calc(45vw+80px)] max-w-[600px] max-md:hidden">
         <div className="flex w-full flex-col items-start gap-[62px]">
           <div>
-            <p className="sourcing-principle-text-anim-step font-display text-[14px] leading-[18px] tracking-[2px] uppercase text-[#9B9792] mb-[24px]">
+            <p className="sourcing-principle-text-anim-step font-display text-[14px] leading-[18px] tracking-[2px] uppercase text-[#9B9792] mb-[20px]">
               Cost Efficiency
             </p>
             <p className="sourcing-principle-text-anim-step-text w-full font-sans text-[16px] leading-[21px] text-[#1A1A1E66]">
@@ -181,7 +181,7 @@ export default function PrinciplesSourcing() {
           </div>
 
           <div>
-            <p className="sourcing-principle-text-anim-step font-display text-[14px] leading-[18px] tracking-[2px] uppercase text-[#9B9792] mb-[24px]">
+            <p className="sourcing-principle-text-anim-step font-display text-[14px] leading-[18px] tracking-[2px] uppercase text-[#9B9792] mb-[20px]">
               Top-Tier Quality
             </p>
             <p className="sourcing-principle-text-anim-step-text w-full font-sans text-[16px] leading-[21px] text-[#1A1A1E66]">
@@ -190,7 +190,7 @@ export default function PrinciplesSourcing() {
           </div>
 
           <div>
-            <p className="sourcing-principle-text-anim-step font-display text-[14px] leading-[18px] tracking-[2px] uppercase text-[#9B9792] mb-[24px]">
+            <p className="sourcing-principle-text-anim-step font-display text-[14px] leading-[18px] tracking-[2px] uppercase text-[#9B9792] mb-[20px]">
               Fast Delivery & Execution
             </p>
             <p className="sourcing-principle-text-anim-step-text w-full font-sans text-[16px] leading-[21px] text-[#1A1A1E66]">
@@ -199,7 +199,7 @@ export default function PrinciplesSourcing() {
           </div>
 
           <div>
-            <p className="sourcing-principle-text-anim-step font-display text-[14px] leading-[18px] tracking-[2px] uppercase text-[#9B9792] mb-[24px]">
+            <p className="sourcing-principle-text-anim-step font-display text-[14px] leading-[18px] tracking-[2px] uppercase text-[#9B9792] mb-[20px]">
               Global Reach & Logistics
             </p>
             <p className="sourcing-principle-text-anim-step-text w-full font-sans text-[16px] leading-[21px] text-[#1A1A1E66]">
