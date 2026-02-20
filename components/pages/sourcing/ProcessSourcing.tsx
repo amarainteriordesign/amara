@@ -216,19 +216,17 @@ export default function ProcessSourcing() {
                 overflow: "hidden",
               }}
             >
-              <div className="px-[24px] py-[8px] max-sm:px-[16px]">
-                <div className="mb-[8px] flex items-center justify-end">
-                  <button
-                    className="hidden items-center gap-[4px] font-sans text-[12px] text-[#9a9082] max-md:flex"
-                    onClick={(e) => {
-                      e.stopPropagation();
-                      setIsExpanded(false);
-                    }}
-                  >
-                    Collapse
-                    <ChevronDown className="rotate-180 text-[#9a9082]" />
-                  </button>
-                </div>
+              <div className="relative px-[24px] max-sm:px-[16px]">
+                <button
+                  className="absolute right-[24px] top-[24px] hidden items-center gap-[4px] font-sans text-[12px] text-[#9a9082] max-md:flex max-sm:right-[16px]"
+                  onClick={(e) => {
+                    e.stopPropagation();
+                    setIsExpanded(false);
+                  }}
+                >
+                  Collapse
+                  <ChevronDown className="rotate-180 text-[#9a9082]" />
+                </button>
                 <div className="flex gap-[16px] max-md:flex-col max-md:gap-[20px]">
                   {designPhases.map((phase) => (
                     <PhaseColumn
