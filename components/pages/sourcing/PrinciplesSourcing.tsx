@@ -163,12 +163,38 @@ export default function PrinciplesSourcing() {
         </h3>
       </div>
 
-      <div className="hidden max-w-[1440px] px-[24px] max-md:flex">
-        <p className="mx-auto mt-[65px] mb-[147px] max-w-[500px] text-center text-[14px] leading-[21px] text-[#1A1A1E66] max-sm:max-w-[302px] max-sm:text-[11px]">
-          We begin each design by listening, to the story, the mood, the soul. What's whispered
-          between the lines becomes our guide, so the space can echo something true, something
-          deeply lived.
-        </p>
+      <div className="hidden max-w-[1440px] px-[24px] max-md:block">
+        <div className="mx-auto mt-[40px] mb-[40px] flex max-w-[500px] flex-col gap-[32px] max-sm:max-w-full max-sm:px-[16px]">
+          <div className="relative pl-[60px]">
+            <p className="absolute top-0 left-0 text-[13px] leading-[18px] text-[#9B9792]">1/4</p>
+            <p className="font-serif text-[14px] leading-[21px] text-[#1A1A1E99] max-sm:text-[13px] max-sm:leading-[19px]">
+              We begin each design by listening, to the story, the mood, the soul. What's whispered
+              between the lines becomes our guide, so the space can echo something true, something
+              deeply lived.
+            </p>
+          </div>
+          <div className="relative pl-[60px]">
+            <p className="absolute top-0 left-0 text-[13px] leading-[18px] text-[#9B9792]">2/4</p>
+            <p className="font-serif text-[14px] leading-[21px] text-[#1A1A1E99] max-sm:text-[13px] max-sm:leading-[19px]">
+              Blending tension and calm, raw and refined, we shape spaces where opposites don't
+              compete, but complete each other. Balance isn't a goal, it's a quiet rhythm.
+            </p>
+          </div>
+          <div className="relative pl-[60px]">
+            <p className="absolute top-0 left-0 text-[13px] leading-[18px] text-[#9B9792]">3/4</p>
+            <p className="font-serif text-[14px] leading-[21px] text-[#1A1A1E99] max-sm:text-[13px] max-sm:leading-[19px]">
+              Shaping each project step by step, we follow a rhythm of precision and flow, where
+              every draft, choice, and adjustment brings us closer to clarity.
+            </p>
+          </div>
+          <div className="relative pl-[60px]">
+            <p className="absolute top-0 left-0 text-[13px] leading-[18px] text-[#9B9792]">4/4</p>
+            <p className="font-serif text-[14px] leading-[21px] text-[#1A1A1E99] max-sm:text-[13px] max-sm:leading-[19px]">
+              Honoring the idea means guiding it through every phase, from sketch to site, with
+              care, precision, and presence at every step.
+            </p>
+          </div>
+        </div>
       </div>
 
       <div className="absolute top-[40%] left-[112px] mr-[calc(45vw+80px)] max-w-[600px] max-md:hidden">
