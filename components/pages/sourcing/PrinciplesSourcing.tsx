@@ -185,33 +185,28 @@ export default function PrinciplesSourcing() {
 
       <div className="hidden max-w-[1440px] px-[24px] max-md:block">
         <div className="mx-auto mt-[40px] mb-[40px] flex max-w-[500px] flex-col gap-[32px] max-sm:max-w-full max-sm:px-[16px]">
-          <div className="sourcing-mobile-principle-step relative pl-[60px] opacity-0">
-            <p className="absolute top-0 left-0 text-[13px] leading-[18px] text-[#9B9792]">1/4</p>
+          <div className="sourcing-mobile-principle-step opacity-0">
+            <p className="font-sans text-[13px] leading-[18px] font-medium tracking-[2px] uppercase text-[#62513A] mb-[8px]">Cost Efficiency</p>
             <p className="font-serif text-[14px] leading-[21px] text-[#1A1A1E99] max-sm:text-[13px] max-sm:leading-[19px]">
-              We begin each design by listening, to the story, the mood, the soul. What's whispered
-              between the lines becomes our guide, so the space can echo something true, something
-              deeply lived.
+              Save up to 30% compared to traditional sourcing. We work directly with our UAE partner factory — no middlemen, no markups, just quality at better prices.
             </p>
           </div>
-          <div className="sourcing-mobile-principle-step relative pl-[60px] opacity-0">
-            <p className="absolute top-0 left-0 text-[13px] leading-[18px] text-[#9B9792]">2/4</p>
+          <div className="sourcing-mobile-principle-step opacity-0">
+            <p className="font-sans text-[13px] leading-[18px] font-medium tracking-[2px] uppercase text-[#62513A] mb-[8px]">Top-Tier Quality</p>
             <p className="font-serif text-[14px] leading-[21px] text-[#1A1A1E99] max-sm:text-[13px] max-sm:leading-[19px]">
-              Blending tension and calm, raw and refined, we shape spaces where opposites don't
-              compete, but complete each other. Balance isn't a goal, it's a quiet rhythm.
+              Premium materials, direct from source. We use only top-quality materials from trusted global suppliers — no shortcuts, just standout results.
             </p>
           </div>
-          <div className="sourcing-mobile-principle-step relative pl-[60px] opacity-0">
-            <p className="absolute top-0 left-0 text-[13px] leading-[18px] text-[#9B9792]">3/4</p>
+          <div className="sourcing-mobile-principle-step opacity-0">
+            <p className="font-sans text-[13px] leading-[18px] font-medium tracking-[2px] uppercase text-[#62513A] mb-[8px]">Fast Delivery & Execution</p>
             <p className="font-serif text-[14px] leading-[21px] text-[#1A1A1E99] max-sm:text-[13px] max-sm:leading-[19px]">
-              Shaping each project step by step, we follow a rhythm of precision and flow, where
-              every draft, choice, and adjustment brings us closer to clarity.
+              Up to 40% faster than standard timelines. Our streamlined local production delivers high-end materials quickly — keeping your project on schedule.
             </p>
           </div>
-          <div className="sourcing-mobile-principle-step relative pl-[60px] opacity-0">
-            <p className="absolute top-0 left-0 text-[13px] leading-[18px] text-[#9B9792]">4/4</p>
+          <div className="sourcing-mobile-principle-step opacity-0">
+            <p className="font-sans text-[13px] leading-[18px] font-medium tracking-[2px] uppercase text-[#62513A] mb-[8px]">Global Reach & Logistics</p>
             <p className="font-serif text-[14px] leading-[21px] text-[#1A1A1E99] max-sm:text-[13px] max-sm:leading-[19px]">
-              Honoring the idea means guiding it through every phase, from sketch to site, with
-              care, precision, and presence at every step.
+              Skip the local shelf, go worldwide. Wherever your project is, we handle fast, reliable sourcing and export through our global network.
             </p>
           </div>
         </div>
@@ -219,48 +214,39 @@ export default function PrinciplesSourcing() {
 
       <div className="absolute top-[40%] left-[112px] mr-[calc(45vw+80px)] max-w-[600px] max-md:hidden">
         <div className="flex w-full flex-col items-start gap-[62px]">
-          <div className="relative pl-[100px]">
-            <p className="sourcing-principle-text-anim-step absolute top-0 left-0 text-[14px] leading-[18px] text-[#9B9792]">
-              1/4
+          <div>
+            <p className="sourcing-principle-text-anim-step font-sans text-[14px] leading-[18px] font-medium tracking-[2px] uppercase text-[#9B9792] mb-[10px]">
+              Cost Efficiency
             </p>
-
             <p className="sourcing-principle-text-anim-step-text w-full font-serif text-[16px] leading-[21px] text-[#1A1A1E66]">
-              We begin each design by listening, to the story, the mood, the soul. What's whispered
-              between the lines becomes our guide, so the space can echo something true, something
-              deeply lived.
+              Save up to 30% compared to traditional sourcing. We work directly with our UAE partner factory — no middlemen, no markups, just quality at better prices.
             </p>
           </div>
 
-          <div className="relative pl-[100px]">
-            <p className="sourcing-principle-text-anim-step absolute top-0 left-0 text-[14px] leading-[18px] text-[#9B9792]">
-              2/4
+          <div>
+            <p className="sourcing-principle-text-anim-step font-sans text-[14px] leading-[18px] font-medium tracking-[2px] uppercase text-[#9B9792] mb-[10px]">
+              Top-Tier Quality
             </p>
-
             <p className="sourcing-principle-text-anim-step-text w-full font-serif text-[16px] leading-[21px] text-[#1A1A1E66]">
-              Blending tension and calm, raw and refined, we shape spaces where opposites don't
-              compete, but complete each other. Balance isn't a goal, it's a quiet rhythm.
+              Premium materials, direct from source. We use only top-quality materials from trusted global suppliers — no shortcuts, just standout results.
             </p>
           </div>
 
-          <div className="relative pl-[100px]">
-            <p className="sourcing-principle-text-anim-step absolute top-0 left-0 text-[14px] leading-[18px] text-[#9B9792]">
-              3/4
+          <div>
+            <p className="sourcing-principle-text-anim-step font-sans text-[14px] leading-[18px] font-medium tracking-[2px] uppercase text-[#9B9792] mb-[10px]">
+              Fast Delivery & Execution
             </p>
-
             <p className="sourcing-principle-text-anim-step-text w-full font-serif text-[16px] leading-[21px] text-[#1A1A1E66]">
-              Shaping each project step by step, we follow a rhythm of precision and flow, where
-              every draft, choice, and adjustment brings us closer to clarity.{" "}
+              Up to 40% faster than standard timelines. Our streamlined local production delivers high-end materials quickly — keeping your project on schedule.
             </p>
           </div>
 
-          <div className="relative pl-[100px]">
-            <p className="sourcing-principle-text-anim-step absolute top-0 left-0 text-[14px] leading-[18px] text-[#9B9792]">
-              4/4
+          <div>
+            <p className="sourcing-principle-text-anim-step font-sans text-[14px] leading-[18px] font-medium tracking-[2px] uppercase text-[#9B9792] mb-[10px]">
+              Global Reach & Logistics
             </p>
-
             <p className="sourcing-principle-text-anim-step-text w-full font-serif text-[16px] leading-[21px] text-[#1A1A1E66]">
-              Honoring the idea means guiding it through every phase, from sketch to site, with
-              care, precision, and presence at every step.{" "}
+              Skip the local shelf, go worldwide. Wherever your project is, we handle fast, reliable sourcing and export through our global network.
             </p>
           </div>
         </div>
