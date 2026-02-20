@@ -106,15 +106,6 @@ function ArrowRight() {
   );
 }
 
-function ProgressBar() {
-  return (
-    <div className="mt-[20px] flex items-center gap-[6px]">
-      <div className="h-[3px] w-[8px] rounded-full bg-[#9a9082]" />
-      <div className="h-[3px] flex-1 rounded-full bg-[#9a9082]" />
-      <div className="h-0 w-0 border-t-[4px] border-b-[4px] border-l-[6px] border-t-transparent border-b-transparent border-l-[#9a9082]" />
-    </div>
-  );
-}
 
 function PhaseCard({
   phase,
@@ -145,7 +136,6 @@ function PhaseCard({
           </li>
         ))}
       </ul>
-      <ProgressBar />
     </div>
   );
 }
@@ -237,7 +227,6 @@ export default function ProcessSourcing() {
                           </li>
                         ))}
                       </ul>
-                      <ProgressBar />
                     </div>
                   ))}
                 </div>
