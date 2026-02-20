@@ -119,14 +119,14 @@ function PhaseColumn({
 }) {
   return (
     <div className="min-w-0 flex-1 py-[24px]">
-      <p className="font-display text-[11px] tracking-[0.5px] text-[#262626]">
+      <p className="font-display text-[13px] tracking-[0.5px] text-[#262626] max-sm:text-[11px]">
         PHASE {number}
       </p>
-      <h4 className="mt-[8px] font-display text-[14px] leading-[20px] tracking-[0.3px] text-[#262626] max-sm:text-[13px]">
+      <h4 className="mt-[8px] font-display text-[18px] leading-[24px] tracking-[0.3px] text-[#262626] max-sm:text-[15px] max-sm:leading-[20px]">
         {title}
       </h4>
       {subtitle && (
-        <p className="mt-[2px] font-sans text-[12px] italic text-[#262626]">
+        <p className="mt-[2px] font-sans text-[14px] italic text-[#262626] max-sm:text-[12px]">
           {subtitle}
         </p>
       )}
@@ -134,9 +134,9 @@ function PhaseColumn({
         {items.map((item, i) => (
           <li
             key={i}
-            className="flex items-start gap-[8px] font-sans text-[13px] leading-[20px] text-[#262626] max-sm:text-[12px]"
+            className="flex items-start gap-[8px] font-sans text-[16px] leading-[26px] text-[#262626] max-sm:text-[14px] max-sm:leading-[22px]"
           >
-            <span className="mt-[7px] block h-[4px] w-[4px] shrink-0 rounded-full bg-[#262626]" />
+            <span className="mt-[9px] block h-[5px] w-[5px] shrink-0 rounded-full bg-[#262626]" />
             {item}
           </li>
         ))}
@@ -192,16 +192,16 @@ export default function ProcessSourcing() {
                 overflow: "hidden",
               }}
             >
-              <p className="font-display text-[11px] tracking-[0.5px] text-[#262626]">
+              <p className="font-display text-[13px] tracking-[0.5px] text-[#262626] max-sm:text-[11px]">
                 PHASES 1 – 3
               </p>
-              <h3 className="mt-[8px] font-display text-[14px] leading-[20px] tracking-[0.3px] text-[#262626] max-sm:text-[13px]">
+              <h3 className="mt-[8px] font-display text-[18px] leading-[24px] tracking-[0.3px] text-[#262626] max-sm:text-[15px] max-sm:leading-[20px]">
                 DESIGN
               </h3>
-              <p className="mt-[8px] font-sans text-[13px] text-[#262626] max-md:hidden">
+              <p className="mt-[8px] font-sans text-[16px] text-[#262626] max-md:hidden max-sm:text-[14px]">
                 Hover to explore
               </p>
-              <p className="mt-[8px] hidden font-sans text-[13px] text-[#262626] max-md:block">
+              <p className="mt-[8px] hidden font-sans text-[16px] text-[#262626] max-md:block max-sm:text-[14px]">
                 Tap to explore
               </p>
               <ChevronDown className="mt-[12px] hidden text-[#262626] max-md:block" />
