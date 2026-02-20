@@ -245,28 +245,30 @@ export default function ProcessSourcing() {
             </div>
           </div>
 
-          <ArrowRight />
-
           {/* Phase 4 */}
-          <div className="min-w-0 flex-1 px-[16px] max-md:px-[0px]">
-            <PhaseColumn
-              number={sourcingPhases[0].number}
-              title={sourcingPhases[0].title}
-              subtitle={sourcingPhases[0].subtitle}
-              items={sourcingPhases[0].items}
-            />
+          <div className="flex min-w-0 flex-1 items-stretch max-md:flex-col">
+            <ArrowRight />
+            <div className="flex-1 px-[8px] max-md:px-[0px]">
+              <PhaseColumn
+                number={sourcingPhases[0].number}
+                title={sourcingPhases[0].title}
+                subtitle={sourcingPhases[0].subtitle}
+                items={sourcingPhases[0].items}
+              />
+            </div>
           </div>
 
-          <ArrowRight />
-
           {/* Phase 5 */}
-          <div className="min-w-0 flex-1 px-[16px] max-md:px-[0px]">
-            <PhaseColumn
-              number={sourcingPhases[1].number}
-              title={sourcingPhases[1].title}
-              subtitle={sourcingPhases[1].subtitle}
-              items={sourcingPhases[1].items}
-            />
+          <div className="flex min-w-0 flex-1 items-stretch max-md:flex-col">
+            <ArrowRight />
+            <div className="flex-1 px-[8px] max-md:px-[0px]">
+              <PhaseColumn
+                number={sourcingPhases[1].number}
+                title={sourcingPhases[1].title}
+                subtitle={sourcingPhases[1].subtitle}
+                items={sourcingPhases[1].items}
+              />
+            </div>
           </div>
         </div>
       </div>
