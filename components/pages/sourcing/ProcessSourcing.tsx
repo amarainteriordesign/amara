@@ -194,7 +194,7 @@ export default function ProcessSourcing() {
               <p className="font-display text-[11px] tracking-[0.5px] text-[#9a9082]">
                 PHASES 1 – 3
               </p>
-              <h3 className="mt-[12px] font-display text-[16px] leading-[22px] tracking-[0.3px] text-[#262626] max-sm:text-[14px]">
+              <h3 className="mt-[12px] font-display text-[14px] leading-[20px] tracking-[0.3px] text-[#262626] max-sm:text-[13px]">
                 DESIGN
               </h3>
               <p className="mt-[8px] font-sans text-[13px] text-[#9a9082] max-md:hidden">
