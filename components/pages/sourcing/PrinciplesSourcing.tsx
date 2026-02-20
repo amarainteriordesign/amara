@@ -37,8 +37,8 @@ export default function PrinciplesSourcing() {
   return (
     <section className="bg-background relative w-full">
       <div className="mx-auto max-w-[1440px] px-[24px] py-[108px] max-md:py-[48px]">
-        <h3 className="max-xmd:text-[70px] max-xmd:leading-[70px] font-display text-center text-[100px] leading-[100px] font-normal text-[#62513A] max-md:text-[48px] max-md:leading-[48px] max-sm:text-[32px] max-sm:leading-[32px]">
-          WHY WORK WITH US.
+        <h3 className="max-xmd:text-[35px] max-xmd:leading-[35px] font-display text-center text-[50px] leading-[50px] font-normal text-[#62513A] max-md:text-[24px] max-md:leading-[24px] max-sm:text-[16px] max-sm:leading-[16px]">
+          WHY WORK WITH US?
         </h3>
       </div>
 
