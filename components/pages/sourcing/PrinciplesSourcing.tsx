@@ -23,19 +23,21 @@ export default function PrinciplesSourcing() {
           const mobileSteps = gsap.utils.toArray<HTMLElement>(".sourcing-mobile-principle-step");
 
           mobileSteps.forEach((step) => {
-            ScrollTrigger.create({
-              trigger: step,
-              start: "top bottom-=80px",
-              end: "bottom top",
-              onEnter: () => {
-                gsap.to(step, {
-                  opacity: 1,
-                  y: 0,
-                  duration: 0.8,
-                  ease: "power2.out",
-                });
-              },
-            });
+            gsap.fromTo(
+              step,
+              { opacity: 0, y: 20 },
+              {
+                opacity: 1,
+                y: 0,
+                duration: 0.8,
+                ease: "power2.out",
+                scrollTrigger: {
+                  trigger: step,
+                  start: "top bottom-=40px",
+                  toggleActions: "play none none none",
+                },
+              }
+            );
           });
 
           ScrollTrigger.create({
@@ -183,7 +185,7 @@ export default function PrinciplesSourcing() {
 
       <div className="hidden max-w-[1440px] px-[24px] max-md:block">
         <div className="mx-auto mt-[40px] mb-[40px] flex max-w-[500px] flex-col gap-[32px] max-sm:max-w-full max-sm:px-[16px]">
-          <div className="sourcing-mobile-principle-step relative pl-[60px] opacity-0 translate-y-[20px]">
+          <div className="sourcing-mobile-principle-step relative pl-[60px] opacity-0">
             <p className="absolute top-0 left-0 text-[13px] leading-[18px] text-[#9B9792]">1/4</p>
             <p className="font-serif text-[14px] leading-[21px] text-[#1A1A1E99] max-sm:text-[13px] max-sm:leading-[19px]">
               We begin each design by listening, to the story, the mood, the soul. What's whispered
@@ -191,21 +193,21 @@ export default function PrinciplesSourcing() {
               deeply lived.
             </p>
           </div>
-          <div className="sourcing-mobile-principle-step relative pl-[60px] opacity-0 translate-y-[20px]">
+          <div className="sourcing-mobile-principle-step relative pl-[60px] opacity-0">
             <p className="absolute top-0 left-0 text-[13px] leading-[18px] text-[#9B9792]">2/4</p>
             <p className="font-serif text-[14px] leading-[21px] text-[#1A1A1E99] max-sm:text-[13px] max-sm:leading-[19px]">
               Blending tension and calm, raw and refined, we shape spaces where opposites don't
               compete, but complete each other. Balance isn't a goal, it's a quiet rhythm.
             </p>
           </div>
-          <div className="sourcing-mobile-principle-step relative pl-[60px] opacity-0 translate-y-[20px]">
+          <div className="sourcing-mobile-principle-step relative pl-[60px] opacity-0">
             <p className="absolute top-0 left-0 text-[13px] leading-[18px] text-[#9B9792]">3/4</p>
             <p className="font-serif text-[14px] leading-[21px] text-[#1A1A1E99] max-sm:text-[13px] max-sm:leading-[19px]">
               Shaping each project step by step, we follow a rhythm of precision and flow, where
               every draft, choice, and adjustment brings us closer to clarity.
             </p>
           </div>
-          <div className="sourcing-mobile-principle-step relative pl-[60px] opacity-0 translate-y-[20px]">
+          <div className="sourcing-mobile-principle-step relative pl-[60px] opacity-0">
             <p className="absolute top-0 left-0 text-[13px] leading-[18px] text-[#9B9792]">4/4</p>
             <p className="font-serif text-[14px] leading-[21px] text-[#1A1A1E99] max-sm:text-[13px] max-sm:leading-[19px]">
               Honoring the idea means guiding it through every phase, from sketch to site, with
