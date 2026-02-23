@@ -159,7 +159,7 @@ export default function PrinciplesSourcing() {
     <section className="bg-background sourcing-principle-container-anim-main relative h-[calc(100vh+1100px)] min-h-[800px] w-full max-md:h-[calc(180vh)] max-md:h-fit max-md:min-h-fit">
       <div className="max-xmd:py-[60px] mx-auto max-w-[1440px] px-[24px] py-[108px] max-md:py-[18px] max-md:py-[48px]">
         <h3 className="max-xmd:text-[70px] max-xmd:leading-[70px] font-diranista text-center text-[100px] leading-[100px] font-normal text-[#62513A] max-md:text-[48px] max-md:leading-[48px] max-sm:text-[32px] max-sm:leading-[32px]">
-          WHY WORK WITH US?
+          OUR PROCESS
         </h3>
       </div>
 
