@@ -61,30 +61,47 @@ export default function Header({ isDark = false }: { isDark?: boolean }) {
     const heroSection = document.querySelector("section");
     if (!heroSection) return;
 
+    const setWhite = () => {
+      gsap.to(".header-logo", { color: "#FFF", duration: 0.3 });
+      gsap.to(".header-logo-text", { color: "#bcb19b", duration: 0.3 });
+      if (plusIconRef.current) {
+        gsap.to(plusIconRef.current, { fill: "#FFF", fillOpacity: 0.85, duration: 0.3 });
+      }
+      if (gradientRef.current) {
+        gsap.to(gradientRef.current, { opacity: 1, duration: 0.3 });
+      }
+    };
+
+    const setDark = () => {
+      gsap.to(".header-logo", { color: "#262626", duration: 0.3 });
+      gsap.to(".header-logo-text", { color: "#262626", duration: 0.3 });
+      if (plusIconRef.current) {
+        gsap.to(plusIconRef.current, { fill: "#262626", fillOpacity: 1, duration: 0.3 });
+      }
+      if (gradientRef.current) {
+        gsap.to(gradientRef.current, { opacity: 0, duration: 0.3 });
+      }
+    };
+
     ScrollTrigger.create({
       trigger: heroSection,
       start: "bottom top",
-      onEnter: () => {
-        gsap.to(".header-logo", { color: "#262626", duration: 0.3 });
-        gsap.to(".header-logo-text", { color: "#262626", duration: 0.3 });
-        if (plusIconRef.current) {
-          gsap.to(plusIconRef.current, { fill: "#262626", fillOpacity: 1, duration: 0.3 });
-        }
-        if (gradientRef.current) {
-          gsap.to(gradientRef.current, { opacity: 0, duration: 0.3 });
-        }
-      },
-      onLeaveBack: () => {
-        gsap.to(".header-logo", { color: "#FFF", duration: 0.3 });
-        gsap.to(".header-logo-text", { color: "#bcb19b", duration: 0.3 });
-        if (plusIconRef.current) {
-          gsap.to(plusIconRef.current, { fill: "#FFF", fillOpacity: 0.85, duration: 0.3 });
-        }
-        if (gradientRef.current) {
-          gsap.to(gradientRef.current, { opacity: 1, duration: 0.3 });
-        }
-      },
+      onEnter: setDark,
+      onLeaveBack: setWhite,
     });
+
+    const teamSection = document.getElementById("team-landing");
+    if (teamSection) {
+      ScrollTrigger.create({
+        trigger: teamSection,
+        start: "top top",
+        end: "bottom top",
+        onEnter: setWhite,
+        onLeaveBack: setDark,
+        onLeave: setDark,
+        onEnterBack: setWhite,
+      });
+    }
   }, [isDark]);
 
   // Timelines initialization

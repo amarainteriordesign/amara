@@ -17,7 +17,7 @@ const STATS = [
 
 export default function TeamLanding() {
   return (
-    <section className="relative w-full">
+    <section id="team-landing" className="relative w-full">
       <div className="absolute inset-0 top-0 h-1/2 bg-[#e8dfd2]" />
       <div className="absolute inset-0 top-1/2 h-1/2 bg-[#e8dfd2]" />
       <div className="relative z-[2] mx-auto flex w-full max-w-[1440px] flex-col items-center px-[20px] pb-[40px] max-md:pb-[30px]">
