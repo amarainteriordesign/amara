@@ -81,7 +81,7 @@ export default function PrinciplesSourcing() {
           <h2 className="font-display text-[36px] leading-[44px] tracking-[0.5px] text-[#262626] max-sm:text-[26px] max-sm:leading-[34px]">
             DESIGN PHASES 1-3
           </h2>
-          <div className="mt-[20px] max-sm:mt-[16px]">
+          <div className="mt-[40px] max-sm:mt-[24px]">
             <button className="inline-block h-[39px] rounded-[35px] border-[1px] border-[#26262699] px-[16px] font-sans text-[12px] leading-[39px] font-medium tracking-[0.2px] text-[#262626] max-sm:h-[32px] max-sm:px-[14px] max-sm:text-[11px] max-sm:leading-[32px]">
               FIND OUT MORE →
             </button>
@@ -167,7 +167,7 @@ export default function PrinciplesSourcing() {
           <h2 className="font-display text-[36px] leading-[44px] tracking-[0.5px] text-[#262626] max-sm:text-[26px] max-sm:leading-[34px]">
             DESIGN PHASES 1-3
           </h2>
-          <div className="mt-[16px]">
+          <div className="mt-[32px]">
             <button className="inline-block h-[32px] rounded-[35px] border-[1px] border-[#26262699] px-[14px] font-sans text-[11px] leading-[32px] font-medium tracking-[0.2px] text-[#262626]">
               FIND OUT MORE →
             </button>
