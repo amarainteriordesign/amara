@@ -1,5 +1,3 @@
-import Link from "next/link";
-
 export default function ServicesLanding() {
   return (
     <>
@@ -25,12 +23,12 @@ export default function ServicesLanding() {
               </p>
             </div>
             <div className="mt-[28px]">
-              <Link
-                href="/philosophy"
+              <a
+                href="#contact-us"
                 className="h-[39px] inline-block rounded-[35px] border-[1px] border-[#e2e0da99] px-[16px] font-sans text-[12px] leading-[39px] font-medium tracking-[0.2px] text-[#FFF] max-sm:h-[32px] max-sm:px-[14px] max-sm:text-[11px] max-sm:leading-[32px]"
               >
                 FIND OUT MORE
-              </Link>
+              </a>
             </div>
           </div>
 
@@ -44,12 +42,12 @@ export default function ServicesLanding() {
               </p>
             </div>
             <div className="mt-[28px]">
-              <Link
-                href="/philosophy"
+              <a
+                href="#contact-us"
                 className="h-[39px] inline-block rounded-[35px] border-[1px] border-[#d4cfc899] px-[16px] font-sans text-[12px] leading-[39px] font-medium tracking-[0.2px] text-[#FFF] max-sm:h-[32px] max-sm:px-[14px] max-sm:text-[11px] max-sm:leading-[32px]"
               >
                 FIND OUT MORE
-              </Link>
+              </a>
             </div>
           </div>
         </div>
