@@ -2,8 +2,8 @@ export default function BoutiqueGrid() {
   return (
     <section className="w-full bg-[#e8dfd2]">
       <div className="mx-auto max-w-[1200px] px-[60px] pt-[80px] pb-[20px] text-center max-md:px-[40px] max-md:pt-[60px] max-sm:px-[17px] max-sm:pt-[40px]">
-        <h3 className="font-calvino text-center text-[28px] leading-[36px] font-normal tracking-[-0.3px] text-[#262626] max-sm:text-[22px] max-sm:leading-[30px]">
-          Why Work With Us?
+        <h3 className="font-diranista text-center text-[48px] leading-[48px] font-normal text-[#62513A] max-md:text-[36px] max-md:leading-[36px] max-sm:text-[28px] max-sm:leading-[28px]">
+          WHY WORK WITH US?
         </h3>
       </div>
 
@@ -11,7 +11,7 @@ export default function BoutiqueGrid() {
         <div className="mx-auto flex max-w-[1200px] flex-wrap px-[60px] max-md:flex-col max-md:px-[40px] max-sm:px-[17px]">
           <div className="flex w-[calc(50%-40px)] flex-col justify-between rounded-[4px] px-[50px] pt-[50px] pb-[45px] max-md:w-full max-sm:px-[28px] max-sm:pt-[36px] max-sm:pb-[32px]" style={{ backgroundColor: '#92958D' }}>
             <div>
-              <h2 className="font-display text-normal pb-[28px] text-[38px] leading-[46px] tracking-[0.8px] text-[#FFF] max-sm:pb-[20px] max-sm:text-[24px] max-sm:leading-[30px] max-sm:tracking-[0.4px]">
+              <h2 className="font-display text-normal pb-[28px] text-[28px] leading-[36px] tracking-[0.8px] text-[#FFF] max-sm:pb-[20px] max-sm:text-[20px] max-sm:leading-[26px] max-sm:tracking-[0.4px]">
                 COST EFFICIENCY
               </h2>
               <p className="text-normal font-sans text-[15px] leading-[24px] tracking-[-0.3px] text-[#FFF] max-sm:text-[14px] max-sm:leading-[22px]" style={{ textAlign: 'justify' }}>
@@ -24,7 +24,7 @@ export default function BoutiqueGrid() {
 
           <div className="flex w-[calc(50%-40px)] flex-col justify-between rounded-[4px] px-[50px] pt-[50px] pb-[45px] max-md:w-full max-sm:px-[28px] max-sm:pt-[36px] max-sm:pb-[32px]" style={{ backgroundColor: '#92958D' }}>
             <div>
-              <h2 className="font-display text-normal pb-[28px] text-[38px] leading-[46px] tracking-[0.8px] text-[#FFF] max-sm:pb-[20px] max-sm:text-[24px] max-sm:leading-[30px] max-sm:tracking-[0.4px]">
+              <h2 className="font-display text-normal pb-[28px] text-[28px] leading-[36px] tracking-[0.8px] text-[#FFF] max-sm:pb-[20px] max-sm:text-[20px] max-sm:leading-[26px] max-sm:tracking-[0.4px]">
                 TOP-TIER QUALITY
               </h2>
               <p className="text-normal font-sans text-[15px] leading-[24px] tracking-[-0.3px] text-[#FFF] max-sm:text-[14px] max-sm:leading-[22px]" style={{ textAlign: 'justify' }}>
@@ -37,7 +37,7 @@ export default function BoutiqueGrid() {
 
           <div className="flex w-[calc(50%-40px)] flex-col justify-between rounded-[4px] px-[50px] pt-[50px] pb-[45px] max-md:w-full max-sm:px-[28px] max-sm:pt-[36px] max-sm:pb-[32px]" style={{ backgroundColor: '#92958D' }}>
             <div>
-              <h2 className="font-display text-normal pb-[28px] text-[38px] leading-[46px] tracking-[0.8px] text-[#FFF] max-sm:pb-[20px] max-sm:text-[24px] max-sm:leading-[30px] max-sm:tracking-[0.4px]">
+              <h2 className="font-display text-normal pb-[28px] text-[28px] leading-[36px] tracking-[0.8px] text-[#FFF] max-sm:pb-[20px] max-sm:text-[20px] max-sm:leading-[26px] max-sm:tracking-[0.4px]">
                 FAST DELIVERY & EXECUTION
               </h2>
               <p className="text-normal font-sans text-[15px] leading-[24px] tracking-[-0.3px] text-[#FFF] max-sm:text-[14px] max-sm:leading-[22px]" style={{ textAlign: 'justify' }}>
@@ -50,7 +50,7 @@ export default function BoutiqueGrid() {
 
           <div className="flex w-[calc(50%-40px)] flex-col justify-between rounded-[4px] px-[50px] pt-[50px] pb-[45px] max-md:w-full max-sm:px-[28px] max-sm:pt-[36px] max-sm:pb-[32px]" style={{ backgroundColor: '#92958D' }}>
             <div>
-              <h2 className="font-display text-normal pb-[28px] text-[38px] leading-[46px] tracking-[0.8px] text-[#FFF] max-sm:pb-[20px] max-sm:text-[24px] max-sm:leading-[30px] max-sm:tracking-[0.4px]">
+              <h2 className="font-display text-normal pb-[28px] text-[28px] leading-[36px] tracking-[0.8px] text-[#FFF] max-sm:pb-[20px] max-sm:text-[20px] max-sm:leading-[26px] max-sm:tracking-[0.4px]">
                 GLOBAL REACH & LOGISTICS
               </h2>
               <p className="text-normal font-sans text-[15px] leading-[24px] tracking-[-0.3px] text-[#FFF] max-sm:text-[14px] max-sm:leading-[22px]" style={{ textAlign: 'justify' }}>
