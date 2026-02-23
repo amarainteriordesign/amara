@@ -20,6 +20,8 @@ export default function Header({ isDark = false }: { isDark?: boolean }) {
   const router = useRouter();
 
   const headerRef = useRef<HTMLElement>(null);
+  const plusIconRef = useRef<SVGPathElement>(null);
+  const gradientRef = useRef<HTMLDivElement>(null);
 
   const [now, setNow] = useState<Date>(new Date());
   const [showPreloader, setShowPreloader] = useState(isInitialLoad);
@@ -51,6 +53,39 @@ export default function Header({ isDark = false }: { isDark?: boolean }) {
       lenis?.scrollTo(0, { duration: 0, easing: (t) => t });
     }
   }, [lenis]);
+
+  // Header color change on scroll past hero
+  useGSAP(() => {
+    if (isDark) return;
+
+    const heroSection = document.querySelector("section");
+    if (!heroSection) return;
+
+    ScrollTrigger.create({
+      trigger: heroSection,
+      start: "bottom top",
+      onEnter: () => {
+        gsap.to(".header-logo", { color: "#262626", duration: 0.3 });
+        gsap.to(".header-logo-text", { color: "#262626", duration: 0.3 });
+        if (plusIconRef.current) {
+          gsap.to(plusIconRef.current, { fill: "#262626", fillOpacity: 1, duration: 0.3 });
+        }
+        if (gradientRef.current) {
+          gsap.to(gradientRef.current, { opacity: 0, duration: 0.3 });
+        }
+      },
+      onLeaveBack: () => {
+        gsap.to(".header-logo", { color: "#FFF", duration: 0.3 });
+        gsap.to(".header-logo-text", { color: "#bcb19b", duration: 0.3 });
+        if (plusIconRef.current) {
+          gsap.to(plusIconRef.current, { fill: "#FFF", fillOpacity: 0.85, duration: 0.3 });
+        }
+        if (gradientRef.current) {
+          gsap.to(gradientRef.current, { opacity: 1, duration: 0.3 });
+        }
+      },
+    });
+  }, [isDark]);
 
   // Timelines initialization
   useGSAP(() => {
@@ -145,7 +180,7 @@ export default function Header({ isDark = false }: { isDark?: boolean }) {
   return (
     <>
       <header ref={headerRef} className="fixed top-0 right-0 left-0 z-[20]">
-        <div className="pointer-events-none absolute inset-0 h-[80px] bg-gradient-to-b from-black/40 to-transparent" />
+        <div ref={gradientRef} className="pointer-events-none absolute inset-0 h-[80px] bg-gradient-to-b from-black/40 to-transparent" />
         <div className="relative w-full">
           <div className="mx-auto flex w-full max-w-[1440px] items-center py-[18px] pr-[18px] pl-[42px]">
             {/* Logo */}
@@ -174,6 +209,7 @@ export default function Header({ isDark = false }: { isDark?: boolean }) {
                   xmlns="http://www.w3.org/2000/svg"
                 >
                   <path
+                    ref={plusIconRef}
                     d="M0 12.219C0 12.9389 0.607588 13.5266 1.31891 13.5266H10.9069V23.0326C10.9069 23.738 11.4997 24.3404 12.2259 24.3404C12.952 24.3404 13.5596 23.738 13.5596 23.0326V13.5266H23.1327C23.8441 13.5266 24.4517 12.9389 24.4517 12.219C24.4517 11.4991 23.8441 10.8967 23.1327 10.8967H13.5596V1.40529C13.5596 0.700051 12.952 0.0976562 12.2259 0.0976562C11.4997 0.0976562 10.9069 0.700051 10.9069 1.40529V10.8967H1.31891C0.607588 10.8967 0 11.4991 0 12.219Z"
                     fill="white"
                     fillOpacity="0.85"
