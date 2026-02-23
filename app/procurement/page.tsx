@@ -11,12 +11,12 @@ import Footer from "@/components/layout/Footer";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Sourcing",
+  title: "Procurement",
   description:
-    "Amara sourcing services – luxury furniture, materials, and design elements sourced globally for high-end residential and commercial projects.",
+    "Amara procurement services – luxury furniture, materials, and design elements sourced globally for high-end residential and commercial projects.",
 };
 
-export default function Sourcing() {
+export default function Procurement() {
   return (
     <>
       <Header />
