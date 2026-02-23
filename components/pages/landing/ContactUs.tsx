@@ -124,7 +124,7 @@ export default function ContactUs() {
     <section className="relative w-full bg-[#e8dfd2]">
       <div className="relative z-[2] w-full max-md:h-auto">
         <div className="px-[20px] pt-[60px] pb-[60px] max-sm:px-[12px] max-sm:pt-[20px] max-sm:pb-[30px]">
-          <div className="mx-auto flex max-w-[1200px] gap-[0px] rounded-[20px] bg-[#E8E0D6] max-md:flex-col">
+          <div className="mx-auto flex max-w-[1200px] gap-[0px] rounded-[20px] bg-[#e8dfd2] max-md:flex-col">
             <div className="w-[33%] shrink-0 px-[5px] py-[10px] max-md:order-3 max-md:w-full max-md:px-[5px] max-md:py-[5px]">
               <Image
                 src="/images/pages/landing/contact.webp"
@@ -299,6 +299,9 @@ export default function ContactUs() {
               </div>
             </div>
           </div>
+        </div>
+        <div className="mx-auto max-w-[1200px] px-[20px] max-sm:px-[12px]">
+          <div className="border-t border-[#26262633]" />
         </div>
       </div>
     </section>
