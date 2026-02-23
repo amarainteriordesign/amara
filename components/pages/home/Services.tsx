@@ -3,7 +3,7 @@ import Link from "next/link";
 export default function Services() {
   return (
     <>
-      <section className="bg-[#e8dfd2] pt-[65px] max-md:pt-[50px] max-sm:pt-[35px]">
+      <section className="bg-[#e8dfd2] pt-[75px] max-md:pt-[55px] max-sm:pt-[38px]">
         <div className="mx-auto max-w-[1200px] px-[60px] pb-[40px] text-center max-md:px-[40px] max-sm:px-[17px] max-sm:pb-[28px]">
           <h2
             className="text-bg-img inline bg-[url(/images/pages/home/text-background.webp)] !bg-top pb-[9px] font-calvino italic text-[32px] leading-[40px] tracking-[0.2px] max-sm:text-[22px] max-sm:leading-[28px]"
