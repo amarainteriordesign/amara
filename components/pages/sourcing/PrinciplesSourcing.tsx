@@ -58,7 +58,7 @@ export default function PrinciplesSourcing() {
             <h2 className="font-display text-[36px] leading-[44px] tracking-[0.5px] text-[#262626] max-sm:text-[26px] max-sm:leading-[34px]">
               DESIGN PROCESS
             </h2>
-            <p className="mt-[6px] font-display text-[14px] tracking-[1.5px] text-[#9a9082] max-sm:text-[12px]">
+            <p className="mt-[6px] font-sans text-[14px] tracking-[1.5px] text-[#9a9082] max-sm:text-[12px]">
               Phase 1 - 3
             </p>
             <p className="mt-[24px] font-sans text-[16px] leading-[28px] text-[#4a4a4a] max-sm:mt-[16px] max-sm:text-[14px] max-sm:leading-[24px]" style={{ textAlign: 'justify' }}>
@@ -75,7 +75,7 @@ export default function PrinciplesSourcing() {
             <h2 className="font-display text-[36px] leading-[44px] tracking-[0.5px] text-[#262626] max-sm:text-[26px] max-sm:leading-[34px]">
               SOURCING PROCESS
             </h2>
-            <p className="mt-[6px] font-display text-[14px] tracking-[1.5px] text-[#9a9082] max-sm:text-[12px]">
+            <p className="mt-[6px] font-sans text-[14px] tracking-[1.5px] text-[#9a9082] max-sm:text-[12px]">
               Procurement & Delivery
             </p>
 
