@@ -21,7 +21,7 @@ export default function ClientsCarousel() {
       <div className="relative w-full">
         <div className="pointer-events-none absolute top-0 bottom-0 left-0 z-[2] w-[80px] bg-gradient-to-r from-[#f1ebdf] to-transparent" />
         <div className="pointer-events-none absolute top-0 right-0 bottom-0 z-[2] w-[80px] bg-gradient-to-l from-[#f1ebdf] to-transparent" />
-        <div className="flex animate-scroll items-center gap-[70px] max-sm:gap-[45px]">
+        <div className="flex animate-scroll items-center gap-[100px] max-sm:gap-[60px]">
           {doubled.map((client, i) => (
             <div
               key={i}
