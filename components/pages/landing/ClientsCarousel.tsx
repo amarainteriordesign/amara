@@ -5,7 +5,7 @@ const CLIENTS = [
   { src: "/images/clients/aria_amara-interior-design-procurement-miami-dubai.webp", alt: "Aria Reserve Miami", className: "" },
   { src: "/images/clients/astonmartin_amara-interior-design-procurement-miami-dubai.webp", alt: "Aston Martin Residences", className: "" },
   { src: "/images/clients/bloom_amara-interior-design-procurement-miami-dubai.webp", alt: "Bloom Pilates", className: "" },
-  { src: "/images/clients/cervera_amara-interior-design-procurement-miami-dubai.webp", alt: "Cervera Real Estate", className: "!px-[25px] max-sm:!px-[15px]" },
+  { src: "/images/clients/cervera_amara-interior-design-procurement-miami-dubai.webp", alt: "Cervera Real Estate", className: "!px-[15px] max-sm:!px-[10px]" },
   { src: "/images/clients/emaar_amara-interior-design-procurement-miami-dubai.webp", alt: "Emaar", className: "" },
   { src: "/images/clients/fortune_amara-interior-design-procurement-miami-dubai.webp", alt: "Fortune International Realty" },
   { src: "/images/clients/globalty_amara-interior-design-procurement-miami-dubai.webp", alt: "Globalty Investment" },
