@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Libre_Baskerville, Libre_Caslon_Display } from "next/font/google";
+import { Cormorant_Garamond, Libre_Baskerville, Libre_Caslon_Display } from "next/font/google";
 import localFont from "next/font/local";
 import Script from "next/script";
 
@@ -47,6 +47,15 @@ const libreCaslonDisplay = Libre_Caslon_Display({
   variable: "--font-libre-caslon-display",
   subsets: ["latin"],
   weight: ["400"],
+  display: "swap",
+});
+
+// font-cormorant
+const cormorantGaramond = Cormorant_Garamond({
+  variable: "--font-cormorant",
+  subsets: ["latin"],
+  weight: ["300", "400", "500", "600", "700"],
+  style: ["normal", "italic"],
   display: "swap",
 });
 
@@ -143,7 +152,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         />
       </head>
       <body
-        className={`${helveticaNeue.variable} ${libreBaskerville.variable} ${libreCaslonDisplay.variable} ${diranista.variable} ${calvino.variable} ${snellRoundhand.variable} ${madeMirageThin.variable} max-w-screen overflow-x-hidden antialiased`}
+        className={`${helveticaNeue.variable} ${libreBaskerville.variable} ${libreCaslonDisplay.variable} ${cormorantGaramond.variable} ${diranista.variable} ${calvino.variable} ${snellRoundhand.variable} ${madeMirageThin.variable} max-w-screen overflow-x-hidden antialiased`}
       >
         <noscript>
           <iframe
