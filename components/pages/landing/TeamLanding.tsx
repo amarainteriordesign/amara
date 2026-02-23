@@ -58,7 +58,7 @@ export default function TeamLanding() {
           </div>
         </div>
 
-        <div className="relative flex h-[76vh] w-full max-w-[417px] flex-col justify-between gap-[20px] rounded-[8px] max-md:max-w-full max-sm:h-[427px]">
+        <div className="relative flex h-[63vh] w-full max-w-[417px] flex-col justify-between gap-[20px] rounded-[8px] max-md:h-[76vh] max-md:max-w-full max-sm:h-[427px]">
           <Image
             src="/images/pages/studio/ines.png"
             alt="ELOISE CHAUVIERE"
