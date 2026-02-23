@@ -2,6 +2,7 @@ import Header from "@/components/layout/Header";
 import Hero from "@/components/pages/sourcing/Hero";
 import AboutSourcing from "@/components/pages/sourcing/AboutSourcing";
 import PrinciplesSourcing from "@/components/pages/sourcing/PrinciplesSourcing";
+import BoutiqueGrid from "@/components/pages/sourcing/BoutiqueGrid";
 import ProcessSourcing from "@/components/pages/sourcing/ProcessSourcing";
 import Services from "@/components/pages/home/Services";
 import Studio from "@/components/pages/home/Studio";
@@ -26,6 +27,8 @@ export default function Procurement() {
       <AboutSourcing />
 
       <PrinciplesSourcing />
+
+      <BoutiqueGrid />
 
       <ProcessSourcing />
 
