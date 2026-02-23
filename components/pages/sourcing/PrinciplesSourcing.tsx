@@ -46,7 +46,7 @@ export default function PrinciplesSourcing() {
   return (
     <section className="bg-background sourcing-principle-container-anim-main relative w-full max-md:h-fit max-md:min-h-fit">
       <div className="mx-auto max-w-[1440px] px-[24px] py-[108px] max-md:py-[48px]">
-        <h3 className="font-display text-center text-[100px] leading-[100px] font-normal tracking-[1px] text-[#62513A] max-md:text-[48px] max-md:leading-[48px] max-sm:text-[32px] max-sm:leading-[32px]">
+        <h3 className="text-center text-[72px] leading-[72px] font-normal tracking-[1px] text-[#62513A] max-md:text-[48px] max-md:leading-[48px] max-sm:text-[32px] max-sm:leading-[32px]" style={{ fontFamily: 'var(--font-libre-caslon-display)' }}>
           OUR APPROACH
         </h3>
       </div>
