@@ -8,8 +8,8 @@ const CLIENTS = [
   { src: "/images/clients/cervera_amara-interior-design-procurement-miami-dubai.webp", alt: "Cervera Real Estate", px: 5 },
   { src: "/images/clients/emaar_amara-interior-design-procurement-miami-dubai.webp", alt: "Emaar" },
   { src: "/images/clients/fortune_amara-interior-design-procurement-miami-dubai.webp", alt: "Fortune International Realty" },
-  { src: "/images/clients/globalty_amara-interior-design-procurement-miami-dubai.webp", alt: "Globalty Investment" },
-  { src: "/images/clients/hh_amara-interior-design-procurement-miami-dubai.webp", alt: "H&H Properties" },
+  { src: "/images/clients/globalty_amara-interior-design-procurement-miami-dubai.webp", alt: "Globalty Investment", h: 110 },
+  { src: "/images/clients/hh_amara-interior-design-procurement-miami-dubai.webp", alt: "H&H Properties", h: 110 },
   { src: "/images/clients/missoni_amara-interior-design-procurement-miami-dubai.webp", alt: "Missoni Baia Miami Residences" },
   { src: "/images/clients/mrc_amara-interior-design-procurement-miami-dubai.webp", alt: "Mr. C Residences" },
   { src: "/images/clients/padel_amara-interior-design-procurement-miami-dubai.webp", alt: "Padel One" },
@@ -31,8 +31,8 @@ export default function ClientsCarousel() {
           {doubled.map((client, i) => (
             <div
               key={i}
-              className="flex h-[80px] shrink-0 items-center justify-center max-sm:h-[55px]"
-              style={{ paddingLeft: client.px ?? 50, paddingRight: client.px ?? 50 }}
+              className="flex shrink-0 items-center justify-center"
+              style={{ paddingLeft: client.px ?? 50, paddingRight: client.px ?? 50, height: client.h ?? 80 }}
             >
               <Image
                 src={client.src}
