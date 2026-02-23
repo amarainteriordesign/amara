@@ -4,6 +4,7 @@ import Services from "@/components/pages/home/Services";
 import Studio from "@/components/pages/home/Studio";
 import Projects from "@/components/pages/home/Projects";
 import Contact from "@/components/pages/home/Contact";
+import ClientsCarousel from "@/components/pages/landing/ClientsCarousel";
 import Footer from "@/components/layout/Footer";
 import type { Metadata } from "next";
 
@@ -25,6 +26,8 @@ export default function Home() {
       <Services />
 
       <Projects />
+
+      <ClientsCarousel />
 
       <Contact />
 
