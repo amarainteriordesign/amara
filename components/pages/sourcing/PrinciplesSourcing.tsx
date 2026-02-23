@@ -82,7 +82,7 @@ export default function PrinciplesSourcing() {
             <div className="mt-[48px] space-y-[48px] max-sm:mt-[32px] max-sm:space-y-[36px]">
 
               <div>
-                <h3 className="text-[22px] leading-[30px] font-semibold tracking-[0.2px] text-[#262626] max-sm:text-[18px] max-sm:leading-[24px]" style={{ fontFamily: 'var(--font-cormorant)', fontVariantNumeric: 'lining-nums' }}>
+                <h3 className="font-sans text-[20px] leading-[28px] font-medium tracking-[0.2px] text-[#262626] max-sm:text-[17px] max-sm:leading-[24px]">
                   Phase 4 : Purchasing & Procurement
                 </h3>
                 <ul className="mt-[16px] space-y-[8px]">
@@ -103,7 +103,7 @@ export default function PrinciplesSourcing() {
               </div>
 
               <div>
-                <h3 className="text-[22px] leading-[30px] font-semibold tracking-[0.2px] text-[#262626] max-sm:text-[18px] max-sm:leading-[24px]" style={{ fontFamily: 'var(--font-cormorant)', fontVariantNumeric: 'lining-nums' }}>
+                <h3 className="font-sans text-[20px] leading-[28px] font-medium tracking-[0.2px] text-[#262626] max-sm:text-[17px] max-sm:leading-[24px]">
                   Phase 5 : Logistics, Quality Control & Shipping
                 </h3>
                 <ul className="mt-[16px] space-y-[8px]">
@@ -124,7 +124,7 @@ export default function PrinciplesSourcing() {
               </div>
 
               <div>
-                <h3 className="text-[22px] leading-[30px] font-semibold tracking-[0.2px] text-[#262626] max-sm:text-[18px] max-sm:leading-[24px]" style={{ fontFamily: 'var(--font-cormorant)', fontVariantNumeric: 'lining-nums' }}>
+                <h3 className="font-sans text-[20px] leading-[28px] font-medium tracking-[0.2px] text-[#262626] max-sm:text-[17px] max-sm:leading-[24px]">
                   Phase 6 : Installation, Fit-Out & Styling
                 </h3>
                 <ul className="mt-[16px] space-y-[8px]">
