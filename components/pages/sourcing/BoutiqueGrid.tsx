@@ -22,7 +22,7 @@ export default function BoutiqueGrid() {
 
           <div className="w-[80px] max-md:h-[20px] max-md:w-full" />
 
-          <div className="flex w-[calc(50%-40px)] flex-col justify-between rounded-[4px] px-[50px] pt-[50px] pb-[45px] max-md:w-full max-sm:px-[28px] max-sm:pt-[36px] max-sm:pb-[32px]" style={{ backgroundColor: '#2F3034' }}>
+          <div className="flex w-[calc(50%-40px)] flex-col justify-between rounded-[4px] px-[50px] pt-[50px] pb-[45px] max-md:w-full max-sm:px-[28px] max-sm:pt-[36px] max-sm:pb-[32px]" style={{ backgroundColor: '#92958D' }}>
             <div>
               <h2 className="font-display text-normal pb-[28px] text-[38px] leading-[46px] tracking-[0.8px] text-[#FFF] max-sm:pb-[20px] max-sm:text-[24px] max-sm:leading-[30px] max-sm:tracking-[0.4px]">
                 TOP-TIER QUALITY
@@ -35,7 +35,7 @@ export default function BoutiqueGrid() {
 
           <div className="h-[20px] w-full" />
 
-          <div className="flex w-[calc(50%-40px)] flex-col justify-between rounded-[4px] px-[50px] pt-[50px] pb-[45px] max-md:w-full max-sm:px-[28px] max-sm:pt-[36px] max-sm:pb-[32px]" style={{ backgroundColor: '#2F3034' }}>
+          <div className="flex w-[calc(50%-40px)] flex-col justify-between rounded-[4px] px-[50px] pt-[50px] pb-[45px] max-md:w-full max-sm:px-[28px] max-sm:pt-[36px] max-sm:pb-[32px]" style={{ backgroundColor: '#92958D' }}>
             <div>
               <h2 className="font-display text-normal pb-[28px] text-[38px] leading-[46px] tracking-[0.8px] text-[#FFF] max-sm:pb-[20px] max-sm:text-[24px] max-sm:leading-[30px] max-sm:tracking-[0.4px]">
                 FAST DELIVERY & EXECUTION
