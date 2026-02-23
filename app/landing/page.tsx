@@ -5,6 +5,7 @@ import TeamLanding from "@/components/pages/landing/TeamLanding";
 import ContactUs from "@/components/pages/landing/ContactUs";
 import ServicesLanding from "@/components/pages/landing/ServicesLanding";
 import ProjectsLanding from "@/components/pages/landing/ProjectsLanding";
+import ClientsCarousel from "@/components/pages/landing/ClientsCarousel";
 import Footer from "@/components/layout/Footer";
 import type { Metadata } from "next";
 
@@ -29,6 +30,8 @@ export default function Landing() {
       <ServicesLanding />
 
       <ProjectsLanding />
+
+      <ClientsCarousel />
 
       <ContactUs />
 
