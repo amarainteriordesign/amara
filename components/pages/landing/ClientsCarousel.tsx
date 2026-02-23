@@ -9,7 +9,7 @@ const CLIENTS = [
   { src: "/images/clients/emaar_amara-interior-design-procurement-miami-dubai.webp", alt: "Emaar" },
   { src: "/images/clients/fortune_amara-interior-design-procurement-miami-dubai.webp", alt: "Fortune International Realty" },
   { src: "/images/clients/globalty_amara-interior-design-procurement-miami-dubai.webp", alt: "Globalty Investment", h: 110 },
-  { src: "/images/clients/hh_amara-interior-design-procurement-miami-dubai.webp", alt: "H&H Properties", h: 110 },
+  { src: "/images/clients/hh_amara-interior-design-procurement-miami-dubai.webp", alt: "H&H Properties", h: 140 },
   { src: "/images/clients/missoni_amara-interior-design-procurement-miami-dubai.webp", alt: "Missoni Baia Miami Residences" },
   { src: "/images/clients/mrc_amara-interior-design-procurement-miami-dubai.webp", alt: "Mr. C Residences" },
   { src: "/images/clients/padel_amara-interior-design-procurement-miami-dubai.webp", alt: "Padel One" },
