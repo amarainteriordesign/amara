@@ -81,7 +81,7 @@ export default function PrinciplesSourcing() {
           <h2 className="font-display text-[36px] leading-[44px] tracking-[0.5px] text-[#262626] max-sm:text-[26px] max-sm:leading-[34px]">
             DESIGN PHASES 1-3
           </h2>
-          <p className="mt-[16px] font-sans text-[16px] leading-[26px] text-[#4a4a4a]">
+          <p className="mt-[16px] text-[16px] leading-[26px] text-[#4a4a4a]" style={{ fontFamily: 'var(--font-lora)' }}>
             Before procurement begins, the design must be in place.
           </p>
           <div className="mt-[28px]">
@@ -170,7 +170,7 @@ export default function PrinciplesSourcing() {
           <h2 className="font-display text-[36px] leading-[44px] tracking-[0.5px] text-[#262626] max-sm:text-[26px] max-sm:leading-[34px]">
             DESIGN PHASES 1-3
           </h2>
-          <p className="mt-[12px] font-sans text-[14px] leading-[22px] text-[#4a4a4a]">
+          <p className="mt-[12px] text-[14px] leading-[22px] text-[#4a4a4a]" style={{ fontFamily: 'var(--font-lora)' }}>
             Before procurement begins, the design must be in place.
           </p>
           <div className="mt-[20px]">
