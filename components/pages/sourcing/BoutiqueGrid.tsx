@@ -2,7 +2,7 @@ export default function BoutiqueGrid() {
   return (
     <section className="w-full bg-[#e8dfd2]">
       <div className="mx-auto max-w-[1200px] px-[60px] pt-[80px] pb-[20px] text-center max-md:px-[40px] max-md:pt-[60px] max-sm:px-[17px] max-sm:pt-[40px]">
-        <h3 className="font-diranista text-center text-[48px] leading-[48px] font-normal text-[#62513A] max-md:text-[36px] max-md:leading-[36px] max-sm:text-[28px] max-sm:leading-[28px]">
+        <h3 className="font-diranista text-center text-[72px] leading-[72px] font-normal text-[#62513A] max-md:text-[48px] max-md:leading-[48px] max-sm:text-[32px] max-sm:leading-[32px]">
           WHY WORK WITH US?
         </h3>
       </div>
