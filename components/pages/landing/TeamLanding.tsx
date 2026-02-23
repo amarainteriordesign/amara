@@ -10,8 +10,8 @@ function WhatsAppIcon() {
 }
 
 const STATS = [
-  { number: "150+", label: "Projects Completed" },
-  { number: "50,000+", label: "Sqft Designed" },
+  { number: "40+", label: "Projects Completed" },
+  { number: "150,000", label: "Sqft Designed" },
   { number: "7+", label: "Countries" },
 ];
 
@@ -25,19 +25,6 @@ export default function TeamLanding() {
           id="contact"
           className="grid w-full grid-cols-3 gap-[20px] pt-[40px] max-md:grid-cols-1 max-md:gap-[30px] max-sm:pt-[20px]"
         >
-          <div className="flex h-[63vh] flex-col justify-center gap-[40px] rounded-[8px] px-[40px] max-md:h-auto max-md:gap-[30px] max-md:px-[20px] max-md:py-[40px] max-sm:h-auto max-sm:gap-[24px] max-sm:px-[16px] max-sm:py-[30px]">
-            {STATS.map((stat, i) => (
-              <div key={i}>
-                <p className="font-display text-[48px] leading-[1] font-normal tracking-[-1px] text-[#262626] uppercase max-sm:text-[36px]">
-                  {stat.number}
-                </p>
-                <p className="mt-[8px] font-sans text-[14px] leading-[20px] font-normal tracking-[1.5px] text-[#262626] uppercase max-sm:text-[12px]">
-                  {stat.label}
-                </p>
-              </div>
-            ))}
-          </div>
-
           <div className="relative flex h-[63vh] flex-col justify-between gap-[20px] rounded-[8px] max-md:h-[76vh] max-sm:h-[427px]">
             <Image
               src="/images/pages/studio/eloise.png"
@@ -73,6 +60,19 @@ export default function TeamLanding() {
                 </a>
               </div>
             </div>
+          </div>
+
+          <div className="flex h-[63vh] flex-col items-center justify-center gap-[40px] rounded-[8px] px-[40px] max-md:order-first max-md:h-auto max-md:gap-[30px] max-md:px-[20px] max-md:py-[40px] max-sm:h-auto max-sm:gap-[24px] max-sm:px-[16px] max-sm:py-[30px]">
+            {STATS.map((stat, i) => (
+              <div key={i} className="text-center">
+                <p className="font-display text-[48px] leading-[1] font-normal tracking-[-1px] text-[#262626] uppercase max-sm:text-[36px]">
+                  {stat.number}
+                </p>
+                <p className="mt-[8px] font-sans text-[14px] leading-[20px] font-normal tracking-[1.5px] text-[#262626] uppercase max-sm:text-[12px]">
+                  {stat.label}
+                </p>
+              </div>
+            ))}
           </div>
 
           <div className="relative flex h-[63vh] flex-col justify-between gap-[20px] rounded-[8px] max-md:h-[76vh] max-sm:h-[427px]">
