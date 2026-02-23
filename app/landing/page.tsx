@@ -1,7 +1,7 @@
 import Header from "@/components/layout/Header";
 import HeroLanding from "@/components/pages/landing/HeroLanding";
 import AboutLanding from "@/components/pages/landing/AboutLanding";
-import ContactLanding from "@/components/pages/landing/ContactLanding";
+import TeamLanding from "@/components/pages/landing/TeamLanding";
 import ContactUs from "@/components/pages/landing/ContactUs";
 import ServicesLanding from "@/components/pages/landing/ServicesLanding";
 import ProjectsLanding from "@/components/pages/landing/ProjectsLanding";
@@ -24,7 +24,7 @@ export default function Landing() {
 
       <AboutLanding />
 
-      <ContactLanding />
+      <TeamLanding />
 
       <ServicesLanding />
 
