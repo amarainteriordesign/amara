@@ -14,8 +14,8 @@ export default function Services() {
         </div>
       </section>
       <div className="bg-gradient-to-b from-[#e8dfd2] from-50% to-[#f1ebdf] to-50% pb-[40px]">
-        <div className="mx-auto flex justify-center gap-[80px] px-[60px] max-md:flex-col max-md:px-[40px] max-sm:gap-[20px] max-sm:px-[17px]">
-          <div className="flex w-full max-w-[540px] flex-col justify-between rounded-[4px] px-[50px] pt-[50px] pb-[45px] max-md:max-w-full max-sm:px-[28px] max-sm:pt-[36px] max-sm:pb-[32px]" style={{ backgroundColor: '#92958D' }}>
+        <div className="mx-auto flex max-w-[1200px] px-[60px] max-md:flex-col max-md:px-[40px] max-sm:px-[17px]">
+          <div className="flex w-1/2 flex-col justify-between rounded-[4px] px-[50px] pt-[50px] pb-[45px] max-md:w-full max-sm:px-[28px] max-sm:pt-[36px] max-sm:pb-[32px]" style={{ backgroundColor: '#92958D' }}>
             <div>
               <h2 className="font-display text-normal pb-[28px] text-[38px] leading-[46px] tracking-[0.8px] text-[#FFF] max-sm:pb-[20px] max-sm:text-[24px] max-sm:leading-[30px] max-sm:tracking-[0.4px]">
                 DESIGN
@@ -34,7 +34,7 @@ export default function Services() {
             </div>
           </div>
 
-          <div className="flex w-full max-w-[540px] flex-col justify-between rounded-[4px] px-[50px] pt-[50px] pb-[45px] max-md:max-w-full max-sm:px-[28px] max-sm:pt-[36px] max-sm:pb-[32px]" style={{ backgroundColor: '#2F3034' }}>
+          <div className="ml-[80px] flex w-1/2 flex-col justify-between rounded-[4px] px-[50px] pt-[50px] pb-[45px] max-md:ml-0 max-md:mt-[20px] max-md:w-full max-sm:px-[28px] max-sm:pt-[36px] max-sm:pb-[32px]" style={{ backgroundColor: '#2F3034' }}>
             <div>
               <h2 className="font-display text-normal pb-[28px] text-[38px] leading-[46px] tracking-[0.8px] text-[#FFF] max-sm:pb-[20px] max-sm:text-[24px] max-sm:leading-[30px] max-sm:tracking-[0.4px]">
                 PROCUREMENT
