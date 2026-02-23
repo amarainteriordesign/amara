@@ -10,8 +10,8 @@ function WhatsAppIcon() {
 }
 
 const STATS = [
-  { number: "40+", label: "Projects Completed" },
-  { number: "150,000", label: "Sqft Designed" },
+  { number: "40+", label: "Projects Delivered" },
+  { number: "150,000+", label: "Sqft Designed" },
   { number: "7+", label: "Countries" },
 ];
 
