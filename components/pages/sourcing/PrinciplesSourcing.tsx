@@ -82,29 +82,20 @@ export default function PrinciplesSourcing() {
             <div className="mt-[48px] space-y-[48px] max-sm:mt-[32px] max-sm:space-y-[36px]">
 
               <div>
-                <p className="font-display text-[13px] tracking-[0.5px] text-[#9a9082] max-sm:text-[11px]">
-                  PHASE 4
-                </p>
-                <h3 className="mt-[8px] font-display text-[22px] leading-[30px] tracking-[0.3px] text-[#262626] max-sm:text-[18px] max-sm:leading-[24px]">
-                  PURCHASING & PROCUREMENT
+                <h3 className="font-calvino text-[22px] leading-[30px] tracking-[-0.3px] text-[#262626] max-sm:text-[18px] max-sm:leading-[24px]">
+                  Phase 4 : Purchasing & Procurement
                 </h3>
-                <p className="mt-[16px] font-sans text-[16px] leading-[28px] text-[#4a4a4a] max-sm:text-[14px] max-sm:leading-[24px]" style={{ textAlign: 'justify' }}>
-                  This phase converts the approved design into confirmed orders, prices, and timelines. This includes :
-                </p>
                 <ul className="mt-[16px] space-y-[8px]">
                   {[
-                    "Engagement with selected suppliers and manufacturers",
-                    "Confirmation of suppliers, SKUs, specifications, finishes, and quantities",
-                    "Final pricing, lead times, and availability checks",
-                    "Placement of purchase orders",
-                    "Budget tracking and cost control",
-                    "Coordination of production timelines",
+                    "Supplier selection, product specification confirmation, and FF&E procurement across furniture, lighting, and finishes",
+                    "Purchase order placement, production coordination, and lead time management",
+                    "Budget tracking, cost control, and procurement alignment with the approved interior design scope",
                   ].map((item, i) => (
                     <li
                       key={i}
-                      className="flex items-start gap-[8px] font-sans text-[16px] leading-[26px] text-[#262626] max-sm:text-[14px] max-sm:leading-[22px]"
+                      className="flex items-start gap-[8px] font-sans text-[16px] leading-[26px] text-[#4a4a4a] max-sm:text-[14px] max-sm:leading-[22px]"
                     >
-                      <span className="mt-[9px] block h-[5px] w-[5px] shrink-0 rounded-full bg-[#262626]" />
+                      <span className="mt-[9px] block h-[5px] w-[5px] shrink-0 rounded-full bg-[#4a4a4a]" />
                       {item}
                     </li>
                   ))}
@@ -112,69 +103,45 @@ export default function PrinciplesSourcing() {
               </div>
 
               <div>
-                <p className="font-display text-[13px] tracking-[0.5px] text-[#9a9082] max-sm:text-[11px]">
-                  PHASE 5
-                </p>
-                <h3 className="mt-[8px] font-display text-[22px] leading-[30px] tracking-[0.3px] text-[#262626] max-sm:text-[18px] max-sm:leading-[24px]">
-                  LOGISTICS, QUALITY CONTROL & SHIPPING
+                <h3 className="font-calvino text-[22px] leading-[30px] tracking-[-0.3px] text-[#262626] max-sm:text-[18px] max-sm:leading-[24px]">
+                  Phase 5 : Logistics, Quality Control & Shipping
                 </h3>
-                <p className="mt-[16px] font-sans text-[16px] leading-[28px] text-[#4a4a4a] max-sm:text-[14px] max-sm:leading-[24px]" style={{ textAlign: 'justify' }}>
-                  We manage and control the movement of all items from production through shipping. This includes :
-                </p>
                 <ul className="mt-[16px] space-y-[8px]">
                   {[
-                    "Order tracking and delivery follow-up",
-                    "Inspection and quality control upon arrival at our warehouse",
-                    "Secure storage until all items are received and approved",
-                    "Consolidation and container loading",
-                    "Preparation of export documentation in coordination with local and international brokers",
-                    "International shipping and customs clearance",
+                    "End-to-end logistics management, order tracking, and delivery coordination",
+                    "Quality control inspections, secure warehouse storage, consolidation, and container loading",
+                    "Export documentation, international shipping, and customs clearance coordination",
                   ].map((item, i) => (
                     <li
                       key={i}
-                      className="flex items-start gap-[8px] font-sans text-[16px] leading-[26px] text-[#262626] max-sm:text-[14px] max-sm:leading-[22px]"
+                      className="flex items-start gap-[8px] font-sans text-[16px] leading-[26px] text-[#4a4a4a] max-sm:text-[14px] max-sm:leading-[22px]"
                     >
-                      <span className="mt-[9px] block h-[5px] w-[5px] shrink-0 rounded-full bg-[#262626]" />
+                      <span className="mt-[9px] block h-[5px] w-[5px] shrink-0 rounded-full bg-[#4a4a4a]" />
                       {item}
                     </li>
                   ))}
                 </ul>
-                <p className="mt-[16px] font-sans text-[16px] leading-[28px] text-[#4a4a4a] max-sm:text-[14px] max-sm:leading-[24px]" style={{ textAlign: 'justify' }}>
-                  This phase ensures all items are shipped safely and in full compliance.
-                </p>
               </div>
 
               <div>
-                <p className="font-display text-[13px] tracking-[0.5px] text-[#9a9082] max-sm:text-[11px]">
-                  PHASE 6
-                </p>
-                <h3 className="mt-[8px] font-display text-[22px] leading-[30px] tracking-[0.3px] text-[#262626] max-sm:text-[18px] max-sm:leading-[24px]">
-                  INSTALLATION, FIT-OUT & STYLING
+                <h3 className="font-calvino text-[22px] leading-[30px] tracking-[-0.3px] text-[#262626] max-sm:text-[18px] max-sm:leading-[24px]">
+                  Phase 6 : Installation, Fit-Out & Styling
                 </h3>
-                <p className="mt-[16px] font-sans text-[16px] leading-[28px] text-[#4a4a4a] max-sm:text-[14px] max-sm:leading-[24px]" style={{ textAlign: 'justify' }}>
-                  This phase focuses on on-site delivery, installation, and final completion of the project. This includes :
-                </p>
                 <ul className="mt-[16px] space-y-[8px]">
                   {[
-                    "Scheduling of white-glove deliveries to site",
-                    "Unpacking, assembly, and installation of all FF&E and lighting",
-                    "Coordination of fit-out works where required",
-                    "On-site supervision and quality control",
-                    "Final styling and detailing",
-                    "Client walkthrough and project handover",
+                    "White-glove delivery scheduling and on-site FF&E and lighting installation",
+                    "Fit-out coordination, on-site supervision, and quality assurance",
+                    "Final interior styling, client walkthrough, and turnkey project handover",
                   ].map((item, i) => (
                     <li
                       key={i}
-                      className="flex items-start gap-[8px] font-sans text-[16px] leading-[26px] text-[#262626] max-sm:text-[14px] max-sm:leading-[22px]"
+                      className="flex items-start gap-[8px] font-sans text-[16px] leading-[26px] text-[#4a4a4a] max-sm:text-[14px] max-sm:leading-[22px]"
                     >
-                      <span className="mt-[9px] block h-[5px] w-[5px] shrink-0 rounded-full bg-[#262626]" />
+                      <span className="mt-[9px] block h-[5px] w-[5px] shrink-0 rounded-full bg-[#4a4a4a]" />
                       {item}
                     </li>
                   ))}
                 </ul>
-                <p className="mt-[16px] font-sans text-[16px] leading-[28px] text-[#4a4a4a] max-sm:text-[14px] max-sm:leading-[24px]" style={{ textAlign: 'justify' }}>
-                  We remain involved until the project is fully installed and completed.
-                </p>
               </div>
 
             </div>
