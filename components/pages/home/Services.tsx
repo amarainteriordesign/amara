@@ -39,7 +39,7 @@ export default function Services() {
               <h2 className="font-display text-normal pb-[28px] text-[38px] leading-[46px] tracking-[0.8px] text-[#FFF] max-sm:pb-[20px] max-sm:text-[24px] max-sm:leading-[30px] max-sm:tracking-[0.4px]">
                 SOURCING
               </h2>
-              <p className="text-normal max-w-[400px] font-sans text-[15px] leading-[24px] tracking-[-0.3px] text-[#FFF] max-md:max-w-full max-sm:text-[14px] max-sm:leading-[22px]">
+              <p className="text-normal max-w-[400px] font-sans text-[15px] leading-[24px] tracking-[-0.3px] text-[#FFF] max-md:max-w-full max-sm:text-[14px] max-sm:leading-[22px]" style={{ textAlign: 'justify' }}>
                 Our international furniture sourcing and procurement services support residential, hospitality, and commercial projects worldwide. We partner with premium manufacturers and trusted suppliers, managing consolidated container shipping, global logistics, customs coordination, and on-site installation to ensure quality control, cost efficiency, and seamless project delivery across international markets.
               </p>
             </div>
