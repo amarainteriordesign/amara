@@ -2,15 +2,21 @@
 import Image from "next/image";
 
 const CLIENTS = [
-  { src: "/images/clients/aston-martin.webp", alt: "Aston Martin Residences" },
-  { src: "/images/clients/bloom-pilates.webp", alt: "Bloom Pilates" },
-  { src: "/images/clients/emaar.webp", alt: "Emaar" },
-  { src: "/images/clients/fortune-realty.webp", alt: "Fortune International Realty" },
-  { src: "/images/clients/globalty.webp", alt: "Globalty Investment" },
-  { src: "/images/clients/missoni-baia.webp", alt: "Missoni Baia" },
-  { src: "/images/clients/mr-c-residence.webp", alt: "Mr. C Residences" },
-  { src: "/images/clients/padel-one.webp", alt: "Padel One" },
-  { src: "/images/clients/sothebys-realty.webp", alt: "Sotheby's International Realty" },
+  { src: "/images/clients/aria_amara-interior-design-procurement-miami-dubai.webp", alt: "Aria Reserve Miami" },
+  { src: "/images/clients/astonmartin_amara-interior-design-procurement-miami-dubai.webp", alt: "Aston Martin Residences" },
+  { src: "/images/clients/bloom_amara-interior-design-procurement-miami-dubai.webp", alt: "Bloom Pilates" },
+  { src: "/images/clients/cervera_amara-interior-design-procurement-miami-dubai.webp", alt: "Cervera Real Estate" },
+  { src: "/images/clients/emaar_amara-interior-design-procurement-miami-dubai.webp", alt: "Emaar" },
+  { src: "/images/clients/fortune_amara-interior-design-procurement-miami-dubai.webp", alt: "Fortune International Realty" },
+  { src: "/images/clients/globalty_amara-interior-design-procurement-miami-dubai.webp", alt: "Globalty Investment" },
+  { src: "/images/clients/hh_amara-interior-design-procurement-miami-dubai.webp", alt: "H&H Properties" },
+  { src: "/images/clients/missoni_amara-interior-design-procurement-miami-dubai.webp", alt: "Missoni Baia Miami Residences" },
+  { src: "/images/clients/mrc_amara-interior-design-procurement-miami-dubai.webp", alt: "Mr. C Residences" },
+  { src: "/images/clients/padel_amara-interior-design-procurement-miami-dubai.webp", alt: "Padel One" },
+  { src: "/images/clients/saas_amara-interior-design-procurement-miami-dubai.webp", alt: "Saas Properties" },
+  { src: "/images/clients/sothebys_amara-interior-design-procurement-miami-dubai.webp", alt: "Sotheby's International Realty" },
+  { src: "/images/clients/village_amara-interior-design-procurement-miami-dubai.webp", alt: "The Village at Coral Gables" },
+  { src: "/images/clients/well_amara-interior-design-procurement-miami-dubai.webp", alt: "The Well" },
 ];
 
 export default function ClientsCarousel() {
