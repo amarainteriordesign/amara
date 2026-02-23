@@ -81,9 +81,12 @@ export default function PrinciplesSourcing() {
           <h2 className="font-display text-[36px] leading-[44px] tracking-[0.5px] text-[#262626] max-sm:text-[26px] max-sm:leading-[34px]">
             DESIGN PHASES 1-3
           </h2>
-          <div className="mt-[40px] max-sm:mt-[24px]">
+          <p className="mt-[16px] font-sans text-[16px] leading-[26px] text-[#4a4a4a]">
+            Before procurement begins, the design must be in place.
+          </p>
+          <div className="mt-[28px]">
             <button className="inline-block h-[39px] rounded-[35px] border-[1px] border-[#26262699] px-[16px] font-sans text-[12px] leading-[39px] font-medium tracking-[0.2px] text-[#262626] max-sm:h-[32px] max-sm:px-[14px] max-sm:text-[11px] max-sm:leading-[32px]">
-              FIND OUT MORE →
+              EXPLORE OUR FULL DESIGN PROCESS →
             </button>
           </div>
         </div>
@@ -167,9 +170,12 @@ export default function PrinciplesSourcing() {
           <h2 className="font-display text-[36px] leading-[44px] tracking-[0.5px] text-[#262626] max-sm:text-[26px] max-sm:leading-[34px]">
             DESIGN PHASES 1-3
           </h2>
-          <div className="mt-[32px]">
+          <p className="mt-[12px] font-sans text-[14px] leading-[22px] text-[#4a4a4a]">
+            Before procurement begins, the design must be in place.
+          </p>
+          <div className="mt-[20px]">
             <button className="inline-block h-[32px] rounded-[35px] border-[1px] border-[#26262699] px-[14px] font-sans text-[11px] leading-[32px] font-medium tracking-[0.2px] text-[#262626]">
-              FIND OUT MORE →
+              EXPLORE OUR FULL DESIGN PROCESS →
             </button>
           </div>
         </div>
