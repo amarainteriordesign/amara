@@ -26,11 +26,11 @@ export default function Landing() {
 
       <ContactLanding />
 
-      <ContactUs />
-
       <ServicesLanding />
 
       <ProjectsLanding />
+
+      <ContactUs />
 
       <Footer />
     </>
