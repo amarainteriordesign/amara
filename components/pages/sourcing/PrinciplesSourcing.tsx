@@ -3,7 +3,7 @@ export default function PrinciplesSourcing() {
     <section className="w-full bg-[#e8dfd2]">
       <div className="mx-auto max-w-[1200px] px-[60px] pt-[80px] pb-[20px] text-center max-md:px-[40px] max-md:pt-[60px] max-sm:px-[17px] max-sm:pt-[40px]">
         <h3 className="font-display text-center text-[48px] leading-[56px] font-normal tracking-[1px] text-[#62513A] max-md:text-[36px] max-md:leading-[44px] max-sm:text-[28px] max-sm:leading-[34px]">
-          OUR PROCESS
+          BOUTIQUE DESIGN, STRATEGIC PROCUREMENT
         </h3>
       </div>
 
