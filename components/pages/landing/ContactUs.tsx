@@ -121,7 +121,7 @@ export default function ContactUs() {
   };
 
   return (
-    <section className="relative w-full bg-[#e8dfd2]">
+    <section className="relative w-full bg-[#F1EBDF]">
       <div className="relative z-[2] w-full max-md:h-auto">
         <div className="px-[20px] pt-[60px] pb-[60px] max-sm:px-[12px] max-sm:pt-[20px] max-sm:pb-[30px]">
           <div className="mx-auto flex max-w-[1200px] gap-[0px] max-md:flex-col">
@@ -301,9 +301,7 @@ export default function ContactUs() {
           </div>
         </div>
       </div>
-      <div className="px-[20px] max-sm:px-[12px]">
-        <hr className="border-t border-[#C8BFB3]" />
-      </div>
+      <hr className="border-t border-[#C8BFB3]" />
     </section>
   );
 }
