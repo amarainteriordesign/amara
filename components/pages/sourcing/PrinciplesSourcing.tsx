@@ -79,15 +79,9 @@ export default function PrinciplesSourcing() {
       <div className="absolute top-[40%] left-[112px] mr-[calc(45vw+80px)] max-w-[600px] max-md:hidden">
         <div className="mb-[60px] max-sm:mb-[40px]">
           <h2 className="font-display text-[36px] leading-[44px] tracking-[0.5px] text-[#262626] max-sm:text-[26px] max-sm:leading-[34px]">
-            DESIGN PROCESS
+            DESIGN PHASES 1-3
           </h2>
-          <p className="mt-[6px] font-sans text-[14px] tracking-[1.5px] text-[#9a9082] max-sm:text-[12px]">
-            Phase 1 - 3
-          </p>
-          <p className="mt-[24px] font-sans text-[16px] leading-[28px] text-[#4a4a4a] max-sm:mt-[16px] max-sm:text-[14px] max-sm:leading-[24px]" style={{ textAlign: 'justify' }}>
-            From briefing to detailed design, we transform your vision into a cohesive luxury interior design concept rooted in lifestyle, spatial planning, and refined material direction. The concept is then developed into a fully coordinated design package with finalized layouts, finishes, lighting strategy, and technical drawings for seamless project execution worldwide.
-          </p>
-          <div className="mt-[32px] max-sm:mt-[24px]">
+          <div className="mt-[20px] max-sm:mt-[16px]">
             <button className="inline-block h-[39px] rounded-[35px] border-[1px] border-[#26262699] px-[16px] font-sans text-[12px] leading-[39px] font-medium tracking-[0.2px] text-[#262626] max-sm:h-[32px] max-sm:px-[14px] max-sm:text-[11px] max-sm:leading-[32px]">
               FIND OUT MORE →
             </button>
@@ -96,11 +90,8 @@ export default function PrinciplesSourcing() {
 
         <div>
           <h2 className="font-display text-[36px] leading-[44px] tracking-[0.5px] text-[#262626] max-sm:text-[26px] max-sm:leading-[34px]">
-            SOURCING PROCESS
+            SOURCING PHASES 4-6
           </h2>
-          <p className="mt-[6px] font-sans text-[14px] tracking-[1.5px] text-[#9a9082] max-sm:text-[12px]">
-            Procurement & Delivery
-          </p>
 
           <div className="mt-[48px] space-y-[48px] max-sm:mt-[32px] max-sm:space-y-[36px]">
 
@@ -174,15 +165,9 @@ export default function PrinciplesSourcing() {
       <div className="hidden px-[24px] max-md:block">
         <div className="mb-[40px]">
           <h2 className="font-display text-[36px] leading-[44px] tracking-[0.5px] text-[#262626] max-sm:text-[26px] max-sm:leading-[34px]">
-            DESIGN PROCESS
+            DESIGN PHASES 1-3
           </h2>
-          <p className="mt-[6px] font-sans text-[14px] tracking-[1.5px] text-[#9a9082] max-sm:text-[12px]">
-            Phase 1 - 3
-          </p>
-          <p className="mt-[24px] font-sans text-[16px] leading-[28px] text-[#4a4a4a] max-sm:mt-[16px] max-sm:text-[14px] max-sm:leading-[24px]" style={{ textAlign: 'justify' }}>
-            From briefing to detailed design, we transform your vision into a cohesive luxury interior design concept rooted in lifestyle, spatial planning, and refined material direction. The concept is then developed into a fully coordinated design package with finalized layouts, finishes, lighting strategy, and technical drawings for seamless project execution worldwide.
-          </p>
-          <div className="mt-[24px]">
+          <div className="mt-[16px]">
             <button className="inline-block h-[32px] rounded-[35px] border-[1px] border-[#26262699] px-[14px] font-sans text-[11px] leading-[32px] font-medium tracking-[0.2px] text-[#262626]">
               FIND OUT MORE →
             </button>
@@ -219,11 +204,8 @@ export default function PrinciplesSourcing() {
       <div className="hidden px-[24px] pb-[60px] max-md:block">
         <div className="mt-[40px]">
           <h2 className="font-display text-[36px] leading-[44px] tracking-[0.5px] text-[#262626] max-sm:text-[26px] max-sm:leading-[34px]">
-            SOURCING PROCESS
+            SOURCING PHASES 4-6
           </h2>
-          <p className="mt-[6px] font-sans text-[14px] tracking-[1.5px] text-[#9a9082] max-sm:text-[12px]">
-            Procurement & Delivery
-          </p>
 
           <div className="mt-[32px] space-y-[36px]">
             <div>
