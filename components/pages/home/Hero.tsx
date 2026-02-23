@@ -69,6 +69,21 @@ export default function Hero() {
             </Copy>
           </div>
 
+          <button
+            onClick={() => setCurrentIndex((prev) => (prev - 1 + CAROUSEL_IMAGES.length) % CAROUSEL_IMAGES.length)}
+            className="absolute top-1/2 left-[24px] z-[2] flex -translate-y-1/2 items-center justify-center opacity-70 transition-opacity hover:opacity-100 max-md:left-[12px]"
+            aria-label="Previous slide"
+          >
+            <Image src="/images/arrow-right.webp" width={27} height={27} alt="Previous" className="rotate-180 invert" />
+          </button>
+          <button
+            onClick={() => setCurrentIndex((prev) => (prev + 1) % CAROUSEL_IMAGES.length)}
+            className="absolute top-1/2 right-[24px] z-[2] flex -translate-y-1/2 items-center justify-center opacity-70 transition-opacity hover:opacity-100 max-md:right-[12px]"
+            aria-label="Next slide"
+          >
+            <Image src="/images/arrow-right.webp" width={27} height={27} alt="Next" className="invert" />
+          </button>
+
           <div className="absolute bottom-[30px] left-0 right-0 z-[2] flex justify-center gap-[8px]">
             {CAROUSEL_IMAGES.map((_, index) => (
               <button
