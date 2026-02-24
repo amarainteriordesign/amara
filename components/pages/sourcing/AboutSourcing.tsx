@@ -8,7 +8,7 @@ export default function AboutSourcing() {
         >
           International FF&E Procurement & Installation
         </h2>
-        <p className="mt-[108px] font-sans max-md:mt-[60px] text-[16px] leading-[28px] font-normal tracking-[-0.2px] text-[#4a4a4a] max-sm:text-[14px] max-sm:leading-[24px]">
+        <p className="mt-[40px] font-sans max-md:mt-[30px] text-[16px] leading-[28px] font-normal tracking-[-0.2px] text-[#4a4a4a] max-sm:text-[14px] max-sm:leading-[24px]">
           At Amara Interior Design, sourcing is a structured and strategic process. We provide international furniture sourcing and FF&E procurement services for luxury residential, hospitality, and commercial projects worldwide. Working directly with trusted global manufacturers and partners, we manage quotations, production follow up, quality control, and international logistics. From supplier coordination to consolidated container shipping, last mile delivery, and onsite installation, we oversee the entire procurement process to ensure consistency, transparency, and reliable project timelines.
         </p>
         <div className="pt-[40px] max-sm:pt-[28px]">
