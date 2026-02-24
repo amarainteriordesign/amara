@@ -21,7 +21,7 @@ export default function HeroSourcing() {
         <div className="flex h-full max-h-full w-full max-w-full items-end overflow-hidden">
           <Image
             className="absolute top-0 left-0 z-[-1] h-full w-full object-cover"
-            src="/images/pages/sourcing/Aerial_Container_Cargo_Ship_Amara_Interior_Design_Procurement_Miami_Dubai.webp"
+            src="/images/pages/sourcing/Aerial_Container_Cargo_Ship_Amara_Interior_Design_Procurement_Miami_Dubai.webp?v=2"
             width={1920}
             height={1080}
             alt="Container ship on open ocean - global sourcing"
