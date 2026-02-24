@@ -33,7 +33,7 @@ export default function PrinciplesSourcing() {
               SOURCING PHASES 4-6
             </h2>
 
-            <div className="mt-[48px] space-y-[48px] max-sm:mt-[32px] max-sm:space-y-[36px]">
+            <div className="mt-[16px] space-y-[48px] max-sm:mt-[12px] max-sm:space-y-[36px]">
 
               <div>
                 <h3 className="text-[22px] leading-[30px] font-medium tracking-[0.2px] text-[#262626] max-sm:text-[18px] max-sm:leading-[24px]" style={{ fontFamily: 'var(--font-lora)' }}>
