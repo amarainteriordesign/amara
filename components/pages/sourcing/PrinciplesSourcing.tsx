@@ -102,8 +102,8 @@ export default function PrinciplesSourcing() {
           </div>
         </div>
 
-        <div className="w-[45%] shrink-0 self-end max-md:w-full">
-          <div className="relative flex aspect-[3/4] w-full items-center justify-center overflow-hidden">
+        <div className="w-[45%] shrink-0 max-md:w-full">
+          <div className="relative flex h-full w-full items-center justify-center overflow-hidden">
             <div className="absolute inset-0">
               <Image
                 src="/images/pages/sourcing/boat-water.webp"
