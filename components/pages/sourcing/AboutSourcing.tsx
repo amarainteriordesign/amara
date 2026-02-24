@@ -1,6 +1,6 @@
 export default function AboutSourcing() {
   return (
-    <section className="w-full bg-[#e8dfd2]">
+    <section className="w-full bg-background">
       <div className="mx-auto max-w-[900px] px-[60px] pt-[80px] pb-[40px] text-center max-md:px-[40px] max-md:pt-[60px] max-md:pb-[30px] max-sm:px-[20px] max-sm:pt-[40px] max-sm:pb-[20px]">
         <h2 className="pb-[24px] font-calvino text-[28px] leading-[36px] font-normal tracking-[-0.3px] text-[#262626] max-sm:pb-[16px] max-sm:text-[22px] max-sm:leading-[30px]">
           International Furniture Sourcing, FF&E Procurement and Installation
