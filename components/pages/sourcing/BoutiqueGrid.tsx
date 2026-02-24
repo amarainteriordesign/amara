@@ -1,13 +1,13 @@
 export default function BoutiqueGrid() {
   return (
-    <section className="w-full bg-[#e8dfd2]">
+    <section className="w-full bg-background">
       <div className="mx-auto max-w-[1200px] px-[60px] pt-[80px] pb-[20px] text-center max-md:px-[40px] max-md:pt-[60px] max-sm:px-[17px] max-sm:pt-[40px]">
         <h3 className="text-center text-[72px] leading-[72px] font-normal tracking-[1px] text-[#62513A] max-md:text-[48px] max-md:leading-[48px] max-sm:text-[32px] max-sm:leading-[32px]" style={{ fontFamily: 'var(--font-libre-caslon-display)' }}>
           WHY WORK WITH US?
         </h3>
       </div>
 
-      <div className="bg-[#e8dfd2] pb-[40px]">
+      <div className="bg-background pb-[40px]">
         <div className="mx-auto flex max-w-[1200px] flex-wrap px-[60px] max-md:flex-col max-md:px-[40px] max-sm:px-[17px]">
           <div className="flex w-[calc(50%-40px)] flex-col justify-between rounded-[4px] px-[50px] pt-[50px] pb-[45px] max-md:w-full max-sm:px-[28px] max-sm:pt-[36px] max-sm:pb-[32px]" style={{ backgroundColor: '#92958D' }}>
             <div>
