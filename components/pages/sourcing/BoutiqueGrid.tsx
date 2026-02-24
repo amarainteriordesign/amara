@@ -18,7 +18,7 @@ export default function BoutiqueGrid() {
                 COST EFFICIENCY
               </h2>
               <p className="text-normal font-sans text-[15px] leading-[24px] tracking-[-0.3px] text-[#FFF] max-sm:text-[14px] max-sm:leading-[22px]" style={{ textAlign: 'justify' }}>
-                Save up to 30% compared to traditional sourcing. We work directly with our UAE partner factory — no middlemen, no markups, just quality at better prices.
+                Save up to 30% compared to traditional sourcing. We work directly with our UAE partner factory, no middlemen, no markups, just quality at better prices.
               </p>
             </div>
           </div>
@@ -31,7 +31,7 @@ export default function BoutiqueGrid() {
                 TOP-TIER QUALITY
               </h2>
               <p className="text-normal font-sans text-[15px] leading-[24px] tracking-[-0.3px] text-[#FFF] max-sm:text-[14px] max-sm:leading-[22px]" style={{ textAlign: 'justify' }}>
-                Premium materials, direct from source. We use only top-quality materials from trusted global suppliers — no shortcuts, just standout results.
+                Premium materials, direct from source. We use only top-quality materials from trusted global suppliers, no shortcuts, just standout results.
               </p>
             </div>
           </div>
@@ -44,7 +44,7 @@ export default function BoutiqueGrid() {
                 FAST DELIVERY & EXECUTION
               </h2>
               <p className="text-normal font-sans text-[15px] leading-[24px] tracking-[-0.3px] text-[#FFF] max-sm:text-[14px] max-sm:leading-[22px]" style={{ textAlign: 'justify' }}>
-                Up to 40% faster than standard timelines. Our streamlined local production delivers high-end materials quickly — keeping your project on schedule.
+                Up to 40% faster than standard timelines. Our streamlined local production delivers high-end materials quickly, keeping your project on schedule.
               </p>
             </div>
           </div>
