@@ -88,6 +88,13 @@ Configured for autoscale deployment on Replit with:
   - Script loads on all pages via Next.js Script component
   - Noscript fallback included for browsers without JavaScript
 
+## Image Naming Convention
+All images follow this naming pattern:
+`DescriptionShort_Amara_Interior_Design_Procurement_Miami_Dubai.webp`
+- Example: `Aerial_Container_Cargo_Ship_Amara_Interior_Design_Procurement_Miami_Dubai.webp`
+- Format: WebP preferred
+- Images stored in `public/images/pages/sourcing/`
+
 ## Recent Changes
 - **2025-01-13**: Added Google Tag Manager
   - GTM script and noscript fallback added to root layout
