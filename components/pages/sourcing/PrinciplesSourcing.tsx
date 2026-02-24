@@ -19,7 +19,7 @@ export default function PrinciplesSourcing() {
               DESIGN PHASES 1-3
             </h2>
             <p className="mt-[16px] font-sans text-[16px] leading-[26px] text-[#4a4a4a] max-sm:text-[14px] max-sm:leading-[22px]">
-              Before procurement begins, the design must be in place.
+              From briefing to detailed design, we translate your vision into a cohesive luxury interior concept and fully coordinated design package, delivering finalized spatial layouts, material and finish direction, lighting strategy, and technical drawings, ready for smooth execution worldwide before any procurement begins.
             </p>
             <div className="mt-[28px]">
               <button className="inline-block h-[39px] rounded-[35px] border-[1px] border-[#26262699] px-[16px] font-sans text-[12px] leading-[39px] font-medium tracking-[0.2px] text-[#262626] max-sm:h-[32px] max-sm:px-[14px] max-sm:text-[11px] max-sm:leading-[32px]">
