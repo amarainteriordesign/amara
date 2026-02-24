@@ -1,7 +1,7 @@
 export default function BoutiqueGrid() {
   return (
     <section className="w-full bg-background">
-      <div className="mx-auto max-w-[1200px] px-[60px] pt-[80px] pb-[20px] text-center max-md:px-[40px] max-md:pt-[60px] max-sm:px-[17px] max-sm:pt-[40px]">
+      <div className="mx-auto max-w-[1200px] px-[60px] pt-[80px] pb-[40px] text-center max-md:px-[40px] max-md:pt-[60px] max-sm:px-[17px] max-sm:pt-[40px]">
         <h3
           className="text-bg-img inline bg-[url(/images/pages/home/text-background.webp)] !bg-top pb-[9px] italic text-[32px] leading-[40px] tracking-[0.2px] max-sm:text-[22px] max-sm:leading-[28px]"
           style={{ fontFamily: 'var(--font-lora)', WebkitTextFillColor: 'transparent' }}
