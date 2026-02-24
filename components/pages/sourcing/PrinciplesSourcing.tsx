@@ -3,7 +3,7 @@ import Image from "next/image";
 export default function PrinciplesSourcing() {
   return (
     <section className="bg-[#e8dfd2] w-full">
-      <div className="mx-auto max-w-[1440px] px-[24px] py-[108px] text-center max-md:py-[48px]">
+      <div className="mx-auto max-w-[1440px] px-[24px] pt-[108px] pb-[40px] text-center max-md:pt-[48px] max-md:pb-[30px]">
         <h3
           className="text-bg-img inline bg-[url(/images/pages/home/text-background.webp)] !bg-top pb-[9px] italic text-[44px] leading-[52px] tracking-[0.2px] max-md:text-[36px] max-md:leading-[44px] max-sm:text-[32px] max-sm:leading-[40px]"
           style={{ fontFamily: 'var(--font-lora)', WebkitTextFillColor: 'transparent' }}
