@@ -76,7 +76,7 @@ export default function PrinciplesSourcing() {
         </h3>
       </div>
 
-      <div className="absolute top-[40%] left-[112px] mr-[calc(45vw+80px)] max-w-[600px] max-md:hidden">
+      <div className="absolute top-[28%] left-[112px] mr-[calc(45vw+80px)] max-w-[600px] max-md:hidden">
         <div className="mb-[60px] max-sm:mb-[40px]">
           <h2 className="font-display text-[36px] leading-[44px] tracking-[0.5px] text-[#262626] max-sm:text-[26px] max-sm:leading-[34px]">
             DESIGN PHASES 1-3
