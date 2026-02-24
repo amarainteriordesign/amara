@@ -69,7 +69,7 @@ export default function PrinciplesSourcing() {
   );
 
   return (
-    <section className="bg-[#e8dfd2] sourcing-principle-container-anim-main relative h-[calc(100vh+675px)] min-h-[800px] w-full max-md:h-auto max-md:min-h-fit">
+    <section className="bg-[#e8dfd2] sourcing-principle-container-anim-main relative h-[calc(100vh+700px)] min-h-[800px] w-full max-md:h-auto max-md:min-h-fit">
       <div className="mx-auto max-w-[1440px] px-[24px] py-[108px] text-center max-md:py-[48px]">
         <h3
           className="text-bg-img inline bg-[url(/images/pages/home/text-background.webp)] !bg-top pb-[9px] italic text-[44px] leading-[52px] tracking-[0.2px] max-md:text-[36px] max-md:leading-[44px] max-sm:text-[32px] max-sm:leading-[40px]"
@@ -79,7 +79,7 @@ export default function PrinciplesSourcing() {
         </h3>
       </div>
 
-      <div className="absolute top-[15%] left-[112px] mr-[calc(45vw+80px)] max-w-[600px] max-md:hidden">
+      <div className="absolute top-1/2 -translate-y-1/2 left-[112px] mr-[calc(45vw+80px)] max-w-[600px] max-md:hidden">
         <div className="mb-[60px] max-sm:mb-[40px]">
           <h2 className="font-display text-[36px] leading-[44px] tracking-[0.5px] text-[#262626] max-sm:text-[26px] max-sm:leading-[34px]">
             DESIGN PHASES 1-3
