@@ -79,7 +79,7 @@ export default function PrinciplesSourcing() {
         </h3>
       </div>
 
-      <div className="absolute top-[28%] left-[112px] mr-[calc(45vw+80px)] max-w-[600px] max-md:hidden">
+      <div className="absolute top-[20%] left-[112px] mr-[calc(45vw+80px)] max-w-[600px] max-md:hidden">
         <div className="mb-[60px] max-sm:mb-[40px]">
           <h2 className="font-display text-[36px] leading-[44px] tracking-[0.5px] text-[#262626] max-sm:text-[26px] max-sm:leading-[34px]">
             DESIGN PHASES 1-3
@@ -184,7 +184,7 @@ export default function PrinciplesSourcing() {
         </div>
       </div>
 
-      <div className="sourcing-principle-container-anim sticky top-0 ml-auto h-[75vh] w-[45vw] max-md:relative max-md:h-[100vw] max-md:w-full">
+      <div className="sourcing-principle-container-anim sticky top-0 ml-auto h-screen w-[45vw] max-md:relative max-md:h-[100vw] max-md:w-full">
         <div className="relative flex h-full max-h-full w-full max-w-full items-center justify-center overflow-hidden">
           <div className="overlow-hidden absolute">
             <Image
