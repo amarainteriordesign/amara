@@ -3,9 +3,6 @@ import Hero from "@/components/pages/sourcing/Hero";
 import AboutSourcing from "@/components/pages/sourcing/AboutSourcing";
 import PrinciplesSourcing from "@/components/pages/sourcing/PrinciplesSourcing";
 import BoutiqueGrid from "@/components/pages/sourcing/BoutiqueGrid";
-import Services from "@/components/pages/home/Services";
-import Studio from "@/components/pages/home/Studio";
-import Projects from "@/components/pages/home/Projects";
 import Contact from "@/components/pages/home/Contact";
 import Footer from "@/components/layout/Footer";
 import type { Metadata } from "next";
@@ -28,12 +25,6 @@ export default function Procurement() {
       <PrinciplesSourcing />
 
       <BoutiqueGrid />
-
-      <Studio />
-
-      <Services />
-
-      <Projects />
 
       <Contact />
 
