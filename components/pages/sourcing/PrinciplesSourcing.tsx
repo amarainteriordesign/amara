@@ -70,9 +70,12 @@ export default function PrinciplesSourcing() {
 
   return (
     <section className="bg-[#e8dfd2] sourcing-principle-container-anim-main relative h-[calc(100vh+1100px)] min-h-[800px] w-full max-md:h-auto max-md:min-h-fit">
-      <div className="mx-auto max-w-[1440px] px-[24px] py-[108px] max-md:py-[48px]">
-        <h3 className="text-center text-[72px] leading-[72px] font-normal tracking-[1px] text-[#62513A] max-md:text-[48px] max-md:leading-[48px] max-sm:text-[32px] max-sm:leading-[32px]" style={{ fontFamily: 'var(--font-libre-caslon-display)' }}>
-          OUR APPROACH
+      <div className="mx-auto max-w-[1440px] px-[24px] py-[108px] text-center max-md:py-[48px]">
+        <h3
+          className="text-bg-img inline bg-[url(/images/pages/home/text-background.webp)] !bg-top pb-[9px] italic text-[32px] leading-[40px] tracking-[0.2px] max-sm:text-[22px] max-sm:leading-[28px]"
+          style={{ fontFamily: 'var(--font-lora)', WebkitTextFillColor: 'transparent' }}
+        >
+          Our Approach
         </h3>
       </div>
 
