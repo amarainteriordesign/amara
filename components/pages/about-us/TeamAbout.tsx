@@ -44,14 +44,14 @@ export default function TeamAbout() {
             </div>
           </div>
 
-          <div className="mt-[-120px] flex gap-[40px]">
+          <div className="mt-[-200px] flex gap-[40px]">
             <div className="flex w-[48%] items-end pb-[20px]">
               <p className="font-sans text-[16px] leading-[28px] font-normal tracking-[-0.2px] text-[#262626]" style={{ textAlign: 'justify' }}>
                 Creative and design-led, Inès Bakkali leads the creative vision at Amara. As Design Director, she oversees concept development, spatial planning, and material selection, ensuring each project is cohesive, functional, and thoughtfully executed.
               </p>
             </div>
             <div className="w-[52%]">
-              <div className="relative h-[800px] w-full overflow-hidden rounded-[8px]">
+              <div className="relative h-[620px] w-full overflow-hidden rounded-[8px]">
                 <Image src="/images/pages/studio/ines.png" alt="INES BAKKALI" fill className="rounded-[8px] object-cover" />
                 <PhotoOverlay name="INES BAKKALI" title="Design Director" position="bottom" links={{ whatsapp: "https://api.whatsapp.com/send?phone=13055604373", linkedin: "https://www.linkedin.com/in/inesbakkali/" }} />
               </div>
