@@ -13,7 +13,8 @@ type ExpandingImageProps = {
 
 export default function ExpandingImage({ quote, linkTo = "/design" }: ExpandingImageProps) {
   useGSAP(() => {
-    // Calculate scale based on actual rendered image size
+    const isMobile = window.innerWidth < 768;
+
     const calculateScale = () => {
       const imageElement = document.querySelector(".elements-image-anim img") as HTMLImageElement;
       if (!imageElement) return 0.9;
@@ -21,19 +22,14 @@ export default function ExpandingImage({ quote, linkTo = "/design" }: ExpandingI
       const windowWidth = window.innerWidth;
       const actualImageWidth = imageElement.offsetWidth;
 
-      // Determine margin based on screen size
-      const isMobile = windowWidth < 768;
       const margin = isMobile ? 50 : 100;
 
-      // Calculate scale based on actual image width minus margin
       const targetWidth = windowWidth - margin;
       const scale = targetWidth / actualImageWidth;
 
-      // Ensure minimum scale of 0.9 and maximum scale of 1.1
       return Math.max(0.9, Math.min(scale, 1.1));
     };
 
-    // Wait for image to load and get actual dimensions
     const imageElement = document.querySelector(".elements-image-anim img") as HTMLImageElement;
     if (imageElement && imageElement.complete) {
       const initialScale = calculateScale();
@@ -44,7 +40,8 @@ export default function ExpandingImage({ quote, linkTo = "/design" }: ExpandingI
         duration: 0,
       });
       gsap.set(".elements-image-anim img", {
-        scale: initialScale,
+        scale: isMobile ? initialScale * 1.15 : initialScale,
+        objectPosition: isMobile ? "center 40%" : "center center",
         duration: 0,
       });
 
@@ -64,13 +61,14 @@ export default function ExpandingImage({ quote, linkTo = "/design" }: ExpandingI
         start: "top bottom",
         end: "bottom top",
         onUpdate: (self) => {
+          const baseScale = isMobile ? 1.15 : 1;
+          const currentScale = initialScale + (maxScale - initialScale) * self.progress;
           gsap.to(".elements-image-anim img", {
-            scale: initialScale + (maxScale - initialScale) * self.progress,
+            scale: currentScale * baseScale,
           });
         },
       });
     } else {
-      // Fallback if image not loaded yet
       const initialScale = 0.9;
       const maxScale = 1.0;
 
@@ -79,7 +77,8 @@ export default function ExpandingImage({ quote, linkTo = "/design" }: ExpandingI
         duration: 0,
       });
       gsap.set(".elements-image-anim img", {
-        scale: initialScale,
+        scale: isMobile ? initialScale * 1.15 : initialScale,
+        objectPosition: isMobile ? "center 40%" : "center center",
         duration: 0,
       });
 
@@ -99,8 +98,10 @@ export default function ExpandingImage({ quote, linkTo = "/design" }: ExpandingI
         start: "top bottom",
         end: "bottom top",
         onUpdate: (self) => {
+          const baseScale = isMobile ? 1.15 : 1;
+          const currentScale = initialScale + (maxScale - initialScale) * self.progress;
           gsap.to(".elements-image-anim img", {
-            scale: initialScale + (maxScale - initialScale) * self.progress,
+            scale: currentScale * baseScale,
           });
         },
       });
@@ -115,13 +116,13 @@ export default function ExpandingImage({ quote, linkTo = "/design" }: ExpandingI
         </p>
       )}
 
-      <div className="elements-image-anim relative h-auto aspect-[16/10] w-full max-w-[1272px] overflow-hidden md:h-[80vh] md:aspect-auto md:overflow-visible">
+      <div className="elements-image-anim relative h-auto aspect-[16/10] w-full max-w-[1272px] overflow-hidden md:h-[80vh] md:aspect-auto">
         <Image
           src="/images/pages/design/Showroom_Founders_Amara_Interior_Design_Procurement_Miami_Dubai.webp"
           alt="Amara Showroom"
           width={1272}
           height={704}
-          className="h-full w-full scale-[1.15] object-cover object-[center_40%] md:scale-100 md:object-center"
+          className="h-full w-full object-cover"
         />
       </div>
     </section>
