@@ -164,7 +164,7 @@ export default function Approach() {
 
             <div className="mt-[40px] mb-[40px] overflow-hidden">
               <Image
-                src="/images/pages/design/Material_Samples_Amara_Interior_Design_Procurement_Miami_Dubai.webp"
+                src="/images/pages/design/Amara_Interior_Design_Sample_Selection.webp"
                 width={1598}
                 height={2048}
                 alt="Material samples"
@@ -190,7 +190,7 @@ export default function Approach() {
 
         <div className="w-[45%] shrink-0 overflow-hidden max-md:hidden">
           <Image
-            src="/images/pages/design/Material_Samples_Amara_Interior_Design_Procurement_Miami_Dubai.webp"
+            src="/images/pages/design/Amara_Interior_Design_Sample_Selection.webp"
             width={1598}
             height={2048}
             alt="Material samples"
