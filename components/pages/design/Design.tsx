@@ -24,13 +24,13 @@ export default function Design() {
               </p>
             </div>
             <div className="flex gap-[80px] max-md:flex-col max-md:gap-[33px] max-md:max-w-[500px]">
-              <p className="max-w-[309px] font-sans text-[14px] leading-[21px] font-normal tracking-[3%] text-[#262626] max-sm:max-w-full max-sm:text-[12px]">
+              <p className="max-w-[309px] text-justify font-sans text-[14px] leading-[21px] font-normal tracking-[3%] text-[#262626] max-sm:max-w-full max-sm:text-[12px]">
                 We don&apos;t begin with rules or shapes. We begin with what we feel, the texture of a
                 surface, the warmth of natural lines, the quiet pull of a space that just feels right.
                 Every material tells a story, every project finds its rhythm. What guides us is less a
                 method, more a sense of balance.
               </p>
-              <p className="max-w-[309px] font-sans text-[14px] leading-[21px] font-normal tracking-[3%] text-[#262626] max-sm:max-w-full max-sm:text-[12px]">
+              <p className="max-w-[309px] text-justify font-sans text-[14px] leading-[21px] font-normal tracking-[3%] text-[#262626] max-sm:max-w-full max-sm:text-[12px]">
                 Some spaces ground you, others move you. We try to build both, places that hold weight,
                 but also breathe. In our logo, each letter carries a part of that intention. A nod to what
                 inspires us: the raw, the refined, and the feeling that lingers long after you leave
