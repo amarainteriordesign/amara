@@ -4,7 +4,7 @@ import Design from "@/components/pages/design/Design";
 import ExpandingImage from "@/components/common/ExpandingImage";
 import Approach from "@/components/pages/design/Approach";
 import DesignContact from "@/components/pages/design/Contact";
-import DesignFooter from "@/components/pages/design/Footer";
+import Footer from "@/components/layout/Footer";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -29,7 +29,7 @@ export default function DesignPage() {
 
         <DesignContact />
 
-        <DesignFooter />
+        <Footer />
       </div>
     </>
   );
