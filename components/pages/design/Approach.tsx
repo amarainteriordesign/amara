@@ -169,29 +169,14 @@ export default function Approach() {
               </div>
             </div>
 
-            <div className="mt-[40px] mb-[40px]">
-              <div className="relative flex h-[280px] w-full items-center justify-center overflow-hidden">
-                <div className="absolute inset-0">
-                  <Image
-                    src="/images/pages/design/Material_Samples_Amara_Interior_Design_Procurement_Miami_Dubai.webp"
-                    width={1000}
-                    height={2000}
-                    alt="Material samples"
-                    className="h-full w-full object-cover blur-[30px]"
-                  />
-                </div>
-                <div className="relative z-[1] h-[165px] w-[165px] overflow-hidden">
-                  <div className="absolute h-full w-full overflow-hidden">
-                    <Image
-                      src="/images/pages/design/Material_Samples_Amara_Interior_Design_Procurement_Miami_Dubai.webp"
-                      width={500}
-                      height={1000}
-                      alt="Material samples"
-                      className="h-full w-full object-cover"
-                    />
-                  </div>
-                </div>
-              </div>
+            <div className="mt-[40px] mb-[40px] overflow-hidden">
+              <Image
+                src="/images/pages/design/Material_Samples_Amara_Interior_Design_Procurement_Miami_Dubai.webp"
+                width={1598}
+                height={2048}
+                alt="Material samples"
+                className="h-auto w-full object-cover"
+              />
             </div>
 
             <div>
@@ -210,30 +195,14 @@ export default function Approach() {
           </div>
         </div>
 
-        <div className="w-[45%] shrink-0 max-md:hidden">
-          <div className="relative flex h-full w-full items-center justify-center overflow-hidden">
-            <div className="absolute inset-0">
-              <Image
-                src="/images/pages/design/Material_Samples_Amara_Interior_Design_Procurement_Miami_Dubai.webp"
-                width={1000}
-                height={2000}
-                alt="Material samples"
-                className="h-full w-full object-cover blur-[30px]"
-              />
-            </div>
-
-            <div className="relative z-[1] h-[345px] max-h-[60%] w-[321px] max-w-[70%] overflow-hidden max-sm:h-[165px] max-sm:w-[165px]">
-              <div className="absolute h-full w-full overflow-hidden">
-                <Image
-                  src="/images/pages/design/Material_Samples_Amara_Interior_Design_Procurement_Miami_Dubai.webp"
-                  width={500}
-                  height={1000}
-                  alt="Material samples"
-                  className="h-full w-full object-cover"
-                />
-              </div>
-            </div>
-          </div>
+        <div className="w-[45%] shrink-0 overflow-hidden max-md:hidden">
+          <Image
+            src="/images/pages/design/Material_Samples_Amara_Interior_Design_Procurement_Miami_Dubai.webp"
+            width={1598}
+            height={2048}
+            alt="Material samples"
+            className="h-full w-full object-cover"
+          />
         </div>
       </div>
     </section>
