@@ -18,7 +18,7 @@ export default function Approach() {
           <div className="max-md:hidden">
             <div className="mb-[60px]">
               <h2 className="font-display text-[36px] leading-[44px] tracking-[0.5px] text-[#262626]">
-                DESIGN PROCESS
+                DESIGN PROCESS | PHASES 1–3
               </h2>
 
               <div className="mt-[16px] space-y-[48px]">
@@ -83,7 +83,7 @@ export default function Approach() {
 
             <div>
               <h2 className="font-display text-[36px] leading-[44px] tracking-[0.5px] text-[#262626]">
-                PROCUREMENT PROCESS – Phases 4–6
+                PROCUREMENT PROCESS | PHASES 4–6
               </h2>
               <p className="mt-[16px] font-sans text-[16px] leading-[26px] text-[#4a4a4a]" style={{ textAlign: 'justify' }}>
                 From approved design to final handover, we manage procurement, logistics, quality control, international shipping, and white-glove installation to ensure seamless project delivery.
@@ -99,7 +99,7 @@ export default function Approach() {
           <div className="hidden max-md:block">
             <div className="mb-[40px]">
               <h2 className="font-display text-[26px] leading-[34px] tracking-[0.5px] text-[#262626]">
-                DESIGN PROCESS
+                DESIGN PROCESS | PHASES 1–3
               </h2>
 
               <div className="mt-[16px] space-y-[28px]">
@@ -174,7 +174,7 @@ export default function Approach() {
 
             <div>
               <h2 className="font-display text-[26px] leading-[34px] tracking-[0.5px] text-[#262626]">
-                PROCUREMENT PROCESS – Phases 4–6
+                PROCUREMENT PROCESS | PHASES 4–6
               </h2>
               <p className="mt-[16px] font-sans text-[14px] leading-[22px] text-[#4a4a4a]" style={{ textAlign: 'justify' }}>
                 From approved design to final handover, we manage procurement, logistics, quality control, international shipping, and white-glove installation to ensure seamless project delivery.
