@@ -49,7 +49,7 @@ export default function TeamAbout() {
                 </p>
               </div>
               <div className="mt-[30px]">
-                <div className="relative h-[620px] w-full overflow-hidden rounded-[8px]">
+                <div className="relative h-[720px] w-full overflow-hidden rounded-[8px]">
                   <Image src="/images/pages/studio/ines.png" alt="INES BAKKALI" fill className="rounded-[8px] object-cover" />
                   <PhotoOverlay name="INES BAKKALI" title="Design Director" position="bottom" links={{ whatsapp: "https://api.whatsapp.com/send?phone=13055604373", linkedin: "https://www.linkedin.com/in/inesbakkali/" }} />
                 </div>
