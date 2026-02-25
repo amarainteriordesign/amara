@@ -26,7 +26,7 @@ export default function Approach() {
                   <h3 className="text-[22px] leading-[30px] font-medium tracking-[0.2px] text-[#262626]" style={{ fontFamily: 'var(--font-lora)' }}>
                     Phase 1 – Concept & Vision
                   </h3>
-                  <p className="mt-[12px] font-sans text-[16px] leading-[26px] text-[#4a4a4a]" style={{ textAlign: 'justify' }}>
+                  <p className="mt-[16px] font-sans text-[16px] leading-[26px] text-[#4a4a4a]" style={{ textAlign: 'justify' }}>
                     We define the overall interior design direction based on your brief, lifestyle, and objectives.
                   </p>
                   <ul className="mt-[16px] space-y-[8px]">
@@ -47,7 +47,7 @@ export default function Approach() {
                   <h3 className="text-[22px] leading-[30px] font-medium tracking-[0.2px] text-[#262626]" style={{ fontFamily: 'var(--font-lora)' }}>
                     Phase 2 – Design Development
                   </h3>
-                  <p className="mt-[12px] font-sans text-[16px] leading-[26px] text-[#4a4a4a]" style={{ textAlign: 'justify' }}>
+                  <p className="mt-[16px] font-sans text-[16px] leading-[26px] text-[#4a4a4a]" style={{ textAlign: 'justify' }}>
                     The approved concept is refined into a cohesive and functional interior design across all spaces.
                   </p>
                   <ul className="mt-[16px] space-y-[8px]">
@@ -69,7 +69,7 @@ export default function Approach() {
                   <h3 className="text-[22px] leading-[30px] font-medium tracking-[0.2px] text-[#262626]" style={{ fontFamily: 'var(--font-lora)' }}>
                     Phase 3 – Detailed Design & Documentation
                   </h3>
-                  <p className="mt-[12px] font-sans text-[16px] leading-[26px] text-[#4a4a4a]" style={{ textAlign: 'justify' }}>
+                  <p className="mt-[16px] font-sans text-[16px] leading-[26px] text-[#4a4a4a]" style={{ textAlign: 'justify' }}>
                     The design is finalized and technically documented, ready for construction and procurement.
                   </p>
                   <ul className="mt-[16px] space-y-[8px]">
@@ -115,10 +115,10 @@ export default function Approach() {
                   <h3 className="text-[18px] leading-[24px] font-medium tracking-[0.2px] text-[#262626]" style={{ fontFamily: 'var(--font-lora)' }}>
                     Phase 1 – Concept & Vision
                   </h3>
-                  <p className="mt-[8px] font-sans text-[14px] leading-[22px] text-[#4a4a4a]" style={{ textAlign: 'justify' }}>
+                  <p className="mt-[16px] font-sans text-[14px] leading-[22px] text-[#4a4a4a]" style={{ textAlign: 'justify' }}>
                     We define the overall interior design direction based on your brief, lifestyle, and objectives.
                   </p>
-                  <ul className="mt-[12px] space-y-[8px]">
+                  <ul className="mt-[16px] space-y-[8px]">
                     {[
                       "Concept narrative & moodboards",
                       "Space planning & preliminary layouts",
@@ -136,10 +136,10 @@ export default function Approach() {
                   <h3 className="text-[18px] leading-[24px] font-medium tracking-[0.2px] text-[#262626]" style={{ fontFamily: 'var(--font-lora)' }}>
                     Phase 2 – Design Development
                   </h3>
-                  <p className="mt-[8px] font-sans text-[14px] leading-[22px] text-[#4a4a4a]" style={{ textAlign: 'justify' }}>
+                  <p className="mt-[16px] font-sans text-[14px] leading-[22px] text-[#4a4a4a]" style={{ textAlign: 'justify' }}>
                     The approved concept is refined into a cohesive and functional interior design across all spaces.
                   </p>
-                  <ul className="mt-[12px] space-y-[8px]">
+                  <ul className="mt-[16px] space-y-[8px]">
                     {[
                       "Detailed space planning",
                       "Finishes & material selection",
@@ -158,10 +158,10 @@ export default function Approach() {
                   <h3 className="text-[18px] leading-[24px] font-medium tracking-[0.2px] text-[#262626]" style={{ fontFamily: 'var(--font-lora)' }}>
                     Phase 3 – Detailed Design & Documentation
                   </h3>
-                  <p className="mt-[8px] font-sans text-[14px] leading-[22px] text-[#4a4a4a]" style={{ textAlign: 'justify' }}>
+                  <p className="mt-[16px] font-sans text-[14px] leading-[22px] text-[#4a4a4a]" style={{ textAlign: 'justify' }}>
                     The design is finalized and technically documented, ready for construction and procurement.
                   </p>
-                  <ul className="mt-[12px] space-y-[8px]">
+                  <ul className="mt-[16px] space-y-[8px]">
                     {[
                       "General arrangement drawings",
                       "Joinery details & custom design",
