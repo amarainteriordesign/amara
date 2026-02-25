@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function Design() {
   return (
-    <section className="bg-background flex w-full flex-col gap-[86px] pt-[140px] max-md:gap-[59px] max-md:pt-[70px]">
+    <section className="bg-background flex w-full flex-col gap-[86px] pt-[180px] max-md:gap-[59px] max-md:pt-[80px]">
       <div className="mx-auto flex w-full max-w-[1440px] flex-col px-[20px] max-md:items-center max-md:px-[24px]">
         <div className="flex w-full items-end gap-[40px] max-md:flex-col max-md:items-center max-md:gap-0">
           <div className="max-md:pb-[46px]">
