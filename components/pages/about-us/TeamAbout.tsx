@@ -40,8 +40,8 @@ export default function TeamAbout() {
           <p className="font-sans text-[14px] leading-[24px] font-normal tracking-[-0.2px] text-[#262626]" style={{ textAlign: 'justify' }}>Creative and design-led, Inès Bakkali leads the creative vision at Amara. As Design Director, she oversees concept development, spatial planning, and material selection, ensuring each project is cohesive, functional, and thoughtfully executed.</p>
         </div>
 
-        <div className="grid grid-cols-[45%_1fr] gap-x-[40px] gap-y-[40px] max-md:hidden" style={{ gridTemplateRows: 'auto 120px auto auto' }}>
-          <div className="relative row-span-2 h-[550px] overflow-hidden rounded-[8px]" style={{ gridRow: '1 / 3', gridColumn: '1' }}>
+        <div className="grid grid-cols-[45%_1fr] gap-x-[40px] gap-y-[40px] max-md:hidden" style={{ gridTemplateRows: 'auto 200px auto auto' }}>
+          <div className="relative row-span-2 h-[620px] overflow-hidden rounded-[8px]" style={{ gridRow: '1 / 3', gridColumn: '1' }}>
             <Image src="/images/pages/studio/eloise.png" alt="ELOISE CHAUVIERE" width={417} height={515} className="absolute top-0 left-0 h-full w-full rounded-[8px] object-cover" />
             <div className="absolute top-0 left-0 z-[2] py-[15px] pl-[26px]">
               <p className="font-sans text-[14px] leading-[30px] font-medium tracking-[1.8px] text-[#FEFAF6]">ELOISE CHAUVIERE</p>
@@ -59,7 +59,7 @@ export default function TeamAbout() {
             </p>
           </div>
 
-          <div className="relative h-[450px] self-end overflow-hidden rounded-[8px]" style={{ gridRow: '2 / 5', gridColumn: '2' }}>
+          <div className="relative h-[520px] self-end overflow-hidden rounded-[8px]" style={{ gridRow: '2 / 5', gridColumn: '2' }}>
             <Image src="/images/pages/studio/ines.png" alt="INES BAKKALI" width={417} height={515} className="absolute top-0 left-0 h-full w-full rounded-[8px] object-cover" />
             <div className="absolute bottom-[15px] left-[26px] z-[2]">
               <p className="font-sans text-[14px] leading-[30px] font-medium tracking-[1.8px] text-[#FEFAF6]">INES BAKKALI</p>
