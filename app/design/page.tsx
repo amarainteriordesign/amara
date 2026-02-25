@@ -28,7 +28,7 @@ export default function DesignPage() {
 
         <Approach />
 
-        <div className="bg-[#e8dfd2]">
+        <div className="bg-[#F1EBDF]">
           <Projects />
         </div>
 
