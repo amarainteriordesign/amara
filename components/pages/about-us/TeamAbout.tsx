@@ -33,7 +33,7 @@ export default function TeamAbout() {
           <div className="flex gap-[40px]">
             <div className="w-[48%]">
               <div className="relative h-[620px] w-full overflow-hidden rounded-[8px]">
-                <Image src="/images/pages/studio/eloise.png" alt="ELOISE CHAUVIERE" width={417} height={515} className="absolute top-0 left-0 h-full w-full rounded-[8px] object-cover" />
+                <Image src="/images/pages/studio/eloise.png" alt="ELOISE CHAUVIERE" fill className="rounded-[8px] object-cover" />
                 <PhotoOverlay name="ELOISE CHAUVIERE" title="Managing Director" position="top" links={{ whatsapp: "https://api.whatsapp.com/send?phone=13055604373", linkedin: "https://www.linkedin.com/in/eloïse-chauviere-44b93b159" }} />
               </div>
             </div>
@@ -52,7 +52,7 @@ export default function TeamAbout() {
             </div>
             <div className="w-[52%]">
               <div className="relative h-[520px] w-full overflow-hidden rounded-[8px]">
-                <Image src="/images/pages/studio/ines.png" alt="INES BAKKALI" width={417} height={515} className="absolute top-0 left-0 h-full w-full rounded-[8px] object-cover" />
+                <Image src="/images/pages/studio/ines.png" alt="INES BAKKALI" fill className="rounded-[8px] object-cover" />
                 <PhotoOverlay name="INES BAKKALI" title="Design Director" position="bottom" links={{ whatsapp: "https://api.whatsapp.com/send?phone=13055604373", linkedin: "https://www.linkedin.com/in/inesbakkali/" }} />
               </div>
             </div>
@@ -61,12 +61,12 @@ export default function TeamAbout() {
 
         <div className="hidden max-md:flex max-md:flex-col max-md:gap-[40px]">
           <div className="relative h-[500px] w-full overflow-hidden rounded-[8px] max-sm:h-[400px]">
-            <Image src="/images/pages/studio/eloise.png" alt="ELOISE CHAUVIERE" width={417} height={515} className="absolute top-0 left-0 h-full w-full rounded-[8px] object-cover" />
+            <Image src="/images/pages/studio/eloise.png" alt="ELOISE CHAUVIERE" fill className="rounded-[8px] object-cover" />
             <PhotoOverlay name="ELOISE CHAUVIERE" title="Managing Director" position="top" links={{ whatsapp: "https://api.whatsapp.com/send?phone=13055604373", linkedin: "https://www.linkedin.com/in/eloïse-chauviere-44b93b159" }} />
           </div>
           <p className="font-sans text-[14px] leading-[24px] font-normal tracking-[-0.2px] text-[#262626]" style={{ textAlign: 'justify' }}>Strategic and detail-driven, Eloïse Chauviere bridges concept and execution. As Managing Director, she leads company operations, client strategy, international logistics and procurement, ensuring every project is delivered efficiently and to the highest standard.</p>
           <div className="relative h-[500px] w-full overflow-hidden rounded-[8px] max-sm:h-[400px]">
-            <Image src="/images/pages/studio/ines.png" alt="INES BAKKALI" width={417} height={515} className="absolute top-0 left-0 h-full w-full rounded-[8px] object-cover" />
+            <Image src="/images/pages/studio/ines.png" alt="INES BAKKALI" fill className="rounded-[8px] object-cover" />
             <PhotoOverlay name="INES BAKKALI" title="Design Director" position="bottom" links={{ whatsapp: "https://api.whatsapp.com/send?phone=13055604373", linkedin: "https://www.linkedin.com/in/inesbakkali/" }} />
           </div>
           <p className="font-sans text-[14px] leading-[24px] font-normal tracking-[-0.2px] text-[#262626]" style={{ textAlign: 'justify' }}>Creative and design-led, Inès Bakkali leads the creative vision at Amara. As Design Director, she oversees concept development, spatial planning, and material selection, ensuring each project is cohesive, functional, and thoughtfully executed.</p>
