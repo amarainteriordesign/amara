@@ -1,6 +1,7 @@
 import Header from "@/components/layout/Header";
 import Hero from "@/components/pages/studio/Hero";
 import AboutSection from "@/components/pages/about-us/AboutSection";
+import ExpandingImageAbout from "@/components/pages/about-us/ExpandingImageAbout";
 import Story from "@/components/pages/studio/Story";
 import ExpandingImage from "@/components/common/ExpandingImage";
 import Experiences from "@/components/pages/studio/Experiences";
@@ -22,6 +23,8 @@ export default function AboutUs() {
       <Hero />
 
       <AboutSection />
+
+      <ExpandingImageAbout />
 
       <Story />
 
