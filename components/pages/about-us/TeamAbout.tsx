@@ -9,74 +9,69 @@ function WhatsAppIcon() {
   );
 }
 
+function PhotoOverlay({ name, title, position, links }: { name: string; title: string; position: 'top' | 'bottom'; links: { whatsapp: string; linkedin: string } }) {
+  return (
+    <>
+      <div className={`absolute ${position === 'top' ? 'top-0 left-0 py-[15px] pl-[26px]' : 'bottom-[15px] left-[26px]'} z-[2]`}>
+        <p className="font-sans text-[14px] leading-[30px] font-medium tracking-[1.8px] text-[#FEFAF6]">{name}</p>
+        <p className="font-sans text-[11px] leading-[16px] font-normal tracking-[1px] text-[#FEFAF6]">{title}</p>
+      </div>
+      <div className={`absolute ${position === 'top' ? 'right-[15px] bottom-[15px]' : 'top-[15px] right-[15px]'} z-[2] flex items-center gap-[9px]`}>
+        <a href={links.whatsapp} target="_blank" rel="noopener noreferrer" className="flex h-[40px] w-[40px] items-center justify-center rounded-[50%] border-[1px] border-[#FFF] bg-[#ADADAD4D]"><WhatsAppIcon /></a>
+        <a href={links.linkedin} target="_blank" className="flex h-[40px] w-[40px] items-center justify-center rounded-[50%] border-[1px] border-[#FFF] bg-[#ADADAD4D]"><Linkedin width={16} height={16} color="#FFF" /></a>
+      </div>
+    </>
+  );
+}
+
 export default function TeamAbout() {
   return (
     <section className="w-full bg-[#e8dfd2]">
-      <div className="mx-auto w-full max-w-[1400px] px-[60px] pt-[120px] pb-[120px] max-md:px-[40px] max-md:pt-[60px] max-md:pb-[60px] max-sm:px-[20px] max-sm:pt-[40px] max-sm:pb-[40px]">
+      <div className="mx-auto w-full max-w-[1400px] px-[60px] pt-[100px] pb-[100px] max-md:px-[40px] max-md:pt-[60px] max-md:pb-[60px] max-sm:px-[20px] max-sm:pt-[40px] max-sm:pb-[40px]">
+
+        <div className="max-md:hidden">
+          <div className="flex gap-[40px]">
+            <div className="w-[48%]">
+              <div className="relative h-[620px] w-full overflow-hidden rounded-[8px]">
+                <Image src="/images/pages/studio/eloise.png" alt="ELOISE CHAUVIERE" width={417} height={515} className="absolute top-0 left-0 h-full w-full rounded-[8px] object-cover" />
+                <PhotoOverlay name="ELOISE CHAUVIERE" title="Managing Director" position="top" links={{ whatsapp: "https://api.whatsapp.com/send?phone=13055604373", linkedin: "https://www.linkedin.com/in/eloïse-chauviere-44b93b159" }} />
+              </div>
+            </div>
+            <div className="flex w-[52%] items-start pt-[20px]">
+              <p className="font-sans text-[16px] leading-[28px] font-normal tracking-[-0.2px] text-[#262626]" style={{ textAlign: 'justify' }}>
+                Strategic and detail-driven, Eloïse Chauviere bridges concept and execution. As Managing Director, she leads company operations, client strategy, international logistics and procurement, ensuring every project is delivered efficiently and to the highest standard.
+              </p>
+            </div>
+          </div>
+
+          <div className="mt-[-120px] flex gap-[40px]">
+            <div className="flex w-[48%] items-end pb-[20px]">
+              <p className="font-sans text-[16px] leading-[28px] font-normal tracking-[-0.2px] text-[#262626]" style={{ textAlign: 'justify' }}>
+                Creative and design-led, Inès Bakkali leads the creative vision at Amara. As Design Director, she oversees concept development, spatial planning, and material selection, ensuring each project is cohesive, functional, and thoughtfully executed.
+              </p>
+            </div>
+            <div className="w-[52%]">
+              <div className="relative h-[520px] w-full overflow-hidden rounded-[8px]">
+                <Image src="/images/pages/studio/ines.png" alt="INES BAKKALI" width={417} height={515} className="absolute top-0 left-0 h-full w-full rounded-[8px] object-cover" />
+                <PhotoOverlay name="INES BAKKALI" title="Design Director" position="bottom" links={{ whatsapp: "https://api.whatsapp.com/send?phone=13055604373", linkedin: "https://www.linkedin.com/in/inesbakkali/" }} />
+              </div>
+            </div>
+          </div>
+        </div>
+
         <div className="hidden max-md:flex max-md:flex-col max-md:gap-[40px]">
           <div className="relative h-[500px] w-full overflow-hidden rounded-[8px] max-sm:h-[400px]">
             <Image src="/images/pages/studio/eloise.png" alt="ELOISE CHAUVIERE" width={417} height={515} className="absolute top-0 left-0 h-full w-full rounded-[8px] object-cover" />
-            <div className="absolute top-0 left-0 z-[2] py-[15px] pl-[26px]">
-              <p className="font-sans text-[14px] leading-[30px] font-medium tracking-[1.8px] text-[#FEFAF6]">ELOISE CHAUVIERE</p>
-              <p className="font-sans text-[11px] leading-[16px] font-normal tracking-[1px] text-[#FEFAF6]">Managing Director</p>
-            </div>
-            <div className="absolute right-[15px] bottom-[15px] z-[2] flex items-center gap-[9px]">
-              <a href="https://api.whatsapp.com/send?phone=13055604373" target="_blank" rel="noopener noreferrer" className="flex h-[40px] w-[40px] items-center justify-center rounded-[50%] border-[1px] border-[#FFF] bg-[#ADADAD4D]"><WhatsAppIcon /></a>
-              <a href="https://www.linkedin.com/in/eloïse-chauviere-44b93b159" target="_blank" className="flex h-[40px] w-[40px] items-center justify-center rounded-[50%] border-[1px] border-[#FFF] bg-[#ADADAD4D]"><Linkedin width={16} height={16} color="#FFF" /></a>
-            </div>
+            <PhotoOverlay name="ELOISE CHAUVIERE" title="Managing Director" position="top" links={{ whatsapp: "https://api.whatsapp.com/send?phone=13055604373", linkedin: "https://www.linkedin.com/in/eloïse-chauviere-44b93b159" }} />
           </div>
           <p className="font-sans text-[14px] leading-[24px] font-normal tracking-[-0.2px] text-[#262626]" style={{ textAlign: 'justify' }}>Strategic and detail-driven, Eloïse Chauviere bridges concept and execution. As Managing Director, she leads company operations, client strategy, international logistics and procurement, ensuring every project is delivered efficiently and to the highest standard.</p>
           <div className="relative h-[500px] w-full overflow-hidden rounded-[8px] max-sm:h-[400px]">
             <Image src="/images/pages/studio/ines.png" alt="INES BAKKALI" width={417} height={515} className="absolute top-0 left-0 h-full w-full rounded-[8px] object-cover" />
-            <div className="absolute bottom-[15px] left-[26px] z-[2]">
-              <p className="font-sans text-[14px] leading-[30px] font-medium tracking-[1.8px] text-[#FEFAF6]">INES BAKKALI</p>
-              <p className="font-sans text-[11px] leading-[16px] font-normal tracking-[1px] text-[#FEFAF6]">Design Director</p>
-            </div>
-            <div className="absolute top-[15px] right-[15px] z-[2] flex items-center gap-[9px]">
-              <a href="https://api.whatsapp.com/send?phone=13055604373" target="_blank" rel="noopener noreferrer" className="flex h-[40px] w-[40px] items-center justify-center rounded-[50%] border-[1px] border-[#FFF] bg-[#ADADAD4D]"><WhatsAppIcon /></a>
-              <a href="https://www.linkedin.com/in/inesbakkali/" target="_blank" className="flex h-[40px] w-[40px] items-center justify-center rounded-[50%] border-[1px] border-[#FFF] bg-[#ADADAD4D]"><Linkedin width={16} height={16} color="#FFF" /></a>
-            </div>
+            <PhotoOverlay name="INES BAKKALI" title="Design Director" position="bottom" links={{ whatsapp: "https://api.whatsapp.com/send?phone=13055604373", linkedin: "https://www.linkedin.com/in/inesbakkali/" }} />
           </div>
           <p className="font-sans text-[14px] leading-[24px] font-normal tracking-[-0.2px] text-[#262626]" style={{ textAlign: 'justify' }}>Creative and design-led, Inès Bakkali leads the creative vision at Amara. As Design Director, she oversees concept development, spatial planning, and material selection, ensuring each project is cohesive, functional, and thoughtfully executed.</p>
         </div>
 
-        <div className="grid grid-cols-[45%_1fr] gap-x-[40px] gap-y-[40px] max-md:hidden" style={{ gridTemplateRows: 'auto 250px auto auto' }}>
-          <div className="relative row-span-2 h-[620px] overflow-hidden rounded-[8px]" style={{ gridRow: '1 / 3', gridColumn: '1' }}>
-            <Image src="/images/pages/studio/eloise.png" alt="ELOISE CHAUVIERE" width={417} height={515} className="absolute top-0 left-0 h-full w-full rounded-[8px] object-cover" />
-            <div className="absolute top-0 left-0 z-[2] py-[15px] pl-[26px]">
-              <p className="font-sans text-[14px] leading-[30px] font-medium tracking-[1.8px] text-[#FEFAF6]">ELOISE CHAUVIERE</p>
-              <p className="font-sans text-[11px] leading-[16px] font-normal tracking-[1px] text-[#FEFAF6]">Managing Director</p>
-            </div>
-            <div className="absolute right-[15px] bottom-[15px] z-[2] flex items-center gap-[9px]">
-              <a href="https://api.whatsapp.com/send?phone=13055604373" target="_blank" rel="noopener noreferrer" className="flex h-[40px] w-[40px] items-center justify-center rounded-[50%] border-[1px] border-[#FFF] bg-[#ADADAD4D]"><WhatsAppIcon /></a>
-              <a href="https://www.linkedin.com/in/eloïse-chauviere-44b93b159" target="_blank" className="flex h-[40px] w-[40px] items-center justify-center rounded-[50%] border-[1px] border-[#FFF] bg-[#ADADAD4D]"><Linkedin width={16} height={16} color="#FFF" /></a>
-            </div>
-          </div>
-
-          <div className="self-start pt-[20px]" style={{ gridRow: '1', gridColumn: '2' }}>
-            <p className="font-sans text-[16px] leading-[28px] font-normal tracking-[-0.2px] text-[#262626]" style={{ textAlign: 'justify' }}>
-              Strategic and detail-driven, Eloïse Chauviere bridges concept and execution. As Managing Director, she leads company operations, client strategy, international logistics and procurement, ensuring every project is delivered efficiently and to the highest standard.
-            </p>
-          </div>
-
-          <div className="relative h-[520px] self-end overflow-hidden rounded-[8px]" style={{ gridRow: '2 / 5', gridColumn: '2' }}>
-            <Image src="/images/pages/studio/ines.png" alt="INES BAKKALI" width={417} height={515} className="absolute top-0 left-0 h-full w-full rounded-[8px] object-cover" />
-            <div className="absolute bottom-[15px] left-[26px] z-[2]">
-              <p className="font-sans text-[14px] leading-[30px] font-medium tracking-[1.8px] text-[#FEFAF6]">INES BAKKALI</p>
-              <p className="font-sans text-[11px] leading-[16px] font-normal tracking-[1px] text-[#FEFAF6]">Design Director</p>
-            </div>
-            <div className="absolute top-[15px] right-[15px] z-[2] flex items-center gap-[9px]">
-              <a href="https://api.whatsapp.com/send?phone=13055604373" target="_blank" rel="noopener noreferrer" className="flex h-[40px] w-[40px] items-center justify-center rounded-[50%] border-[1px] border-[#FFF] bg-[#ADADAD4D]"><WhatsAppIcon /></a>
-              <a href="https://www.linkedin.com/in/inesbakkali/" target="_blank" className="flex h-[40px] w-[40px] items-center justify-center rounded-[50%] border-[1px] border-[#FFF] bg-[#ADADAD4D]"><Linkedin width={16} height={16} color="#FFF" /></a>
-            </div>
-          </div>
-
-          <div className="self-end" style={{ gridRow: '3 / 5', gridColumn: '1' }}>
-            <p className="font-sans text-[16px] leading-[28px] font-normal tracking-[-0.2px] text-[#262626]" style={{ textAlign: 'justify' }}>
-              Creative and design-led, Inès Bakkali leads the creative vision at Amara. As Design Director, she oversees concept development, spatial planning, and material selection, ensuring each project is cohesive, functional, and thoughtfully executed.
-            </p>
-          </div>
-        </div>
       </div>
     </section>
   );
