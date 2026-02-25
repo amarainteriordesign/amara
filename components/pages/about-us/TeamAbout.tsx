@@ -32,7 +32,7 @@ export default function TeamAbout() {
         <div className="max-md:hidden">
           <div className="flex gap-[40px]">
             <div className="w-[48%]">
-              <div className="relative h-[800px] w-full overflow-hidden rounded-[8px]">
+              <div className="relative h-[750px] w-full overflow-hidden rounded-[8px]">
                 <Image src="/images/pages/studio/eloise.png" alt="ELOISE CHAUVIERE" fill className="rounded-[8px] object-cover" />
                 <PhotoOverlay name="ELOISE CHAUVIERE" title="Managing Director" position="top" links={{ whatsapp: "https://api.whatsapp.com/send?phone=13055604373", linkedin: "https://www.linkedin.com/in/eloïse-chauviere-44b93b159" }} />
               </div>
@@ -49,7 +49,7 @@ export default function TeamAbout() {
                 </p>
               </div>
               <div className="mt-[30px]">
-                <div className="relative h-[800px] w-full overflow-hidden rounded-[8px]">
+                <div className="relative h-[750px] w-full overflow-hidden rounded-[8px]">
                   <Image src="/images/pages/studio/ines.png" alt="INES BAKKALI" fill className="rounded-[8px] object-cover" />
                   <PhotoOverlay name="INES BAKKALI" title="Design Director" position="bottom" links={{ whatsapp: "https://api.whatsapp.com/send?phone=13055604373", linkedin: "https://www.linkedin.com/in/inesbakkali/" }} />
                 </div>
