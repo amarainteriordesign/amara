@@ -125,7 +125,7 @@ export default function ExpandingImage({ quote, linkTo = "/design" }: ExpandingI
           alt="Elenents"
           width={1272}
           height={704}
-          className="h-full w-full object-cover"
+          className="h-full w-full object-cover object-[center_65%]"
         />
         <div className="absolute bottom-[42px] left-[50%] z-[2] flex translate-x-[-50%] transform flex-col items-center gap-[9px] max-sm:bottom-[25px] max-sm:gap-0">
           <p className="font-serif text-[28px] leading-[36px] tracking-[-0.8px] whitespace-nowrap text-[#F6EFE5] italic max-sm:text-[22px] max-sm:tracking-[-0.6px]">
