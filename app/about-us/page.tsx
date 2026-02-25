@@ -7,11 +7,8 @@ import Projects from "@/components/pages/home/Projects";
 import ImmersiveJourney from "@/components/pages/about-us/ImmersiveJourney";
 import TeamAbout from "@/components/pages/about-us/TeamAbout";
 import QuoteAbout from "@/components/pages/about-us/QuoteAbout";
-import Story from "@/components/pages/studio/Story";
-import ExpandingImage from "@/components/common/ExpandingImage";
-import Experiences from "@/components/pages/studio/Experiences";
-import ContactUs from "@/components/pages/studio/ContactUs";
-import ImageFooter from "@/components/layout/ImageFooter";
+import ContactUs from "@/components/pages/landing/ContactUs";
+import Footer from "@/components/layout/Footer";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -41,15 +38,9 @@ export default function AboutUs() {
 
       <QuoteAbout />
 
-      <Story />
-
-      <ExpandingImage quote="Each project begins with a sense of place. We listen before we draw, to the light, the rhythm, the layers of history and emotion that shape a space. It's not about imposing a style, but revealing what already exists beneath the surface. From ancient textures to modern flows, we let the spirit of each location guide the design, making every detail feel both grounded and personal." />
-
-      <Experiences />
-
       <ContactUs />
 
-      <ImageFooter image="/images/pages/home/hero-2.png" isDarkHeaderByDefault={true} />
+      <Footer />
     </>
   );
 }
