@@ -137,7 +137,7 @@ export default function PrinciplesSourcing() {
                 SOURCING PHASES 4–6
               </h2>
 
-              <div className="mt-[16px] space-y-[36px]">
+              <div className="mt-[16px] space-y-[16px]">
                 <div>
                   <h3 className="text-[18px] leading-[24px] font-medium tracking-[0.2px] text-[#262626]" style={{ fontFamily: 'var(--font-lora)' }}>
                     Phase 4 – Procurement
