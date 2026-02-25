@@ -137,12 +137,12 @@ export default function PrinciplesSourcing() {
                 SOURCING PHASES 4–6
               </h2>
 
-              <div className="mt-[12px] space-y-[28px]">
+              <div className="mt-[16px] space-y-[36px]">
                 <div>
                   <h3 className="text-[18px] leading-[24px] font-medium tracking-[0.2px] text-[#262626]" style={{ fontFamily: 'var(--font-lora)' }}>
                     Phase 4 – Procurement
                   </h3>
-                  <ul className="mt-[12px] space-y-[6px]">
+                  <ul className="mt-[16px] space-y-[8px]">
                     {[
                       "Supplier selection & FF&E purchasing",
                       "Production coordination & budget control",
@@ -159,7 +159,7 @@ export default function PrinciplesSourcing() {
                   <h3 className="text-[18px] leading-[24px] font-medium tracking-[0.2px] text-[#262626]" style={{ fontFamily: 'var(--font-lora)' }}>
                     Phase 5 – Logistics & Shipping
                   </h3>
-                  <ul className="mt-[12px] space-y-[6px]">
+                  <ul className="mt-[16px] space-y-[8px]">
                     {[
                       "Order tracking & quality control",
                       "Consolidation, export & international shipping",
@@ -176,7 +176,7 @@ export default function PrinciplesSourcing() {
                   <h3 className="text-[18px] leading-[24px] font-medium tracking-[0.2px] text-[#262626]" style={{ fontFamily: 'var(--font-lora)' }}>
                     Phase 6 – Installation & Styling
                   </h3>
-                  <ul className="mt-[12px] space-y-[6px]">
+                  <ul className="mt-[16px] space-y-[8px]">
                     {[
                       "On-site FF&E installation & supervision",
                       "Final styling & turnkey handover",
