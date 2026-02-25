@@ -18,7 +18,7 @@ export default function PrinciplesSourcing() {
           <div className="max-md:hidden">
             <div className="mb-[60px]">
               <h2 className="font-display text-[36px] leading-[44px] tracking-[0.5px] text-[#262626]">
-                DESIGN PHASES 1-3
+                DESIGN | PHASES 1–3
               </h2>
               <p className="mt-[16px] font-sans text-[16px] leading-[26px] text-[#4a4a4a]" style={{ textAlign: 'justify' }}>
                 From briefing to design, we translate your vision into a cohesive luxury interior concept and coordinated design package, with finalized layouts, material and finish direction, lighting strategy, and technical drawings, ready for execution before procurement.
@@ -32,7 +32,7 @@ export default function PrinciplesSourcing() {
 
             <div>
               <h2 className="font-display text-[36px] leading-[44px] tracking-[0.5px] text-[#262626]">
-                SOURCING PHASES 4-6
+                PROCUREMENT | PHASES 4–6
               </h2>
 
               <div className="mt-[16px] space-y-[48px]">
@@ -97,7 +97,7 @@ export default function PrinciplesSourcing() {
           <div className="hidden max-md:block">
             <div className="mb-[40px]">
               <h2 className="font-display text-[26px] leading-[34px] tracking-[0.5px] text-[#262626]">
-                DESIGN PHASES 1–3
+                DESIGN | PHASES 1–3
               </h2>
               <p className="mt-[16px] font-sans text-[14px] leading-[22px] text-[#4a4a4a]" style={{ textAlign: 'justify' }}>
                 From briefing to final concept, we deliver a complete luxury interior design package with space planning, material specifications, lighting design, and technical drawings ready for construction.
@@ -136,7 +136,7 @@ export default function PrinciplesSourcing() {
 
             <div>
               <h2 className="font-display text-[26px] leading-[34px] tracking-[0.5px] text-[#262626]">
-                SOURCING PHASES 4–6
+                PROCUREMENT | PHASES 4–6
               </h2>
 
               <div className="mt-[16px] space-y-[28px]">
