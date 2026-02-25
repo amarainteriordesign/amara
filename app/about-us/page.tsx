@@ -1,6 +1,5 @@
 import Header from "@/components/layout/Header";
 import Hero from "@/components/pages/studio/Hero";
-import Work from "@/components/pages/studio/Work";
 import Story from "@/components/pages/studio/Story";
 import ExpandingImage from "@/components/common/ExpandingImage";
 import Experiences from "@/components/pages/studio/Experiences";
@@ -20,8 +19,6 @@ export default function AboutUs() {
       <Header isDark={true} />
 
       <Hero />
-
-      <Work />
 
       <Story />
 
