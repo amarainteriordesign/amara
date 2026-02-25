@@ -52,7 +52,7 @@ export default function Hero() {
             </div>
 
             <Copy delay={1.8} animateOnScroll={false}>
-              <p className="pb-[8px] font-sans text-[14px] leading-[22px] font-normal tracking-[4px] text-white uppercase max-sm:pb-[12px] max-sm:text-[11px]" style={{ textShadow: '0 4px 20px rgba(0,0,0,0.7), 0 2px 8px rgba(0,0,0,0.5)' }}>
+              <p className="pb-[8px] font-sans text-[12px] leading-[20px] font-normal tracking-[4px] text-white uppercase max-sm:pb-[12px] max-sm:text-[10px]" style={{ textShadow: '0 4px 20px rgba(0,0,0,0.7), 0 2px 8px rgba(0,0,0,0.5)' }}>
                 MIAMI - DUBAI - PARIS
               </p>
             </Copy>
