@@ -110,24 +110,26 @@ export default function PrinciplesSourcing() {
             </div>
 
             <div className="mt-[40px] mb-[40px]">
-              <div className="relative flex w-full items-center justify-center overflow-hidden py-[40px]">
+              <div className="relative flex h-[280px] w-full items-center justify-center overflow-hidden">
                 <div className="absolute inset-0">
                   <Image
                     src="/images/pages/sourcing/boat-water.webp"
                     width={1000}
                     height={2000}
                     alt="Boat on water"
-                    className="h-full w-full object-cover blur-[30px] scale-[1.1]"
+                    className="h-full w-full object-cover blur-[30px]"
                   />
                 </div>
                 <div className="relative z-[1] h-[165px] w-[165px] overflow-hidden">
-                  <Image
-                    src="/images/pages/sourcing/boat-water.webp"
-                    width={500}
-                    height={1000}
-                    alt="Boat on water"
-                    className="h-full w-full object-cover"
-                  />
+                  <div className="absolute h-full w-full overflow-hidden">
+                    <Image
+                      src="/images/pages/sourcing/boat-water.webp"
+                      width={500}
+                      height={1000}
+                      alt="Boat on water"
+                      className="h-full w-full object-cover"
+                    />
+                  </div>
                 </div>
               </div>
             </div>
