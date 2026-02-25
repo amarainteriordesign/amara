@@ -28,7 +28,7 @@ export default function PrinciplesSourcing() {
             </div>
           </div>
 
-          <div className="hidden max-md:block my-[40px]">
+          <div className="hidden max-md:block mt-[40px] mb-[60px]">
             <div className="relative flex w-full items-center justify-center overflow-hidden" style={{ aspectRatio: '16/10' }}>
               <div className="absolute inset-0">
                 <Image
