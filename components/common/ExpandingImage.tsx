@@ -3,7 +3,6 @@ import gsap from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
 import Image from "next/image";
 import { useGSAP } from "@gsap/react";
-import Link from "next/link";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -116,26 +115,15 @@ export default function ExpandingImage({ quote, linkTo = "/design" }: ExpandingI
         </p>
       )}
 
-      <Link
-        href={linkTo}
-        className="elements-image-anim open-cursor-item relative h-[80vh] w-full max-w-[1272px]"
-      >
+      <div className="elements-image-anim relative h-[80vh] w-full max-w-[1272px]">
         <Image
           src="/images/pages/design/Showroom_Founders_Amara_Interior_Design_Procurement_Miami_Dubai.webp"
-          alt="Elenents"
+          alt="Amara Showroom"
           width={1272}
           height={704}
           className="h-full w-full object-cover"
         />
-        <div className="absolute bottom-[42px] left-[50%] z-[2] flex translate-x-[-50%] transform flex-col items-center gap-[9px] max-sm:bottom-[25px] max-sm:gap-0">
-          <p className="font-serif text-[28px] leading-[36px] tracking-[-0.8px] whitespace-nowrap text-[#F6EFE5] italic max-sm:text-[22px] max-sm:tracking-[-0.6px]">
-            Our Design Philosophy
-          </p>
-          <p className="font-sans text-[12px] leading-[20px] font-normal tracking-[0.3px] text-[#F6EFE5] uppercase">
-            STORY OF THE ELEMENTS
-          </p>
-        </div>
-      </Link>
+      </div>
     </section>
   );
 }
