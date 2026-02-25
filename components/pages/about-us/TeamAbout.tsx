@@ -13,9 +13,9 @@ export default function TeamAbout() {
   return (
     <section className="w-full bg-[#e8dfd2]">
       <div className="mx-auto w-full max-w-[1200px] px-[60px] pt-[80px] pb-[80px] max-md:px-[40px] max-md:pt-[60px] max-md:pb-[60px] max-sm:px-[20px] max-sm:pt-[40px] max-sm:pb-[40px]">
-        <div className="flex w-full items-end gap-[20px] max-md:flex-col max-md:items-stretch max-md:gap-[40px]">
-          <div className="flex w-[45%] flex-col gap-[20px] max-md:w-full">
-            <div className="relative h-[63vh] w-full overflow-hidden rounded-[8px] max-sm:h-[427px]">
+        <div className="relative max-md:flex max-md:flex-col max-md:gap-[40px]">
+          <div className="relative left-0 top-0 w-[45%] max-md:relative max-md:w-full">
+            <div className="relative h-[500px] w-full overflow-hidden rounded-[8px] max-sm:h-[400px]">
               <Image
                 src="/images/pages/studio/eloise.png"
                 alt="ELOISE CHAUVIERE"
@@ -49,16 +49,16 @@ export default function TeamAbout() {
                 </a>
               </div>
             </div>
-            <p className="font-sans text-[16px] leading-[28px] font-normal tracking-[-0.2px] text-[#262626] max-sm:text-[14px] max-sm:leading-[24px]" style={{ textAlign: 'justify' }}>
-              Creative and design-led, Inès Bakkali leads the creative vision at Amara. As Design Director, she oversees concept development, spatial planning, and material selection, ensuring each project is cohesive, functional, and thoughtfully executed.
-            </p>
           </div>
 
-          <div className="flex w-[55%] flex-col gap-[20px] max-md:w-full">
+          <div className="absolute top-[40px] right-0 w-[48%] max-md:relative max-md:top-0 max-md:w-full">
             <p className="font-sans text-[16px] leading-[28px] font-normal tracking-[-0.2px] text-[#262626] max-sm:text-[14px] max-sm:leading-[24px]" style={{ textAlign: 'justify' }}>
               Strategic and detail-driven, Eloïse Chauviere bridges concept and execution. As Managing Director, she leads company operations, client strategy, international logistics and procurement, ensuring every project is delivered efficiently and to the highest standard.
             </p>
-            <div className="relative h-[63vh] w-full overflow-hidden rounded-[8px] max-sm:h-[427px]">
+          </div>
+
+          <div className="absolute right-0 top-[280px] w-[48%] max-md:relative max-md:top-0 max-md:w-full">
+            <div className="relative h-[420px] w-full overflow-hidden rounded-[8px] max-sm:h-[350px]">
               <Image
                 src="/images/pages/studio/ines.png"
                 alt="INES BAKKALI"
@@ -92,6 +92,12 @@ export default function TeamAbout() {
                 </a>
               </div>
             </div>
+          </div>
+
+          <div className="mt-[30px] w-[45%] max-md:mt-0 max-md:w-full">
+            <p className="font-sans text-[16px] leading-[28px] font-normal tracking-[-0.2px] text-[#262626] max-sm:text-[14px] max-sm:leading-[24px]" style={{ textAlign: 'justify' }}>
+              Creative and design-led, Inès Bakkali leads the creative vision at Amara. As Design Director, she oversees concept development, spatial planning, and material selection, ensuring each project is cohesive, functional, and thoughtfully executed.
+            </p>
           </div>
         </div>
       </div>
