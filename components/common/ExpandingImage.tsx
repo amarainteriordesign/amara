@@ -111,10 +111,10 @@ export default function ExpandingImage({ quote, linkTo = "/design" }: ExpandingI
 
       <div className="elements-image-anim relative h-[80vh] w-full max-w-[1272px] overflow-hidden max-md:h-auto max-md:aspect-[16/10]">
         <Image
-          src="/images/pages/design/Founders_Showroom_Amara_Interior_Design_Procurement_Miami_Dubai.webp"
+          src="/images/pages/design/Founders_Closeup_Amara_Interior_Design_Procurement_Miami_Dubai.webp"
           alt="Amara Showroom"
-          width={1741}
-          height={1046}
+          width={1434}
+          height={985}
           className="h-full w-full object-cover"
         />
       </div>
