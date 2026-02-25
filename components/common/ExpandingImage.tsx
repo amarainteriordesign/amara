@@ -13,8 +13,6 @@ type ExpandingImageProps = {
 
 export default function ExpandingImage({ quote, linkTo = "/design" }: ExpandingImageProps) {
   useGSAP(() => {
-    const isMobile = window.innerWidth < 768;
-
     const calculateScale = () => {
       const imageElement = document.querySelector(".elements-image-anim img") as HTMLImageElement;
       if (!imageElement) return 0.9;
@@ -22,6 +20,7 @@ export default function ExpandingImage({ quote, linkTo = "/design" }: ExpandingI
       const windowWidth = window.innerWidth;
       const actualImageWidth = imageElement.offsetWidth;
 
+      const isMobile = windowWidth < 768;
       const margin = isMobile ? 50 : 100;
 
       const targetWidth = windowWidth - margin;
@@ -40,8 +39,7 @@ export default function ExpandingImage({ quote, linkTo = "/design" }: ExpandingI
         duration: 0,
       });
       gsap.set(".elements-image-anim img", {
-        scale: isMobile ? initialScale * 1.15 : initialScale,
-        objectPosition: isMobile ? "center 40%" : "center center",
+        scale: initialScale,
         duration: 0,
       });
 
@@ -61,10 +59,8 @@ export default function ExpandingImage({ quote, linkTo = "/design" }: ExpandingI
         start: "top bottom",
         end: "bottom top",
         onUpdate: (self) => {
-          const baseScale = isMobile ? 1.15 : 1;
-          const currentScale = initialScale + (maxScale - initialScale) * self.progress;
           gsap.to(".elements-image-anim img", {
-            scale: currentScale * baseScale,
+            scale: initialScale + (maxScale - initialScale) * self.progress,
           });
         },
       });
@@ -77,8 +73,7 @@ export default function ExpandingImage({ quote, linkTo = "/design" }: ExpandingI
         duration: 0,
       });
       gsap.set(".elements-image-anim img", {
-        scale: isMobile ? initialScale * 1.15 : initialScale,
-        objectPosition: isMobile ? "center 40%" : "center center",
+        scale: initialScale,
         duration: 0,
       });
 
@@ -98,10 +93,8 @@ export default function ExpandingImage({ quote, linkTo = "/design" }: ExpandingI
         start: "top bottom",
         end: "bottom top",
         onUpdate: (self) => {
-          const baseScale = isMobile ? 1.15 : 1;
-          const currentScale = initialScale + (maxScale - initialScale) * self.progress;
           gsap.to(".elements-image-anim img", {
-            scale: currentScale * baseScale,
+            scale: initialScale + (maxScale - initialScale) * self.progress,
           });
         },
       });
@@ -116,12 +109,12 @@ export default function ExpandingImage({ quote, linkTo = "/design" }: ExpandingI
         </p>
       )}
 
-      <div className="elements-image-anim relative h-auto aspect-[16/10] w-full max-w-[1272px] overflow-hidden md:h-[80vh] md:aspect-auto">
+      <div className="elements-image-anim relative h-[80vh] w-full max-w-[1272px] overflow-hidden max-md:h-auto max-md:aspect-[16/10]">
         <Image
           src="/images/pages/design/Showroom_Founders_Amara_Interior_Design_Procurement_Miami_Dubai.webp"
           alt="Amara Showroom"
-          width={1272}
-          height={704}
+          width={1741}
+          height={1046}
           className="h-full w-full object-cover"
         />
       </div>
