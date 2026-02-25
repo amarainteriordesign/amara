@@ -41,7 +41,7 @@ export default function Hero() {
           <div className="absolute top-1/2 z-[1] flex max-h-fit w-full -translate-y-1/2 flex-col items-center justify-center overflow-hidden p-[20px]">
             <Copy delay={1.7} animateOnScroll={false}>
               <p className="text-center font-serif text-[28px] leading-[36px] font-normal tracking-tighter text-[#FFF] max-sm:text-[24px]">
-                A Design Philosophy
+                Where Design Comes to Life
               </p>
             </Copy>
 
@@ -51,11 +51,6 @@ export default function Hero() {
               </p>
             </div>
 
-            <Copy delay={1.8} animateOnScroll={false}>
-              <p className="pb-[8px] font-sans text-[12px] leading-[20px] font-normal tracking-tight text-[#FFF] uppercase max-sm:pb-[12px]">
-                DESIGNING HOMES THAT HEALS
-              </p>
-            </Copy>
           </div>
         </div>
       </div>
