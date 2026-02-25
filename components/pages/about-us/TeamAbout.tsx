@@ -36,24 +36,23 @@ export default function TeamAbout() {
                 <Image src="/images/pages/studio/eloise.png" alt="ELOISE CHAUVIERE" fill className="rounded-[8px] object-cover" />
                 <PhotoOverlay name="ELOISE CHAUVIERE" title="Managing Director" position="top" links={{ whatsapp: "https://api.whatsapp.com/send?phone=13055604373", linkedin: "https://www.linkedin.com/in/eloïse-chauviere-44b93b159" }} />
               </div>
-            </div>
-            <div className="flex w-[52%] items-start pt-[20px]">
-              <p className="font-sans text-[16px] leading-[28px] font-normal tracking-[-0.2px] text-[#262626]" style={{ textAlign: 'justify' }}>
-                Strategic and detail-driven, Eloïse Chauviere bridges concept and execution. As Managing Director, she leads company operations, client strategy, international logistics and procurement, ensuring every project is delivered efficiently and to the highest standard.
-              </p>
-            </div>
-          </div>
-
-          <div className="mt-[-350px] flex gap-[40px]">
-            <div className="flex w-[48%] items-end pb-[20px]">
-              <p className="font-sans text-[16px] leading-[28px] font-normal tracking-[-0.2px] text-[#262626]" style={{ textAlign: 'justify' }}>
-                Creative and design-led, Inès Bakkali leads the creative vision at Amara. As Design Director, she oversees concept development, spatial planning, and material selection, ensuring each project is cohesive, functional, and thoughtfully executed.
-              </p>
+              <div className="mt-[30px]">
+                <p className="font-sans text-[16px] leading-[28px] font-normal tracking-[-0.2px] text-[#262626]" style={{ textAlign: 'justify' }}>
+                  Creative and design-led, Inès Bakkali leads the creative vision at Amara. As Design Director, she oversees concept development, spatial planning, and material selection, ensuring each project is cohesive, functional, and thoughtfully executed.
+                </p>
+              </div>
             </div>
             <div className="w-[52%]">
-              <div className="relative h-[620px] w-full overflow-hidden rounded-[8px]">
-                <Image src="/images/pages/studio/ines.png" alt="INES BAKKALI" fill className="rounded-[8px] object-cover" />
-                <PhotoOverlay name="INES BAKKALI" title="Design Director" position="bottom" links={{ whatsapp: "https://api.whatsapp.com/send?phone=13055604373", linkedin: "https://www.linkedin.com/in/inesbakkali/" }} />
+              <div className="pt-[20px]">
+                <p className="font-sans text-[16px] leading-[28px] font-normal tracking-[-0.2px] text-[#262626]" style={{ textAlign: 'justify' }}>
+                  Strategic and detail-driven, Eloïse Chauviere bridges concept and execution. As Managing Director, she leads company operations, client strategy, international logistics and procurement, ensuring every project is delivered efficiently and to the highest standard.
+                </p>
+              </div>
+              <div className="mt-[30px]">
+                <div className="relative h-[620px] w-full overflow-hidden rounded-[8px]">
+                  <Image src="/images/pages/studio/ines.png" alt="INES BAKKALI" fill className="rounded-[8px] object-cover" />
+                  <PhotoOverlay name="INES BAKKALI" title="Design Director" position="bottom" links={{ whatsapp: "https://api.whatsapp.com/send?phone=13055604373", linkedin: "https://www.linkedin.com/in/inesbakkali/" }} />
+                </div>
               </div>
             </div>
           </div>
