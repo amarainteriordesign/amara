@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Approach() {
   return (
@@ -17,33 +18,22 @@ export default function Approach() {
           <div className="max-md:hidden">
             <div className="mb-[60px]">
               <h2 className="font-display text-[36px] leading-[44px] tracking-[0.5px] text-[#262626]">
-                DESIGN PHASES 1-3
-              </h2>
-              <p className="mt-[16px] font-sans text-[16px] leading-[26px] text-[#4a4a4a]" style={{ textAlign: 'justify' }}>
-                From briefing to design, we translate your vision into a cohesive luxury interior concept and coordinated design package, with finalized layouts, material and finish direction, lighting strategy, and technical drawings, ready for execution before procurement.
-              </p>
-              <div className="mt-[28px]">
-                <button className="inline-block h-[39px] rounded-[35px] border-[1px] border-[#26262699] px-[16px] font-sans text-[12px] leading-[39px] font-medium tracking-[0.2px] text-[#262626]">
-                  EXPLORE OUR FULL DESIGN PROCESS
-                </button>
-              </div>
-            </div>
-
-            <div>
-              <h2 className="font-display text-[36px] leading-[44px] tracking-[0.5px] text-[#262626]">
-                SOURCING PHASES 4-6
+                DESIGN PROCESS
               </h2>
 
               <div className="mt-[16px] space-y-[48px]">
                 <div>
                   <h3 className="text-[22px] leading-[30px] font-medium tracking-[0.2px] text-[#262626]" style={{ fontFamily: 'var(--font-lora)' }}>
-                    Phase 4 : Purchasing & Procurement
+                    Phase 1 – Concept & Vision
                   </h3>
+                  <p className="mt-[12px] font-sans text-[16px] leading-[26px] text-[#4a4a4a]" style={{ textAlign: 'justify' }}>
+                    We define the overall interior design direction based on your brief, lifestyle, and objectives.
+                  </p>
                   <ul className="mt-[16px] space-y-[8px]">
                     {[
-                      "Supplier selection, product specification confirmation, and FF&E procurement across furniture, lighting, and finishes",
-                      "Purchase order placement, production coordination, and lead time management",
-                      "Budget tracking, cost control, and procurement alignment with the approved interior design scope",
+                      "Concept narrative & moodboards",
+                      "Space planning & preliminary layouts",
+                      "Material and design direction",
                     ].map((item, i) => (
                       <li key={i} className="flex items-start gap-[8px] font-sans text-[16px] leading-[26px] text-[#4a4a4a]">
                         <span className="mt-[9px] block h-[5px] w-[5px] shrink-0 rounded-full bg-[#4a4a4a]" />
@@ -55,13 +45,17 @@ export default function Approach() {
 
                 <div>
                   <h3 className="text-[22px] leading-[30px] font-medium tracking-[0.2px] text-[#262626]" style={{ fontFamily: 'var(--font-lora)' }}>
-                    Phase 5 : Logistics, Quality Control & Shipping
+                    Phase 2 – Design Development
                   </h3>
+                  <p className="mt-[12px] font-sans text-[16px] leading-[26px] text-[#4a4a4a]" style={{ textAlign: 'justify' }}>
+                    The approved concept is refined into a cohesive and functional interior design across all spaces.
+                  </p>
                   <ul className="mt-[16px] space-y-[8px]">
                     {[
-                      "End-to-end logistics management, order tracking, and delivery coordination",
-                      "Quality control inspections, secure warehouse storage, consolidation, and container loading",
-                      "Export documentation, international shipping, and customs clearance coordination",
+                      "Detailed space planning",
+                      "Finishes & material selection",
+                      "Lighting strategy",
+                      "Preliminary FF&E selection",
                     ].map((item, i) => (
                       <li key={i} className="flex items-start gap-[8px] font-sans text-[16px] leading-[26px] text-[#4a4a4a]">
                         <span className="mt-[9px] block h-[5px] w-[5px] shrink-0 rounded-full bg-[#4a4a4a]" />
@@ -73,13 +67,17 @@ export default function Approach() {
 
                 <div>
                   <h3 className="text-[22px] leading-[30px] font-medium tracking-[0.2px] text-[#262626]" style={{ fontFamily: 'var(--font-lora)' }}>
-                    Phase 6 : Installation, Fit-Out & Styling
+                    Phase 3 – Detailed Design & Documentation
                   </h3>
+                  <p className="mt-[12px] font-sans text-[16px] leading-[26px] text-[#4a4a4a]" style={{ textAlign: 'justify' }}>
+                    The design is finalized and technically documented, ready for construction and procurement.
+                  </p>
                   <ul className="mt-[16px] space-y-[8px]">
                     {[
-                      "White-glove delivery scheduling and on-site FF&E and lighting installation",
-                      "Fit-out coordination, on-site supervision, and quality assurance",
-                      "Final interior styling, client walkthrough, and turnkey project handover",
+                      "General arrangement drawings (RCP, lighting, finishes, layouts)",
+                      "Joinery details & custom design development",
+                      "3D renderings",
+                      "Final design-led FF&E specification",
                     ].map((item, i) => (
                       <li key={i} className="flex items-start gap-[8px] font-sans text-[16px] leading-[26px] text-[#4a4a4a]">
                         <span className="mt-[9px] block h-[5px] w-[5px] shrink-0 rounded-full bg-[#4a4a4a]" />
@@ -88,6 +86,20 @@ export default function Approach() {
                     ))}
                   </ul>
                 </div>
+              </div>
+            </div>
+
+            <div>
+              <h2 className="font-display text-[36px] leading-[44px] tracking-[0.5px] text-[#262626]">
+                PROCUREMENT PROCESS – Phases 4–6
+              </h2>
+              <p className="mt-[16px] font-sans text-[16px] leading-[26px] text-[#4a4a4a]" style={{ textAlign: 'justify' }}>
+                From approved design to final handover, we manage procurement, logistics, quality control, international shipping, and white-glove installation to ensure seamless project delivery.
+              </p>
+              <div className="mt-[28px]">
+                <Link href="/procurement" className="inline-block h-[39px] rounded-[35px] border-[1px] border-[#26262699] px-[16px] font-sans text-[12px] leading-[39px] font-medium tracking-[0.2px] text-[#262626]">
+                  EXPLORE OUR FULL PROCUREMENT PROCESS
+                </Link>
               </div>
             </div>
           </div>
@@ -95,15 +107,74 @@ export default function Approach() {
           <div className="hidden max-md:block">
             <div className="mb-[40px]">
               <h2 className="font-display text-[26px] leading-[34px] tracking-[0.5px] text-[#262626]">
-                DESIGN PHASES 1–3
+                DESIGN PROCESS
               </h2>
-              <p className="mt-[16px] font-sans text-[14px] leading-[22px] text-[#4a4a4a]" style={{ textAlign: 'justify' }}>
-                From briefing to final concept, we deliver a complete luxury interior design package with space planning, material specifications, lighting design, and technical drawings ready for construction.
-              </p>
-              <div className="mt-[28px]">
-                <button className="inline-block h-[32px] rounded-[35px] border-[1px] border-[#26262699] px-[14px] font-sans text-[11px] leading-[32px] font-medium tracking-[0.2px] text-[#262626]">
-                  EXPLORE OUR FULL DESIGN PROCESS
-                </button>
+
+              <div className="mt-[16px] space-y-[28px]">
+                <div>
+                  <h3 className="text-[18px] leading-[24px] font-medium tracking-[0.2px] text-[#262626]" style={{ fontFamily: 'var(--font-lora)' }}>
+                    Phase 1 – Concept & Vision
+                  </h3>
+                  <p className="mt-[8px] font-sans text-[14px] leading-[22px] text-[#4a4a4a]" style={{ textAlign: 'justify' }}>
+                    We define the overall interior design direction based on your brief, lifestyle, and objectives.
+                  </p>
+                  <ul className="mt-[12px] space-y-[8px]">
+                    {[
+                      "Concept narrative & moodboards",
+                      "Space planning & preliminary layouts",
+                      "Material and design direction",
+                    ].map((item, i) => (
+                      <li key={i} className="flex items-start gap-[8px] font-sans text-[14px] leading-[22px] text-[#4a4a4a]">
+                        <span className="mt-[9px] block h-[5px] w-[5px] shrink-0 rounded-full bg-[#4a4a4a]" />
+                        {item}
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+
+                <div>
+                  <h3 className="text-[18px] leading-[24px] font-medium tracking-[0.2px] text-[#262626]" style={{ fontFamily: 'var(--font-lora)' }}>
+                    Phase 2 – Design Development
+                  </h3>
+                  <p className="mt-[8px] font-sans text-[14px] leading-[22px] text-[#4a4a4a]" style={{ textAlign: 'justify' }}>
+                    The approved concept is refined into a cohesive and functional interior design across all spaces.
+                  </p>
+                  <ul className="mt-[12px] space-y-[8px]">
+                    {[
+                      "Detailed space planning",
+                      "Finishes & material selection",
+                      "Lighting strategy",
+                      "Preliminary FF&E selection",
+                    ].map((item, i) => (
+                      <li key={i} className="flex items-start gap-[8px] font-sans text-[14px] leading-[22px] text-[#4a4a4a]">
+                        <span className="mt-[9px] block h-[5px] w-[5px] shrink-0 rounded-full bg-[#4a4a4a]" />
+                        {item}
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+
+                <div>
+                  <h3 className="text-[18px] leading-[24px] font-medium tracking-[0.2px] text-[#262626]" style={{ fontFamily: 'var(--font-lora)' }}>
+                    Phase 3 – Detailed Design & Documentation
+                  </h3>
+                  <p className="mt-[8px] font-sans text-[14px] leading-[22px] text-[#4a4a4a]" style={{ textAlign: 'justify' }}>
+                    The design is finalized and technically documented, ready for construction and procurement.
+                  </p>
+                  <ul className="mt-[12px] space-y-[8px]">
+                    {[
+                      "General arrangement drawings",
+                      "Joinery details & custom design",
+                      "3D renderings",
+                      "Final FF&E specification",
+                    ].map((item, i) => (
+                      <li key={i} className="flex items-start gap-[8px] font-sans text-[14px] leading-[22px] text-[#4a4a4a]">
+                        <span className="mt-[9px] block h-[5px] w-[5px] shrink-0 rounded-full bg-[#4a4a4a]" />
+                        {item}
+                      </li>
+                    ))}
+                  </ul>
+                </div>
               </div>
             </div>
 
@@ -134,60 +205,15 @@ export default function Approach() {
 
             <div>
               <h2 className="font-display text-[26px] leading-[34px] tracking-[0.5px] text-[#262626]">
-                SOURCING PHASES 4–6
+                PROCUREMENT PROCESS – Phases 4–6
               </h2>
-
-              <div className="mt-[16px] space-y-[28px]">
-                <div>
-                  <h3 className="text-[18px] leading-[24px] font-medium tracking-[0.2px] text-[#262626]" style={{ fontFamily: 'var(--font-lora)' }}>
-                    Phase 4 – Procurement
-                  </h3>
-                  <ul className="mt-[16px] space-y-[8px]">
-                    {[
-                      "Supplier selection & FF&E purchasing",
-                      "Production coordination & budget control",
-                    ].map((item, i) => (
-                      <li key={i} className="flex items-start gap-[8px] font-sans text-[14px] leading-[22px] text-[#4a4a4a]">
-                        <span className="mt-[9px] block h-[5px] w-[5px] shrink-0 rounded-full bg-[#4a4a4a]" />
-                        {item}
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-
-                <div>
-                  <h3 className="text-[18px] leading-[24px] font-medium tracking-[0.2px] text-[#262626]" style={{ fontFamily: 'var(--font-lora)' }}>
-                    Phase 5 – Logistics & Shipping
-                  </h3>
-                  <ul className="mt-[16px] space-y-[8px]">
-                    {[
-                      "Order tracking & quality control",
-                      "Consolidation, export & international shipping",
-                    ].map((item, i) => (
-                      <li key={i} className="flex items-start gap-[8px] font-sans text-[14px] leading-[22px] text-[#4a4a4a]">
-                        <span className="mt-[9px] block h-[5px] w-[5px] shrink-0 rounded-full bg-[#4a4a4a]" />
-                        {item}
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-
-                <div>
-                  <h3 className="text-[18px] leading-[24px] font-medium tracking-[0.2px] text-[#262626]" style={{ fontFamily: 'var(--font-lora)' }}>
-                    Phase 6 – Installation & Styling
-                  </h3>
-                  <ul className="mt-[16px] space-y-[8px]">
-                    {[
-                      "On-site FF&E installation & supervision",
-                      "Final styling & turnkey handover",
-                    ].map((item, i) => (
-                      <li key={i} className="flex items-start gap-[8px] font-sans text-[14px] leading-[22px] text-[#4a4a4a]">
-                        <span className="mt-[9px] block h-[5px] w-[5px] shrink-0 rounded-full bg-[#4a4a4a]" />
-                        {item}
-                      </li>
-                    ))}
-                  </ul>
-                </div>
+              <p className="mt-[16px] font-sans text-[14px] leading-[22px] text-[#4a4a4a]" style={{ textAlign: 'justify' }}>
+                From approved design to final handover, we manage procurement, logistics, quality control, international shipping, and white-glove installation to ensure seamless project delivery.
+              </p>
+              <div className="mt-[28px]">
+                <Link href="/procurement" className="inline-block h-[32px] rounded-[35px] border-[1px] border-[#26262699] px-[14px] font-sans text-[11px] leading-[32px] font-medium tracking-[0.2px] text-[#262626]">
+                  EXPLORE OUR FULL PROCUREMENT PROCESS
+                </Link>
               </div>
             </div>
           </div>
