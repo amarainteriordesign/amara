@@ -12,7 +12,7 @@ function WhatsAppIcon() {
 export default function TeamAbout() {
   return (
     <section className="w-full bg-[#e8dfd2]">
-      <div className="mx-auto w-full max-w-[1200px] px-[60px] pt-[80px] pb-[80px] max-md:px-[40px] max-md:pt-[60px] max-md:pb-[60px] max-sm:px-[20px] max-sm:pt-[40px] max-sm:pb-[40px]">
+      <div className="mx-auto w-full max-w-[1400px] px-[60px] pt-[80px] pb-[80px] max-md:px-[40px] max-md:pt-[60px] max-md:pb-[60px] max-sm:px-[20px] max-sm:pt-[40px] max-sm:pb-[40px]">
         <div className="hidden max-md:flex max-md:flex-col max-md:gap-[40px]">
           <div className="relative h-[500px] w-full overflow-hidden rounded-[8px] max-sm:h-[400px]">
             <Image src="/images/pages/studio/eloise.png" alt="ELOISE CHAUVIERE" width={417} height={515} className="absolute top-0 left-0 h-full w-full rounded-[8px] object-cover" />
@@ -40,7 +40,7 @@ export default function TeamAbout() {
           <p className="font-sans text-[14px] leading-[24px] font-normal tracking-[-0.2px] text-[#262626]" style={{ textAlign: 'justify' }}>Creative and design-led, Inès Bakkali leads the creative vision at Amara. As Design Director, she oversees concept development, spatial planning, and material selection, ensuring each project is cohesive, functional, and thoughtfully executed.</p>
         </div>
 
-        <div className="grid grid-cols-[45%_1fr] gap-x-[40px] gap-y-[30px] max-md:hidden" style={{ gridTemplateRows: 'auto 1fr auto auto' }}>
+        <div className="grid grid-cols-[45%_1fr] gap-x-[40px] gap-y-[40px] max-md:hidden" style={{ gridTemplateRows: 'auto 120px auto auto' }}>
           <div className="relative row-span-2 h-[550px] overflow-hidden rounded-[8px]" style={{ gridRow: '1 / 3', gridColumn: '1' }}>
             <Image src="/images/pages/studio/eloise.png" alt="ELOISE CHAUVIERE" width={417} height={515} className="absolute top-0 left-0 h-full w-full rounded-[8px] object-cover" />
             <div className="absolute top-0 left-0 z-[2] py-[15px] pl-[26px]">
