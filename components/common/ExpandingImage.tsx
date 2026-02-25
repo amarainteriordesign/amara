@@ -12,7 +12,7 @@ type ExpandingImageProps = {
   linkTo?: string;
 };
 
-export default function ExpandingImage({ quote, linkTo = "/philosophy" }: ExpandingImageProps) {
+export default function ExpandingImage({ quote, linkTo = "/design" }: ExpandingImageProps) {
   useGSAP(() => {
     // Calculate scale based on actual rendered image size
     const calculateScale = () => {

@@ -245,7 +245,7 @@ export default function ImageFooter({
               </Link>
 
               <Link
-                href="/philosophy"
+                href="/design"
                 className="font-sans text-[15px] leading-[26px] tracking-[-0.4px] text-[#262626] underline"
               >
                 Philosophy

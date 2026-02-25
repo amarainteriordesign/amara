@@ -1,23 +1,23 @@
 import Header from "@/components/layout/Header";
-import Hero from "@/components/pages/philosophy/Hero";
+import Hero from "@/components/pages/design/Hero";
 import ImageFooter from "@/components/layout/ImageFooter";
-import Design from "@/components/pages/philosophy/Design";
-import Moments from "@/components/pages/philosophy/Moments";
-import Quote from "@/components/pages/philosophy/Quote";
-import Build from "@/components/pages/philosophy/Build";
-import Rhythm from "@/components/pages/philosophy/Rhythm";
+import Design from "@/components/pages/design/Design";
+import Moments from "@/components/pages/design/Moments";
+import Quote from "@/components/pages/design/Quote";
+import Build from "@/components/pages/design/Build";
+import Rhythm from "@/components/pages/design/Rhythm";
 import Contact from "@/components/common/Contact";
 import ExpandingImage from "@/components/common/ExpandingImage";
-import Principles from "@/components/pages/philosophy/Principles";
+import Principles from "@/components/pages/design/Principles";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Philosophie",
+  title: "Design",
   description:
-    "Notre approche place l’écoute, la matière et la lumière au cœur du projet. Découvrez la philosophie d’Amara et les principes qui guident notre design.",
+    "Our approach places listening, materials, and light at the heart of every project. Discover Amara's design principles and the philosophy that guides our work.",
 };
 
-export default function Philosophy() {
+export default function DesignPage() {
   return (
     <>
       <Header isDark={true} />

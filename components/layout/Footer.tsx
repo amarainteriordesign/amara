@@ -10,7 +10,7 @@ import Instagram from "@/components/icons/instagram.svg";
 const NAV_LINKS = [
   { name: "PROJECTS", url: "/projects" },
   { name: "ABOUT US", url: "/studio" },
-  { name: "PHILOSOPHY", url: "/philosophy" },
+  { name: "DESIGN", url: "/design" },
   { name: "NEWS", url: "/blog" },
 ];
 

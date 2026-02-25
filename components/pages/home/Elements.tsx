@@ -205,7 +205,7 @@ export default function Elements() {
 
       <div className="max-slg:h-[950px] relative mx-auto h-[1250px] w-full max-w-[1440px] max-md:h-[500px] max-sm:h-[490px]">
         <Link
-          href="/philosophy"
+          href="/design"
           className="element-item-anim open-cursor-item group max-slg:w-[500px] max-slg:h-[513px] absolute top-[40%] left-[40%] z-[1] h-[593px] w-[561px] max-md:h-[330px] max-md:w-[320px] max-sm:h-[315px] max-sm:w-[228px]"
           data-left-target="148"
           data-top-target="0"
@@ -224,7 +224,7 @@ export default function Elements() {
         </Link>
 
         <Link
-          href="/philosophy"
+          href="/design"
           className="elements-items-anim-container open-cursor-item group element-item-anim max-slg:w-[420px] max-slg:h-[320px] absolute top-[40%] right-[40%] z-[2] h-[367px] w-[491px] max-md:h-[200px] max-md:w-[280px] max-sm:h-[152px] max-sm:w-[152px]"
           data-right-target="147"
           data-top-target="0"
@@ -243,7 +243,7 @@ export default function Elements() {
         </Link>
 
         <Link
-          href="/philosophy"
+          href="/design"
           className="element-item-anim open-cursor-item group max-slg:w-[420px] max-slg:h-[360px] absolute top-[40%] left-[40%] z-[1] h-[420px] w-[487px] max-md:h-[280px] max-md:w-[320px] max-sm:h-[150px] max-sm:w-[129px]"
           data-left-target="76"
           data-top-target="712"
@@ -262,7 +262,7 @@ export default function Elements() {
         </Link>
 
         <Link
-          href="/philosophy"
+          href="/design"
           className="element-item-anim group open-cursor-item max-slg:w-[620px] max-slg:h-[630px] absolute top-[40%] right-[40%] z-[3] h-[715px] w-[707px] max-md:h-[420px] max-md:w-[420px] max-sm:h-[256px] max-sm:w-[209px]"
           data-right-target="75"
           data-top-target="503"

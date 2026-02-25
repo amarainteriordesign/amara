@@ -37,7 +37,7 @@ export default function Menu({ now }: { now: Date }) {
         {[
           { name: "Projects", url: "/projects" },
           { name: "About Us", url: "/studio" },
-          { name: "Philosophy", url: "/philosophy" },
+          { name: "Design", url: "/design" },
           { name: "News", url: "/blog" },
         ].map((page, i) => (
           <Link

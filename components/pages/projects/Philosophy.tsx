@@ -1,7 +1,7 @@
 "use client";
 import Image from "next/image";
 import { Project } from "@/types/project";
-import Quote from "../philosophy/Quote";
+import Quote from "../design/Quote";
 import { useWindowSize } from "@/hooks/useWindowSize";
 import { useEffect, useRef, useState } from "react";
 import gsap from "gsap";
