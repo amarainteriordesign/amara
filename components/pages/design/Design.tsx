@@ -15,7 +15,7 @@ export default function Design() {
         </div>
         <div className="max-xmd:max-w-[270px] flex max-w-[309px] shrink flex-col items-start gap-[60px] max-md:max-w-[500px] max-md:gap-[46px] max-sm:max-w-full">
           <div className="flex w-full flex-col max-md:items-center">
-            <h3 className="text-bg-img pb-[6px] text-[28px] leading-[36px] tracking-tighter italic max-md:pb-[16px] max-sm:text-center max-sm:text-[24px]" style={{ fontFamily: "var(--font-lora)" }}>
+            <h3 className="text-bg-img inline bg-[url(/images/pages/home/text-background.webp)] !bg-top pb-[6px] text-[44px] leading-[52px] tracking-[0.2px] italic max-md:pb-[16px] max-md:text-[36px] max-md:leading-[44px] max-sm:text-center max-sm:text-[32px] max-sm:leading-[40px]" style={{ fontFamily: "var(--font-lora)" }}>
               Our Design Philosophy
             </h3>
             <p className="font-sans text-[12px] leading-[20px] font-normal tracking-[2%] text-[#000] uppercase">
