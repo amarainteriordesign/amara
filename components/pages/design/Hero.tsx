@@ -1,28 +1,10 @@
 "use client";
 import Copy from "@/components/common/Copy/Copy";
-import SoundIcon from "@/components/icons/sound.svg";
-import PauseIcon from "@/components/icons/pause.svg";
 import Image from "next/image";
-import { useState, useRef } from "react";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 
 export default function Hero() {
-  const [isMuted, setIsMuted] = useState(true);
-  const audioRef = useRef<HTMLAudioElement>(null);
-
-  const handleAudioToggle = () => {
-    if (audioRef.current) {
-      if (audioRef.current.paused) {
-        audioRef.current.play();
-        setIsMuted(false);
-      } else {
-        audioRef.current.pause();
-        setIsMuted(true);
-      }
-    }
-  };
-
   useGSAP(() => {
     const tl = gsap.timeline({ defaults: { ease: "power3.inOut", duration: 1 } });
 
@@ -75,26 +57,8 @@ export default function Hero() {
               </p>
             </Copy>
           </div>
-
-          <div className="mx-auto flex w-full max-w-[1440px] flex-col items-start p-[20px] max-sm:px-[25px] max-sm:pb-[22px]">
-            <button
-              onClick={handleAudioToggle}
-              className="max-xmd:static xmd:fixed xmd:bottom-[15px] xmd:left-[15px] relative z-[30] cursor-pointer rounded-[50%] border-[1px] border-[#F9F8F4] p-[6px]"
-            >
-              {isMuted ? (
-                <SoundIcon width="20" height="22" color="#F9F8F4" />
-              ) : (
-                <PauseIcon width="20" height="22" color="#F9F8F4" />
-              )}
-            </button>
-          </div>
         </div>
       </div>
-
-      <audio ref={audioRef} preload="metadata">
-        <source src="/audio/our_design_philosophy_.mp3" type="audio/mpeg" />
-        Your browser does not support the audio element.
-      </audio>
     </section>
   );
 }
