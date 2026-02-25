@@ -54,7 +54,7 @@ export default function Build() {
           ref={videoRef}
           className="w-full max-w-[447px] object-cover"
           src="/videos/build.mp4"
-          poster="/images/pages/philosophy/build.png"
+          poster="/images/pages/design/build.png"
           muted={true}
           suppressHydrationWarning
           loop

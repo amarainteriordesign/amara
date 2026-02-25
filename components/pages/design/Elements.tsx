@@ -51,7 +51,7 @@ export default function Elements() {
 
       <div className="elements-image-anim relative h-[80vh] w-full max-w-[1272px]">
         <Image
-          src="/images/pages/philosophy/elements.png"
+          src="/images/pages/design/elements.png"
           alt="Elenents"
           width={1272}
           height={704}

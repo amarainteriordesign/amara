@@ -91,7 +91,7 @@ export default function Quote({ leaveEarly = false }: { leaveEarly?: boolean }) 
       <div className="quote-bg-anim pointer-events-none fixed inset-0 z-[10] opacity-0">
         <div className="relative flex h-full w-full items-center justify-center">
           <Image
-            src="/images/pages/philosophy/quote.png"
+            src="/images/pages/design/quote.png"
             className="absolute top-0 left-0 z-[-1] h-full w-full object-cover"
             alt="Quote Background"
             width={2000}

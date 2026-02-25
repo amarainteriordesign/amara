@@ -6,7 +6,7 @@ export default function Design() {
       <div className="mx-auto flex w-full max-w-[1440px] items-end justify-between gap-[40px] px-[20px] max-md:flex-col max-md:items-center max-md:gap-0 max-md:px-[17px]">
         <div className="max-md:pb-[46px]">
           <Image
-            src="/images/pages/philosophy/design.png"
+            src="/images/pages/design/design.png"
             alt="Design"
             width={421}
             height={345}
@@ -37,7 +37,7 @@ export default function Design() {
       </div>
       <div className="flex w-full flex-col items-center justify-center px-[20px] max-md:px-[12px] max-sm:px-0">
         <Image
-          src="/images/pages/philosophy/design-elements.png"
+          src="/images/pages/design/design-elements.png"
           alt="Design Elements"
           width={1321}
           height={314}

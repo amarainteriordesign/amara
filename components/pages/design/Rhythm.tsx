@@ -13,7 +13,7 @@ export default function Rhythm() {
             </p>
             <div className="w-full max-sm:pb-[12px]">
               <Image
-                src="/images/pages/philosophy/valley.jpg"
+                src="/images/pages/design/valley.jpg"
                 width={635}
                 height={986}
                 alt="Valley"
@@ -36,7 +36,7 @@ export default function Rhythm() {
                 grounded yet fluid, instinctive yet refined, always deeply human.
               </p>
               <Image
-                src="/images/pages/philosophy/ocean.png"
+                src="/images/pages/design/ocean.png"
                 alt="Ocean"
                 width={615}
                 height={648}

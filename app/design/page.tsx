@@ -7,7 +7,6 @@ import Quote from "@/components/pages/design/Quote";
 import Build from "@/components/pages/design/Build";
 import Rhythm from "@/components/pages/design/Rhythm";
 import Contact from "@/components/common/Contact";
-import ExpandingImage from "@/components/common/ExpandingImage";
 import Principles from "@/components/pages/design/Principles";
 import type { Metadata } from "next";
 
@@ -27,14 +26,6 @@ export default function DesignPage() {
 
         <Design />
 
-        <ExpandingImage
-          linkTo="/studio"
-          quote="Before drawing lines or choosing textures, we listen. To your story, your rhythm, your
-        needs. The best design feels right because it comes from something true. From that truth, we
-        shape spaces that carry meaning, where every line follows a purpose, and every material
-        choice speaks softly of who you are."
-        />
-
         <Moments />
 
         <Quote />
@@ -50,7 +41,7 @@ export default function DesignPage() {
         <ImageFooter
           isDarkHeaderByDefault={true}
           addDarkHeader={true}
-          image="/images/pages/philosophy/footer.png"
+          image="/images/pages/design/footer.png"
         />
       </div>
     </>

@@ -32,7 +32,7 @@ export default function Hero() {
         <div className="flex h-full max-h-full w-full max-w-full items-end overflow-hidden">
           <Image
             className="animate-hero-reveal absolute top-0 left-0 z-[-1] h-full w-full object-cover"
-            src="/images/pages/philosophy/hero.png"
+            src="/images/pages/design/hero.png"
             width={1920}
             height={1080}
             alt="Hero background Image"
