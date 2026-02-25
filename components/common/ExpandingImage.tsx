@@ -121,7 +121,7 @@ export default function ExpandingImage({ quote, linkTo = "/design" }: ExpandingI
         className="elements-image-anim open-cursor-item relative h-[80vh] w-full max-w-[1272px]"
       >
         <Image
-          src="/images/pages/design/Showroom_Portrait_Amara_Interior_Design_Procurement_Miami_Dubai.webp"
+          src="/images/pages/design/Showroom_Founders_Amara_Interior_Design_Procurement_Miami_Dubai.webp"
           alt="Elenents"
           width={1272}
           height={704}
