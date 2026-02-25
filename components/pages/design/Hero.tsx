@@ -32,7 +32,7 @@ export default function Hero() {
         <div className="flex h-full max-h-full w-full max-w-full items-end overflow-hidden">
           <Image
             className="animate-hero-reveal absolute top-0 left-0 z-[-1] h-full w-full object-cover"
-            src="/images/pages/home/hero-2.png"
+            src="/images/pages/design/Palm_Trees_Amara_Interior_Design_Miami_Dubai.webp"
             width={1920}
             height={1080}
             alt="Hero background Image"
