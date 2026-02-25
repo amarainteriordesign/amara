@@ -40,19 +40,19 @@ export default function Hero() {
 
           <div className="absolute top-1/2 z-[1] flex max-h-fit w-full -translate-y-1/2 flex-col items-center justify-center overflow-hidden p-[20px]">
             <Copy delay={1.7} animateOnScroll={false}>
-              <p className="text-center font-serif text-[28px] leading-[36px] font-normal tracking-tighter text-[#FFF] max-sm:text-[24px]">
+              <p className="text-center font-serif text-[32px] leading-[40px] font-normal tracking-tighter text-[#FFF] max-sm:text-[26px]">
                 Where Design Comes to Life
               </p>
             </Copy>
 
             <div className="max-h-fit w-full overflow-hidden text-center">
-              <p className="hero-center-text-space text-bg-img bg-[url(/images/pages/home/text-background.webp)] pb-[8px] font-serif text-[28px] leading-[36px] tracking-tighter italic max-sm:text-[24px]">
+              <p className="hero-center-text-space text-bg-img bg-[url(/images/pages/home/text-background.webp)] pb-[8px] font-serif text-[32px] leading-[40px] tracking-tighter italic max-sm:text-[26px]">
                 Inspired by the elements
               </p>
             </div>
 
             <Copy delay={1.8} animateOnScroll={false}>
-              <p className="pb-[8px] font-sans text-[16px] leading-[24px] font-normal tracking-[4px] text-white uppercase max-sm:pb-[12px] max-sm:text-[12px]" style={{ textShadow: '0 4px 20px rgba(0,0,0,0.7), 0 2px 8px rgba(0,0,0,0.5)' }}>
+              <p className="pb-[8px] font-sans text-[14px] leading-[22px] font-normal tracking-[4px] text-white uppercase max-sm:pb-[12px] max-sm:text-[11px]" style={{ textShadow: '0 4px 20px rgba(0,0,0,0.7), 0 2px 8px rgba(0,0,0,0.5)' }}>
                 MIAMI - DUBAI - PARIS
               </p>
             </Copy>
