@@ -115,14 +115,7 @@ export default function ExpandingImage({ quote, linkTo = "/design" }: ExpandingI
           alt="Amara Showroom"
           width={2048}
           height={1231}
-          className="hidden h-full w-full object-cover md:block"
-        />
-        <Image
-          src="/images/pages/design/Founders_Closeup_Amara_Interior_Design_Procurement_Miami_Dubai.webp"
-          alt="Amara Showroom"
-          width={1434}
-          height={985}
-          className="h-full w-full object-cover md:hidden"
+          className="h-full w-full object-cover"
         />
       </div>
     </section>
