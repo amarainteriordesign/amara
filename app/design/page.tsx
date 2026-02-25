@@ -7,6 +7,7 @@ import Quote from "@/components/pages/design/Quote";
 import Build from "@/components/pages/design/Build";
 import Rhythm from "@/components/pages/design/Rhythm";
 import Contact from "@/components/common/Contact";
+import ExpandingImage from "@/components/common/ExpandingImage";
 import Principles from "@/components/pages/design/Principles";
 import type { Metadata } from "next";
 
@@ -25,6 +26,8 @@ export default function DesignPage() {
         <Hero />
 
         <Design />
+
+        <ExpandingImage linkTo="/studio" />
 
         <Moments />
 
