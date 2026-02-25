@@ -290,10 +290,10 @@ button[aria-label="Open Next.js DevTools"],
   }
 
   &.dark {
-    color: #262626;
+    color: #bcb19b;
 
     .header-logo {
-      color: #fff;
+      color: #fff !important;
     }
   }
 }
