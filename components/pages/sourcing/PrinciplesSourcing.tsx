@@ -23,8 +23,31 @@ export default function PrinciplesSourcing() {
             </p>
             <div className="mt-[28px]">
               <button className="inline-block h-[39px] rounded-[35px] border-[1px] border-[#26262699] px-[16px] font-sans text-[12px] leading-[39px] font-medium tracking-[0.2px] text-[#262626] max-sm:h-[32px] max-sm:px-[14px] max-sm:text-[11px] max-sm:leading-[32px]">
-                EXPLORE OUR FULL DESIGN PROCESS →
+                EXPLORE OUR FULL DESIGN PROCESS
               </button>
+            </div>
+          </div>
+
+          <div className="hidden max-md:block my-[40px]">
+            <div className="relative flex w-full items-center justify-center overflow-hidden" style={{ aspectRatio: '16/10' }}>
+              <div className="absolute inset-0">
+                <Image
+                  src="/images/pages/sourcing/boat-water.webp"
+                  width={1000}
+                  height={2000}
+                  alt="Boat on water"
+                  className="h-full w-full object-cover blur-[30px]"
+                />
+              </div>
+              <div className="relative z-[1] h-[200px] w-[200px] overflow-hidden max-sm:h-[165px] max-sm:w-[165px]">
+                <Image
+                  src="/images/pages/sourcing/boat-water.webp"
+                  width={500}
+                  height={1000}
+                  alt="Boat on water"
+                  className="h-full w-full object-cover"
+                />
+              </div>
             </div>
           </div>
 
