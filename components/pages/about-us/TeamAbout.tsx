@@ -56,7 +56,7 @@ export default function TeamAbout() {
             </div>
           </div>
 
-          <div className="mt-[-120px] flex items-end gap-[40px] max-md:mt-0 max-md:flex-col max-md:gap-[30px]">
+          <div className="mt-[-45%] flex items-end gap-[40px] max-md:mt-0 max-md:flex-col max-md:gap-[30px]">
             <div className="flex w-[45%] items-end pb-[40px] max-md:order-2 max-md:w-full max-md:pb-0">
               <p className="font-sans text-[16px] leading-[28px] font-normal tracking-[-0.2px] text-[#262626] max-sm:text-[14px] max-sm:leading-[24px]" style={{ textAlign: 'justify' }}>
                 Creative and design-led, Inès Bakkali leads the creative vision at Amara. As Design Director, she oversees concept development, spatial planning, and material selection, ensuring each project is cohesive, functional, and thoughtfully executed.
