@@ -98,7 +98,7 @@ export default function ImageFooter({
     lenis?.start();
     setIsMenuOpen(false);
     menuPinned.current = false;
-    router.push("/studio#contact");
+    router.push("/about-us#contact");
   }
 
   function scrollToBottom() {
@@ -238,10 +238,10 @@ export default function ImageFooter({
               </Link>
 
               <Link
-                href="/studio"
+                href="/about-us"
                 className="font-sans text-[15px] leading-[26px] tracking-[-0.4px] text-[#262626] underline"
               >
-                Studio
+                About Us
               </Link>
 
               <Link

@@ -24,7 +24,7 @@ export default function DesignPage() {
 
         <Design />
 
-        <ExpandingImage linkTo="/studio" />
+        <ExpandingImage linkTo="/about-us" />
 
         <Approach />
 

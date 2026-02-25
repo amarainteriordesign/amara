@@ -9,12 +9,12 @@ import ImageFooter from "@/components/layout/ImageFooter";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Studio",
+  title: "About Us",
   description:
     "Le studio Amara conçoit des lieux sur-mesure, ancrés dans leur contexte, où matériaux naturels et détails soignés créent des expériences durables.",
 };
 
-export default function Studio() {
+export default function AboutUs() {
   return (
     <>
       <Header isDark={true} />

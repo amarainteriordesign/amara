@@ -13,7 +13,7 @@ export default function Menu({ now }: { now: Date }) {
   const containerRef = useRef<HTMLDivElement>(null);
 
   function navigateToContactUs() {
-    router.push("/studio#contact");
+    router.push("/about-us#contact");
   }
 
   function onMenuClick(event: React.MouseEvent<HTMLDivElement, MouseEvent>) {
@@ -36,7 +36,7 @@ export default function Menu({ now }: { now: Date }) {
       <div className="w-full border-t-[1px] border-[#E8DFD2] pb-[99px]">
         {[
           { name: "Projects", url: "/projects" },
-          { name: "About Us", url: "/studio" },
+          { name: "About Us", url: "/about-us" },
           { name: "Design", url: "/design" },
           { name: "News", url: "/blog" },
         ].map((page, i) => (

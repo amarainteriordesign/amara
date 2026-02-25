@@ -95,7 +95,7 @@ export default function Design() {
 
         <Copy delay={0}>
           <p className="pb-[81px] font-sans text-[12px] leading-[20px] font-normal tracking-[0.6px] text-[#262626] uppercase max-sm:pb-[27px]">
-            The Heart Behind the Studio
+            The Heart Behind the Name
           </p>
         </Copy>
 

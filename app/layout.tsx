@@ -94,7 +94,7 @@ export const metadata: Metadata = {
     template: "%s — Amara",
   },
   description:
-    "Amara creates interior spaces defined by calm, balance, and meaning. Discover our projects, our studio, and our philosophy.",
+    "Amara creates interior spaces defined by calm, balance, and meaning. Discover our projects, our team, and our philosophy.",
   openGraph: {
     type: "website",
     title: "Amara — Interior Design",

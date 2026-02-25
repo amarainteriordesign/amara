@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-export default function Studio() {
+export default function AboutUs() {
   return (
     <section className="bg-[#e8dfd2] py-[80px] max-md:py-[60px] max-sm:py-[40px]">
       <div className="mx-auto flex max-w-[1200px] items-center gap-[60px] px-[60px] max-md:flex-col max-md:gap-[40px] max-md:px-[40px] max-sm:gap-[30px] max-sm:px-[17px]">

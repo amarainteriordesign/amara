@@ -1,7 +1,7 @@
 import Header from "@/components/layout/Header";
 import Hero from "@/components/pages/home/Hero";
 import Services from "@/components/pages/home/Services";
-import Studio from "@/components/pages/home/Studio";
+import AboutUs from "@/components/pages/home/Studio";
 import Projects from "@/components/pages/home/Projects";
 import Contact from "@/components/pages/home/Contact";
 import ClientsCarousel from "@/components/pages/landing/ClientsCarousel";
@@ -21,7 +21,7 @@ export default function Home() {
 
       <Hero />
 
-      <Studio />
+      <AboutUs />
 
       <Services />
 

@@ -23,7 +23,7 @@ Amara is a Next.js 15 application built with TypeScript, featuring a modern web 
 │   ├── landing/        # Landing page
 │   ├── design/         # Design page (formerly Philosophy)
 │   ├── projects/       # Projects pages with dynamic routes
-│   ├── studio/         # Studio page
+│   ├── about-us/       # About Us page (formerly Studio)
 │   └── page.tsx        # Homepage
 ├── components/         # Reusable React components
 ├── helpers/            # Utility functions
