@@ -104,11 +104,11 @@ export default function ExpandingImageAbout() {
     <section className="bg-[#e8dfd2] flex w-full max-w-full flex-col items-center overflow-hidden px-[84px] pt-[80px] pb-[71px] max-md:px-[20px] max-md:pt-[60px] max-md:pb-[60px] max-sm:px-[11px]">
       <div className="about-image-anim relative w-full max-w-[1272px] overflow-hidden">
         <Image
-          src="/images/pages/design/Amara_Interior_Design_Ines_Bakkali_Eloise_Chauviere.webp"
-          alt="Amara Interior Design - Ines Bakkali and Eloise Chauviere"
+          src="/images/pages/about-us/Founders_Amara_Interior_Design_Eloise_Chauviere_Ines_Bakkali.webp"
+          alt="Amara Interior Design Founders - Eloise Chauviere and Ines Bakkali"
           width={2048}
-          height={1537}
-          className="h-auto w-full mt-[-8%]"
+          height={1357}
+          className="h-auto w-full"
         />
       </div>
     </section>
