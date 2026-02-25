@@ -110,14 +110,14 @@ export default function PrinciplesSourcing() {
             </div>
 
             <div className="mt-[40px] mb-[40px]">
-              <div className="relative flex w-full items-center justify-center overflow-hidden" style={{ aspectRatio: '16/10' }}>
+              <div className="relative flex w-full items-center justify-center overflow-hidden py-[40px]">
                 <div className="absolute inset-0">
                   <Image
                     src="/images/pages/sourcing/boat-water.webp"
                     width={1000}
                     height={2000}
                     alt="Boat on water"
-                    className="h-full w-full object-cover blur-[30px]"
+                    className="h-full w-full object-cover blur-[30px] scale-[1.1]"
                   />
                 </div>
                 <div className="relative z-[1] h-[165px] w-[165px] overflow-hidden">
@@ -137,7 +137,7 @@ export default function PrinciplesSourcing() {
                 SOURCING PHASES 4–6
               </h2>
 
-              <div className="mt-[16px] space-y-[16px]">
+              <div className="mt-[16px] space-y-[28px]">
                 <div>
                   <h3 className="text-[18px] leading-[24px] font-medium tracking-[0.2px] text-[#262626]" style={{ fontFamily: 'var(--font-lora)' }}>
                     Phase 4 – Procurement
