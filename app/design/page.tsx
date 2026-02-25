@@ -1,8 +1,6 @@
 import Header from "@/components/layout/Header";
 import Hero from "@/components/pages/design/Hero";
-import ImageFooter from "@/components/layout/ImageFooter";
 import Design from "@/components/pages/design/Design";
-import Contact from "@/components/common/Contact";
 import ExpandingImage from "@/components/common/ExpandingImage";
 import Approach from "@/components/pages/design/Approach";
 import type { Metadata } from "next";
@@ -26,14 +24,6 @@ export default function DesignPage() {
         <ExpandingImage linkTo="/studio" />
 
         <Approach />
-
-        <Contact />
-
-        <ImageFooter
-          isDarkHeaderByDefault={true}
-          addDarkHeader={true}
-          image="/images/pages/design/footer.png"
-        />
       </div>
     </>
   );
