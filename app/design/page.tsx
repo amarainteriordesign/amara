@@ -28,7 +28,9 @@ export default function DesignPage() {
 
         <Approach />
 
-        <Projects />
+        <div className="bg-[#e8dfd2]">
+          <Projects />
+        </div>
 
         <DesignContact />
 
