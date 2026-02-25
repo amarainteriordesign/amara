@@ -4,6 +4,7 @@ import AboutSection from "@/components/pages/about-us/AboutSection";
 import ExpandingImageAbout from "@/components/pages/about-us/ExpandingImageAbout";
 import ContactAbout from "@/components/pages/about-us/ContactAbout";
 import Projects from "@/components/pages/home/Projects";
+import ImmersiveJourney from "@/components/pages/about-us/ImmersiveJourney";
 import Story from "@/components/pages/studio/Story";
 import ExpandingImage from "@/components/common/ExpandingImage";
 import Experiences from "@/components/pages/studio/Experiences";
@@ -31,6 +32,8 @@ export default function AboutUs() {
       <ContactAbout />
 
       <Projects />
+
+      <ImmersiveJourney />
 
       <Story />
 
