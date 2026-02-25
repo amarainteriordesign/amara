@@ -7,10 +7,10 @@ export default function Design() {
         <div className="flex w-full items-start gap-[40px] max-md:flex-col max-md:items-center max-md:gap-0">
           <div className="max-md:pb-[46px]">
             <Image
-              src="/images/pages/design/design.png"
-              alt="Design"
-              width={421}
-              height={345}
+              src="/images/pages/design/Logo_Elements_Amara_Interior_Design_Procurement_Miami_Dubai.webp"
+              alt="Amara Logo Elements"
+              width={966}
+              height={874}
               className="w-full max-w-[421px] max-sm:max-w-[232px]"
             />
           </div>
@@ -41,10 +41,10 @@ export default function Design() {
       </div>
       <div className="flex w-full flex-col items-center justify-center px-[20px] max-md:px-[12px] max-sm:px-0">
         <Image
-          src="/images/pages/design/design-elements.png"
-          alt="Design Elements"
-          width={1321}
-          height={314}
+          src="/images/pages/design/Logo_Elements_Strip_Amara_Interior_Design_Procurement_Miami_Dubai.webp"
+          alt="Amara Logo Elements Strip"
+          width={6384}
+          height={1280}
           className="w-full max-w-[1341px] max-sm:max-w-full"
         />
       </div>
