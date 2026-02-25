@@ -27,7 +27,7 @@ function PhotoOverlay({ name, title, position, links }: { name: string; title: s
 export default function TeamAbout() {
   return (
     <section className="w-full bg-[#e8dfd2]">
-      <div className="mx-auto w-full max-w-[1400px] px-[60px] pt-[100px] pb-[100px] max-md:px-[40px] max-md:pt-[60px] max-md:pb-[60px] max-sm:px-[20px] max-sm:pt-[40px] max-sm:pb-[40px]">
+      <div className="mx-auto w-full max-w-[1400px] px-[60px] pt-[100px] pb-[140px] max-md:px-[40px] max-md:pt-[60px] max-md:pb-[60px] max-sm:px-[20px] max-sm:pt-[40px] max-sm:pb-[40px]">
 
         <div className="max-md:hidden">
           <div className="flex gap-[40px]">
