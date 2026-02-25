@@ -173,20 +173,20 @@ export default function Approach() {
               <div className="relative flex h-[280px] w-full items-center justify-center overflow-hidden">
                 <div className="absolute inset-0">
                   <Image
-                    src="/images/pages/sourcing/boat-water.webp"
+                    src="/images/pages/design/Material_Samples_Amara_Interior_Design_Procurement_Miami_Dubai.webp"
                     width={1000}
                     height={2000}
-                    alt="Boat on water"
+                    alt="Material samples"
                     className="h-full w-full object-cover blur-[30px]"
                   />
                 </div>
                 <div className="relative z-[1] h-[165px] w-[165px] overflow-hidden">
                   <div className="absolute h-full w-full overflow-hidden">
                     <Image
-                      src="/images/pages/sourcing/boat-water.webp"
+                      src="/images/pages/design/Material_Samples_Amara_Interior_Design_Procurement_Miami_Dubai.webp"
                       width={500}
                       height={1000}
-                      alt="Boat on water"
+                      alt="Material samples"
                       className="h-full w-full object-cover"
                     />
                   </div>
@@ -214,10 +214,10 @@ export default function Approach() {
           <div className="relative flex h-full w-full items-center justify-center overflow-hidden">
             <div className="absolute inset-0">
               <Image
-                src="/images/pages/sourcing/boat-water.webp"
+                src="/images/pages/design/Material_Samples_Amara_Interior_Design_Procurement_Miami_Dubai.webp"
                 width={1000}
                 height={2000}
-                alt="Boat on water"
+                alt="Material samples"
                 className="h-full w-full object-cover blur-[30px]"
               />
             </div>
@@ -225,10 +225,10 @@ export default function Approach() {
             <div className="relative z-[1] h-[345px] max-h-[60%] w-[321px] max-w-[70%] overflow-hidden max-sm:h-[165px] max-sm:w-[165px]">
               <div className="absolute h-full w-full overflow-hidden">
                 <Image
-                  src="/images/pages/sourcing/boat-water.webp"
+                  src="/images/pages/design/Material_Samples_Amara_Interior_Design_Procurement_Miami_Dubai.webp"
                   width={500}
                   height={1000}
-                  alt="Boat on water"
+                  alt="Material samples"
                   className="h-full w-full object-cover"
                 />
               </div>
