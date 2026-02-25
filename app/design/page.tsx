@@ -4,6 +4,7 @@ import ImageFooter from "@/components/layout/ImageFooter";
 import Design from "@/components/pages/design/Design";
 import Contact from "@/components/common/Contact";
 import ExpandingImage from "@/components/common/ExpandingImage";
+import Approach from "@/components/pages/design/Approach";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -23,6 +24,8 @@ export default function DesignPage() {
         <Design />
 
         <ExpandingImage linkTo="/studio" />
+
+        <Approach />
 
         <Contact />
 
