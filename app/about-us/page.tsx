@@ -38,9 +38,11 @@ export default function AboutUs() {
 
       <QuoteAbout />
 
-      <ContactUs />
+      <div className="relative z-[12]">
+        <ContactUs />
 
-      <Footer />
+        <Footer />
+      </div>
     </>
   );
 }
