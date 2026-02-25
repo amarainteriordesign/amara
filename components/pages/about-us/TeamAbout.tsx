@@ -12,10 +12,10 @@ function WhatsAppIcon() {
 export default function TeamAbout() {
   return (
     <section className="w-full bg-[#e8dfd2]">
-      <div className="mx-auto w-full max-w-[1440px] px-[60px] py-[80px] max-md:px-[40px] max-md:py-[60px] max-sm:px-[20px] max-sm:py-[40px]">
-        <div className="flex flex-col gap-[60px] max-md:gap-[40px]">
+      <div className="mx-auto w-full max-w-[1440px] px-[60px] pt-[80px] pb-[80px] max-md:px-[40px] max-md:pt-[60px] max-md:pb-[60px] max-sm:px-[20px] max-sm:pt-[40px] max-sm:pb-[40px]">
+        <div className="relative max-md:flex max-md:flex-col max-md:gap-[40px]">
           <div className="flex items-start gap-[40px] max-md:flex-col max-md:gap-[30px]">
-            <div className="relative w-[50%] shrink-0 overflow-hidden rounded-[8px] max-md:w-full">
+            <div className="relative w-[45%] shrink-0 overflow-hidden rounded-[8px] max-md:w-full">
               <Image
                 src="/images/pages/studio/eloise.png"
                 alt="ELOISE CHAUVIERE"
@@ -49,20 +49,20 @@ export default function TeamAbout() {
                 </a>
               </div>
             </div>
-            <div className="flex w-[50%] items-center self-stretch max-md:w-full">
+            <div className="flex w-[55%] items-start pt-[40px] max-md:w-full max-md:pt-0">
               <p className="font-sans text-[16px] leading-[28px] font-normal tracking-[-0.2px] text-[#262626] max-sm:text-[14px] max-sm:leading-[24px]" style={{ textAlign: 'justify' }}>
                 Strategic and detail-driven, Eloïse Chauviere bridges concept and execution. As Managing Director, she leads company operations, client strategy, international logistics and procurement, ensuring every project is delivered efficiently and to the highest standard.
               </p>
             </div>
           </div>
 
-          <div className="flex items-start gap-[40px] max-md:flex-col max-md:gap-[30px]">
-            <div className="flex w-[50%] items-center self-stretch max-md:order-2 max-md:w-full">
+          <div className="mt-[-120px] flex items-end gap-[40px] max-md:mt-0 max-md:flex-col max-md:gap-[30px]">
+            <div className="flex w-[45%] items-end pb-[40px] max-md:order-2 max-md:w-full max-md:pb-0">
               <p className="font-sans text-[16px] leading-[28px] font-normal tracking-[-0.2px] text-[#262626] max-sm:text-[14px] max-sm:leading-[24px]" style={{ textAlign: 'justify' }}>
                 Creative and design-led, Inès Bakkali leads the creative vision at Amara. As Design Director, she oversees concept development, spatial planning, and material selection, ensuring each project is cohesive, functional, and thoughtfully executed.
               </p>
             </div>
-            <div className="relative w-[50%] shrink-0 overflow-hidden rounded-[8px] max-md:order-1 max-md:w-full">
+            <div className="relative w-[45%] shrink-0 overflow-hidden rounded-[8px] max-md:order-1 max-md:w-full">
               <Image
                 src="/images/pages/studio/ines.png"
                 alt="INES BAKKALI"
