@@ -13,6 +13,9 @@ type ExpandingImageProps = {
 
 export default function ExpandingImage({ quote, linkTo = "/design" }: ExpandingImageProps) {
   useGSAP(() => {
+    const isMobile = window.innerWidth < 768;
+    const mobileZoom = isMobile ? 1.3 : 1;
+
     const calculateScale = () => {
       const imageElement = document.querySelector(".elements-image-anim img") as HTMLImageElement;
       if (!imageElement) return 0.9;
@@ -20,7 +23,6 @@ export default function ExpandingImage({ quote, linkTo = "/design" }: ExpandingI
       const windowWidth = window.innerWidth;
       const actualImageWidth = imageElement.offsetWidth;
 
-      const isMobile = windowWidth < 768;
       const margin = isMobile ? 50 : 100;
 
       const targetWidth = windowWidth - margin;
@@ -39,7 +41,7 @@ export default function ExpandingImage({ quote, linkTo = "/design" }: ExpandingI
         duration: 0,
       });
       gsap.set(".elements-image-anim img", {
-        scale: initialScale,
+        scale: initialScale * mobileZoom,
         duration: 0,
       });
 
@@ -59,8 +61,9 @@ export default function ExpandingImage({ quote, linkTo = "/design" }: ExpandingI
         start: "top bottom",
         end: "bottom top",
         onUpdate: (self) => {
+          const currentScale = initialScale + (maxScale - initialScale) * self.progress;
           gsap.to(".elements-image-anim img", {
-            scale: initialScale + (maxScale - initialScale) * self.progress,
+            scale: currentScale * mobileZoom,
           });
         },
       });
@@ -73,7 +76,7 @@ export default function ExpandingImage({ quote, linkTo = "/design" }: ExpandingI
         duration: 0,
       });
       gsap.set(".elements-image-anim img", {
-        scale: initialScale,
+        scale: initialScale * mobileZoom,
         duration: 0,
       });
 
@@ -93,8 +96,9 @@ export default function ExpandingImage({ quote, linkTo = "/design" }: ExpandingI
         start: "top bottom",
         end: "bottom top",
         onUpdate: (self) => {
+          const currentScale = initialScale + (maxScale - initialScale) * self.progress;
           gsap.to(".elements-image-anim img", {
-            scale: initialScale + (maxScale - initialScale) * self.progress,
+            scale: currentScale * mobileZoom,
           });
         },
       });
