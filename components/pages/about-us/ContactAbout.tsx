@@ -14,7 +14,7 @@ export default function ContactAbout() {
           </p>
 
           <Link
-            href="/about-us#contact"
+            href="/about-us#contact-us"
             className="h-[43px] rounded-[30px] bg-[#26262633] px-[20px] font-sans text-[14px] leading-[43px] font-normal tracking-[-3%] text-[#262626]"
           >
             Contact Us

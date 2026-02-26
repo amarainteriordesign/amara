@@ -1,6 +1,5 @@
 "use client";
 
-import Link from "next/link";
 import Carousel, { type Slide } from "@/components/common/Carousel";
 import { useRef } from "react";
 import gsap from "gsap";

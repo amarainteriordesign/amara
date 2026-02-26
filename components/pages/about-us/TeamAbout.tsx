@@ -17,8 +17,8 @@ function PhotoOverlay({ name, title, position, links }: { name: string; title: s
         <p className="font-sans text-[11px] leading-[16px] font-normal tracking-[1px] text-[#FEFAF6]">{title}</p>
       </div>
       <div className={`absolute ${position === 'top' ? 'right-[15px] bottom-[15px]' : 'top-[15px] right-[15px]'} z-[2] flex items-center gap-[9px]`}>
-        <a href={links.whatsapp} target="_blank" rel="noopener noreferrer" className="flex h-[40px] w-[40px] items-center justify-center rounded-[50%] border-[1px] border-[#FFF] bg-[#ADADAD4D]"><WhatsAppIcon /></a>
-        <a href={links.linkedin} target="_blank" className="flex h-[40px] w-[40px] items-center justify-center rounded-[50%] border-[1px] border-[#FFF] bg-[#ADADAD4D]"><Linkedin width={16} height={16} color="#FFF" /></a>
+        <a href={links.whatsapp} target="_blank" rel="noopener noreferrer" aria-label={`Message ${name} on WhatsApp`} className="flex h-[40px] w-[40px] items-center justify-center rounded-[50%] border-[1px] border-[#FFF] bg-[#ADADAD4D]"><WhatsAppIcon /></a>
+        <a href={links.linkedin} target="_blank" rel="noopener noreferrer" aria-label={`View ${name} on LinkedIn`} className="flex h-[40px] w-[40px] items-center justify-center rounded-[50%] border-[1px] border-[#FFF] bg-[#ADADAD4D]"><Linkedin width={16} height={16} color="#FFF" /></a>
       </div>
     </>
   );

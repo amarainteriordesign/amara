@@ -39,10 +39,10 @@ export default function InsideBlogSection({ blog }: InsideBlogSectionProps) {
           <span>BACK TO NEWS</span>
         </Link>
 
-        <p
+        <h1
           className="font-display max-w-[895px] self-center pb-[180px] text-center text-[42px] leading-[43px] tracking-[0.8px] text-[#262626] max-md:pb-[80px] max-sm:text-[24px] max-sm:leading-[25px] max-sm:tracking-[0.5px]"
           dangerouslySetInnerHTML={{ __html: blog.title }}
-        ></p>
+        ></h1>
 
         <p className="max-xmd:ml-0 ml-[100px] w-full max-w-[595px] pb-[149px] font-serif text-[14px] leading-[21px] font-normal tracking-[0.4px] text-[#262626] max-md:max-w-[475px] max-md:pb-[97px] max-sm:max-w-full max-sm:leading-[19px]">
           <span

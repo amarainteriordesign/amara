@@ -146,6 +146,7 @@ export default function Inspiration() {
             isMuted && !hasUserInteracted ? "animate-pulse bg-white/10" : ""
           }`}
           title={isMuted ? "Click to enable sound" : "Click to mute sound"}
+          aria-label={isMuted ? "Enable sound" : "Mute sound"}
         >
           {isMuted && (
             <div className="absolute top-0 left-0 flex h-full w-full rotate-135 items-center justify-center">
@@ -158,7 +159,7 @@ export default function Inspiration() {
 
         <div className="flex items-center gap-[10px] max-sm:hidden">
           {isPlayDisabled ? (
-            <button className="cursor-pointer" onClick={handlePause}>
+            <button className="cursor-pointer" onClick={handlePause} aria-label="Pause video">
               <PauseIcon
                 width="10"
                 height="19"
@@ -167,7 +168,7 @@ export default function Inspiration() {
               />
             </button>
           ) : (
-            <button className="cursor-pointer" onClick={handlePlay} disabled={isPlayDisabled}>
+            <button className="cursor-pointer" onClick={handlePlay} disabled={isPlayDisabled} aria-label="Play video">
               <PlayIcon
                 width="17"
                 height="19"

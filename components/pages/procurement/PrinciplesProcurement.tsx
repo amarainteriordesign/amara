@@ -4,12 +4,12 @@ export default function PrinciplesProcurement() {
   return (
     <section className="bg-[#e8dfd2] w-full">
       <div className="mx-auto max-w-[1440px] px-[24px] pt-[40px] pb-[40px] text-center max-md:pt-[48px] max-md:pb-[30px]">
-        <h3
+        <h2
           className="text-bg-img inline bg-[url(/images/pages/home/Text_Background_Amara_Interior_Design_Procurement_Miami_Dubai.webp)] !bg-top pb-[9px] italic text-[44px] leading-[52px] tracking-[0.2px] max-md:text-[36px] max-md:leading-[44px] max-sm:text-[32px] max-sm:leading-[40px]"
           style={{ fontFamily: 'var(--font-lora)', WebkitTextFillColor: 'transparent' }}
         >
           Our Approach
-        </h3>
+        </h2>
       </div>
 
       <div className="mx-auto max-w-[1440px] flex gap-[80px] px-[60px] pb-[108px] max-md:flex-col max-md:gap-[40px] max-md:px-[24px] max-md:pb-[60px]">
@@ -17,9 +17,9 @@ export default function PrinciplesProcurement() {
           {/* Desktop version */}
           <div className="max-md:hidden">
             <div className="mb-[60px]">
-              <h2 className="font-display text-[36px] leading-[44px] tracking-[0.5px] text-[#262626]">
+              <h3 className="font-display text-[36px] leading-[44px] tracking-[0.5px] text-[#262626]">
                 DESIGN | PHASES 1–3
-              </h2>
+              </h3>
               <p className="mt-[16px] font-sans text-[16px] leading-[26px] text-[#4a4a4a]" style={{ textAlign: 'justify' }}>
                 From briefing to design, we translate your vision into a cohesive luxury interior concept and coordinated design package, with finalized layouts, material and finish direction, lighting strategy, and technical drawings, ready for execution before procurement.
               </p>
@@ -31,15 +31,15 @@ export default function PrinciplesProcurement() {
             </div>
 
             <div>
-              <h2 className="font-display text-[36px] leading-[44px] tracking-[0.5px] text-[#262626]">
+              <h3 className="font-display text-[36px] leading-[44px] tracking-[0.5px] text-[#262626]">
                 PROCUREMENT | PHASES 4–6
-              </h2>
+              </h3>
 
               <div className="mt-[16px] space-y-[48px]">
                 <div>
-                  <h3 className="text-[22px] leading-[30px] font-medium tracking-[0.2px] text-[#262626]" style={{ fontFamily: 'var(--font-lora)' }}>
+                  <h4 className="text-[22px] leading-[30px] font-medium tracking-[0.2px] text-[#262626]" style={{ fontFamily: 'var(--font-lora)' }}>
                     Phase 4 : Purchasing & Procurement
-                  </h3>
+                  </h4>
                   <ul className="mt-[16px] space-y-[8px]">
                     {[
                       "Supplier selection, product specification confirmation, and FF&E procurement across furniture, lighting, and finishes",
@@ -55,9 +55,9 @@ export default function PrinciplesProcurement() {
                 </div>
 
                 <div>
-                  <h3 className="text-[22px] leading-[30px] font-medium tracking-[0.2px] text-[#262626]" style={{ fontFamily: 'var(--font-lora)' }}>
+                  <h4 className="text-[22px] leading-[30px] font-medium tracking-[0.2px] text-[#262626]" style={{ fontFamily: 'var(--font-lora)' }}>
                     Phase 5 : Logistics, Quality Control & Shipping
-                  </h3>
+                  </h4>
                   <ul className="mt-[16px] space-y-[8px]">
                     {[
                       "End-to-end logistics management, order tracking, and delivery coordination",
@@ -73,9 +73,9 @@ export default function PrinciplesProcurement() {
                 </div>
 
                 <div>
-                  <h3 className="text-[22px] leading-[30px] font-medium tracking-[0.2px] text-[#262626]" style={{ fontFamily: 'var(--font-lora)' }}>
+                  <h4 className="text-[22px] leading-[30px] font-medium tracking-[0.2px] text-[#262626]" style={{ fontFamily: 'var(--font-lora)' }}>
                     Phase 6 : Installation, Fit-Out & Styling
-                  </h3>
+                  </h4>
                   <ul className="mt-[16px] space-y-[8px]">
                     {[
                       "White-glove delivery scheduling and on-site FF&E and lighting installation",
@@ -96,9 +96,9 @@ export default function PrinciplesProcurement() {
           {/* Mobile version */}
           <div className="hidden max-md:block">
             <div className="mb-[40px]">
-              <h2 className="font-display text-[26px] leading-[34px] tracking-[0.5px] text-[#262626]">
+              <h3 className="font-display text-[26px] leading-[34px] tracking-[0.5px] text-[#262626]">
                 DESIGN | PHASES 1–3
-              </h2>
+              </h3>
               <p className="mt-[16px] font-sans text-[14px] leading-[22px] text-[#4a4a4a]" style={{ textAlign: 'justify' }}>
                 From briefing to final concept, we deliver a complete luxury interior design package with space planning, material specifications, lighting design, and technical drawings ready for construction.
               </p>
@@ -135,15 +135,15 @@ export default function PrinciplesProcurement() {
             </div>
 
             <div>
-              <h2 className="font-display text-[26px] leading-[34px] tracking-[0.5px] text-[#262626]">
+              <h3 className="font-display text-[26px] leading-[34px] tracking-[0.5px] text-[#262626]">
                 PROCUREMENT | PHASES 4–6
-              </h2>
+              </h3>
 
               <div className="mt-[16px] space-y-[28px]">
                 <div>
-                  <h3 className="text-[18px] leading-[24px] font-medium tracking-[0.2px] text-[#262626]" style={{ fontFamily: 'var(--font-lora)' }}>
+                  <h4 className="text-[18px] leading-[24px] font-medium tracking-[0.2px] text-[#262626]" style={{ fontFamily: 'var(--font-lora)' }}>
                     Phase 4 – Procurement
-                  </h3>
+                  </h4>
                   <ul className="mt-[16px] space-y-[8px]">
                     {[
                       "Supplier selection & FF&E purchasing",
@@ -158,9 +158,9 @@ export default function PrinciplesProcurement() {
                 </div>
 
                 <div>
-                  <h3 className="text-[18px] leading-[24px] font-medium tracking-[0.2px] text-[#262626]" style={{ fontFamily: 'var(--font-lora)' }}>
+                  <h4 className="text-[18px] leading-[24px] font-medium tracking-[0.2px] text-[#262626]" style={{ fontFamily: 'var(--font-lora)' }}>
                     Phase 5 – Logistics & Shipping
-                  </h3>
+                  </h4>
                   <ul className="mt-[16px] space-y-[8px]">
                     {[
                       "Order tracking & quality control",
@@ -175,9 +175,9 @@ export default function PrinciplesProcurement() {
                 </div>
 
                 <div>
-                  <h3 className="text-[18px] leading-[24px] font-medium tracking-[0.2px] text-[#262626]" style={{ fontFamily: 'var(--font-lora)' }}>
+                  <h4 className="text-[18px] leading-[24px] font-medium tracking-[0.2px] text-[#262626]" style={{ fontFamily: 'var(--font-lora)' }}>
                     Phase 6 – Installation & Styling
-                  </h3>
+                  </h4>
                   <ul className="mt-[16px] space-y-[8px]">
                     {[
                       "On-site FF&E installation & supervision",

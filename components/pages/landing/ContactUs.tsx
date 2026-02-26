@@ -191,7 +191,7 @@ export default function ContactUs() {
                       onChange={handleChange}
                       autoComplete="off"
                       suppressHydrationWarning
-                      className={`w-full border-b bg-transparent py-[12px] font-sans text-[14px] leading-[20px] font-normal text-[#0a0a0a] placeholder-[#666] transition-colors outline-none ${
+                      className={`w-full border-b bg-transparent py-[12px] font-sans text-[14px] leading-[20px] font-normal text-[#0a0a0a] placeholder-[#595959] transition-colors outline-none ${
                         validationErrors.name ? "border-red-500" : "border-[#444]"
                       }`}
                     />
@@ -213,7 +213,7 @@ export default function ContactUs() {
                       onChange={handleChange}
                       autoComplete="off"
                       suppressHydrationWarning
-                      className={`w-full border-b bg-transparent py-[12px] font-sans text-[14px] leading-[20px] font-normal text-[#0a0a0a] placeholder-[#666] transition-colors outline-none ${
+                      className={`w-full border-b bg-transparent py-[12px] font-sans text-[14px] leading-[20px] font-normal text-[#0a0a0a] placeholder-[#595959] transition-colors outline-none ${
                         validationErrors.email ? "border-red-500" : "border-[#444]"
                       }`}
                     />
@@ -235,7 +235,7 @@ export default function ContactUs() {
                       onChange={handleChange}
                       autoComplete="off"
                       suppressHydrationWarning
-                      className={`w-full border-b bg-transparent py-[12px] font-sans text-[14px] leading-[20px] font-normal text-[#0a0a0a] placeholder-[#666] transition-colors outline-none ${
+                      className={`w-full border-b bg-transparent py-[12px] font-sans text-[14px] leading-[20px] font-normal text-[#0a0a0a] placeholder-[#595959] transition-colors outline-none ${
                         validationErrors.phone ? "border-red-500" : "border-[#444]"
                       }`}
                     />
@@ -257,7 +257,7 @@ export default function ContactUs() {
                       rows={3}
                       autoComplete="off"
                       suppressHydrationWarning
-                      className={`w-full resize-none border-b bg-transparent py-[12px] font-sans text-[14px] leading-[20px] font-normal text-[#0a0a0a] placeholder-[#666] transition-colors outline-none ${
+                      className={`w-full resize-none border-b bg-transparent py-[12px] font-sans text-[14px] leading-[20px] font-normal text-[#0a0a0a] placeholder-[#595959] transition-colors outline-none ${
                         validationErrors.message ? "border-red-500" : "border-[#444]"
                       }`}
                     />
