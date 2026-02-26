@@ -49,7 +49,7 @@ Amara is a Next.js 15 application built with TypeScript, featuring a modern web 
 
 ### Key Configuration Changes for Replit
 1. **next.config.ts**: Added `allowedDevOrigins: ["*"]` to allow Replit's proxy
-2. **next.config.ts**: Added cache-control headers to prevent caching issues
+2. **next.config.ts**: Smart cache-control headers (static assets cached 1yr, HTML revalidates)
 3. **package.json**: Updated dev script to use port 5000 with host 0.0.0.0
 4. **package.json**: Removed `--turbopack` flag from dev and build scripts
 
@@ -94,6 +94,17 @@ All images follow this naming pattern:
 - Example: `Aerial_Container_Cargo_Ship_Amara_Interior_Design_Procurement_Miami_Dubai.webp`
 - Format: WebP preferred
 - Images stored in `public/images/pages/sourcing/`
+
+## SEO Configuration
+- **Production Domain**: `https://amarainteriordesign.com` (set via `NEXT_PUBLIC_SITE_URL` env var)
+- **Structured Data**: JSON-LD Organization schema in `app/layout.tsx` (name, logo, locations, services)
+- **Canonical URLs**: Set on every page via `alternates.canonical` in metadata exports
+- **Sitemap**: Dynamic sitemap at `app/sitemap.ts` — includes all static pages + dynamic projects/blog posts
+- **Robots.txt**: Generated via `app/robots.ts` — allows all crawlers, references sitemap, blocks "coming soon" projects
+- **llms.txt**: AI discoverability file at `public/llms.txt` — describes business for AI assistants
+- **Cache-Control**: Static assets (images, fonts, JS/CSS) cached 1 year; HTML pages revalidate on every request
+- **OG/Twitter Cards**: Configured in root layout with proper production URLs
+- **Image Alt Texts**: All keyword-rich with "Amara Interior Design Miami Dubai" pattern across 25+ components
 
 ## Recent Changes
 - **2025-01-13**: Added Google Tag Manager

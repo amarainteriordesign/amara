@@ -13,6 +13,9 @@ export const metadata: Metadata = {
   title: "Amara Interior Design Studio | Luxury Residential & Hospitality | Miami, Dubai, Paris",
   description:
     "Amara is a luxury interior design and procurement studio in Miami, Dubai, and Paris specializing in bespoke residential and hospitality spaces with curated materials and artisan craftsmanship.",
+  alternates: {
+    canonical: "/landing",
+  },
 };
 
 export default function Landing() {

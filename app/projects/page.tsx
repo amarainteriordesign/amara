@@ -16,6 +16,9 @@ export const metadata: Metadata = {
   title: "Projects",
   description:
     "Explore Amara Interior Design projects worldwide. Luxury residential and hospitality interiors featuring authentic materials, natural light, and bespoke procurement in Miami, Dubai, and beyond.",
+  alternates: {
+    canonical: "/projects",
+  },
 };
 
 export default async function Projects() {

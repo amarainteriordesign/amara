@@ -11,6 +11,9 @@ export const metadata: Metadata = {
   title: "Procurement",
   description:
     "Amara procurement services – luxury furniture, materials, and design elements sourced globally for high-end residential and commercial projects.",
+  alternates: {
+    canonical: "/procurement",
+  },
 };
 
 export default function Procurement() {

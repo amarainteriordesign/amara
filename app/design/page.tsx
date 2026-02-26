@@ -12,6 +12,9 @@ export const metadata: Metadata = {
   title: "Design Philosophy | Amara Interior Design | Miami, Dubai, Paris",
   description:
     "Discover Amara's luxury interior design philosophy — placing listening, natural materials, and light at the heart of every bespoke residential and hospitality project in Miami, Dubai, and Paris.",
+  alternates: {
+    canonical: "/design",
+  },
 };
 
 export default function DesignPage() {

@@ -87,26 +87,31 @@ const madeMirageThin = localFont({
   display: "swap",
 });
 
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://amarainteriordesign.com";
+
 export const metadata: Metadata = {
-  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || "http://localhost:3000"),
+  metadataBase: new URL(siteUrl),
   title: {
     default: "Amara — Interior Design",
     template: "%s — Amara",
   },
   description:
-    "Amara creates interior spaces defined by calm, balance, and meaning. Discover our projects, our team, and our philosophy.",
+    "Amara creates luxury interior spaces defined by calm, balance, and meaning in Miami, Dubai, and Paris. Discover our projects, our team, and our design philosophy.",
+  alternates: {
+    canonical: "/",
+  },
   openGraph: {
     type: "website",
     title: "Amara — Interior Design",
     description:
-      "Amara creates interior spaces defined by calm, balance, and meaning.",
+      "Amara creates luxury interior spaces defined by calm, balance, and meaning in Miami, Dubai, and Paris.",
     url: "/",
     images: [
       {
         url: "/images/pages/home/hero-2.png",
         width: 1200,
         height: 630,
-        alt: "Amara",
+        alt: "Amara Interior Design luxury interiors Miami Dubai Paris",
       },
     ],
   },
@@ -114,7 +119,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Amara — Interior Design",
     description:
-      "Amara creates interior spaces defined by calm, balance, and meaning.",
+      "Amara creates luxury interior spaces defined by calm, balance, and meaning in Miami, Dubai, and Paris.",
     images: ["/images/pages/home/hero-2.png"],
   },
   icons: {
@@ -131,6 +136,29 @@ export const metadata: Metadata = {
   },
 };
 
+const organizationJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  name: "Amara Interior Design",
+  url: siteUrl,
+  logo: `${siteUrl}/images/pages/studio/logo.png`,
+  description:
+    "Amara is a luxury interior design and procurement studio specializing in bespoke residential and hospitality spaces.",
+  areaServed: [
+    { "@type": "City", name: "Miami" },
+    { "@type": "City", name: "Dubai" },
+    { "@type": "City", name: "Paris" },
+  ],
+  knowsAbout: [
+    "Interior Design",
+    "Luxury Residential Design",
+    "Hospitality Design",
+    "Furniture Procurement",
+    "Bespoke Furniture",
+    "Project Management",
+  ],
+};
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -139,6 +167,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationJsonLd) }}
+        />
         <Script
           id="gtm-script"
           strategy="afterInteractive"

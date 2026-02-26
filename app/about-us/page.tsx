@@ -15,6 +15,9 @@ export const metadata: Metadata = {
   title: "About Us",
   description:
     "Meet the Amara Interior Design team. Luxury bespoke interiors crafted with natural materials, refined details, and timeless design in Miami, Dubai, and Paris.",
+  alternates: {
+    canonical: "/about-us",
+  },
 };
 
 export default function AboutUs() {

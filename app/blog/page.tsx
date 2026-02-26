@@ -13,6 +13,9 @@ export const metadata: Metadata = {
   title: "Blog",
   description:
     "Insights, inspiration, and stories about luxury interior design, architecture, and procurement by Amara Interior Design. Trends from Miami, Dubai, and Paris.",
+  alternates: {
+    canonical: "/blog",
+  },
 };
 
 export default async function Blog() {

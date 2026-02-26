@@ -43,3 +43,4 @@ build = ["npm", "run", "build"]
 
 [userenv.shared]
 GIT_URL = "https://amarainteriordesign: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github.com/amarainteriordesign/amara.git"
+NEXT_PUBLIC_SITE_URL = "https://amarainteriordesign.com"
