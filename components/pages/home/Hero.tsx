@@ -56,7 +56,7 @@ export default function Hero() {
 
           <div className="hero-overlay absolute top-1/2 z-[1] flex max-h-fit w-full -translate-y-1/2 flex-col items-center justify-center overflow-hidden p-[20px]">
             <Copy animateOnScroll={false} delay={1.55}>
-              <p className="pb-[12px] text-center font-calvino text-[56px] leading-[64px] font-normal tracking-[-0.5px] capitalize text-[#FFF] max-sm:pb-[8px] max-sm:text-[40px] max-sm:leading-[48px]">
+              <p className="pb-[12px] text-center text-[56px] leading-[64px] font-normal tracking-[-0.5px] capitalize text-[#FFF] max-sm:pb-[8px] max-sm:text-[40px] max-sm:leading-[48px]" style={{ fontFamily: 'var(--font-lora)' }}>
                 <span className="text-white">Amara</span>{" "}
                 <span className="text-white">Interior Design Studio</span>
               </p>

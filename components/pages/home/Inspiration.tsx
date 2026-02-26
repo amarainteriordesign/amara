@@ -127,13 +127,13 @@ export default function Inspiration() {
         </div>
 
         <div className="max-h-fit w-full overflow-hidden text-center">
-          <p className="inspirations-text translate-y-[-120%] font-calvino text-[28px] leading-[36px] font-normal tracking-[-0.8px] text-[#F6EFE5] text-[#FFF] max-sm:text-[24px] max-sm:tracking-[-0.7]">
+          <p className="inspirations-text translate-y-[-120%] text-[28px] leading-[36px] font-normal tracking-[-0.8px] text-[#F6EFE5] text-[#FFF] max-sm:text-[24px] max-sm:tracking-[-0.7]" style={{ fontFamily: 'var(--font-lora)' }}>
             Every project has a story,
           </p>
         </div>
 
         <Copy delay={0.2}>
-          <p className="pb-[8px] font-calvino text-[28px] leading-[36px] tracking-[-0.8px] text-[#F6EFE5] italic max-sm:text-[24px] max-sm:tracking-[-0.7]">
+          <p className="pb-[8px] text-[28px] leading-[36px] tracking-[-0.8px] text-[#F6EFE5] italic max-sm:text-[24px] max-sm:tracking-[-0.7]" style={{ fontFamily: 'var(--font-lora)' }}>
             Inspired by the Elements
           </p>
         </Copy>
