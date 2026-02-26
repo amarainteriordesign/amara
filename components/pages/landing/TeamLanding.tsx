@@ -31,6 +31,7 @@ export default function TeamLanding() {
               alt="ELOISE CHAUVIERE"
               width={417}
               height={515}
+              sizes="(max-width: 768px) 100vw, 33vw"
               className="absolute top-0 right-0 h-full w-full overflow-hidden rounded-[8px] object-cover"
             />
             <div className="relative z-[2] flex h-full w-full justify-between py-[15px] pr-[15px] pl-[26px] max-sm:px-[22px] max-sm:pt-[10px] max-sm:pb-[18px]">
@@ -81,6 +82,7 @@ export default function TeamLanding() {
               alt="INES BAKKALI"
               width={417}
               height={515}
+              sizes="(max-width: 768px) 100vw, 33vw"
               className="absolute top-0 right-0 h-full w-full overflow-hidden rounded-[8px] object-cover"
             />
             <div className="relative z-[2] flex h-full w-full justify-between py-[15px] pr-[15px] pl-[26px] max-sm:px-[22px] max-sm:pt-[10px] max-sm:pb-[18px]">

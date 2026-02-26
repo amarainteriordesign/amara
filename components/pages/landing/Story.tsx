@@ -13,6 +13,7 @@ export default function Story() {
               src="/images/pages/studio/Story_Wellness_Amara_Interior_Design_Procurement_Miami_Dubai.webp"
               width={900}
               height={1000}
+              sizes="(max-width: 640px) 315px, 438px"
               className="h-[530px] w-full object-cover max-sm:h-[450px]"
               alt="Design materials selection"
             />
@@ -41,6 +42,7 @@ export default function Story() {
               src="/images/pages/studio/Story_Nature_Amara_Interior_Design_Procurement_Miami_Dubai.webp"
               width={900}
               height={1000}
+              sizes="(max-width: 640px) 315px, 438px"
               className="h-[530px] w-full object-cover max-sm:h-[450px]"
               alt="Procurement & Project Management"
             />
@@ -53,6 +55,7 @@ export default function Story() {
               src="/images/pages/studio/Story_Balance_Amara_Interior_Design_Procurement_Miami_Dubai.webp"
               width={900}
               height={1000}
+              sizes="(max-width: 640px) 315px, 438px"
               className="h-[530px] w-full object-cover max-sm:h-[450px]"
               alt="Design Development"
             />

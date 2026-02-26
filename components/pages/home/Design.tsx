@@ -135,6 +135,7 @@ export default function Design() {
                   height={950}
                   src={item.img}
                   alt={item.title}
+                  sizes="(max-width: 768px) 70vw, 40vw"
                 />
               </div>
             ))}

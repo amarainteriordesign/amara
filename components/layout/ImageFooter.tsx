@@ -198,6 +198,7 @@ export default function ImageFooter({
           width={1920}
           height={1080}
           alt="Footer background Image"
+          sizes="100vw"
         />
 
         {!isMenuOpen && (

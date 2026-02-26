@@ -32,6 +32,8 @@ export default function Hero() {
             width={1920}
             height={1080}
             alt="Interior design news and insights Amara Miami Dubai"
+            priority
+            sizes="100vw"
           />
 
           <h1 className="sr-only">Interior Design News and Insights</h1>

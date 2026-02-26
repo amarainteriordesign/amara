@@ -10,6 +10,7 @@ export default function AboutUs() {
             width={600}
             height={750}
             alt="Amara founders"
+            sizes="(max-width: 768px) 100vw, 50vw"
             className="h-auto w-full object-cover"
           />
         </div>
@@ -21,6 +22,7 @@ export default function AboutUs() {
               width={4063}
               height={1840}
               alt="Architecture sketch"
+              sizes="(max-width: 768px) 100vw, 50vw"
               className="h-auto w-full"
             />
           </div>

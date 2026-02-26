@@ -179,7 +179,7 @@ export default function ContactUs() {
                   {FORM_TITLE}
                 </h2>
 
-                <form id="contact-form-landing" onSubmit={handleSubmit} className="flex flex-col gap-[16px]">
+                <form id="contact-form-landing" onSubmit={handleSubmit} autoComplete="off" className="flex flex-col gap-[16px]">
                   <div>
                     <input
                       type="text"
@@ -187,6 +187,8 @@ export default function ContactUs() {
                       placeholder="Name"
                       value={formData.name}
                       onChange={handleChange}
+                      autoComplete="off"
+                      suppressHydrationWarning
                       className={`w-full border-b bg-transparent py-[12px] font-sans text-[14px] leading-[20px] font-normal text-[#0a0a0a] placeholder-[#666] transition-colors outline-none ${
                         validationErrors.name ? "border-red-500" : "border-[#444]"
                       }`}
@@ -205,6 +207,8 @@ export default function ContactUs() {
                       placeholder="Email"
                       value={formData.email}
                       onChange={handleChange}
+                      autoComplete="off"
+                      suppressHydrationWarning
                       className={`w-full border-b bg-transparent py-[12px] font-sans text-[14px] leading-[20px] font-normal text-[#0a0a0a] placeholder-[#666] transition-colors outline-none ${
                         validationErrors.email ? "border-red-500" : "border-[#444]"
                       }`}
@@ -223,6 +227,8 @@ export default function ContactUs() {
                       placeholder="Phone number"
                       value={formData.phone}
                       onChange={handleChange}
+                      autoComplete="off"
+                      suppressHydrationWarning
                       className={`w-full border-b bg-transparent py-[12px] font-sans text-[14px] leading-[20px] font-normal text-[#0a0a0a] placeholder-[#666] transition-colors outline-none ${
                         validationErrors.phone ? "border-red-500" : "border-[#444]"
                       }`}
@@ -241,6 +247,8 @@ export default function ContactUs() {
                       value={formData.message}
                       onChange={handleChange}
                       rows={3}
+                      autoComplete="off"
+                      suppressHydrationWarning
                       className={`w-full resize-none border-b bg-transparent py-[12px] font-sans text-[14px] leading-[20px] font-normal text-[#0a0a0a] placeholder-[#666] transition-colors outline-none ${
                         validationErrors.message ? "border-red-500" : "border-[#444]"
                       }`}

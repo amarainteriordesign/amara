@@ -49,6 +49,8 @@ export default function HeroLanding() {
               height={1080}
               alt={["Luxury villa interior design Amara Miami Dubai", "Bespoke residential interior Amara Interior Design", "Modern luxury living space Amara Miami Dubai", "Hospitality interior design Amara Dubai Miami"][index]}
               priority={index === 0}
+              loading={index === 0 ? "eager" : "lazy"}
+              sizes="100vw"
             />
           ))}
 

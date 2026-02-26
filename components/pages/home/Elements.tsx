@@ -218,6 +218,7 @@ export default function Elements() {
               alt="Natural materials interior design Amara Miami Dubai"
               width={1000}
               height={600}
+              sizes="(max-width: 640px) 228px, (max-width: 768px) 320px, 561px"
               className="h-full w-full object-cover object-left"
             />
           </div>
@@ -237,6 +238,7 @@ export default function Elements() {
               alt="Earth tones luxury interior Amara Interior Design"
               width={1000}
               height={600}
+              sizes="(max-width: 640px) 152px, (max-width: 768px) 280px, 491px"
               className="h-full w-full object-cover object-right"
             />
           </div>
@@ -256,6 +258,7 @@ export default function Elements() {
               alt="Refined textures bespoke interior design Amara"
               width={1000}
               height={600}
+              sizes="(max-width: 640px) 129px, (max-width: 768px) 320px, 487px"
               className="h-full w-full object-cover object-right"
             />
           </div>
@@ -275,6 +278,7 @@ export default function Elements() {
               alt="Light and balance luxury design Amara Miami Dubai"
               width={1000}
               height={600}
+              sizes="(max-width: 640px) 209px, (max-width: 768px) 420px, 707px"
               className="h-full w-full object-cover object-left"
             />
           </div>

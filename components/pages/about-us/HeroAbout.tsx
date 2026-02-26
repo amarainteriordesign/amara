@@ -10,12 +10,6 @@ gsap.registerPlugin(ScrollTrigger);
 
 export default function HeroAbout() {
   useGSAP(() => {
-    const tl = gsap.timeline({ defaults: { ease: "power3.inOut", duration: 1 } });
-
-    tl.to(".hero-bottom-text", { y: 300, duration: 0 });
-    tl.to(".hero-bottom-text", { opacity: 1, delay: 1.5, duration: 0 });
-    tl.to(".hero-bottom-text", { y: 0 });
-
     const tl2 = gsap.timeline({ defaults: { ease: "power3.inOut", duration: 1 } });
 
     tl2.to(".hero-center-text-space", { y: 120, duration: 0 });
@@ -68,6 +62,8 @@ export default function HeroAbout() {
             width={1440}
             height={809}
             alt="Amara Interior Design studio about us Miami Dubai"
+            priority
+            sizes="100vw"
           />
           <div className="mx-auto flex h-screen w-full max-w-[1440px] flex-col items-center justify-end gap-[67px] px-[20px] pt-[166px] pb-[166px] max-md:justify-center max-sm:gap-[35px] max-sm:px-[12px]">
             <div className="flex flex-col items-center">

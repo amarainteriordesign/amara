@@ -119,6 +119,7 @@ export default function ExpandingImage({ quote, linkTo = "/design" }: ExpandingI
           alt="Amara Interior Design - Ines Bakkali and Eloise Chauviere"
           width={2048}
           height={1537}
+          sizes="100vw"
           className="h-auto w-full mt-[-8%]"
         />
       </div>
