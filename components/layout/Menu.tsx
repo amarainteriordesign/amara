@@ -18,7 +18,7 @@ export default function Menu({ now }: { now: Date }) {
   const logoY = isMobile ? 340 : 365;
   const logoHeight = Math.round(217 * logoScale);
   const contactBtnY = isMobile ? 350 : 487;
-  const menuHeight = isMobile ? 480 : 610;
+  const menuHeight = isMobile ? 530 : 610;
 
   function navigateToContactUs() {
     router.push("/landing#contact-us");
