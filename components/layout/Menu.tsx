@@ -67,7 +67,7 @@ export default function Menu({ now }: { now: Date }) {
           <SoundIcon width={22} height={24} color="#262626" />
           <SoundIcon width={22} height={24} color="#262626" className="ml-[-4px]" />
         </div>
-        <p className="pb-[20px] text-justify font-sans text-[18px] leading-[26px] font-medium tracking-[-0.6px] text-[#262626] max-sm:text-[15px] max-sm:leading-[22px]" style={{ textAlignLast: "justify" }}>
+        <p className="pb-[20px] text-justify font-sans text-[18px] leading-[26px] font-medium tracking-[-0.6px] text-[#262626] max-sm:text-[15px] max-sm:leading-[22px]">
           An immersive journey inspired by the story of the four{" "}
           <span className="text-[#737373]">elements</span>
         </p>
