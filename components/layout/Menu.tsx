@@ -19,8 +19,8 @@ export default function Menu({ now }: { now: Date }) {
 
   function onMenuClick(event: React.MouseEvent<HTMLDivElement, MouseEvent>) {
     const topMenuPosition = containerRef.current?.getBoundingClientRect().top || 0;
-    if (event.clientY - topMenuPosition >= 374 && event.clientY - topMenuPosition <= 456) {
-      if (event.clientX >= 25 && event.clientX <= 143) {
+    if (event.clientY - topMenuPosition >= 350 && event.clientY - topMenuPosition <= 460) {
+      if (event.clientX >= 25 && event.clientX <= 180) {
         if (pathname !== "/") {
           router.push("/");
         }
@@ -100,7 +100,7 @@ export default function Menu({ now }: { now: Date }) {
         <defs>
           <mask id="menu-mask-mobile" maskUnits="userSpaceOnUse">
             <rect width={screenSize?.width || 600} height="610" fill="white" />
-            <g transform="translate(25,374) scale(0.38)">
+            <g transform="translate(25,350) scale(0.5)">
               <path
                 d="M99 115.553H153.297L197.032 115V157.592H208V217H163.046V158.367H156.005H148.964L148.422 217H99V115.553Z"
                 fill="black"
