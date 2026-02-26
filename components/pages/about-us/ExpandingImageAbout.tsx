@@ -107,7 +107,7 @@ export default function ExpandingImageAbout() {
           src="/images/pages/about-us/Founders_Amara_Interior_Design_Eloise_Chauviere_Ines_Bakkali.webp"
           alt="Amara Interior Design Founders - Eloise Chauviere and Ines Bakkali"
           width={2048}
-          height={1357}
+          height={1171}
           className="h-auto w-full"
         />
       </div>
