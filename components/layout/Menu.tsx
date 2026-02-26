@@ -89,15 +89,14 @@ export default function Menu({ now }: { now: Date }) {
 
       <svg
         className="absolute top-0 left-0 z-[-1] h-full w-full"
-        width="100%"
-        height="100%"
-        viewBox={`0 0 ${screenSize?.width || 2000} 610`}
-        preserveAspectRatio="xMinYMin slice"
+        width={(screenSize?.width || 2000) + 40}
+        height="610"
+        viewBox={`0 0 ${(screenSize?.width || 2000) + 40} 610`}
         xmlns="http://www.w3.org/2000/svg"
       >
         <defs>
           <mask id="menu-mask-mobile" maskUnits="userSpaceOnUse">
-            <rect width={screenSize?.width || 2000} height="610" fill="white" />
+            <rect width={(screenSize?.width || 2000) + 40} height="610" fill="white" />
             <g transform="translate(25,374) scale(0.38)">
               <path
                 d="M99 115.553H153.297L197.032 115V157.592H208V217H163.046V158.367H156.005H148.964L148.422 217H99V115.553Z"
@@ -128,7 +127,7 @@ export default function Menu({ now }: { now: Date }) {
         </defs>
 
         <rect
-          width={screenSize?.width || 2000}
+          width={(screenSize?.width || 2000) + 40}
           height="610"
           fill="#F1EBDF"
           mask="url(#menu-mask-mobile)"
