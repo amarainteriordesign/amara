@@ -13,7 +13,7 @@ export default function Menu({ now }: { now: Date }) {
   const containerRef = useRef<HTMLDivElement>(null);
 
   function navigateToContactUs() {
-    router.push("/about-us#contact");
+    router.push("/landing#contact-us");
   }
 
   function onMenuClick(event: React.MouseEvent<HTMLDivElement, MouseEvent>) {
