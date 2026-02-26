@@ -2,27 +2,25 @@ export const revalidate = 300;
 
 import Header from "@/components/layout/Header";
 import ImageFooter from "@/components/layout/ImageFooter";
-import Hero from "@/components/pages/blog/Hero";
+import Hero from "@/components/pages/news/Hero";
 import Contact from "@/components/common/Contact";
-import MainSection from "@/components/pages/blog/MainSection";
+import MainSection from "@/components/pages/news/MainSection";
 import { fetchAllBlogs } from "@/lib/blog";
 import type { SerializedBlog } from "@/types/blog";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Blog",
+  title: "News",
   description:
     "Insights, inspiration, and stories about luxury interior design, architecture, and procurement by Amara Interior Design. Trends from Miami, Dubai, and Paris.",
   alternates: {
-    canonical: "/blog",
+    canonical: "/news",
   },
 };
 
-export default async function Blog() {
-  // Fetch all blog articles from Firebase
+export default async function News() {
   const blogs = await fetchAllBlogs();
 
-  // Serialize blogs to remove Firebase Timestamps
   const serializedBlogs: SerializedBlog[] = blogs.map((blog) => ({
     ...blog,
     createdAt: blog.createdAt?.toDate?.()?.toISOString() || blog.createdAt.toString(),
@@ -40,7 +38,7 @@ export default async function Blog() {
 
       <Contact />
 
-      <ImageFooter image="/images/pages/blog/ocean2.png" />
+      <ImageFooter image="/images/pages/news/ocean2.png" />
     </>
   );
 }

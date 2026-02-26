@@ -17,7 +17,6 @@ export default function OtherBlogs({ blogs }: { blogs: SerializedBlog[] }) {
     [blogs],
   );
 
-  // Memoize slides to prevent recreation on every render
   const slides = useMemo(() => {
     return blogs.map((blog) => ({
       id: blog.id,
@@ -45,7 +44,7 @@ export default function OtherBlogs({ blogs }: { blogs: SerializedBlog[] }) {
         </p>
 
         <Link
-          href={`/blog/${selectedBlog?.slug}`}
+          href={`/news/${selectedBlog?.slug}`}
           className="flex h-[40px] items-center justify-center rounded-[20px] border-[1px] border-[#262626] px-[16px] text-center text-[12px] leading-[18px] font-medium tracking-[0.2px] text-[#262626] uppercase"
         >
           DISCOVER ARTICLE

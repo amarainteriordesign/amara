@@ -39,7 +39,7 @@ export default function Menu({ now }: { now: Date }) {
           { name: "Design", url: "/design" },
           { name: "Procurement", url: "/procurement" },
           { name: "Projects", url: "/projects" },
-          { name: "News", url: "/blog" },
+          { name: "News", url: "/news" },
         ].map((page, i) => (
           <Link
             key={i}

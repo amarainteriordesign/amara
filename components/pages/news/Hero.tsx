@@ -28,13 +28,13 @@ export default function Hero() {
         <div className="flex h-full max-h-full w-full max-w-full items-end overflow-hidden">
           <Image
             className="animate-hero-reveal absolute top-0 left-0 z-[-1] h-full w-full object-cover"
-            src="/images/pages/blog/ocean.png"
+            src="/images/pages/news/ocean.png"
             width={1920}
             height={1080}
-            alt="Interior design blog and insights Amara Miami Dubai"
+            alt="Interior design news and insights Amara Miami Dubai"
           />
 
-          <h1 className="sr-only">Interior Design Blog and Insights</h1>
+          <h1 className="sr-only">Interior Design News and Insights</h1>
           <div className="hero-bottom-text-anim absolute right-0 bottom-0 left-0 px-[10px] pb-[26px] max-sm:px-[5px]">
             <InsightsIcon />
           </div>

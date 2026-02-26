@@ -1,4 +1,4 @@
-import Gallery from "@/components/pages/blog/Gallery";
+import Gallery from "@/components/pages/news/Gallery";
 import { SerializedBlog } from "@/types/blog";
 import Image from "next/image";
 
@@ -20,8 +20,8 @@ export default function MainSection({ blogs }: { blogs: SerializedBlog[] }) {
     <section className="mx-auto w-full max-w-[1440px] px-[20px] pt-[40px] max-sm:px-[12px] max-sm:pt-[82px]">
       <div className="max-xmd:pl-0 max-xmd:gap-[60px] flex w-full items-center justify-center gap-[160px] pb-[221px] pl-[100px] max-md:flex-col max-sm:gap-[48px] max-sm:pb-[116px]">
         <Image
-          src="/images/pages/blog/drawing.png"
-          alt="Architectural sketch Amara Interior Design blog"
+          src="/images/pages/news/drawing.png"
+          alt="Architectural sketch Amara Interior Design news"
           height={320}
           width={320}
           className="object-cover"
@@ -33,9 +33,9 @@ export default function MainSection({ blogs }: { blogs: SerializedBlog[] }) {
           philosophies to quiet rituals, we gather insights that shape how we create.
           <br />
           <br />
-          Here, you’ll find reflections on our projects, the materials we love, the questions we
-          ask, and the trends we observe. It’s a space for curiosity, connection, and conversation,
-          an ongoing exploration of the world through Amara’s eyes.
+          Here, you'll find reflections on our projects, the materials we love, the questions we
+          ask, and the trends we observe. It's a space for curiosity, connection, and conversation,
+          an ongoing exploration of the world through Amara's eyes.
         </p>
       </div>
 

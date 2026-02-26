@@ -252,10 +252,10 @@ export default function ImageFooter({
               </Link>
 
               <Link
-                href="/blog"
+                href="/news"
                 className="overflow-hidden font-sans text-[15px] leading-[26px] tracking-[-0.4px] text-[#262626] underline"
               >
-                <span>Blog</span>
+                <span>News</span>
               </Link>
             </div>
 

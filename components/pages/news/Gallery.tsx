@@ -49,12 +49,12 @@ export default function Gallery({ data }: GalleryProps) {
       {data[0] && (
         <div className="mx-auto flex w-full max-w-[625px] flex-col items-center gap-[15px] pb-[188px] max-md:pb-[50px] max-sm:max-w-full">
           <Link
-            href={"/blog/" + data[0].metaUrl}
+            href={"/news/" + data[0].metaUrl}
             className="open-cursor-item h-[720px] w-full overflow-hidden max-sm:h-[537px]"
           >
             <Image
               src={data[0].previewImageUrl}
-              alt="Interior design article Amara blog featured"
+              alt="Interior design article Amara news featured"
               width={625}
               height={720}
               className="gallery-image-anim h-[120%] w-full object-cover"
@@ -77,12 +77,12 @@ export default function Gallery({ data }: GalleryProps) {
           <div className="max-xmd:gap-[100px] flex w-full flex-col items-start gap-[189px] max-md:items-center max-md:justify-center max-md:gap-[50px]">
             <div className="max-xmd:max-w-[450px] flex w-full max-w-[563px] flex-col items-center gap-[15px] max-md:max-w-[625px] max-sm:max-w-full">
               <Link
-                href={"/blog/" + data[1].metaUrl}
+                href={"/news/" + data[1].metaUrl}
                 className="open-cursor-item max-xmd:h-[300px] h-[376px] w-full overflow-hidden max-md:h-[417px] max-sm:h-[352px]"
               >
                 <Image
                   src={data[1].previewImageUrl}
-                  alt="Luxury interior design insights Amara blog"
+                  alt="Luxury interior design insights Amara news"
                   width={563}
                   height={376}
                   className="gallery-image-anim h-[120%] w-full object-cover"
@@ -102,7 +102,7 @@ export default function Gallery({ data }: GalleryProps) {
             {data[3] && (
               <div className="max-xmd:max-w-[450px] flex w-full max-w-[563px] flex-col items-center gap-[15px] self-end max-md:max-w-[625px] max-md:self-center max-sm:max-w-full">
                 <Link
-                  href={"/blog/" + data[3].metaUrl}
+                  href={"/news/" + data[3].metaUrl}
                   className="open-cursor-item max-xmd:h-[292px] h-[365px] w-full overflow-hidden max-md:h-[417px] max-sm:h-[352px]"
                 >
                   <Image
@@ -129,7 +129,7 @@ export default function Gallery({ data }: GalleryProps) {
           {data[2] && (
             <div className="max-xmd:max-w-[300px] max-xmd:pt-[40px] flex w-full max-w-[376px] flex-col items-center gap-[15px] pt-[86px] max-md:max-w-[625px] max-md:pt-0 max-sm:max-w-full">
               <Link
-                href={"/blog/" + data[2].metaUrl}
+                href={"/news/" + data[2].metaUrl}
                 className="open-cursor-item max-xmd:h-[450px] h-[563px] w-full overflow-hidden max-md:h-[417px] max-sm:h-[352px]"
               >
                 <Image
@@ -159,12 +159,12 @@ export default function Gallery({ data }: GalleryProps) {
           {data[4] && (
             <div className="max-xmd:max-w-[322px] flex w-full max-w-[403px] flex-col items-center gap-[15px] max-md:max-w-[625px] max-sm:max-w-full">
               <Link
-                href={"/blog/" + data[4].metaUrl}
+                href={"/news/" + data[4].metaUrl}
                 className="open-cursor-item max-xmd:h-[214px] h-[268px] w-full overflow-hidden max-md:h-[417px] max-sm:h-[352px]"
               >
                 <Image
                   src={data[4].previewImageUrl}
-                  alt="Luxury design news Amara Interior Design blog"
+                  alt="Luxury design news Amara Interior Design"
                   width={403}
                   height={268}
                   className="gallery-image-anim h-[120%] w-full object-cover"
@@ -185,7 +185,7 @@ export default function Gallery({ data }: GalleryProps) {
           {data[5] && (
             <div className="max-xmd:max-w-[541px] max-xmd:pt-[65px] flex w-full max-w-[677px] flex-col items-center gap-[15px] pt-[134px] max-md:max-w-[625px] max-md:pt-0 max-sm:max-w-full">
               <Link
-                href={"/blog/" + data[5].metaUrl}
+                href={"/news/" + data[5].metaUrl}
                 className="open-cursor-item max-xmd:h-[360px] h-[450px] w-full overflow-hidden max-md:h-[417px] max-sm:h-[352px]"
               >
                 <Image

@@ -32,11 +32,11 @@ export default function InsideBlogSection({ blog }: InsideBlogSectionProps) {
 
       <div className="mx-auto flex w-full max-w-[1440px] flex-col items-start px-[71px] pt-[66px] pb-[305px] max-md:px-[20px] max-md:pb-[158px] max-sm:px-[12px]">
         <Link
-          href="/blog"
+          href="/news"
           className="flex w-full items-center gap-[11px] pb-[123px] font-sans text-[14px] leading-[18px] font-normal tracking-[0.3px] text-[#262626] max-md:pb-[66px]"
         >
           <Arrow width={12} height={10} color="#262626" className="rotate-180" />
-          <span>BACK TO BLOG</span>
+          <span>BACK TO NEWS</span>
         </Link>
 
         <p
@@ -70,7 +70,7 @@ export default function InsideBlogSection({ blog }: InsideBlogSectionProps) {
 
         <Image
           src={blog.image1Url}
-          alt="Interior design inspiration Amara blog Miami Dubai"
+          alt="Interior design inspiration Amara news Miami Dubai"
           width={1200}
           height={1800}
           className="mb-[212px] h-[909px] w-full max-w-[895px] self-center object-cover max-md:mb-[145px] max-md:h-[636px] max-md:max-w-[626px] max-sm:h-[372px] max-sm:max-w-full"

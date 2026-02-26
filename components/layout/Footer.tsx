@@ -12,7 +12,7 @@ const NAV_LINKS = [
   { name: "DESIGN", url: "/design" },
   { name: "PROCUREMENT", url: "/procurement" },
   { name: "PROJECTS", url: "/projects" },
-  { name: "NEWS", url: "/blog" },
+  { name: "NEWS", url: "/news" },
 ];
 
 const CITIES = [
