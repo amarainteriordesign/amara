@@ -2,15 +2,25 @@
 import Link from "next/link";
 import ArrowIcon from "@/components/icons/arrow-right.svg";
 import { formatTimeForOffset } from "@/helpers/time";
-import React, { useRef } from "react";
-import { useWindowSize } from "@/hooks/useWindowSize";
+import React, { useRef, useState, useEffect } from "react";
 import { usePathname, useRouter } from "next/navigation";
 
 export default function Menu({ now }: { now: Date }) {
-  const screenSize = useWindowSize();
   const router = useRouter();
   const pathname = usePathname();
   const containerRef = useRef<HTMLDivElement>(null);
+  const [containerWidth, setContainerWidth] = useState(0);
+
+  useEffect(() => {
+    function updateWidth() {
+      if (containerRef.current) {
+        setContainerWidth(containerRef.current.offsetWidth);
+      }
+    }
+    updateWidth();
+    window.addEventListener("resize", updateWidth);
+    return () => window.removeEventListener("resize", updateWidth);
+  }, []);
 
   function navigateToContactUs() {
     router.push("/about-us#contact");
@@ -87,52 +97,54 @@ export default function Menu({ now }: { now: Date }) {
         ))}
       </div>
 
-      <svg
-        className="absolute top-0 left-0 z-[-1] h-full w-full"
-        width={(screenSize?.width || 2000) + 40}
-        height="610"
-        viewBox={`0 0 ${(screenSize?.width || 2000) + 40} 610`}
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <defs>
-          <mask id="menu-mask-mobile" maskUnits="userSpaceOnUse">
-            <rect width={(screenSize?.width || 2000) + 40} height="610" fill="white" />
-            <g transform="translate(25,374) scale(0.38)">
-              <path
-                d="M99 115.553H153.297L197.032 115V157.592H208V217H163.046V158.367H156.005H148.964L148.422 217H99V115.553Z"
-                fill="black"
-              />
-              <path
-                d="M0 0H43.836H88V89.9237V217H51.7068V144.351H43.836H39.9006V217H0V0Z"
-                fill="black"
-              />
-              <path
-                d="M219 0H262.836H307V42.2683V102H270.707V67.8517H262.836H258.901V102H219V0Z"
-                fill="black"
-              />
-              <path
-                d="M219 115H262.836H307V157.268V217H270.707V182.852H262.836H258.901V217H219V115Z"
-                fill="black"
-              />
-              <path
-                d="M109.833 0H197.614L208 102H175.278L177.958 42.8889H164.78L168.577 102H138.87L141.662 43H129.377L131.499 102H99L107.711 21.5556L109.833 0Z"
-                fill="black"
-              />
-            </g>
-
-            <g transform={`translate(${(screenSize?.width || 2000) - 128 - 25}, 416)`}>
-              <rect width="128" height="41" rx="20" fill="black" />
-            </g>
-          </mask>
-        </defs>
-
-        <rect
-          width={(screenSize?.width || 2000) + 40}
+      {containerWidth > 0 && (
+        <svg
+          className="absolute top-0 left-0 z-[-1] h-full w-full"
+          width={containerWidth}
           height="610"
-          fill="#F1EBDF"
-          mask="url(#menu-mask-mobile)"
-        />
-      </svg>
+          viewBox={`0 0 ${containerWidth} 610`}
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <defs>
+            <mask id="menu-mask-mobile" maskUnits="userSpaceOnUse">
+              <rect width={containerWidth} height="610" fill="white" />
+              <g transform="translate(25,374) scale(0.38)">
+                <path
+                  d="M99 115.553H153.297L197.032 115V157.592H208V217H163.046V158.367H156.005H148.964L148.422 217H99V115.553Z"
+                  fill="black"
+                />
+                <path
+                  d="M0 0H43.836H88V89.9237V217H51.7068V144.351H43.836H39.9006V217H0V0Z"
+                  fill="black"
+                />
+                <path
+                  d="M219 0H262.836H307V42.2683V102H270.707V67.8517H262.836H258.901V102H219V0Z"
+                  fill="black"
+                />
+                <path
+                  d="M219 115H262.836H307V157.268V217H270.707V182.852H262.836H258.901V217H219V115Z"
+                  fill="black"
+                />
+                <path
+                  d="M109.833 0H197.614L208 102H175.278L177.958 42.8889H164.78L168.577 102H138.87L141.662 43H129.377L131.499 102H99L107.711 21.5556L109.833 0Z"
+                  fill="black"
+                />
+              </g>
+
+              <g transform={`translate(${containerWidth - 128 - 25}, 416)`}>
+                <rect width="128" height="41" rx="20" fill="black" />
+              </g>
+            </mask>
+          </defs>
+
+          <rect
+            width={containerWidth}
+            height="610"
+            fill="#F1EBDF"
+            mask="url(#menu-mask-mobile)"
+          />
+        </svg>
+      )}
     </div>
   );
 }
