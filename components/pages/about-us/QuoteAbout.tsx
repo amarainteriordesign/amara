@@ -85,7 +85,7 @@ export default function QuoteAbout() {
   });
 
   const lines = [
-    "Spaces aligned with energy.",
+    "Wellness at the core.",
     "Grounded in nature.",
     "Designed for balance.",
   ];
