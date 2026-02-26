@@ -12,7 +12,7 @@ gsap.registerPlugin(ScrollTrigger);
 const slides: Slide[] = [
   {
     id: "project-1",
-    img: "/images/pages/home/project1.webp",
+    img: "/images/pages/home/The_Village_Amara_Interior_Design_Procurement_Miami_Dubai.webp",
     alt: "Project 1",
     href: "https://amarainteriordesign.com/projects/U1AU0cmh5zpMvHmFD0r3",
     location: "MIAMI, UNITED STATES",
@@ -20,7 +20,7 @@ const slides: Slide[] = [
   },
   {
     id: "project-2",
-    img: "/images/pages/home/project2.webp",
+    img: "/images/pages/home/Sadhu_Retreat_Amara_Interior_Design_Procurement_Miami_Dubai.webp",
     alt: "Project 2",
     href: "https://amarainteriordesign.com/projects/y84GzsyHGgBncALVehIF",
     location: "TULUM, MEXICO",
@@ -28,11 +28,19 @@ const slides: Slide[] = [
   },
   {
     id: "project-3",
-    img: "/images/pages/home/project3.webp",
+    img: "/images/pages/home/Reem_Nine_Amara_Interior_Design_Procurement_Miami_Dubai.webp",
     alt: "Project 3",
     href: "https://amarainteriordesign.com/projects/IMhU0k1RcDqMeXCrOrUY",
     location: "ABU DHABI, UNITED ARAB EMIRATES",
     title: "REEM NINE",
+  },
+  {
+    id: "project-4",
+    img: "/images/pages/home/Coconut_Grove_Amara_Interior_Design_Procurement_Miami_Dubai.webp",
+    alt: "Project 4",
+    href: "https://amarainteriordesign.com/projects/SbIftjNcuTO39L1JNG65",
+    location: "MIAMI, UNITED STATES",
+    title: "COCONUT GROVE",
   },
 ];
 
