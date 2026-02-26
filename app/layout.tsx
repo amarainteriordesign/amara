@@ -165,12 +165,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <head>
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationJsonLd) }}
-        />
         <Script
           id="gtm-script"
           strategy="afterInteractive"
@@ -185,6 +181,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       </head>
       <body
         className={`${helveticaNeue.variable} ${libreBaskerville.variable} ${libreCaslonDisplay.variable} ${lora.variable} ${diranista.variable} ${calvino.variable} ${snellRoundhand.variable} ${madeMirageThin.variable} max-w-screen overflow-x-hidden antialiased`}
+        suppressHydrationWarning
       >
         <noscript>
           <iframe
@@ -195,6 +192,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           />
         </noscript>
         <ClientLayout>{children}</ClientLayout>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationJsonLd) }}
+        />
       </body>
     </html>
   );
