@@ -62,7 +62,7 @@ export default function Menu({ now }: { now: Date }) {
         Contact Us
       </button>
 
-      <div className="mx-auto flex w-full max-w-[340px] flex-col items-start pt-[40px]">
+      <div className="absolute bottom-[52px] left-1/2 flex w-full max-w-[340px] -translate-x-1/2 flex-col items-start">
         <div className="relative flex items-center pb-[10px]">
           <SoundIcon width={22} height={24} color="#262626" />
           <SoundIcon width={22} height={24} color="#262626" className="ml-[-4px]" />
@@ -71,9 +71,7 @@ export default function Menu({ now }: { now: Date }) {
           An immersive journey inspired by the story of the four{" "}
           <span className="text-[#737373]">elements</span>
         </p>
-      </div>
-
-      <div className="mx-auto flex w-full max-w-[340px] justify-between">
+        <div className="flex w-full justify-between">
         {[
           { title: "Miami", offset: -5 },
           { title: "Dubai", offset: 4 },
@@ -88,6 +86,7 @@ export default function Menu({ now }: { now: Date }) {
             </p>
           </div>
         ))}
+        </div>
       </div>
 
       <svg
