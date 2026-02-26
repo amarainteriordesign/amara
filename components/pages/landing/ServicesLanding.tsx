@@ -1,6 +1,6 @@
 export default function ServicesLanding() {
   return (
-    <div className="bg-gradient-to-b from-[#e8dfd2] from-50% to-[#f1ebdf] to-50% max-md:bg-[#F1EBDF] max-md:bg-none">
+    <div className="bg-gradient-to-b from-[#e8dfd2] from-50% to-[#f1ebdf] to-50% max-md:!bg-[#F1EBDF] max-md:!bg-none">
       <div className="max-md:bg-[#e8dfd2]">
         <div className="mx-auto max-w-[1200px] px-[60px] pt-[40px] pb-[40px] text-center max-md:px-[40px] max-md:pt-[30px] max-sm:px-[17px] max-sm:pt-[25px] max-sm:pb-[28px]">
           <h2
