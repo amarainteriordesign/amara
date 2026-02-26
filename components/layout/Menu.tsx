@@ -34,7 +34,7 @@ export default function Menu({ now }: { now: Date }) {
       onClick={onMenuClick}
       className="relative h-[610px] w-full px-[25px] pt-[50px] pb-[32px]"
     >
-      <div className="w-full border-t-[1px] border-[#E8DFD2] pb-[99px]">
+      <div className="w-full border-t-[1px] border-[#E8DFD2] pb-[50px]">
         {[
           { name: "About Us", url: "/about-us" },
           { name: "Design", url: "/design" },
@@ -62,18 +62,18 @@ export default function Menu({ now }: { now: Date }) {
         Contact Us
       </button>
 
-      <div className="mx-auto flex w-full max-w-[400px] flex-col items-center pt-[40px]">
+      <div className="flex w-full max-w-[400px] flex-col items-start pt-[40px]">
         <div className="relative flex items-center pb-[10px]">
           <SoundIcon width={22} height={24} color="#262626" />
           <SoundIcon width={22} height={24} color="#262626" className="ml-[-4px]" />
         </div>
-        <p className="pb-[20px] text-center font-sans text-[18px] leading-[26px] font-medium tracking-[-0.6px] text-[#262626] max-sm:text-[15px] max-sm:leading-[22px]">
+        <p className="pb-[20px] font-sans text-[18px] leading-[26px] font-medium tracking-[-0.6px] text-[#262626] max-sm:text-[15px] max-sm:leading-[22px]">
           An immersive journey inspired by the story of the four{" "}
           <span className="text-[#737373]">elements</span>
         </p>
       </div>
 
-      <div className="mx-auto flex w-full max-w-[340px] justify-between gap-[20px]">
+      <div className="flex w-full max-w-[340px] justify-between gap-[20px]">
         {[
           { title: "Dubai", offset: 4 },
           { title: "Miami", offset: -5 },
