@@ -13,6 +13,13 @@ export default function HeroProcurement() {
       { opacity: 0 },
       { opacity: 1, duration: 1.5, delay: 0.5, ease: "power2.out" }
     );
+
+    gsap.to(".animate-hero-reveal", {
+      scale: 1,
+      ease: "power3.inOut",
+      duration: 2,
+      delay: 1.7,
+    });
   });
 
   return (
@@ -20,7 +27,7 @@ export default function HeroProcurement() {
       <div className="sticky top-0 z-[1] h-screen w-full max-w-full overflow-hidden">
         <div className="flex h-full max-h-full w-full max-w-full items-end overflow-hidden">
           <Image
-            className="absolute top-0 left-0 z-[-1] h-full w-full object-cover"
+            className="animate-hero-reveal absolute top-0 left-0 z-[-1] h-full w-full scale-[1.3] object-cover"
             src="/images/pages/procurement/Aerial_Container_Cargo_Ship_Amara_Interior_Design_Procurement_Miami_Dubai.webp"
             width={1920}
             height={1080}
