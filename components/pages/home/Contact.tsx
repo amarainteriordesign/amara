@@ -137,7 +137,7 @@ export default function Contact() {
               />
             </div>
 
-            <div className="flex w-[33%] flex-col justify-between px-[30px] py-[30px] max-md:w-full max-md:px-[24px] max-md:py-[24px] max-sm:px-[16px] max-sm:py-[20px]">
+            <div className="flex w-[33%] flex-col justify-between px-[30px] pt-[38px] pb-[30px] max-md:w-full max-md:px-[24px] max-md:py-[24px] max-sm:px-[16px] max-sm:py-[20px]">
               <div>
                 {OFFICES.map((office, i) => (
                   <div key={office.title} className={i > 0 ? "mt-[40px]" : ""}>
