@@ -13,9 +13,9 @@ export default function Services() {
           </h2>
         </div>
       </section>
-      <div className="bg-gradient-to-b from-[#e8dfd2] from-50% to-[#f1ebdf] to-50% pb-[40px]">
-        <div className="mx-auto max-w-[1200px] px-[60px] max-md:px-[40px] max-sm:px-[17px]" style={{ display: 'grid', gridTemplateColumns: '1fr 80px 1fr' }}>
-          <div className="flex flex-col justify-between rounded-[4px] px-[50px] pt-[50px] pb-[45px] max-sm:px-[28px] max-sm:pt-[36px] max-sm:pb-[32px]" style={{ backgroundColor: '#92958D', gridColumn: '1' }}>
+      <div className="bg-gradient-to-b from-[#e8dfd2] from-50% to-[#f1ebdf] to-50% pb-[40px] max-sm:from-[#e8dfd2] max-sm:to-[#e8dfd2]">
+        <div className="mx-auto flex max-w-[1200px] gap-[80px] px-[60px] max-md:gap-[40px] max-md:px-[40px] max-sm:flex-col max-sm:gap-[20px] max-sm:px-[17px]">
+          <div className="flex flex-1 flex-col justify-between rounded-[4px] bg-[#92958D] px-[50px] pt-[50px] pb-[45px] max-sm:px-[28px] max-sm:pt-[36px] max-sm:pb-[32px]">
             <div>
               <h2 className="font-display text-normal pb-[28px] text-[38px] leading-[46px] tracking-[0.8px] text-[#FFF] max-sm:pb-[20px] max-sm:text-[24px] max-sm:leading-[30px] max-sm:tracking-[0.4px]">
                 DESIGN
@@ -34,7 +34,7 @@ export default function Services() {
             </div>
           </div>
 
-          <div className="flex flex-col justify-between rounded-[4px] px-[50px] pt-[50px] pb-[45px] max-sm:px-[28px] max-sm:pt-[36px] max-sm:pb-[32px]" style={{ backgroundColor: '#2F3034', gridColumn: '3' }}>
+          <div className="flex flex-1 flex-col justify-between rounded-[4px] bg-[#2F3034] px-[50px] pt-[50px] pb-[45px] max-sm:px-[28px] max-sm:pt-[36px] max-sm:pb-[32px]">
             <div>
               <h2 className="font-display text-normal pb-[28px] text-[38px] leading-[46px] tracking-[0.8px] text-[#FFF] max-sm:pb-[20px] max-sm:text-[24px] max-sm:leading-[30px] max-sm:tracking-[0.4px]">
                 PROCUREMENT
