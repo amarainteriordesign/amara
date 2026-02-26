@@ -45,7 +45,7 @@ export default function Menu({ now }: { now: Date }) {
           <Link
             key={i}
             href={page.url}
-            className="flex w-full items-center justify-between border-b-[1px] border-[#E8DFD2] py-[7px] pr-[18px]"
+            className="flex w-full items-center justify-between border-b-[1px] border-[#E8DFD2] py-[7px] pr-[18px] outline-none"
           >
             <span className="font-regular font-sans text-[19px] leading-[36px] tracking-[-0.5px]">
               {page.name}
