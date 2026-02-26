@@ -87,8 +87,63 @@ export default async function InsideNews({ params }: NewsPageProps) {
     publishedAt: blog.publishedAt?.toDate?.()?.toISOString() || blog.publishedAt?.toString(),
   }));
 
+  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://amarainteriordesign.com";
+  const articleUrl = `${siteUrl}/news/${blog.metaUrl || blog.slug}`;
+
+  const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      { "@type": "ListItem", position: 1, name: "Home", item: siteUrl },
+      { "@type": "ListItem", position: 2, name: "News", item: `${siteUrl}/news` },
+      { "@type": "ListItem", position: 3, name: blog.metaTitle || blog.title, item: articleUrl },
+    ],
+  };
+
+  const blogPostingSchema: Record<string, unknown> = {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    headline: blog.metaTitle || blog.title,
+    description: blog.metaDescription || blog.previewDescription,
+    datePublished: serializedBlog.publishedAt || serializedBlog.createdAt,
+    author: {
+      "@type": "Organization",
+      name: "Amara Interior Design",
+      url: siteUrl,
+    },
+    publisher: {
+      "@type": "Organization",
+      name: "Amara Interior Design",
+      url: siteUrl,
+      logo: {
+        "@type": "ImageObject",
+        url: `${siteUrl}/favicon.ico`,
+      },
+    },
+    mainEntityOfPage: {
+      "@type": "WebPage",
+      "@id": articleUrl,
+    },
+  };
+
+  if (blog.heroImageUrl) {
+    blogPostingSchema.image = blog.heroImageUrl;
+  }
+  if (serializedBlog.updatedAt) {
+    blogPostingSchema.dateModified = serializedBlog.updatedAt;
+  }
+
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(blogPostingSchema) }}
+      />
+
       <Header />
 
       <InsideBlogSection blog={serializedBlog} />

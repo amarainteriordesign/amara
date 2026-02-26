@@ -215,7 +215,9 @@ export default function Contact() {
 
                 <form id="contact-form" onSubmit={handleSubmit} className="flex flex-col gap-[16px]" autoComplete="off">
                   <div>
+                    <label htmlFor="home-contact-name" className="sr-only">Name</label>
                     <input
+                      id="home-contact-name"
                       type="text"
                       name="name"
                       placeholder="Name"
@@ -235,7 +237,9 @@ export default function Contact() {
                   </div>
 
                   <div>
+                    <label htmlFor="home-contact-email" className="sr-only">Email</label>
                     <input
+                      id="home-contact-email"
                       type="email"
                       name="email"
                       placeholder="Email"
@@ -255,7 +259,9 @@ export default function Contact() {
                   </div>
 
                   <div>
+                    <label htmlFor="home-contact-phone" className="sr-only">Phone number</label>
                     <input
+                      id="home-contact-phone"
                       type="tel"
                       name="phone"
                       placeholder="Phone number"
@@ -275,7 +281,9 @@ export default function Contact() {
                   </div>
 
                   <div>
+                    <label htmlFor="home-contact-message" className="sr-only">Your message</label>
                     <textarea
+                      id="home-contact-message"
                       name="message"
                       placeholder="Your message"
                       value={formData.message}

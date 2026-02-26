@@ -196,7 +196,9 @@ export default function ContactSection() {
 
             <form onSubmit={handleSubmit} autoComplete="off" className="flex flex-col gap-[16px]">
               <div>
+                <label htmlFor="landing-section-email" className="sr-only">Email</label>
                 <input
+                  id="landing-section-email"
                   type="email"
                   name="email"
                   placeholder="Email"
@@ -216,7 +218,9 @@ export default function ContactSection() {
               </div>
 
               <div>
+                <label htmlFor="landing-section-phone" className="sr-only">Phone number</label>
                 <input
+                  id="landing-section-phone"
                   type="tel"
                   name="phone"
                   placeholder="Phone number"
@@ -236,7 +240,9 @@ export default function ContactSection() {
               </div>
 
               <div>
+                <label htmlFor="landing-section-message" className="sr-only">Your message</label>
                 <textarea
+                  id="landing-section-message"
                   name="message"
                   placeholder="Your message"
                   value={formData.message}

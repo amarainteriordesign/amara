@@ -22,6 +22,8 @@ export default function Header({ isDark = false }: { isDark?: boolean }) {
   const headerRef = useRef<HTMLElement>(null);
   const plusIconRef = useRef<SVGPathElement>(null);
   const gradientRef = useRef<HTMLDivElement>(null);
+  const menuContainerRef = useRef<HTMLDivElement>(null);
+  const menuTriggerRef = useRef<HTMLButtonElement>(null);
 
   const [now, setNow] = useState<Date>(new Date());
   const [showPreloader, setShowPreloader] = useState(isInitialLoad);
@@ -174,13 +176,57 @@ export default function Header({ isDark = false }: { isDark?: boolean }) {
       window.addEventListener("click", outsideListener);
       clickOutsideMobileMenuListener.current = outsideListener;
 
+      const handleKeyDown = (e: KeyboardEvent) => {
+        if (e.key === "Escape") {
+          setIsMobileMenuOpen(false);
+          return;
+        }
+
+        if (e.key === "Tab" && menuContainerRef.current) {
+          const focusable = menuContainerRef.current.querySelectorAll<HTMLElement>(
+            'a[href], button, input, textarea, select, [tabindex]:not([tabindex="-1"])'
+          );
+          if (focusable.length === 0) return;
+
+          const first = focusable[0];
+          const last = focusable[focusable.length - 1];
+
+          if (e.shiftKey) {
+            if (document.activeElement === first || !menuContainerRef.current.contains(document.activeElement)) {
+              e.preventDefault();
+              last.focus();
+            }
+          } else {
+            if (document.activeElement === last || !menuContainerRef.current.contains(document.activeElement)) {
+              e.preventDefault();
+              first.focus();
+            }
+          }
+        }
+      };
+
+      document.addEventListener("keydown", handleKeyDown);
+
+      requestAnimationFrame(() => {
+        if (menuContainerRef.current) {
+          const focusable = menuContainerRef.current.querySelectorAll<HTMLElement>(
+            'a[href], button, input, textarea, select, [tabindex]:not([tabindex="-1"])'
+          );
+          if (focusable.length > 0) {
+            focusable[0].focus();
+          }
+        }
+      });
+
       return () => {
         window.removeEventListener("click", outsideListener);
+        document.removeEventListener("keydown", handleKeyDown);
       };
     }
 
     mobileMenuTl.current?.reverse();
     lenis?.start();
+    menuTriggerRef.current?.focus();
 
     if (clickOutsideMobileMenuListener.current) {
       const callbackListener = clickOutsideMobileMenuListener.current;
@@ -217,7 +263,7 @@ export default function Header({ isDark = false }: { isDark?: boolean }) {
 
             {/* Menu Button (Plus Icon) */}
             <div className="mobile-menu-trigger flex">
-              <button onClick={toggleMenu} className="cursor-pointer">
+              <button ref={menuTriggerRef} onClick={toggleMenu} aria-expanded={isMobileMenuOpen} aria-label="Menu" className="cursor-pointer">
                 <svg
                   width="25"
                   height="25"
@@ -238,7 +284,7 @@ export default function Header({ isDark = false }: { isDark?: boolean }) {
         </div>
       </header>
 
-      <div className="mobile-menu-anim fixed top-0 left-0 z-[30] hidden w-full bg-black/30 shadow-lg shadow-black/20 backdrop-blur-sm">
+      <div ref={menuContainerRef} className="mobile-menu-anim fixed top-0 left-0 z-[30] hidden w-full bg-black/30 shadow-lg shadow-black/20 backdrop-blur-sm">
         <Menu now={now} />
       </div>
 

@@ -14,8 +14,6 @@ interface GalleryProps {
 }
 
 export default function Gallery({ project }: GalleryProps) {
-  console.log(project);
-
   const screenSize = useWindowSize();
   const [isColumn, setsColumn] = useState(false);
   useEffect(() => {

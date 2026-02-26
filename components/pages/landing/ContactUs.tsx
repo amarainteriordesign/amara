@@ -181,7 +181,9 @@ export default function ContactUs() {
 
                 <form id="contact-form-landing" onSubmit={handleSubmit} autoComplete="off" className="flex flex-col gap-[16px]">
                   <div>
+                    <label htmlFor="landing-contact-name" className="sr-only">Name</label>
                     <input
+                      id="landing-contact-name"
                       type="text"
                       name="name"
                       placeholder="Name"
@@ -201,7 +203,9 @@ export default function ContactUs() {
                   </div>
 
                   <div>
+                    <label htmlFor="landing-contact-email" className="sr-only">Email</label>
                     <input
+                      id="landing-contact-email"
                       type="email"
                       name="email"
                       placeholder="Email"
@@ -221,7 +225,9 @@ export default function ContactUs() {
                   </div>
 
                   <div>
+                    <label htmlFor="landing-contact-phone" className="sr-only">Phone number</label>
                     <input
+                      id="landing-contact-phone"
                       type="tel"
                       name="phone"
                       placeholder="Phone number"
@@ -241,7 +247,9 @@ export default function ContactUs() {
                   </div>
 
                   <div>
+                    <label htmlFor="landing-contact-message" className="sr-only">Your message</label>
                     <textarea
+                      id="landing-contact-message"
                       name="message"
                       placeholder="Your message"
                       value={formData.message}

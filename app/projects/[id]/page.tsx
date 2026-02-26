@@ -92,8 +92,26 @@ export default async function Project({ params }: ProjectPageProps) {
     updatedAt: project.updatedAt?.toDate?.()?.toISOString() || project.updatedAt,
   } as Project;
 
+  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://amarainteriordesign.com";
+  const projectUrl = `${siteUrl}/projects/${project.id}`;
+
+  const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      { "@type": "ListItem", position: 1, name: "Home", item: siteUrl },
+      { "@type": "ListItem", position: 2, name: "Projects", item: `${siteUrl}/projects` },
+      { "@type": "ListItem", position: 3, name: project.title, item: projectUrl },
+    ],
+  };
+
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
+
       <Header isDark={true} />
 
       <Hero project={serializedProject} />

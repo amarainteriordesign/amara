@@ -215,7 +215,9 @@ export default function DesignContact() {
 
                 <form id="design-contact-form" onSubmit={handleSubmit} autoComplete="off" className="flex flex-col gap-[16px]">
                   <div>
+                    <label htmlFor="design-contact-name" className="sr-only">Name</label>
                     <input
+                      id="design-contact-name"
                       type="text"
                       name="name"
                       placeholder="Name"
@@ -235,7 +237,9 @@ export default function DesignContact() {
                   </div>
 
                   <div>
+                    <label htmlFor="design-contact-email" className="sr-only">Email</label>
                     <input
+                      id="design-contact-email"
                       type="email"
                       name="email"
                       placeholder="Email"
@@ -255,7 +259,9 @@ export default function DesignContact() {
                   </div>
 
                   <div>
+                    <label htmlFor="design-contact-phone" className="sr-only">Phone number</label>
                     <input
+                      id="design-contact-phone"
                       type="tel"
                       name="phone"
                       placeholder="Phone number"
@@ -275,7 +281,9 @@ export default function DesignContact() {
                   </div>
 
                   <div>
+                    <label htmlFor="design-contact-message" className="sr-only">Your message</label>
                     <textarea
+                      id="design-contact-message"
                       name="message"
                       placeholder="Your message"
                       value={formData.message}
