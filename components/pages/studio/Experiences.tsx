@@ -27,7 +27,7 @@ export default function Experiences() {
         <div className="flex max-w-[343px] flex-col items-start gap-[17px] self-end max-md:max-w-[580px] max-md:self-start max-sm:w-full max-sm:max-w-[315px] max-sm:gap-[15px]">
           <Image
             src="/images/pages/studio/experience1.png"
-            alt="Experience"
+            alt="Concept development luxury interior design Amara"
             width="605"
             height="756"
             className="h-[54vh] w-full object-cover max-md:h-[90vh] max-sm:h-[450px]"
@@ -39,7 +39,7 @@ export default function Experiences() {
         <div className="flex w-full max-w-[605px] flex-col items-start gap-[17px] max-md:max-w-[580px] max-md:self-end max-sm:w-full max-sm:max-w-[315px] max-sm:gap-[15px]">
           <Image
             src="/images/pages/studio/experience2.png"
-            alt="Experience"
+            alt="Procurement and project management Amara Interior Design"
             width="605"
             height="756"
             className="h-[93vh] w-full object-cover max-md:h-[90vh] max-sm:h-[450px]"
@@ -51,7 +51,7 @@ export default function Experiences() {
         <div className="flex w-full max-w-[332px] flex-col items-start gap-[17px] self-start max-md:max-w-[580px] max-md:self-start max-sm:w-full max-sm:max-w-[315px] max-sm:gap-[15px]">
           <Image
             src="/images/pages/studio/experience3.png"
-            alt="Experience"
+            alt="On-site installation luxury interiors Amara Miami Dubai"
             width="605"
             height="756"
             className="h-[53vh] w-full object-cover max-md:h-[90vh] max-sm:h-[450px]"

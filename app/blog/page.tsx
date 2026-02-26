@@ -12,7 +12,7 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Blog",
   description:
-    "Lectures, inspirations et récits autour de l’architecture et de l’intérieur par Amara.",
+    "Insights, inspiration, and stories about luxury interior design, architecture, and procurement by Amara Interior Design. Trends from Miami, Dubai, and Paris.",
 };
 
 export default async function Blog() {

@@ -54,7 +54,7 @@ export default function Gallery({ data }: GalleryProps) {
           >
             <Image
               src={data[0].previewImageUrl}
-              alt="Blog"
+              alt="Interior design article Amara blog featured"
               width={625}
               height={720}
               className="gallery-image-anim h-[120%] w-full object-cover"
@@ -82,7 +82,7 @@ export default function Gallery({ data }: GalleryProps) {
               >
                 <Image
                   src={data[1].previewImageUrl}
-                  alt="Blog"
+                  alt="Luxury interior design insights Amara blog"
                   width={563}
                   height={376}
                   className="gallery-image-anim h-[120%] w-full object-cover"
@@ -107,7 +107,7 @@ export default function Gallery({ data }: GalleryProps) {
                 >
                   <Image
                     src={data[3].previewImageUrl}
-                    alt="Blog"
+                    alt="Interior design trends and inspiration Amara"
                     width={563}
                     height={365}
                     className="gallery-image-anim h-[120%] w-full object-cover"
@@ -134,7 +134,7 @@ export default function Gallery({ data }: GalleryProps) {
               >
                 <Image
                   src={data[2].previewImageUrl}
-                  alt="Blog"
+                  alt="Architecture and interior design article Amara"
                   width={376}
                   height={563}
                   className="gallery-image-anim h-[120%] w-full object-cover"
@@ -164,7 +164,7 @@ export default function Gallery({ data }: GalleryProps) {
               >
                 <Image
                   src={data[4].previewImageUrl}
-                  alt="Blog"
+                  alt="Luxury design news Amara Interior Design blog"
                   width={403}
                   height={268}
                   className="gallery-image-anim h-[120%] w-full object-cover"
@@ -190,7 +190,7 @@ export default function Gallery({ data }: GalleryProps) {
               >
                 <Image
                   src={data[5].previewImageUrl}
-                  alt="Blog"
+                  alt="Interior design stories and procurement insights Amara"
                   width={677}
                   height={450}
                   className="gallery-image-anim h-[120%] w-full object-cover"

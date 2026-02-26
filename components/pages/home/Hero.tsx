@@ -47,7 +47,7 @@ export default function Hero() {
               src={src}
               width={1920}
               height={1080}
-              alt={`Interior design showcase ${index + 1}`}
+              alt={["Luxury villa interior design Amara Miami Dubai", "Bespoke residential interior Amara Interior Design", "Modern luxury living space Amara Miami Dubai", "Hospitality interior design Amara Dubai Miami"][index]}
               priority={index === 0}
             />
           ))}

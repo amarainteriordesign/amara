@@ -21,7 +21,7 @@ export default function MainSection({ blogs }: { blogs: SerializedBlog[] }) {
       <div className="max-xmd:pl-0 max-xmd:gap-[60px] flex w-full items-center justify-center gap-[160px] pb-[221px] pl-[100px] max-md:flex-col max-sm:gap-[48px] max-sm:pb-[116px]">
         <Image
           src="/images/pages/blog/drawing.png"
-          alt="Drawing"
+          alt="Architectural sketch Amara Interior Design blog"
           height={320}
           width={320}
           className="object-cover"

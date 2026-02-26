@@ -130,7 +130,7 @@ export default function ContactUs() {
                 src="/images/pages/landing/contact.webp"
                 width={400}
                 height={600}
-                alt="Interior design showcase"
+                alt="Luxury interior design consultation Amara Miami Dubai"
                 className="h-full w-full rounded-[16px] object-cover"
               />
             </div>

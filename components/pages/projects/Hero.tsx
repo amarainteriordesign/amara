@@ -70,7 +70,7 @@ export default function Hero() {
             src="/images/pages/projects/hero.png"
             width={1920}
             height={1080}
-            alt="Hero background Image"
+            alt="Luxury interior design projects portfolio Amara Miami Dubai"
           />
 
           <div className="absolute top-1/2 z-[1] flex max-h-fit w-full -translate-y-1/2 flex-col items-center justify-center overflow-hidden p-[20px]">

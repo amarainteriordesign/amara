@@ -31,7 +31,7 @@ export default function Hero() {
             src="/images/pages/blog/ocean.png"
             width={1920}
             height={1080}
-            alt="Hero background Image"
+            alt="Interior design blog and insights Amara Miami Dubai"
           />
 
           <div className="hero-bottom-text-anim absolute right-0 bottom-0 left-0 px-[10px] pb-[26px] max-sm:px-[5px]">

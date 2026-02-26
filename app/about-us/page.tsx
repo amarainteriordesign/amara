@@ -14,7 +14,7 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "About Us",
   description:
-    "Le studio Amara conçoit des lieux sur-mesure, ancrés dans leur contexte, où matériaux naturels et détails soignés créent des expériences durables.",
+    "Meet the Amara Interior Design team. Luxury bespoke interiors crafted with natural materials, refined details, and timeless design in Miami, Dubai, and Paris.",
 };
 
 export default function AboutUs() {

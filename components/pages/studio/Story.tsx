@@ -103,7 +103,7 @@ export default function Story() {
               width={900}
               height={1000}
               className="h-[530px] w-full object-cover max-sm:h-[450px]"
-              alt="Miami"
+              alt="Amara Interior Design studio Miami office"
             />
             <div className="flex w-full flex-col items-start gap-[6px]">
               <p className="font-sans text-[14px] leading-[30px] font-medium tracking-[1.8px] text-[#262626] uppercase max-sm:hidden">
@@ -132,7 +132,7 @@ export default function Story() {
               width={900}
               height={1000}
               className="h-[530px] w-full object-cover max-sm:h-[450px]"
-              alt="Miami"
+              alt="Amara Interior Design studio Dubai office"
             />
           </div>
         </div>
@@ -144,7 +144,7 @@ export default function Story() {
               width={900}
               height={1000}
               className="h-[530px] w-full object-cover max-sm:h-[450px]"
-              alt="Miami"
+              alt="Amara Interior Design studio Paris office"
             />
             <div className="flex w-full flex-col items-start gap-[6px]">
               <p className="font-sans text-[14px] leading-[30px] font-medium tracking-[13%] text-[#262626] uppercase max-sm:hidden">

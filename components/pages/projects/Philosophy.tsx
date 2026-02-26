@@ -119,7 +119,7 @@ export default function Philosophy({ project }: { project: Project }) {
             <div className="max-xmd:h-[856px] h-[908px] w-full overflow-hidden max-sm:h-[364px]">
               <Image
                 src={project.secondHalfImage1Url}
-                alt="Image"
+                alt="Interior design detail Amara luxury project"
                 width={1000}
                 height={1200}
                 className="philosophy-anim-img-1 h-[120%] w-full object-cover"
@@ -135,7 +135,7 @@ export default function Philosophy({ project }: { project: Project }) {
             <div className="max-xmd:h-[771px] h-[1008px] w-full overflow-hidden max-md:h-screen max-sm:h-[738px]">
               <Image
                 src={project.secondHalfImage2Url}
-                alt="Image"
+                alt="Bespoke interior design showcase Amara Miami Dubai"
                 width={1000}
                 height={1200}
                 className="philosophy-anim-img-2 h-[110%] w-full object-cover"
@@ -151,7 +151,7 @@ export default function Philosophy({ project }: { project: Project }) {
 
         {/* <Image
           src={project?.secondFullWidthImageUrl}
-          alt="Image"
+          alt="Full width interior design showcase Amara Miami Dubai"
           width={2000}
           height={1000}
           className="max-sm: h-full h-screen w-full object-cover max-md:mx-[16px] max-md:h-[68vh] max-md:max-w-[74vw] max-sm:h-[508px] max-sm:max-w-[292px]"

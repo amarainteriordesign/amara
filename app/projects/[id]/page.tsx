@@ -23,8 +23,8 @@ export async function generateMetadata({ params }: ProjectPageProps): Promise<Me
 
     if (!project || project.isSoon) {
       return {
-        title: "Projet indisponible",
-        description: "Ce projet n'est pas disponible.",
+        title: "Project Unavailable",
+        description: "This project is not currently available.",
       };
     }
 
@@ -33,7 +33,7 @@ export async function generateMetadata({ params }: ProjectPageProps): Promise<Me
       project.designDescription ||
       project.description ||
       project.description2 ||
-      "Projet signé Amara.";
+      "An interior design project by Amara.";
     const image =
       project.previewImageUrl || project.mainImageUrl || project.fullWidthImageUrl || undefined;
 
@@ -64,8 +64,8 @@ export async function generateMetadata({ params }: ProjectPageProps): Promise<Me
   } catch (error) {
     console.error("Failed to generate project metadata:", error);
     return {
-      title: "Projet",
-      description: "Découvrez un projet signé Amara.",
+      title: "Project",
+      description: "Discover an interior design project by Amara.",
     };
   }
 }

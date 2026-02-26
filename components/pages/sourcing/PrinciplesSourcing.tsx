@@ -116,7 +116,7 @@ export default function PrinciplesSourcing() {
                     src="/images/pages/sourcing/boat-water.webp"
                     width={1000}
                     height={2000}
-                    alt="Boat on water"
+                    alt="Global procurement and sourcing Amara Interior Design Miami Dubai"
                     className="h-full w-full object-cover blur-[30px]"
                   />
                 </div>
@@ -126,7 +126,7 @@ export default function PrinciplesSourcing() {
                       src="/images/pages/sourcing/boat-water.webp"
                       width={500}
                       height={1000}
-                      alt="Boat on water"
+                      alt="Global procurement and sourcing Amara Interior Design Miami Dubai"
                       className="h-full w-full object-cover"
                     />
                   </div>
@@ -202,7 +202,7 @@ export default function PrinciplesSourcing() {
                 src="/images/pages/sourcing/boat-water.webp"
                 width={1000}
                 height={2000}
-                alt="Boat on water"
+                alt="Global procurement and sourcing Amara Interior Design Miami Dubai"
                 className="h-full w-full object-cover blur-[30px]"
               />
             </div>
@@ -213,7 +213,7 @@ export default function PrinciplesSourcing() {
                   src="/images/pages/sourcing/boat-water.webp"
                   width={500}
                   height={1000}
-                  alt="Boat on water"
+                  alt="Global procurement and sourcing Amara Interior Design Miami Dubai"
                   className="h-full w-full object-cover"
                 />
               </div>

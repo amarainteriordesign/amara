@@ -15,7 +15,7 @@ export default function ContactUs() {
       <div className="flex w-full justify-center pt-[160px] max-sm:pt-[100px]">
         <Image
           src="/images/pages/studio/drawing.png"
-          alt="Drawing"
+          alt="Architectural sketch Amara Interior Design"
           width={1020}
           height={432}
           className="w-full max-w-[520px]"

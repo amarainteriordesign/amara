@@ -27,7 +27,7 @@ export default function InsideBlogSection({ blog }: InsideBlogSectionProps) {
         src={blog.heroImageUrl}
         width={1920}
         height={1080}
-        alt="Hero background Image"
+        alt="Interior design article feature image Amara"
       />
 
       <div className="mx-auto flex w-full max-w-[1440px] flex-col items-start px-[71px] pt-[66px] pb-[305px] max-md:px-[20px] max-md:pb-[158px] max-sm:px-[12px]">
@@ -70,7 +70,7 @@ export default function InsideBlogSection({ blog }: InsideBlogSectionProps) {
 
         <Image
           src={blog.image1Url}
-          alt="Blog"
+          alt="Interior design inspiration Amara blog Miami Dubai"
           width={1200}
           height={1800}
           className="mb-[212px] h-[909px] w-full max-w-[895px] self-center object-cover max-md:mb-[145px] max-md:h-[636px] max-md:max-w-[626px] max-sm:h-[372px] max-sm:max-w-full"

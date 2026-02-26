@@ -16,9 +16,9 @@ export default function CarouselGallery({ project }: { project: Project }) {
   const [scrollLeft, setScrollLeft] = useState(0);
 
   const images = [
-    { src: project.threeImages1Url, alt: "Project Image 1" },
-    { src: project.threeImages2Url, alt: "Project Image 2" },
-    { src: project.threeImages3Url, alt: "Project Image 3" },
+    { src: project.threeImages1Url, alt: "Luxury interior design gallery Amara project detail" },
+    { src: project.threeImages2Url, alt: "Bespoke materials and finishes Amara Interior Design" },
+    { src: project.threeImages3Url, alt: "Residential interior design detail Amara Miami Dubai" },
   ];
 
   const handleMouseDown = (e: React.MouseEvent) => {
@@ -171,7 +171,7 @@ export default function CarouselGallery({ project }: { project: Project }) {
               height={1000}
               className="carousel-gallery-anim-img h-[120%] w-full object-cover"
               src={project.threeImages1Url}
-              alt="Image 1"
+              alt="Luxury interior design gallery Amara project detail"
             />
           </div>
 
@@ -181,7 +181,7 @@ export default function CarouselGallery({ project }: { project: Project }) {
               height={1000}
               className="carousel-gallery-anim-img h-[120%] w-full object-cover"
               src={project.threeImages2Url}
-              alt="Image 1"
+              alt="Bespoke materials and finishes Amara Interior Design"
             />
           </div>
 
@@ -191,7 +191,7 @@ export default function CarouselGallery({ project }: { project: Project }) {
               height={1000}
               className="carousel-gallery-anim-img h-[120%] w-full object-cover"
               src={project.threeImages3Url}
-              alt="Image 1"
+              alt="Residential interior design detail Amara Miami Dubai"
             />
           </div>
         </div>

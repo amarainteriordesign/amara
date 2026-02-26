@@ -67,7 +67,7 @@ export default function Hero() {
             src="/images/pages/studio/hero.png"
             width={1440}
             height={809}
-            alt="Hero background Image"
+            alt="Amara Interior Design studio about us Miami Dubai"
           />
           <div className="mx-auto flex h-screen w-full max-w-[1440px] flex-col items-center justify-end gap-[67px] px-[20px] pt-[166px] pb-[166px] max-md:justify-center max-sm:gap-[35px] max-sm:px-[12px]">
             <div className="flex flex-col items-center">
@@ -85,7 +85,7 @@ export default function Hero() {
             <div className="flex flex-col items-center gap-[25px] max-sm:gap-[35px]">
               <Image
                 src="/images/pages/studio/logo.png"
-                alt="Logo"
+                alt="Amara Interior Design logo"
                 width={307}
                 height={217}
                 className="object-contain max-sm:h-[153px] max-sm:w-[217px]"

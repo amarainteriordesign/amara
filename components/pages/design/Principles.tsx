@@ -227,7 +227,7 @@ export default function Principles() {
               src="/images/pages/design/principles-bg.png"
               width={1000}
               height={2000}
-              alt="Pricncipals"
+              alt="Interior design principles Amara Miami Dubai"
               className="principle-image-box-anim-bg h-[120%] w-full scale-[1.4] object-cover blur-[30px]"
             />
           </div>
@@ -238,7 +238,7 @@ export default function Principles() {
                 src="/images/pages/design/principles.jpg"
                 width={500}
                 height={1000}
-                alt="Pricncipals"
+                alt="Luxury design principles Amara Interior Design"
                 className="principle-image-box-anim h-[120%] w-full object-cover"
               />
             </div>

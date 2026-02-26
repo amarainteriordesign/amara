@@ -173,7 +173,7 @@ export default function Work() {
             <div className="work-step-3 absolute top-1/2 left-1/2 z-[0] flex w-full -translate-x-1/2 -translate-y-1/2 items-center justify-center">
               <Image
                 src="/images/pages/studio/drawing.png"
-                alt="Drawing"
+                alt="Architectural sketch Amara Interior Design process"
                 width={520}
                 height={272}
                 className="w-full max-w-[520px]"
@@ -191,7 +191,7 @@ export default function Work() {
           <div className="relative aspect-[1.37] w-full max-w-[606px] overflow-hidden max-md:max-w-full">
             <Image
               src="/images/pages/studio/work.png"
-              alt="Work"
+              alt="Luxury interior design project in progress Amara Miami Dubai"
               width={606}
               height={442}
               className="work-left-anim absolute left-0 h-[calc(100%+100px)] max-h-[calc(100%+100px)] w-full translate-y-[-100px] object-cover"

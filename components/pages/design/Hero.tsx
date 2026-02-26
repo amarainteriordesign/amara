@@ -35,7 +35,7 @@ export default function Hero() {
             src="/images/pages/design/Palm_Trees_Amara_Interior_Design_Miami_Dubai.webp"
             width={1920}
             height={1080}
-            alt="Hero background Image"
+            alt="Palm trees luxury design inspiration Amara Interior Design Miami Dubai"
           />
 
           <div className="absolute top-1/2 z-[1] flex max-h-fit w-full -translate-y-1/2 flex-col items-center justify-center overflow-hidden p-[20px]">

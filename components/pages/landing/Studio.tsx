@@ -11,7 +11,7 @@ export default function Studio({ isDesktopSideBySide = false }: StudioProps) {
       <div className={`mx-auto px-[40px] pt-[100px] pb-[80px] max-sm:px-[17px] max-sm:pt-[80px] max-sm:pb-[60px] ${isDesktopSideBySide ? "md:max-w-full md:px-[40px] md:pt-[40px] md:pb-[40px]" : "max-w-[800px]"}`}>
         <Image
           src="/images/pages/home/drawing.png"
-          alt="Drawing"
+          alt="Architectural sketch Amara Interior Design studio"
           width={483}
           height={245}
           className={`mx-auto h-auto w-full object-cover pb-[55px] max-sm:pb-[60px] ${isDesktopSideBySide ? "md:max-w-[300px] md:pb-[30px]" : "max-w-[500px]"}`}

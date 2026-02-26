@@ -123,7 +123,7 @@ export default function Moments() {
           <div className="relative aspect-[0.67] w-full max-w-[331px] overflow-hidden max-md:max-w-full">
             <Image
               src="/images/pages/home/studio.webp"
-              alt="Studio"
+              alt="Amara Interior Design studio workspace Miami Dubai"
               width={1300}
               height={1500}
               className="moment-left-anim absolute left-0 h-[calc(100%+100px)] max-h-[calc(100%+100px)] w-full translate-y-[-100px] object-cover"
@@ -140,7 +140,7 @@ export default function Moments() {
           <div className="relative h-full w-full overflow-hidden">
             <Image
               src="/images/pages/home/design1.png"
-              alt="Design"
+              alt="Bespoke luxury interior design detail Amara Miami Dubai"
               width={1500}
               height={1900}
               className="moment-right-anim moment-left-anim absolute left-0 h-[calc(100%+80px)] max-h-[calc(100%+80px)] translate-y-[-80px] object-cover"

@@ -183,7 +183,7 @@ export default function ContactSection() {
               src="/images/pages/landing/contact.webp"
               width={350}
               height={350}
-              alt="Interior design showcase"
+              alt="Luxury interior design consultation Amara Miami Dubai"
               className="h-full w-full rounded-[16px] object-cover"
             />
           </div>

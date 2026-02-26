@@ -93,7 +93,7 @@ export default function Quote({ leaveEarly = false }: { leaveEarly?: boolean }) 
           <Image
             src="/images/pages/design/quote.png"
             className="absolute top-0 left-0 z-[-1] h-full w-full object-cover"
-            alt="Quote Background"
+            alt="Serene interior atmosphere Amara Interior Design"
             width={2000}
             height={1000}
           />

@@ -9,9 +9,9 @@ import Footer from "@/components/layout/Footer";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Accueil",
+  title: "Luxury Interior Design Studio Miami & Dubai",
   description:
-    "Amara imagine des espaces d’architecture et d’intérieur où le calme, la matière et la lumière composent des lieux à vivre durables.",
+    "Amara Interior Design creates luxury residential and hospitality interiors in Miami, Dubai, and Paris. Expert procurement, bespoke furniture, and full-service interior design worldwide.",
 };
 
 export default function Home() {

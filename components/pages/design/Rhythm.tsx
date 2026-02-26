@@ -16,7 +16,7 @@ export default function Rhythm() {
                 src="/images/pages/design/valley.jpg"
                 width={635}
                 height={986}
-                alt="Valley"
+                alt="Mediterranean landscape design inspiration Amara Interior Design"
                 className="h-screen w-full max-w-[635px] object-cover max-md:h-[95vh] max-md:max-w-full max-sm:h-[553px]"
               />
             </div>
@@ -37,7 +37,7 @@ export default function Rhythm() {
               </p>
               <Image
                 src="/images/pages/design/ocean.png"
-                alt="Ocean"
+                alt="Ocean coastal design inspiration Amara Interior Design Miami"
                 width={615}
                 height={648}
                 className="h-[65vh] w-full max-w-[615px] object-cover max-md:max-w-[65vw] max-sm:h-[385px]"

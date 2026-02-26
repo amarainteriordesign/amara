@@ -9,9 +9,9 @@ import Footer from "@/components/layout/Footer";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Design",
+  title: "Design Philosophy | Amara Interior Design | Miami, Dubai, Paris",
   description:
-    "Our approach places listening, materials, and light at the heart of every project. Discover Amara's design principles and the philosophy that guides our work.",
+    "Discover Amara's luxury interior design philosophy — placing listening, natural materials, and light at the heart of every bespoke residential and hospitality project in Miami, Dubai, and Paris.",
 };
 
 export default function DesignPage() {
