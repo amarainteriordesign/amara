@@ -58,8 +58,6 @@ export default function Header({ isDark = false }: { isDark?: boolean }) {
 
   // Header color change on scroll past hero
   useGSAP(() => {
-    if (isDark) return;
-
     const heroSection = document.querySelector("section");
     if (!heroSection) return;
 
@@ -104,7 +102,7 @@ export default function Header({ isDark = false }: { isDark?: boolean }) {
         onEnterBack: setWhite,
       });
     }
-  }, [isDark]);
+  }, []);
 
   // Timelines initialization
   useGSAP(() => {
