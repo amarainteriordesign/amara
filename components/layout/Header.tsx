@@ -263,7 +263,7 @@ export default function Header({ isDark = false }: { isDark?: boolean }) {
 
             {/* Menu Button (Plus Icon) */}
             <div className="mobile-menu-trigger flex">
-              <button ref={menuTriggerRef} onClick={toggleMenu} aria-expanded={isMobileMenuOpen} aria-label="Menu" className="cursor-pointer">
+              <button ref={menuTriggerRef} onClick={toggleMenu} aria-expanded={isMobileMenuOpen} aria-label="Menu" className="cursor-pointer outline-none">
                 <svg
                   width="25"
                   height="25"
