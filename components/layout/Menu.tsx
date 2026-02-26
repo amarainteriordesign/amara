@@ -62,7 +62,7 @@ export default function Menu({ now }: { now: Date }) {
         Contact Us
       </button>
 
-      <div className="absolute bottom-[32px] left-1/2 flex w-full max-w-[340px] -translate-x-1/2 flex-col items-start">
+      <div className="absolute bottom-[10px] left-1/2 flex w-full max-w-[340px] -translate-x-1/2 flex-col items-start">
         <div className="relative flex items-center pb-[10px]">
           <SoundIcon width={22} height={24} color="#262626" />
           <SoundIcon width={22} height={24} color="#262626" className="ml-[-4px]" />
