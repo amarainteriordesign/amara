@@ -62,18 +62,18 @@ export default function Menu({ now }: { now: Date }) {
         Contact Us
       </button>
 
-      <div className="absolute top-[374px] left-[180px] flex max-w-[380px] flex-col items-start max-sm:left-[140px] max-sm:max-w-[200px]">
-        <div className="relative flex items-center pb-[16px]">
+      <div className="mx-auto flex w-full max-w-[400px] flex-col items-center pt-[80px]">
+        <div className="relative flex items-center pb-[12px]">
           <SoundIcon width={24} height={26} color="#262626" />
           <SoundIcon width={24} height={26} color="#262626" className="ml-[-4px]" />
         </div>
-        <p className="font-sans text-[22px] leading-[30px] font-medium tracking-[-0.6px] text-[#262626] max-sm:text-[16px] max-sm:leading-[24px]">
+        <p className="pb-[28px] text-center font-sans text-[22px] leading-[30px] font-medium tracking-[-0.6px] text-[#262626] max-sm:text-[16px] max-sm:leading-[24px]">
           An immersive journey inspired by the story of the four{" "}
           <span className="text-[#737373]">elements</span>
         </p>
       </div>
 
-      <div className="mx-auto flex w-full max-w-[340px] justify-between gap-[20px] pt-[130px]">
+      <div className="mx-auto flex w-full max-w-[340px] justify-between gap-[20px]">
         {[
           { title: "Dubai", offset: 4 },
           { title: "Miami", offset: -5 },
