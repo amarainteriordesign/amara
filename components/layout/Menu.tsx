@@ -73,10 +73,10 @@ export default function Menu({ now }: { now: Date }) {
         </p>
       </div>
 
-      <div className="mx-auto flex w-full max-w-[340px] justify-between gap-[20px]">
+      <div className="mx-auto flex w-full max-w-[400px] items-center gap-[20px]">
         {[
-          { title: "Dubai", offset: 4 },
           { title: "Miami", offset: -5 },
+          { title: "Dubai", offset: 4 },
           { title: "Paris", offset: 1 },
         ].map((item) => (
           <div className="flex items-baseline gap-[8px]" key={item.title}>
