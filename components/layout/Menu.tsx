@@ -57,7 +57,7 @@ export default function Menu({ now }: { now: Date }) {
 
       <button
         onClick={navigateToContactUs}
-        className="absolute top-[416px] right-[25px] flex h-[41px] w-[128px] items-center justify-center rounded-[30px] bg-transparent font-sans text-[14px] leading-[41px] text-[#F6EFE5]"
+        className="absolute top-[487px] right-[25px] flex h-[41px] w-[128px] items-center justify-center rounded-[30px] bg-transparent font-sans text-[14px] leading-[41px] text-[#F6EFE5]"
       >
         Contact Us
       </button>
@@ -122,7 +122,7 @@ export default function Menu({ now }: { now: Date }) {
               />
             </g>
 
-            <g transform={`translate(${screenSize?.width - 128 - 25}, 416)`}>
+            <g transform={`translate(${screenSize?.width - 128 - 25}, 487)`}>
               <rect width="128" height="41" rx="20" fill="black" />
             </g>
           </mask>
