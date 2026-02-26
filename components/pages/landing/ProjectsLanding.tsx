@@ -40,7 +40,7 @@ export default function ProjectsLanding() {
   return (
     <section className="w-full max-w-full overflow-hidden bg-[#F1EBDF] pb-[60px] max-sm:pb-[40px]">
       <div className="flex flex-col items-center justify-center px-[20px] pt-[80px] pb-[40px] max-sm:pt-[40px] max-sm:pb-[28px]">
-        <h2 className="text-bg-img bg-[url(/images/pages/home/text-background.webp)] !bg-top pb-[9px] text-center font-calvino text-[32px] leading-[40px] tracking-[0.2px] italic max-sm:pb-[16px] max-sm:text-[22px] max-sm:leading-[28px] max-sm:tracking-[0.2px]">
+        <h2 className="text-bg-img bg-[url(/images/pages/home/text-background.webp)] !bg-top pb-[9px] text-center text-[32px] leading-[40px] tracking-[0.2px] italic max-sm:pb-[16px] max-sm:text-[22px] max-sm:leading-[28px] max-sm:tracking-[0.2px]" style={{ fontFamily: 'var(--font-lora)' }}>
           Discover our Projects worldwide{" "}
         </h2>
       </div>

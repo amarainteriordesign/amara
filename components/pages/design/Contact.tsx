@@ -209,7 +209,7 @@ export default function DesignContact() {
 
             <div className="flex w-[33%] flex-col justify-between px-[30px] py-[30px] max-md:w-full max-md:px-[24px] max-md:py-[24px] max-sm:px-[16px] max-sm:py-[16px]">
               <div>
-                <h2 className="mb-[24px] font-calvino text-[22px] leading-[28px] font-normal tracking-[-0.8px] text-[#0a0a0a] max-sm:text-[18px]">
+                <h2 className="mb-[24px] text-[22px] leading-[28px] font-normal tracking-[-0.8px] text-[#0a0a0a] max-sm:text-[18px]" style={{ fontFamily: 'var(--font-lora)' }}>
                   {FORM_TITLE}
                 </h2>
 

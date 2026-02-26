@@ -118,7 +118,7 @@ export default function ContactSection() {
       {/* Description Section */}
       <div className="mb-[60px] flex w-full flex-col items-center justify-center px-[20px] text-center max-sm:mb-[40px]">
         <div className="max-h-fit overflow-hidden">
-          <h2 className="text-bg-img mb-[8px] bg-[url(/images/pages/home/text-background.webp)] pb-[8px] font-calvino text-[28px] leading-[36px] font-normal tracking-[-0.8px] italic max-sm:text-[22px] max-sm:tracking-[-0.6px]">
+          <h2 className="text-bg-img mb-[8px] bg-[url(/images/pages/home/text-background.webp)] pb-[8px] text-[28px] leading-[36px] font-normal tracking-[-0.8px] italic max-sm:text-[22px] max-sm:tracking-[-0.6px]" style={{ fontFamily: 'var(--font-lora)' }}>
             From Concept to Delivery
           </h2>
         </div>
@@ -190,7 +190,7 @@ export default function ContactSection() {
 
           {/* Form */}
           <div className="flex w-[50%] flex-col justify-center px-[30px] py-[30px] max-md:w-full max-md:px-[24px] max-md:py-[24px] max-sm:px-[16px] max-sm:py-[16px]">
-            <h3 className="mb-[24px] font-calvino text-[22px] leading-[28px] font-normal tracking-[-0.8px] text-[#0a0a0a] max-sm:text-[18px]">
+            <h3 className="mb-[24px] text-[22px] leading-[28px] font-normal tracking-[-0.8px] text-[#0a0a0a] max-sm:text-[18px]" style={{ fontFamily: 'var(--font-lora)' }}>
               {FORM_TITLE}
             </h3>
 

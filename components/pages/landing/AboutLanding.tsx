@@ -2,7 +2,7 @@ export default function AboutLanding() {
   return (
     <section className="w-full bg-[#e8dfd2]">
       <div className="mx-auto max-w-[900px] px-[60px] pt-[80px] pb-[40px] text-center max-md:px-[40px] max-md:pt-[60px] max-md:pb-[30px] max-sm:px-[20px] max-sm:pt-[40px] max-sm:pb-[20px]">
-        <h2 className="pb-[24px] font-calvino text-[28px] leading-[36px] font-normal tracking-[-0.3px] text-[#262626] max-sm:pb-[16px] max-sm:text-[22px] max-sm:leading-[30px]">
+        <h2 className="pb-[24px] text-[28px] leading-[36px] font-normal tracking-[-0.3px] text-[#262626] max-sm:pb-[16px] max-sm:text-[22px] max-sm:leading-[30px]" style={{ fontFamily: 'var(--font-lora)' }}>
           Your Luxury Interior Designers in Miami
         </h2>
         <p className="font-sans text-[16px] leading-[28px] font-normal tracking-[-0.2px] text-[#4a4a4a] max-sm:text-[14px] max-sm:leading-[24px]">
