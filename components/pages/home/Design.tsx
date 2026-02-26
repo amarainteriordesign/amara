@@ -58,32 +58,6 @@ export default function Design() {
     };
   }, [screenSize]);
 
-  const contextHeaderRef = useRef<gsap.Context>(null);
-  useGSAP(() => {
-    const headerLogo = document.querySelector("header .logo");
-    if (!headerLogo) contextHeaderRef.current?.revert();
-
-    contextHeaderRef.current = gsap.context(() => {
-      ScrollTrigger.create({
-        trigger: ".design-container",
-        start: "top-=80px top",
-        end: "bottom-=80px top",
-        onEnter: () => {
-          headerLogo?.classList.add("dark");
-        },
-        onEnterBack: () => {
-          headerLogo?.classList.add("dark");
-        },
-        onLeaveBack: () => {
-          headerLogo?.classList.remove("dark");
-        },
-        onLeave: () => {
-          headerLogo?.classList.remove("dark");
-        },
-      });
-    });
-  });
-
   return (
     <section className="design-container xmd:pb-[100px] w-full max-w-full pb-[150px] max-sm:pb-[70px]">
       <div className="top-0 mx-auto flex max-w-[1440px] flex-col items-center justify-center px-[20px] pt-[166px] max-sm:pt-[88px]">

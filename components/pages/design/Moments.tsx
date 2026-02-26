@@ -84,35 +84,6 @@ export default function Moments() {
     },
   );
 
-  const contextHeaderRef = useRef<gsap.Context>(null);
-  useGSAP(() => {
-    const headerLogo = document.querySelector("header .logo");
-    if (!headerLogo) {
-      contextHeaderRef.current?.revert();
-      return;
-    }
-
-    contextHeaderRef.current = gsap.context(() => {
-      ScrollTrigger.create({
-        trigger: ".moments-wrapper",
-        start: "top-=80px top",
-        end: "bottom-=80px top",
-        onEnter: () => {
-          headerLogo?.classList.remove("dark");
-        },
-        onEnterBack: () => {
-          headerLogo?.classList.remove("dark");
-        },
-        onLeaveBack: () => {
-          headerLogo?.classList.add("dark");
-        },
-        onLeave: () => {
-          headerLogo?.classList.add("dark");
-        },
-      });
-    });
-  });
-
   return (
     <section
       ref={containerRef}

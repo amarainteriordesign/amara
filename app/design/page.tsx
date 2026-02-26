@@ -20,7 +20,7 @@ export const metadata: Metadata = {
 export default function DesignPage() {
   return (
     <>
-      <Header isDark={true} />
+      <Header />
 
       <div className="w-full bg-[#1A1A1E]">
         <Hero />

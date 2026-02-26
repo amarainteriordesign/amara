@@ -15,7 +15,7 @@ CustomEase.create("hop", "0.9, 0, 0.1, 1");
 
 const isInitialLoad = true;
 
-export default function Header({ isDark = false }: { isDark?: boolean }) {
+export default function Header() {
   const lenis = useLenis();
   const router = useRouter();
 
@@ -97,8 +97,15 @@ export default function Header({ isDark = false }: { isDark?: boolean }) {
         gsap.set(gradientRef.current, { opacity: 0 });
       }
     } else {
+      gsap.set(".logo", { color: "#BCB19B" });
       gsap.set(".header-logo", { color: "#FFF" });
       gsap.set(".header-logo-text", { color: "#BCB19B" });
+      if (plusIconRef.current) {
+        gsap.set(plusIconRef.current, { fill: "#FFF", fillOpacity: 0.85 });
+      }
+      if (gradientRef.current) {
+        gsap.set(gradientRef.current, { opacity: 1 });
+      }
     }
 
     ScrollTrigger.create({
@@ -254,10 +261,7 @@ export default function Header({ isDark = false }: { isDark?: boolean }) {
               <Link
                 href="/"
                 onClick={onLogoClick}
-                className={
-                  (isDark ? "dark" : "") +
-                  " logo font-sans text-[16px] leading-[20px] font-medium tracking-[-0.5px] text-[#BCB19B]"
-                }
+                className="logo font-sans text-[16px] leading-[20px] font-medium tracking-[-0.5px]"
               >
                 <span className="header-logo">Amara</span>{" "}
                 <span className="header-logo-text">Interior Design Studio</span>

@@ -3,10 +3,6 @@ import Image from "next/image";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import Copy from "@/components/common/Copy/Copy";
-import { useRef } from "react";
-import ScrollTrigger from "gsap/ScrollTrigger";
-
-gsap.registerPlugin(ScrollTrigger);
 
 export default function HeroAbout() {
   useGSAP(() => {
@@ -24,31 +20,6 @@ export default function HeroAbout() {
     });
   });
 
-  const contextRef = useRef<gsap.Context>(null);
-  useGSAP(() => {
-    const headerLogo = document.querySelector("header .logo");
-    if (!headerLogo) contextRef.current?.revert();
-
-    contextRef.current = gsap.context(() => {
-      ScrollTrigger.create({
-        trigger: ".hero-container",
-        start: "top-=80px top",
-        end: "bottom-=80px top",
-        onEnter: () => {
-          headerLogo?.classList.remove("dark");
-        },
-        onEnterBack: () => {
-          headerLogo?.classList.remove("dark");
-        },
-        onLeaveBack: () => {
-          headerLogo?.classList.add("dark");
-        },
-        onLeave: () => {
-          headerLogo?.classList.add("dark");
-        },
-      });
-    });
-  });
 
   return (
     <section

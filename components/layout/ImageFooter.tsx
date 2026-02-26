@@ -12,18 +12,13 @@ import { useWindowSize } from "@/hooks/useWindowSize";
 import { formatTimeForOffset } from "@/helpers/time";
 import Menu from "@/components/layout/Menu";
 import SoundIcon from "@/components/icons/sound.svg";
-import ScrollTrigger from "gsap/ScrollTrigger";
 
 type ImageFooterProps = {
   image: string;
-  addDarkHeader?: boolean;
-  isDarkHeaderByDefault?: boolean;
 };
 
 export default function ImageFooter({
   image,
-  addDarkHeader = false,
-  isDarkHeaderByDefault = false,
 }: ImageFooterProps) {
   const [now, setNow] = useState<Date>(new Date());
   const lenis = useLenis();
@@ -132,51 +127,6 @@ export default function ImageFooter({
       }
     }
   }
-
-  const contextHeaderRef = useRef<gsap.Context>(null);
-  useGSAP(() => {
-    const headerLogo = document.querySelector("header .logo");
-    if (!headerLogo || (addDarkHeader && isDarkHeaderByDefault)) {
-      contextHeaderRef.current?.revert();
-      return;
-    }
-
-    contextHeaderRef.current = gsap.context(() => {
-      ScrollTrigger.create({
-        trigger: ".footer-image-ref",
-        start: "top-=80px top",
-        end: "bottom-=80px top",
-        onEnter: () => {
-          if (isDarkHeaderByDefault) {
-            headerLogo?.classList.remove("dark");
-          } else {
-            headerLogo?.classList.add("dark");
-          }
-        },
-        onEnterBack: () => {
-          if (isDarkHeaderByDefault) {
-            headerLogo?.classList.remove("dark");
-          } else {
-            headerLogo?.classList.add("dark");
-          }
-        },
-        onLeaveBack: () => {
-          if (isDarkHeaderByDefault) {
-            headerLogo?.classList.add("dark");
-          } else {
-            headerLogo?.classList.remove("dark");
-          }
-        },
-        onLeave: () => {
-          if (isDarkHeaderByDefault) {
-            headerLogo?.classList.add("dark");
-          } else {
-            headerLogo?.classList.remove("dark");
-          }
-        },
-      });
-    });
-  }, [addDarkHeader, isDarkHeaderByDefault]);
 
   return (
     <>

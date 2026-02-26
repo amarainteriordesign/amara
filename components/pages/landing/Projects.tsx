@@ -1,12 +1,6 @@
 "use client";
 
 import Carousel, { type Slide } from "@/components/common/Carousel";
-import { useRef } from "react";
-import gsap from "gsap";
-import { useGSAP } from "@gsap/react";
-import ScrollTrigger from "gsap/ScrollTrigger";
-
-gsap.registerPlugin(ScrollTrigger);
 
 // Original projects data converted to slides format
 const slides: Slide[] = [
@@ -28,32 +22,6 @@ const slides: Slide[] = [
 ];
 
 export default function Projects() {
-  const contextHeaderRef = useRef<gsap.Context>(null);
-  useGSAP(() => {
-    const headerLogo = document.querySelector("header .logo");
-    if (!headerLogo) contextHeaderRef.current?.revert();
-
-    contextHeaderRef.current = gsap.context(() => {
-      ScrollTrigger.create({
-        trigger: ".project-landing-ref",
-        start: "top-=80px top",
-        end: "bottom-=80px top",
-        onEnter: () => {
-          headerLogo?.classList.add("dark");
-        },
-        onEnterBack: () => {
-          headerLogo?.classList.add("dark");
-        },
-        onLeaveBack: () => {
-          headerLogo?.classList.remove("dark");
-        },
-        onLeave: () => {
-          headerLogo?.classList.remove("dark");
-        },
-      });
-    });
-  });
-
   return (
     <section className="project-landing-ref w-full max-w-full overflow-hidden pb-[127px] max-sm:pb-[65px]">
       <div className="flex flex-col items-center justify-center px-[20px] pb-[55px] max-sm:pb-[54px]">

@@ -115,7 +115,7 @@ export default async function Project({ params }: ProjectPageProps) {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
       />
 
-      <Header isDark={true} />
+      <Header />
 
       <Hero project={serializedProject} />
 
@@ -128,8 +128,6 @@ export default async function Project({ params }: ProjectPageProps) {
       <Contact />
 
       <ImageFooter
-        isDarkHeaderByDefault={true}
-        addDarkHeader={true}
         image={serializedProject.footerFullWidthImageUrl}
       />
     </>

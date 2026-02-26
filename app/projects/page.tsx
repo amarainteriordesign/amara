@@ -48,7 +48,7 @@ export default async function Projects() {
 
   return (
     <>
-      <Header isDark={true} />
+      <Header />
 
       <Hero />
 
@@ -60,7 +60,7 @@ export default async function Projects() {
 
       <Contact />
 
-      <ImageFooter isDarkHeaderByDefault={true} image="/images/pages/home/Hero_Bedroom_Amara_Interior_Design_Procurement_Miami_Dubai.webp" />
+      <ImageFooter image="/images/pages/home/Hero_Bedroom_Amara_Interior_Design_Procurement_Miami_Dubai.webp" />
     </>
   );
 }

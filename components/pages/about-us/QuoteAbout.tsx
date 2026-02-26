@@ -55,35 +55,6 @@ export default function QuoteAbout() {
     return () => ctx.revert();
   });
 
-  const contextHeaderRef = useRef<gsap.Context>(null);
-  useGSAP(() => {
-    const headerLogo = document.querySelector("header .logo");
-    if (!headerLogo) {
-      contextHeaderRef.current?.revert();
-      return;
-    }
-
-    contextHeaderRef.current = gsap.context(() => {
-      ScrollTrigger.create({
-        trigger: ".quote-about-container-anim",
-        start: "top-=80px top",
-        end: "bottom-=80px top",
-        onEnter: () => {
-          headerLogo?.classList.remove("dark");
-        },
-        onEnterBack: () => {
-          headerLogo?.classList.remove("dark");
-        },
-        onLeaveBack: () => {
-          headerLogo?.classList.add("dark");
-        },
-        onLeave: () => {
-          headerLogo?.classList.add("dark");
-        },
-      });
-    });
-  });
-
   const lines = [
     "Wellness at the core.",
     "Grounded in nature.",

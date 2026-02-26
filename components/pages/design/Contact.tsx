@@ -1,11 +1,6 @@
 "use client";
 import Image from "next/image";
-import { useState, useRef } from "react";
-import gsap from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
-import { useGSAP } from "@gsap/react";
-
-gsap.registerPlugin(ScrollTrigger);
+import { useState } from "react";
 
 const FORM_TITLE = "Let's get in Touch";
 const SUCCESS_MESSAGE = "✓ Message sent successfully! We'll be in touch soon.";
@@ -25,33 +20,6 @@ const OFFICES = [
 ];
 
 export default function DesignContact() {
-  const contextHeaderRef = useRef<gsap.Context | null>(null);
-
-  useGSAP(() => {
-    const headerLogo = document.querySelector("header .logo");
-    if (!headerLogo) contextHeaderRef.current?.revert();
-
-    contextHeaderRef.current = gsap.context(() => {
-      ScrollTrigger.create({
-        trigger: ".contact-design-ref",
-        start: "top-=80px top",
-        end: "bottom-=80px top",
-        onEnter: () => {
-          headerLogo?.classList.add("dark");
-        },
-        onEnterBack: () => {
-          headerLogo?.classList.add("dark");
-        },
-        onLeaveBack: () => {
-          headerLogo?.classList.remove("dark");
-        },
-        onLeave: () => {
-          headerLogo?.classList.remove("dark");
-        },
-      });
-    });
-  });
-
   const [formData, setFormData] = useState({
     name: "",
     email: "",

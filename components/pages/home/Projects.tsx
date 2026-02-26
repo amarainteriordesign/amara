@@ -2,12 +2,7 @@
 
 import Link from "next/link";
 import Carousel, { type Slide } from "@/components/common/Carousel";
-import { useRef, useState, useCallback } from "react";
-import gsap from "gsap";
-import { useGSAP } from "@gsap/react";
-import ScrollTrigger from "gsap/ScrollTrigger";
-
-gsap.registerPlugin(ScrollTrigger);
+import { useState, useCallback } from "react";
 
 const slides: Slide[] = [
   {
@@ -49,32 +44,6 @@ export default function Projects() {
   const handleSlideChange = useCallback((slide: Slide) => {
     setActiveSlide(slide);
   }, []);
-  const contextHeaderRef = useRef<gsap.Context>(null);
-  useGSAP(() => {
-    const headerLogo = document.querySelector("header .logo");
-    if (!headerLogo) contextHeaderRef.current?.revert();
-
-    contextHeaderRef.current = gsap.context(() => {
-      ScrollTrigger.create({
-        trigger: ".project-home-ref",
-        start: "top-=80px top",
-        end: "bottom-=80px top",
-        onEnter: () => {
-          headerLogo?.classList.add("dark");
-        },
-        onEnterBack: () => {
-          headerLogo?.classList.add("dark");
-        },
-        onLeaveBack: () => {
-          headerLogo?.classList.remove("dark");
-        },
-        onLeave: () => {
-          headerLogo?.classList.remove("dark");
-        },
-      });
-    });
-  });
-
   return (
     <section className="project-home-ref w-full max-w-full overflow-hidden pb-[60px] max-sm:pb-[40px]">
       <div className="flex flex-col items-center justify-center px-[20px] pt-[80px] pb-[40px] max-sm:pt-[40px] max-sm:pb-[28px]">

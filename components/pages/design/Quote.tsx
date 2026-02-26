@@ -55,35 +55,6 @@ export default function Quote({ leaveEarly = false }: { leaveEarly?: boolean }) 
     return () => ctx.revert();
   });
 
-  const contextHeaderRef = useRef<gsap.Context>(null);
-  useGSAP(() => {
-    const headerLogo = document.querySelector("header .logo");
-    if (!headerLogo) {
-      contextHeaderRef.current?.revert();
-      return;
-    }
-
-    contextHeaderRef.current = gsap.context(() => {
-      ScrollTrigger.create({
-        trigger: ".quote-container-anim",
-        start: "top-=80px top",
-        end: "bottom-=80px top",
-        onEnter: () => {
-          headerLogo?.classList.remove("dark");
-        },
-        onEnterBack: () => {
-          headerLogo?.classList.remove("dark");
-        },
-        onLeaveBack: () => {
-          headerLogo?.classList.add("dark");
-        },
-        onLeave: () => {
-          headerLogo?.classList.add("dark");
-        },
-      });
-    });
-  });
-
   const text = "LISTENING TO WHAT THE SPACE ASKS FOR AND ANSWERING WITH MEANING AND CARE";
 
   return (

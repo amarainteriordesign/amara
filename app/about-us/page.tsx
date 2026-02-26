@@ -23,7 +23,7 @@ export const metadata: Metadata = {
 export default function AboutUs() {
   return (
     <>
-      <Header isDark={true} />
+      <Header />
 
       <HeroAbout />
 
