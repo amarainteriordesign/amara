@@ -4,7 +4,7 @@ import Design from "@/components/pages/design/Design";
 import ExpandingImage from "@/components/common/ExpandingImage";
 import Approach from "@/components/pages/design/Approach";
 import Projects from "@/components/pages/home/Projects";
-import DesignContact from "@/components/pages/design/Contact";
+import Contact from "@/components/pages/home/Contact";
 import Footer from "@/components/layout/Footer";
 import type { Metadata } from "next";
 
@@ -37,7 +37,7 @@ export default function DesignPage() {
           <Projects />
         </div>
 
-        <DesignContact />
+        <Contact />
 
         <Footer />
       </div>
