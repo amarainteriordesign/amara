@@ -20,7 +20,7 @@ export default function Story() {
               <p className="font-sans text-[14px] leading-[30px] font-medium tracking-[1.8px] text-[#262626] uppercase max-sm:hidden">
                 DESIGN DEVELOPMENT
               </p>
-              <p className="font-calvino text-[14px] leading-[21px] font-normal tracking-[0.3px] text-[#262626] max-sm:text-[12px] max-sm:tracking-[0.3px]">
+              <p className="text-[14px] leading-[21px] font-normal tracking-[0.3px] text-[#262626] max-sm:text-[12px] max-sm:tracking-[0.3px]" style={{ fontFamily: 'var(--font-lora)' }}>
                 We translate your vision into moodboards, spatial layouts, and initial narratives
                 that reflect your lifestyle, brand identity, or project intent with clarity and
                 depth.
@@ -32,7 +32,7 @@ export default function Story() {
               <p className="font-sans text-[14px] leading-[30px] font-medium tracking-[13%] text-[#262626] uppercase max-sm:hidden">
                 PROCUREMENT & PROJECT MANAGEMENT
               </p>
-              <p className="font-calvino text-[14px] leading-[21px] font-normal tracking-[2%] text-[#262626] max-sm:text-[12px] max-sm:tracking-[0%]">
+              <p className="text-[14px] leading-[21px] font-normal tracking-[2%] text-[#262626] max-sm:text-[12px] max-sm:tracking-[0%]" style={{ fontFamily: 'var(--font-lora)' }}>
                 We source, budget, and oversee production and delivery, managing every vendor,
                 timeline, and detail to bring your space to life with ease and precision.
               </p>
@@ -60,7 +60,7 @@ export default function Story() {
               <p className="font-sans text-[14px] leading-[30px] font-medium tracking-[13%] text-[#262626] uppercase max-sm:hidden">
                 DESIGN DEVELOPMENT
               </p>
-              <p className="font-calvino text-[14px] leading-[21px] font-normal tracking-[2%] text-[#262626] max-sm:text-[12px] max-sm:tracking-[0%]">
+              <p className="text-[14px] leading-[21px] font-normal tracking-[2%] text-[#262626] max-sm:text-[12px] max-sm:tracking-[0%]" style={{ fontFamily: 'var(--font-lora)' }}>
                 From material palettes to detailed drawings, we refine the concept into buildable
                 designs, balancing form, function, and a curated selection of finishes.
               </p>

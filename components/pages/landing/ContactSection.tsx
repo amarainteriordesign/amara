@@ -127,7 +127,7 @@ export default function ContactSection() {
           WE SHAPE INTERIORS WITH PURPOSE
         </p>
 
-        <p className="text-gradient-vertical mx-auto max-w-[565px] font-calvino text-[28px] leading-[37px] font-normal tracking-[-0.8px] max-sm:max-w-[311px] max-sm:text-[18px] max-sm:leading-[28px] max-sm:tracking-[-0.5px]">
+        <p className="text-gradient-vertical mx-auto max-w-[565px] text-[28px] leading-[37px] font-normal tracking-[-0.8px] max-sm:max-w-[311px] max-sm:text-[18px] max-sm:leading-[28px] max-sm:tracking-[-0.5px]" style={{ fontFamily: 'var(--font-lora)' }}>
           Amara is a multidisciplinary interior design and procurement studio crafting refined
           spaces through concept design, detailing, procurement, and project coordination.
         </p>

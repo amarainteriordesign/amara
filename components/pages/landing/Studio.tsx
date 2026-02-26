@@ -17,12 +17,12 @@ export default function Studio({ isDesktopSideBySide = false }: StudioProps) {
           className={`mx-auto h-auto w-full object-cover pb-[55px] max-sm:pb-[60px] ${isDesktopSideBySide ? "md:max-w-[300px] md:pb-[30px]" : "max-w-[500px]"}`}
         />
         <div className="text-center">
-          <p className={`font-calvino text-normal mx-auto pb-[18px] tracking-[0.8px] text-[#FFF] max-sm:max-w-full max-sm:pb-[28px] max-sm:text-[22px] max-sm:leading-[23px] max-sm:tracking-[0.4] ${isDesktopSideBySide ? "md:max-w-full md:text-[24px] md:leading-[30px] md:pb-[12px]" : "max-w-[500px] text-[42px] leading-[49px]"}`}>
+          <p className={`text-normal mx-auto pb-[18px] tracking-[0.8px] text-[#FFF] max-sm:max-w-full max-sm:pb-[28px] max-sm:text-[22px] max-sm:leading-[23px] max-sm:tracking-[0.4] ${isDesktopSideBySide ? "md:max-w-full md:text-[24px] md:leading-[30px] md:pb-[12px]" : "max-w-[500px] text-[42px] leading-[49px]"}`} style={{ fontFamily: 'var(--font-lora)' }}>
             <span className="max-sm:hidden">Designing Between Miami, Dubai & Beyond</span>
 
             <span className="hidden max-sm:inline">Designing Between Miami, Dubai & Beyond</span>
           </p>
-          <p className={`text-normal mx-auto pb-[54px] font-calvino text-[16px] leading-[24px] tracking-[-0.4] text-[#FFF] max-sm:max-w-full max-sm:pb-[35px] ${isDesktopSideBySide ? "md:max-w-full md:text-[13px] md:leading-[20px] md:pb-[24px]" : "max-w-[600px]"}`}>
+          <p className={`text-normal mx-auto pb-[54px] text-[16px] leading-[24px] tracking-[-0.4] text-[#FFF] max-sm:max-w-full max-sm:pb-[35px] ${isDesktopSideBySide ? "md:max-w-full md:text-[13px] md:leading-[20px] md:pb-[24px]" : "max-w-[600px]"}`} style={{ fontFamily: 'var(--font-lora)' }}>
             From the vibrant rhythm of Miami to the refined elegance of Paris and the bold energy of
             Dubai, Amara redefines interior design through a distinct voice. We are a boutique
             powerhouse blending artistic depth with technical mastery, crafting spaces that feel

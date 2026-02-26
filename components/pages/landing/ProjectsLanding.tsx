@@ -49,7 +49,7 @@ export default function ProjectsLanding() {
         <p className="pb-[7px] font-sans text-[12px] leading-[43px] font-medium tracking-[0.6px] text-[#262626] uppercase max-sm:pb-0 max-sm:text-[10px] max-sm:leading-[30px] max-sm:tracking-[-0.5]">
           {(activeSlide.location as string) || ""}
         </p>
-        <h3 className="font-calvino pb-[27px] text-[42px] leading-[43px] font-normal tracking-[0.8px] text-[#262626] uppercase max-sm:pb-[15px] max-sm:text-[22px] max-sm:leading-[32px] max-sm:tracking-[-0.4]">
+        <h3 className="pb-[27px] text-[42px] leading-[43px] font-normal tracking-[0.8px] text-[#262626] uppercase max-sm:pb-[15px] max-sm:text-[22px] max-sm:leading-[32px] max-sm:tracking-[-0.4]" style={{ fontFamily: 'var(--font-lora)' }}>
           {(activeSlide.title as string) || ""}
         </h3>
         <Link
