@@ -254,8 +254,8 @@ export default function Header({ isDark = false }: { isDark?: boolean }) {
                   " logo font-sans text-[16px] leading-[20px] font-medium tracking-[-0.5px] text-[#BCB19B]"
                 }
               >
-                <span className={"header-logo " + (isDark ? "text-white" : "text-[#FFF]")}>Amara</span>{" "}
-                <span className={"header-logo-text " + (isDark ? "text-[#BCB19B]" : "")}>Interior Design Studio</span>
+                <span className="header-logo" style={{ color: "#FFF" }}>Amara</span>{" "}
+                <span className="header-logo-text" style={{ color: isDark ? "#BCB19B" : "#BCB19B" }}>Interior Design Studio</span>
               </Link>
             </div>
 
