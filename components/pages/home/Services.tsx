@@ -13,7 +13,7 @@ export default function Services() {
           </h2>
         </div>
       </section>
-      <div className="bg-gradient-to-b from-[#e8dfd2] from-50% to-[#f1ebdf] to-50% pb-[40px] max-md:!bg-[#e8dfd2] max-md:!bg-none">
+      <div className="bg-gradient-to-b from-[#e8dfd2] from-50% to-[#f1ebdf] to-50% pb-[40px] max-md:!bg-[#e8dfd2] max-md:!bg-none max-md:pb-0">
         <div className="mx-auto flex max-w-[1200px] gap-[80px] px-[60px] max-md:flex-col max-md:gap-[20px] max-md:px-[40px] max-sm:px-[17px]">
           <div className="flex flex-1 flex-col justify-between rounded-[4px] px-[50px] pt-[50px] pb-[45px] max-sm:px-[28px] max-sm:pt-[36px] max-sm:pb-[32px]" style={{ backgroundColor: '#92958D' }}>
             <div>
