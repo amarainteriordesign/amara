@@ -9,19 +9,20 @@ export default function Menu({ now }: { now: Date }) {
   const router = useRouter();
   const pathname = usePathname();
   const containerRef = useRef<HTMLDivElement>(null);
-  const [containerWidth, setContainerWidth] = useState(0);
+  const buttonRef = useRef<HTMLButtonElement>(null);
   const [viewportWidth, setViewportWidth] = useState(0);
+  const [buttonLeft, setButtonLeft] = useState(0);
 
   useEffect(() => {
-    function updateWidth() {
-      if (containerRef.current) {
-        setContainerWidth(containerRef.current.offsetWidth);
-      }
+    function updateMeasurements() {
       setViewportWidth(window.innerWidth);
+      if (buttonRef.current && containerRef.current) {
+        setButtonLeft(buttonRef.current.offsetLeft);
+      }
     }
-    updateWidth();
-    window.addEventListener("resize", updateWidth);
-    return () => window.removeEventListener("resize", updateWidth);
+    updateMeasurements();
+    window.addEventListener("resize", updateMeasurements);
+    return () => window.removeEventListener("resize", updateMeasurements);
   }, []);
 
   function navigateToContactUs() {
@@ -67,6 +68,7 @@ export default function Menu({ now }: { now: Date }) {
       </div>
 
       <button
+        ref={buttonRef}
         onClick={navigateToContactUs}
         className="absolute top-[416px] right-[25px] flex h-[41px] w-[128px] items-center justify-center rounded-[30px] bg-transparent font-sans text-[14px] leading-[41px] text-[#F6EFE5]"
       >
@@ -99,7 +101,7 @@ export default function Menu({ now }: { now: Date }) {
         ))}
       </div>
 
-      {viewportWidth > 0 && containerWidth > 0 && (
+      {viewportWidth > 0 && buttonLeft > 0 && (
         <svg
           className="absolute -top-[2px] left-0 z-[-1]"
           width={viewportWidth}
@@ -133,7 +135,7 @@ export default function Menu({ now }: { now: Date }) {
                 />
               </g>
 
-              <g transform={`translate(${containerWidth - 128 - 25}, 416)`}>
+              <g transform={`translate(${buttonLeft}, 416)`}>
                 <rect width="128" height="41" rx="20" fill="black" />
               </g>
             </mask>
