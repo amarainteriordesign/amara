@@ -31,10 +31,10 @@ export default function ImmersiveJourney() {
               { title: "Paris", offset: 1 },
             ].map((item) => (
               <div className="flex items-baseline gap-[6px]" key={item.title}>
-                <p className="font-sans text-[20px] leading-[28px] font-normal tracking-[-0.4px] text-[#737373]">
+                <p className="font-sans text-[18px] leading-[26px] font-normal tracking-[-0.4px] text-[#737373]">
                   {formatTimeForOffset(now, item.offset)}
                 </p>
-                <p className="font-sans text-[20px] leading-[28px] font-medium tracking-[-0.6px] text-[#262626]">
+                <p className="font-sans text-[18px] leading-[26px] font-medium tracking-[-0.6px] text-[#262626]">
                   {item.title}
                 </p>
               </div>
