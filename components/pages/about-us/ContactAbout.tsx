@@ -5,9 +5,9 @@ export default function ContactAbout() {
     <section className="bg-[#e8dfd2] w-full">
       <div className="relative mx-auto flex w-full max-w-[1440px] flex-col px-[20px] pt-[80px] pb-[80px] max-md:pt-[60px] max-md:pb-[60px] max-sm:px-[12px] max-sm:pt-[40px] max-sm:pb-[40px]">
         <div className="flex h-full w-full flex-col items-center justify-center">
-          <h4 className="text-gradient-vertical pb-[9px] text-center font-serif text-[28px] leading-[36px] tracking-tighter italic max-md:pb-[16px] max-sm:text-center max-sm:text-[24px]">
+          <h2 className="text-gradient-vertical pb-[9px] text-center font-serif text-[28px] leading-[36px] tracking-tighter italic max-md:pb-[16px] max-sm:text-center max-sm:text-[24px]">
             Book a Discovery Call with our Team
-          </h4>
+          </h2>
 
           <p className="pb-[43px] font-sans text-[12px] leading-[20px] font-normal tracking-[2%] text-[#262626] uppercase max-md:pb-[17px]">
             BRING YOU PROJECT TO LIFE

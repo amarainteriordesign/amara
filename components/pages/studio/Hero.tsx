@@ -72,9 +72,9 @@ export default function Hero() {
           <div className="mx-auto flex h-screen w-full max-w-[1440px] flex-col items-center justify-end gap-[67px] px-[20px] pt-[166px] pb-[166px] max-md:justify-center max-sm:gap-[35px] max-sm:px-[12px]">
             <div className="flex flex-col items-center">
               <Copy delay={1.7} animateOnScroll={false}>
-                <h2 className="text-center font-serif text-[28px] leading-[36px] font-normal tracking-[-0.8px] text-[#FFF] max-sm:text-[24px] max-sm:tracking-[-0.6px]">
+                <h1 className="text-center font-serif text-[28px] leading-[36px] font-normal tracking-[-0.8px] text-[#FFF] max-sm:text-[24px] max-sm:tracking-[-0.6px]">
                   Design Begins with People
-                </h2>
+                </h1>
               </Copy>
               <div className="max-h-fit w-full overflow-hidden text-center">
                 <p className="hero-center-text-space text-bg-img bg-[url(/images/pages/home/text-background.webp)] text-center font-serif text-[28px] leading-[36px] tracking-[-0.8px] italic max-sm:text-[24px] max-sm:tracking-[-0.6px]">

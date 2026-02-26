@@ -78,18 +78,18 @@ export default function Projects() {
   return (
     <section className="project-home-ref w-full max-w-full overflow-hidden pb-[60px] max-sm:pb-[40px]">
       <div className="flex flex-col items-center justify-center px-[20px] pt-[80px] pb-[40px] max-sm:pt-[40px] max-sm:pb-[28px]">
-        <h3 className="text-bg-img bg-[url(/images/pages/home/text-background.webp)] !bg-top pb-[9px] text-center text-[32px] leading-[40px] tracking-[0.2px] italic max-sm:pb-[16px] max-sm:text-[22px] max-sm:leading-[28px] max-sm:tracking-[0.2px]" style={{ fontFamily: 'var(--font-lora)' }}>
+        <h2 className="text-bg-img bg-[url(/images/pages/home/text-background.webp)] !bg-top pb-[9px] text-center text-[32px] leading-[40px] tracking-[0.2px] italic max-sm:pb-[16px] max-sm:text-[22px] max-sm:leading-[28px] max-sm:tracking-[0.2px]" style={{ fontFamily: 'var(--font-lora)' }}>
           Discover our Projects worldwide{" "}
-        </h3>
+        </h2>
       </div>
       <Carousel slides={slides} onSlideChange={handleSlideChange} />
       <div className="flex flex-col items-center justify-center px-[20px] pt-[23px] max-sm:pt-[25px]">
         <p className="pb-[7px] font-sans text-[12px] leading-[43px] font-medium tracking-[0.6px] text-[#262626] uppercase max-sm:pb-0 max-sm:text-[10px] max-sm:leading-[30px] max-sm:tracking-[-0.5]">
           {(activeSlide.location as string) || ""}
         </p>
-        <h4 className="pb-[27px] text-[42px] leading-[43px] font-normal tracking-[0.8px] text-[#262626] uppercase max-sm:pb-[15px] max-sm:text-[22px] max-sm:leading-[32px] max-sm:tracking-[-0.4]" style={{ fontFamily: 'var(--font-lora)' }}>
+        <h3 className="pb-[27px] text-[42px] leading-[43px] font-normal tracking-[0.8px] text-[#262626] uppercase max-sm:pb-[15px] max-sm:text-[22px] max-sm:leading-[32px] max-sm:tracking-[-0.4]" style={{ fontFamily: 'var(--font-lora)' }}>
           {(activeSlide.title as string) || ""}
-        </h4>
+        </h3>
         <Link
           href="/projects"
           className="h-[39px] self-center rounded-[35px] border-[1px] border-[#26262699] px-[16px] font-sans text-[12px] leading-[39px] font-medium tracking-[0.2px] max-sm:h-[32px] max-sm:px-[14px] max-sm:text-[11px] max-sm:leading-[32px]"

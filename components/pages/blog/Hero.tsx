@@ -34,6 +34,7 @@ export default function Hero() {
             alt="Interior design blog and insights Amara Miami Dubai"
           />
 
+          <h1 className="sr-only">Interior Design Blog and Insights</h1>
           <div className="hero-bottom-text-anim absolute right-0 bottom-0 left-0 px-[10px] pb-[26px] max-sm:px-[5px]">
             <InsightsIcon />
           </div>

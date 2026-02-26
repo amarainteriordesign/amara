@@ -139,9 +139,9 @@ export default function ContactUs() {
               <div>
                 {OFFICES.map((office, i) => (
                   <div key={office.title} className={i > 0 ? "mt-[40px]" : ""}>
-                    <h4 className="font-sans text-[14px] leading-[20px] font-normal tracking-[2px] text-[#262626] uppercase">
+                    <h3 className="font-sans text-[14px] leading-[20px] font-normal tracking-[2px] text-[#262626] uppercase">
                       {office.title}
-                    </h4>
+                    </h3>
                     <p className="mt-[12px] font-sans text-[14px] leading-[20px] font-normal text-[#666]">
                       {office.phone}
                     </p>
@@ -175,9 +175,9 @@ export default function ContactUs() {
 
             <div className="flex w-[33%] flex-col justify-between px-[30px] py-[30px] max-md:order-1 max-md:w-full max-md:px-[24px] max-md:py-[24px] max-sm:px-[16px] max-sm:py-[16px]">
               <div>
-                <h3 className="mb-[24px] font-calvino text-[22px] leading-[28px] font-normal tracking-[-0.8px] text-[#0a0a0a] max-sm:text-[18px]">
+                <h2 className="mb-[24px] font-calvino text-[22px] leading-[28px] font-normal tracking-[-0.8px] text-[#0a0a0a] max-sm:text-[18px]">
                   {FORM_TITLE}
-                </h3>
+                </h2>
 
                 <form id="contact-form-landing" onSubmit={handleSubmit} className="flex flex-col gap-[16px]">
                   <div>

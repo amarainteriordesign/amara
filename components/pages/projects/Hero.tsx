@@ -75,9 +75,9 @@ export default function Hero() {
 
           <div className="absolute top-1/2 z-[1] flex max-h-fit w-full -translate-y-1/2 flex-col items-center justify-center overflow-hidden p-[20px]">
             <Copy delay={1.7} animateOnScroll={false}>
-              <p className="text-center font-serif text-[28px] leading-[36px] font-normal tracking-tighter text-[#FFF] max-sm:text-[24px]">
+              <h1 className="text-center font-serif text-[28px] leading-[36px] font-normal tracking-tighter text-[#FFF] max-sm:text-[24px]">
                 Building the Finest Homes
-              </p>
+              </h1>
             </Copy>
 
             <div className="max-h-fit w-full overflow-hidden text-center">

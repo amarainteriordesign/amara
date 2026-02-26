@@ -40,9 +40,9 @@ export default function Hero() {
 
           <div className="absolute top-1/2 z-[1] flex max-h-fit w-full -translate-y-1/2 flex-col items-center justify-center overflow-hidden p-[20px]">
             <Copy delay={1.7} animateOnScroll={false}>
-              <p className="text-center font-serif text-[32px] leading-[40px] font-normal tracking-tighter text-[#FFF] max-sm:text-[26px]">
+              <h1 className="text-center font-serif text-[32px] leading-[40px] font-normal tracking-tighter text-[#FFF] max-sm:text-[26px]">
                 Where Design Comes to Life
-              </p>
+              </h1>
             </Copy>
 
             <div className="max-h-fit w-full overflow-hidden text-center">

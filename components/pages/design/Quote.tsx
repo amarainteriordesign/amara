@@ -98,7 +98,7 @@ export default function Quote({ leaveEarly = false }: { leaveEarly?: boolean }) 
             height={1000}
           />
 
-          <h4 className="font-diranista quote-text-anim-text leadding-[99px] max-xmd:text-[75px] max-xmd:leading-[90px] max-xmd:max-w-[900px] max-sm::tracking-[-1.5px] max-w-[1196px] text-center text-[100px] font-normal tracking-[-5px] text-[#A2ADB4] uppercase max-md:max-w-[560px] max-md:text-[45px] max-md:leading-[50px] max-md:tracking-[-2px] max-sm:max-w-[410px] max-sm:px-[10px] max-sm:text-[32px] max-sm:leading-[42px]">
+          <h2 className="font-diranista quote-text-anim-text leadding-[99px] max-xmd:text-[75px] max-xmd:leading-[90px] max-xmd:max-w-[900px] max-sm::tracking-[-1.5px] max-w-[1196px] text-center text-[100px] font-normal tracking-[-5px] text-[#A2ADB4] uppercase max-md:max-w-[560px] max-md:text-[45px] max-md:leading-[50px] max-md:tracking-[-2px] max-sm:max-w-[410px] max-sm:px-[10px] max-sm:text-[32px] max-sm:leading-[42px]">
             {text.split(/(\s+)/).map((part, i) =>
               /\s+/.test(part) ? (
                 part
@@ -108,7 +108,7 @@ export default function Quote({ leaveEarly = false }: { leaveEarly?: boolean }) 
                 </span>
               ),
             )}
-          </h4>
+          </h2>
         </div>
       </div>
 

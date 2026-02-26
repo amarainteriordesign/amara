@@ -105,6 +105,7 @@ All images follow this naming pattern:
 - **Cache-Control**: Static assets (images, fonts, JS/CSS) cached 1 year; HTML pages revalidate on every request
 - **OG/Twitter Cards**: Configured in root layout with proper production URLs
 - **Image Alt Texts**: All keyword-rich with "Amara Interior Design Miami Dubai" pattern across 25+ components
+- **Heading Hierarchy**: Every page has exactly one `<h1>` in the hero section, with proper `h1→h2→h3` progression (no skipped levels)
 
 ## Recent Changes
 - **2025-01-13**: Added Google Tag Manager

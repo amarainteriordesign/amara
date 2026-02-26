@@ -88,9 +88,9 @@ export default function Design() {
     <section className="design-container xmd:pb-[100px] w-full max-w-full pb-[150px] max-sm:pb-[70px]">
       <div className="top-0 mx-auto flex max-w-[1440px] flex-col items-center justify-center px-[20px] pt-[166px] max-sm:pt-[88px]">
         <div className="max-h-fit w-full overflow-hidden text-center">
-          <h3 className="design-text-anim text-bg-img translate-y-[-120%] bg-[url(/images/pages/home/text-background.webp)] !bg-top pb-[9px] text-[28px] leading-[36px] tracking-[-0.8px] italic max-sm:pb-[7px] max-sm:text-[24px] max-sm:tracking-[-0.6]" style={{ fontFamily: 'var(--font-lora)' }}>
+          <h2 className="design-text-anim text-bg-img translate-y-[-120%] bg-[url(/images/pages/home/text-background.webp)] !bg-top pb-[9px] text-[28px] leading-[36px] tracking-[-0.8px] italic max-sm:pb-[7px] max-sm:text-[24px] max-sm:tracking-[-0.6]" style={{ fontFamily: 'var(--font-lora)' }}>
             Designing with stillness in mind
-          </h3>
+          </h2>
         </div>
 
         <Copy delay={0}>

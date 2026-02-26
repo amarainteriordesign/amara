@@ -159,9 +159,9 @@ export default function Elements() {
     <section className="elements-container flex w-full max-w-full flex-col items-center gap-[186px] overflow-hidden pt-[180px] pb-[285px] max-sm:gap-[88px] max-sm:pt-[88px] max-sm:pb-[125px]">
       <div className="flex w-full flex-col items-center justify-center px-[20px]">
         <div className="max-h-fit overflow-hidden text-center">
-          <h3 className="text-bg-img elements-text-anim translate-y-[120%] bg-[url(/images/pages/home/text-background.webp)] !bg-top pb-[8px] text-[28px] leading-[36px] tracking-[-0.8px] italic max-sm:text-[22px] max-sm:tracking-[-0.6]" style={{ fontFamily: 'var(--font-lora)' }}>
+          <h2 className="text-bg-img elements-text-anim translate-y-[120%] bg-[url(/images/pages/home/text-background.webp)] !bg-top pb-[8px] text-[28px] leading-[36px] tracking-[-0.8px] italic max-sm:text-[22px] max-sm:tracking-[-0.6]" style={{ fontFamily: 'var(--font-lora)' }}>
             Mastering Balance
-          </h3>
+          </h2>
         </div>
 
         <Copy delay={0.5}>
