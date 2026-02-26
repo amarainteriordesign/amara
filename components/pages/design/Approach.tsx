@@ -6,7 +6,7 @@ export default function Approach() {
     <section className="bg-[#e8dfd2] w-full">
       <div className="mx-auto max-w-[1440px] px-[24px] pt-[40px] pb-[40px] text-center max-md:pt-[48px] max-md:pb-[30px]">
         <h3
-          className="text-bg-img inline bg-[url(/images/pages/home/text-background.webp)] !bg-top pb-[9px] italic text-[44px] leading-[52px] tracking-[0.2px] max-md:text-[36px] max-md:leading-[44px] max-sm:text-[32px] max-sm:leading-[40px]"
+          className="text-bg-img inline bg-[url(/images/pages/home/Text_Background_Amara_Interior_Design_Procurement_Miami_Dubai.webp)] !bg-top pb-[9px] italic text-[44px] leading-[52px] tracking-[0.2px] max-md:text-[36px] max-md:leading-[44px] max-sm:text-[32px] max-sm:leading-[40px]"
           style={{ fontFamily: 'var(--font-lora)', WebkitTextFillColor: 'transparent' }}
         >
           Our Approach
@@ -158,7 +158,7 @@ export default function Approach() {
 
             <div className="mt-[40px] mb-[40px] overflow-hidden">
               <Image
-                src="/images/pages/design/Amara_Interior_Design_Sample_Selection.webp"
+                src="/images/pages/design/Sample_Selection_Amara_Interior_Design_Procurement_Miami_Dubai.webp"
                 width={1598}
                 height={2048}
                 alt="Material samples"
@@ -184,7 +184,7 @@ export default function Approach() {
 
         <div className="w-[45%] shrink-0 overflow-hidden max-md:hidden">
           <Image
-            src="/images/pages/design/Amara_Interior_Design_Sample_Selection.webp"
+            src="/images/pages/design/Sample_Selection_Amara_Interior_Design_Procurement_Miami_Dubai.webp"
             width={1598}
             height={2048}
             alt="Material samples"

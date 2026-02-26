@@ -38,7 +38,7 @@ export default async function News() {
 
       <Contact />
 
-      <ImageFooter image="/images/pages/news/ocean2.webp" />
+      <ImageFooter image="/images/pages/news/News_Ocean_Footer_Amara_Interior_Design_Procurement_Miami_Dubai.webp" />
     </>
   );
 }

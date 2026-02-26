@@ -88,7 +88,7 @@ export default function Design() {
     <section className="design-container xmd:pb-[100px] w-full max-w-full pb-[150px] max-sm:pb-[70px]">
       <div className="top-0 mx-auto flex max-w-[1440px] flex-col items-center justify-center px-[20px] pt-[166px] max-sm:pt-[88px]">
         <div className="max-h-fit w-full overflow-hidden text-center">
-          <h2 className="design-text-anim text-bg-img translate-y-[-120%] bg-[url(/images/pages/home/text-background.webp)] !bg-top pb-[9px] text-[28px] leading-[36px] tracking-[-0.8px] italic max-sm:pb-[7px] max-sm:text-[24px] max-sm:tracking-[-0.6]" style={{ fontFamily: 'var(--font-lora)' }}>
+          <h2 className="design-text-anim text-bg-img translate-y-[-120%] bg-[url(/images/pages/home/Text_Background_Amara_Interior_Design_Procurement_Miami_Dubai.webp)] !bg-top pb-[9px] text-[28px] leading-[36px] tracking-[-0.8px] italic max-sm:pb-[7px] max-sm:text-[24px] max-sm:tracking-[-0.6]" style={{ fontFamily: 'var(--font-lora)' }}>
             Designing with stillness in mind
           </h2>
         </div>
@@ -115,13 +115,13 @@ export default function Design() {
             style={{ willChange: "transform" }}
           >
             {[
-              { img: "/images/pages/home/design1.webp", title: "Water and golden object" },
-              { img: "/images/pages/home/design2.webp", title: "Relaxing in stone bathtub" },
+              { img: "/images/pages/home/Design_Water_Gold_Amara_Interior_Design_Procurement_Miami_Dubai.webp", title: "Water and golden object" },
+              { img: "/images/pages/home/Design_Stone_Bathtub_Amara_Interior_Design_Procurement_Miami_Dubai.webp", title: "Relaxing in stone bathtub" },
               {
-                img: "/images/pages/home/design3.webp",
+                img: "/images/pages/home/Design_Fire_Pit_Amara_Interior_Design_Procurement_Miami_Dubai.webp",
                 title: "Outdoor leisure area with fire pit",
               },
-              { img: "/images/pages/home/design4.webp", title: "Water and golden object" },
+              { img: "/images/pages/home/Design_Golden_Detail_Amara_Interior_Design_Procurement_Miami_Dubai.webp", title: "Water and golden object" },
             ].map((item, index) => (
               <div
                 key={"design" + index}

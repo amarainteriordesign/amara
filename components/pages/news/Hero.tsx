@@ -28,7 +28,7 @@ export default function Hero() {
         <div className="flex h-full max-h-full w-full max-w-full items-end overflow-hidden">
           <Image
             className="animate-hero-reveal absolute top-0 left-0 z-[-1] h-full w-full object-cover"
-            src="/images/pages/news/ocean.webp"
+            src="/images/pages/news/News_Ocean_Hero_Amara_Interior_Design_Procurement_Miami_Dubai.webp"
             width={1920}
             height={1080}
             alt="Interior design news and insights Amara Miami Dubai"

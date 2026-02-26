@@ -122,7 +122,7 @@ export default function Moments() {
         <div className="flex flex-col items-start gap-[63px] pb-[17px] max-md:w-full max-md:gap-[10px]">
           <div className="relative aspect-[0.67] w-full max-w-[331px] overflow-hidden max-md:max-w-full">
             <Image
-              src="/images/pages/home/studio.webp"
+              src="/images/pages/home/Studio_Interior_Amara_Interior_Design_Procurement_Miami_Dubai.webp"
               alt="Amara Interior Design studio workspace Miami Dubai"
               width={1300}
               height={1500}
@@ -139,7 +139,7 @@ export default function Moments() {
         <div className="moment-right-anim-container aspect-[0.69] w-full max-w-[566px] self-end max-sm:max-w-[251px]">
           <div className="relative h-full w-full overflow-hidden">
             <Image
-              src="/images/pages/home/design1.webp"
+              src="/images/pages/home/Design_Water_Gold_Amara_Interior_Design_Procurement_Miami_Dubai.webp"
               alt="Bespoke luxury interior design detail Amara Miami Dubai"
               width={1500}
               height={1900}

@@ -67,7 +67,7 @@ export default function Hero() {
         <div className="flex h-full max-h-full w-full max-w-full items-end overflow-hidden">
           <Image
             className="animate-hero-reveal absolute top-0 left-0 z-[-1] h-full w-full object-cover"
-            src="/images/pages/projects/hero.webp"
+            src="/images/pages/projects/Projects_Hero_Amara_Interior_Design_Procurement_Miami_Dubai.webp"
             width={1920}
             height={1080}
             alt="Luxury interior design projects portfolio Amara Miami Dubai"
@@ -81,7 +81,7 @@ export default function Hero() {
             </Copy>
 
             <div className="max-h-fit w-full overflow-hidden text-center">
-              <p className="hero-center-text-space text-bg-img bg-[url(/images/pages/home/text-background.webp)] pb-[8px] font-serif text-[28px] leading-[36px] tracking-tighter italic max-sm:text-[24px]">
+              <p className="hero-center-text-space text-bg-img bg-[url(/images/pages/home/Text_Background_Amara_Interior_Design_Procurement_Miami_Dubai.webp)] pb-[8px] font-serif text-[28px] leading-[36px] tracking-tighter italic max-sm:text-[24px]">
                 All over the world
               </p>
             </div>

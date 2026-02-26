@@ -5,7 +5,7 @@ export default function PrinciplesProcurement() {
     <section className="bg-[#e8dfd2] w-full">
       <div className="mx-auto max-w-[1440px] px-[24px] pt-[40px] pb-[40px] text-center max-md:pt-[48px] max-md:pb-[30px]">
         <h3
-          className="text-bg-img inline bg-[url(/images/pages/home/text-background.webp)] !bg-top pb-[9px] italic text-[44px] leading-[52px] tracking-[0.2px] max-md:text-[36px] max-md:leading-[44px] max-sm:text-[32px] max-sm:leading-[40px]"
+          className="text-bg-img inline bg-[url(/images/pages/home/Text_Background_Amara_Interior_Design_Procurement_Miami_Dubai.webp)] !bg-top pb-[9px] italic text-[44px] leading-[52px] tracking-[0.2px] max-md:text-[36px] max-md:leading-[44px] max-sm:text-[32px] max-sm:leading-[40px]"
           style={{ fontFamily: 'var(--font-lora)', WebkitTextFillColor: 'transparent' }}
         >
           Our Approach
@@ -113,7 +113,7 @@ export default function PrinciplesProcurement() {
               <div className="relative flex h-[280px] w-full items-center justify-center overflow-hidden">
                 <div className="absolute inset-0">
                   <Image
-                    src="/images/pages/procurement/boat-water.webp"
+                    src="/images/pages/procurement/Boat_Water_Amara_Interior_Design_Procurement_Miami_Dubai.webp"
                     width={1000}
                     height={2000}
                     alt="Global procurement Amara Interior Design Miami Dubai"
@@ -123,7 +123,7 @@ export default function PrinciplesProcurement() {
                 <div className="relative z-[1] h-[165px] w-[165px] overflow-hidden">
                   <div className="absolute h-full w-full overflow-hidden">
                     <Image
-                      src="/images/pages/procurement/boat-water.webp"
+                      src="/images/pages/procurement/Boat_Water_Amara_Interior_Design_Procurement_Miami_Dubai.webp"
                       width={500}
                       height={1000}
                       alt="Global procurement Amara Interior Design Miami Dubai"
@@ -199,7 +199,7 @@ export default function PrinciplesProcurement() {
           <div className="relative flex h-full w-full items-center justify-center overflow-hidden">
             <div className="absolute inset-0">
               <Image
-                src="/images/pages/procurement/boat-water.webp"
+                src="/images/pages/procurement/Boat_Water_Amara_Interior_Design_Procurement_Miami_Dubai.webp"
                 width={1000}
                 height={2000}
                 alt="Global procurement Amara Interior Design Miami Dubai"
@@ -210,7 +210,7 @@ export default function PrinciplesProcurement() {
             <div className="relative z-[1] h-[345px] max-h-[60%] w-[321px] max-w-[70%] overflow-hidden max-sm:h-[165px] max-sm:w-[165px]">
               <div className="absolute h-full w-full overflow-hidden">
                 <Image
-                  src="/images/pages/procurement/boat-water.webp"
+                  src="/images/pages/procurement/Boat_Water_Amara_Interior_Design_Procurement_Miami_Dubai.webp"
                   width={500}
                   height={1000}
                   alt="Global procurement Amara Interior Design Miami Dubai"

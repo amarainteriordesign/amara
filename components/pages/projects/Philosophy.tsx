@@ -95,7 +95,7 @@ export default function Philosophy({ project }: { project: Project }) {
     <>
       <section className="w-full">
         <div className="flex w-full flex-col items-center justify-center px-[16px] py-[195px] max-md:py-[144px]">
-          <h3 className="text-bg-img bg-[url(/images/pages/home/text-background.webp)] !bg-top pb-[9px] font-serif text-[28px] leading-[36px] tracking-[-0.8px] italic max-sm:pb-[7px] max-sm:text-[22px] max-sm:tracking-[-0.6px]">
+          <h3 className="text-bg-img bg-[url(/images/pages/home/Text_Background_Amara_Interior_Design_Procurement_Miami_Dubai.webp)] !bg-top pb-[9px] font-serif text-[28px] leading-[36px] tracking-[-0.8px] italic max-sm:pb-[7px] max-sm:text-[22px] max-sm:tracking-[-0.6px]">
             {project?.designTitle || "Our Design Philosophy"}
           </h3>
 

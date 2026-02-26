@@ -159,7 +159,7 @@ export default function Elements() {
     <section className="elements-container flex w-full max-w-full flex-col items-center gap-[186px] overflow-hidden pt-[180px] pb-[285px] max-sm:gap-[88px] max-sm:pt-[88px] max-sm:pb-[125px]">
       <div className="flex w-full flex-col items-center justify-center px-[20px]">
         <div className="max-h-fit overflow-hidden text-center">
-          <h2 className="text-bg-img elements-text-anim translate-y-[120%] bg-[url(/images/pages/home/text-background.webp)] !bg-top pb-[8px] text-[28px] leading-[36px] tracking-[-0.8px] italic max-sm:text-[22px] max-sm:tracking-[-0.6]" style={{ fontFamily: 'var(--font-lora)' }}>
+          <h2 className="text-bg-img elements-text-anim translate-y-[120%] bg-[url(/images/pages/home/Text_Background_Amara_Interior_Design_Procurement_Miami_Dubai.webp)] !bg-top pb-[8px] text-[28px] leading-[36px] tracking-[-0.8px] italic max-sm:text-[22px] max-sm:tracking-[-0.6]" style={{ fontFamily: 'var(--font-lora)' }}>
             Mastering Balance
           </h2>
         </div>
@@ -214,7 +214,7 @@ export default function Elements() {
         >
           <div className="relative h-full w-full">
             <Image
-              src="/images/pages/home/elements-1.webp"
+              src="/images/pages/home/Elements_Natural_Materials_Amara_Interior_Design_Procurement_Miami_Dubai.webp"
               alt="Natural materials interior design Amara Miami Dubai"
               width={1000}
               height={600}
@@ -233,7 +233,7 @@ export default function Elements() {
         >
           <div className="relative h-full w-full">
             <Image
-              src="/images/pages/home/elements-2.webp"
+              src="/images/pages/home/Elements_Earth_Tones_Amara_Interior_Design_Procurement_Miami_Dubai.webp"
               alt="Earth tones luxury interior Amara Interior Design"
               width={1000}
               height={600}
@@ -252,7 +252,7 @@ export default function Elements() {
         >
           <div className="relative h-full w-full">
             <Image
-              src="/images/pages/home/element-3.webp"
+              src="/images/pages/home/Elements_Refined_Textures_Amara_Interior_Design_Procurement_Miami_Dubai.webp"
               alt="Refined textures bespoke interior design Amara"
               width={1000}
               height={600}
@@ -271,7 +271,7 @@ export default function Elements() {
         >
           <div className="relative h-full w-full">
             <Image
-              src="/images/pages/home/elements-4.webp"
+              src="/images/pages/home/Elements_Light_Balance_Amara_Interior_Design_Procurement_Miami_Dubai.webp"
               alt="Light and balance luxury design Amara Miami Dubai"
               width={1000}
               height={600}

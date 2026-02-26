@@ -3,7 +3,7 @@ export default function AboutProcurement() {
     <section className="w-full bg-[#e8dfd2]">
       <div className="mx-auto max-w-[900px] px-[60px] pt-[80px] pb-[40px] text-center max-md:px-[40px] max-md:pt-[60px] max-md:pb-[30px] max-sm:px-[20px] max-sm:pt-[40px] max-sm:pb-[20px]">
         <h2
-          className="text-bg-img inline bg-[url(/images/pages/home/text-background.webp)] !bg-top pb-[9px] italic text-[44px] leading-[52px] tracking-[0.2px] max-md:text-[36px] max-md:leading-[44px] max-sm:text-[26px] max-sm:leading-[34px]"
+          className="text-bg-img inline bg-[url(/images/pages/home/Text_Background_Amara_Interior_Design_Procurement_Miami_Dubai.webp)] !bg-top pb-[9px] italic text-[44px] leading-[52px] tracking-[0.2px] max-md:text-[36px] max-md:leading-[44px] max-sm:text-[26px] max-sm:leading-[34px]"
           style={{ fontFamily: 'var(--font-lora)', WebkitTextFillColor: 'transparent' }}
         >
           International FF&E Procurement & Installation

@@ -10,7 +10,7 @@ export default function Story() {
         <div className="flex h-full flex-col justify-between py-[120px] max-sm:py-0">
           <div className="flex max-w-[438px] flex-col gap-[25px] max-sm:max-w-[315px] max-sm:gap-[15px]">
             <Image
-              src="/images/pages/studio/story1-new.webp"
+              src="/images/pages/studio/Story_Wellness_Amara_Interior_Design_Procurement_Miami_Dubai.webp"
               width={900}
               height={1000}
               className="h-[530px] w-full object-cover max-sm:h-[450px]"
@@ -38,7 +38,7 @@ export default function Story() {
               </p>
             </div>
             <Image
-              src="/images/pages/studio/story2-landing.webp"
+              src="/images/pages/studio/Story_Nature_Amara_Interior_Design_Procurement_Miami_Dubai.webp"
               width={900}
               height={1000}
               className="h-[530px] w-full object-cover max-sm:h-[450px]"
@@ -50,7 +50,7 @@ export default function Story() {
         <div className="flex h-full flex-col items-end justify-center max-md:absolute max-md:right-0 max-md:w-full">
           <div className="flex max-w-[438px] flex-col gap-[25px] max-sm:max-w-[315px] max-sm:gap-[15px]">
             <Image
-              src="/images/pages/studio/story3-landing.webp"
+              src="/images/pages/studio/Story_Balance_Amara_Interior_Design_Procurement_Miami_Dubai.webp"
               width={900}
               height={1000}
               className="h-[530px] w-full object-cover max-sm:h-[450px]"

@@ -13,7 +13,7 @@ export default function Rhythm() {
             </p>
             <div className="w-full max-sm:pb-[12px]">
               <Image
-                src="/images/pages/design/valley.webp"
+                src="/images/pages/design/Valley_Landscape_Amara_Interior_Design_Procurement_Miami_Dubai.webp"
                 width={635}
                 height={986}
                 alt="Mediterranean landscape design inspiration Amara Interior Design"
@@ -36,7 +36,7 @@ export default function Rhythm() {
                 grounded yet fluid, instinctive yet refined, always deeply human.
               </p>
               <Image
-                src="/images/pages/design/ocean.webp"
+                src="/images/pages/design/Ocean_Rhythm_Amara_Interior_Design_Procurement_Miami_Dubai.webp"
                 alt="Ocean coastal design inspiration Amara Interior Design Miami"
                 width={615}
                 height={648}

@@ -54,7 +54,7 @@ export default function Build() {
           ref={videoRef}
           className="w-full max-w-[447px] object-cover"
           src="/videos/build.mp4"
-          poster="/images/pages/design/build.webp"
+          poster="/images/pages/design/Build_Phase_Amara_Interior_Design_Procurement_Miami_Dubai.webp"
           muted={true}
           suppressHydrationWarning
           loop

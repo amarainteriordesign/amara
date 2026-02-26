@@ -60,7 +60,7 @@ export default async function Projects() {
 
       <Contact />
 
-      <ImageFooter isDarkHeaderByDefault={true} image="/images/pages/home/hero-2.webp" />
+      <ImageFooter isDarkHeaderByDefault={true} image="/images/pages/home/Hero_Bedroom_Amara_Interior_Design_Procurement_Miami_Dubai.webp" />
     </>
   );
 }

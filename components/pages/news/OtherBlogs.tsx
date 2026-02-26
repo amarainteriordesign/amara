@@ -28,7 +28,7 @@ export default function OtherBlogs({ blogs }: { blogs: SerializedBlog[] }) {
   return (
     <section className="w-full overflow-hidden">
       <div className="flex flex-col items-center justify-center px-[20px] pb-[55px] max-sm:pb-[54px]">
-        <h3 className="text-bg-img bg-[url(/images/pages/home/text-background.webp)] !bg-top pb-[9px] text-center font-serif text-[28px] leading-[36px] tracking-[-0.8px] italic max-sm:pb-[16px] max-sm:text-[24px] max-sm:leading-[28px] max-sm:tracking-[-0.6]">
+        <h3 className="text-bg-img bg-[url(/images/pages/home/Text_Background_Amara_Interior_Design_Procurement_Miami_Dubai.webp)] !bg-top pb-[9px] text-center font-serif text-[28px] leading-[36px] tracking-[-0.8px] italic max-sm:pb-[16px] max-sm:text-[24px] max-sm:leading-[28px] max-sm:tracking-[-0.6]">
           Discover more articles
         </h3>
         <p className="text-center font-sans text-[14px] leading-[18px] font-normal tracking-[0.4px] text-[#262626] uppercase">

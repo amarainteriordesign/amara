@@ -90,10 +90,10 @@ Configured for autoscale deployment on Replit with:
 
 ## Image Naming Convention
 All images follow this naming pattern:
-`DescriptionShort_Amara_Interior_Design_Procurement_Miami_Dubai.webp`
+`UniqueDescriptionShort_Amara_Interior_Design_Procurement_Miami_Dubai.webp`
 - Example: `Aerial_Container_Cargo_Ship_Amara_Interior_Design_Procurement_Miami_Dubai.webp`
-- Format: WebP preferred
-- Images stored in `public/images/pages/procurement/`
+- Format: WebP (all images converted)
+- Images stored in `public/images/pages/` organized by section (home/, design/, news/, projects/, studio/, procurement/, landing/, about-us/)
 
 ## SEO Configuration
 - **Production Domain**: `https://amarainteriordesign.com` (set via `NEXT_PUBLIC_SITE_URL` env var)
@@ -108,6 +108,9 @@ All images follow this naming pattern:
 - **Heading Hierarchy**: Every page has exactly one `<h1>` in the hero section, with proper `h1→h2→h3` progression (no skipped levels)
 
 ## Recent Changes
+- **2025-02-26**: Renamed all images to follow naming convention
+  - All 40+ used images renamed to `UniqueDescriptionShort_Amara_Interior_Design_Procurement_Miami_Dubai.webp`
+  - Updated all code references across 30+ component/page files
 - **2025-02-26**: Converted all used images from PNG/JPG to WebP
   - 31 images converted using cwebp (quality 85) across design/, home/, news/, projects/, studio/
   - Updated all code references in 23 component/page files

@@ -29,7 +29,7 @@ type FooterProps = {
 
 export default function Footer({
   showDesertImage = false,
-  desertImage = "/images/pages/home/footer.webp",
+  desertImage = "/images/pages/home/Footer_Desert_Amara_Interior_Design_Procurement_Miami_Dubai.webp",
   bgColor = "#F1EBDF",
 }: FooterProps) {
   const [now, setNow] = useState<Date>(new Date());
@@ -77,7 +77,7 @@ export default function Footer({
                     </clipPath>
                   </defs>
                   <image
-                    href="/images/pages/home/footer.webp"
+                    href="/images/pages/home/Footer_Desert_Amara_Interior_Design_Procurement_Miami_Dubai.webp"
                     width="307"
                     height="217"
                     clipPath="url(#amara-footer-clip)"

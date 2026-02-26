@@ -10,7 +10,7 @@ export default function Studio({ isDesktopSideBySide = false }: StudioProps) {
     <section className={`w-full bg-[#000] ${isDesktopSideBySide ? "h-full flex items-center" : ""}`}>
       <div className={`mx-auto px-[40px] pt-[100px] pb-[80px] max-sm:px-[17px] max-sm:pt-[80px] max-sm:pb-[60px] ${isDesktopSideBySide ? "md:max-w-full md:px-[40px] md:pt-[40px] md:pb-[40px]" : "max-w-[800px]"}`}>
         <Image
-          src="/images/pages/home/drawing.webp"
+          src="/images/pages/home/Architectural_Drawing_Amara_Interior_Design_Procurement_Miami_Dubai.webp"
           alt="Architectural sketch Amara Interior Design studio"
           width={483}
           height={245}

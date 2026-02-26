@@ -8,10 +8,10 @@ import Copy from "@/components/common/Copy/Copy";
 gsap.registerPlugin(useGSAP);
 
 const CAROUSEL_IMAGES = [
-  "/images/pages/home/hero-villa.webp",
-  "/images/pages/home/hero-1.webp",
-  "/images/pages/home/hero-2.webp",
-  "/images/pages/home/hero-3.webp",
+  "/images/pages/home/Hero_Villa_Amara_Interior_Design_Procurement_Miami_Dubai.webp",
+  "/images/pages/home/Hero_Living_Room_Amara_Interior_Design_Procurement_Miami_Dubai.webp",
+  "/images/pages/home/Hero_Bedroom_Amara_Interior_Design_Procurement_Miami_Dubai.webp",
+  "/images/pages/home/Hero_Lounge_Amara_Interior_Design_Procurement_Miami_Dubai.webp",
 ];
 
 const CAROUSEL_INTERVAL = 5000;

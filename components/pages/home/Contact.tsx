@@ -161,7 +161,7 @@ export default function Contact() {
           <div className="mx-auto flex max-w-[1200px] gap-[0px] rounded-[20px] bg-[#E8E0D6] max-md:flex-col">
             <div className="w-[33%] shrink-0 px-[5px] py-[10px] max-md:w-full max-md:px-[5px] max-md:py-[5px]">
               <Image
-                src="/images/pages/landing/contact.webp"
+                src="/images/pages/landing/Contact_Image_Amara_Interior_Design_Procurement_Miami_Dubai.webp"
                 width={400}
                 height={600}
                 alt="Luxury interior design consultation Amara Miami Dubai"

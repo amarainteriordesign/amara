@@ -64,7 +64,7 @@ export default function HeroAbout() {
         <div className="flex h-full max-h-full w-full max-w-full items-end overflow-hidden">
           <Image
             className="animate-hero-reveal absolute top-0 left-0 z-[-1] h-full w-full object-cover object-bottom"
-            src="/images/pages/studio/hero.webp"
+            src="/images/pages/studio/About_Hero_Amara_Interior_Design_Procurement_Miami_Dubai.webp"
             width={1440}
             height={809}
             alt="Amara Interior Design studio about us Miami Dubai"
@@ -77,14 +77,14 @@ export default function HeroAbout() {
                 </h1>
               </Copy>
               <div className="max-h-fit w-full overflow-hidden text-center">
-                <p className="hero-center-text-space text-bg-img bg-[url(/images/pages/home/text-background.webp)] text-center font-serif text-[28px] leading-[36px] tracking-[-0.8px] italic max-sm:text-[24px] max-sm:tracking-[-0.6px]">
+                <p className="hero-center-text-space text-bg-img bg-[url(/images/pages/home/Text_Background_Amara_Interior_Design_Procurement_Miami_Dubai.webp)] text-center font-serif text-[28px] leading-[36px] tracking-[-0.8px] italic max-sm:text-[24px] max-sm:tracking-[-0.6px]">
                   Residential. Commercial. Wellness.
                 </p>
               </div>
             </div>
             <div className="flex flex-col items-center gap-[25px] max-sm:gap-[35px]">
               <Image
-                src="/images/pages/studio/logo.webp"
+                src="/images/pages/studio/Logo_White_Amara_Interior_Design_Procurement_Miami_Dubai.webp"
                 alt="Amara Interior Design logo"
                 width={307}
                 height={217}

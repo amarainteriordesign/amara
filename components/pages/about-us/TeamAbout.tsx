@@ -33,7 +33,7 @@ export default function TeamAbout() {
           <div className="flex gap-[40px]">
             <div className="w-[48%]">
               <div className="relative h-[750px] w-full overflow-hidden rounded-[8px]">
-                <Image src="/images/pages/studio/eloise.webp" alt="ELOISE CHAUVIERE" fill className="rounded-[8px] object-cover" />
+                <Image src="/images/pages/studio/Eloise_Chauviere_Amara_Interior_Design_Procurement_Miami_Dubai.webp" alt="ELOISE CHAUVIERE" fill className="rounded-[8px] object-cover" />
                 <PhotoOverlay name="ELOISE CHAUVIERE" title="Managing Director" position="top" links={{ whatsapp: "https://api.whatsapp.com/send?phone=13055604373", linkedin: "https://www.linkedin.com/in/eloïse-chauviere-44b93b159" }} />
               </div>
               <div className="mt-[60px]">
@@ -52,7 +52,7 @@ export default function TeamAbout() {
               </div>
               <div className="mt-[60px]">
                 <div className="relative h-[750px] w-full overflow-hidden rounded-[8px]">
-                  <Image src="/images/pages/studio/ines.webp" alt="INES BAKKALI" fill className="rounded-[8px] object-cover" />
+                  <Image src="/images/pages/studio/Ines_Bakkali_Amara_Interior_Design_Procurement_Miami_Dubai.webp" alt="INES BAKKALI" fill className="rounded-[8px] object-cover" />
                   <PhotoOverlay name="INES BAKKALI" title="Design Director" position="bottom" links={{ whatsapp: "https://api.whatsapp.com/send?phone=13055604373", linkedin: "https://www.linkedin.com/in/inesbakkali/" }} />
                 </div>
               </div>
@@ -62,7 +62,7 @@ export default function TeamAbout() {
 
         <div className="hidden max-md:flex max-md:flex-col max-md:gap-[40px]">
           <div className="relative h-[500px] w-full overflow-hidden rounded-[8px] max-sm:h-[400px]">
-            <Image src="/images/pages/studio/eloise.webp" alt="ELOISE CHAUVIERE" fill className="rounded-[8px] object-cover" />
+            <Image src="/images/pages/studio/Eloise_Chauviere_Amara_Interior_Design_Procurement_Miami_Dubai.webp" alt="ELOISE CHAUVIERE" fill className="rounded-[8px] object-cover" />
             <PhotoOverlay name="ELOISE CHAUVIERE" title="Managing Director" position="top" links={{ whatsapp: "https://api.whatsapp.com/send?phone=13055604373", linkedin: "https://www.linkedin.com/in/eloïse-chauviere-44b93b159" }} />
           </div>
           <div>
@@ -70,7 +70,7 @@ export default function TeamAbout() {
             <p className="font-sans text-[14px] leading-[24px] font-normal tracking-[-0.2px] text-[#262626]" style={{ textAlign: 'justify' }}>Strategic and detail-driven, Eloise bridges concept and execution. As Managing Director, she leads company operations, client strategy, international logistics and procurement, ensuring every project is delivered efficiently and to the highest standard.</p>
           </div>
           <div className="relative h-[500px] w-full overflow-hidden rounded-[8px] max-sm:h-[400px]">
-            <Image src="/images/pages/studio/ines.webp" alt="INES BAKKALI" fill className="rounded-[8px] object-cover" />
+            <Image src="/images/pages/studio/Ines_Bakkali_Amara_Interior_Design_Procurement_Miami_Dubai.webp" alt="INES BAKKALI" fill className="rounded-[8px] object-cover" />
             <PhotoOverlay name="INES BAKKALI" title="Design Director" position="bottom" links={{ whatsapp: "https://api.whatsapp.com/send?phone=13055604373", linkedin: "https://www.linkedin.com/in/inesbakkali/" }} />
           </div>
           <div>

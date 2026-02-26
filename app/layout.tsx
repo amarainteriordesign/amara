@@ -101,7 +101,7 @@ export const metadata: Metadata = {
     url: "/",
     images: [
       {
-        url: "/images/pages/home/hero-2.webp",
+        url: "/images/pages/home/Hero_Bedroom_Amara_Interior_Design_Procurement_Miami_Dubai.webp",
         width: 1200,
         height: 630,
         alt: "Amara Interior Design luxury interiors Miami Dubai Paris",
@@ -113,7 +113,7 @@ export const metadata: Metadata = {
     title: "Amara — Interior Design",
     description:
       "Amara creates luxury interior spaces defined by calm, balance, and meaning in Miami, Dubai, and Paris.",
-    images: ["/images/pages/home/hero-2.webp"],
+    images: ["/images/pages/home/Hero_Bedroom_Amara_Interior_Design_Procurement_Miami_Dubai.webp"],
   },
   icons: {
     icon: [
@@ -134,7 +134,7 @@ const organizationJsonLd = {
   "@type": "Organization",
   name: "Amara Interior Design",
   url: siteUrl,
-  logo: `${siteUrl}/images/pages/studio/logo.webp`,
+  logo: `${siteUrl}/images/pages/studio/Logo_White_Amara_Interior_Design_Procurement_Miami_Dubai.webp`,
   description:
     "Amara is a luxury interior design and procurement studio specializing in bespoke residential and hospitality spaces.",
   areaServed: [

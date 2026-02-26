@@ -7,7 +7,7 @@ import { useState, useCallback } from "react";
 const slides: Slide[] = [
   {
     id: "project-1",
-    img: "/images/pages/home/project1.webp",
+    img: "/images/pages/home/Project_Preview_One_Amara_Interior_Design_Procurement_Miami_Dubai.webp",
     alt: "Project 1",
     href: "https://amarainteriordesign.com/projects/U1AU0cmh5zpMvHmFD0r3",
     location: "MIAMI, UNITED STATES",
@@ -15,7 +15,7 @@ const slides: Slide[] = [
   },
   {
     id: "project-2",
-    img: "/images/pages/home/project2.webp",
+    img: "/images/pages/home/Project_Preview_Two_Amara_Interior_Design_Procurement_Miami_Dubai.webp",
     alt: "Project 2",
     href: "https://amarainteriordesign.com/projects/y84GzsyHGgBncALVehIF",
     location: "TULUM, MEXICO",
@@ -23,7 +23,7 @@ const slides: Slide[] = [
   },
   {
     id: "project-3",
-    img: "/images/pages/home/project3.webp",
+    img: "/images/pages/home/Project_Preview_Three_Amara_Interior_Design_Procurement_Miami_Dubai.webp",
     alt: "Project 3",
     href: "https://amarainteriordesign.com/projects/IMhU0k1RcDqMeXCrOrUY",
     location: "ABU DHABI, UNITED ARAB EMIRATES",
@@ -40,7 +40,7 @@ export default function ProjectsLanding() {
   return (
     <section className="w-full max-w-full overflow-hidden bg-[#F1EBDF] pb-[60px] max-sm:pb-[40px]">
       <div className="flex flex-col items-center justify-center px-[20px] pt-[80px] pb-[40px] max-sm:pt-[40px] max-sm:pb-[28px]">
-        <h2 className="text-bg-img bg-[url(/images/pages/home/text-background.webp)] !bg-top pb-[9px] text-center text-[32px] leading-[40px] tracking-[0.2px] italic max-sm:pb-[16px] max-sm:text-[22px] max-sm:leading-[28px] max-sm:tracking-[0.2px]" style={{ fontFamily: 'var(--font-lora)' }}>
+        <h2 className="text-bg-img bg-[url(/images/pages/home/Text_Background_Amara_Interior_Design_Procurement_Miami_Dubai.webp)] !bg-top pb-[9px] text-center text-[32px] leading-[40px] tracking-[0.2px] italic max-sm:pb-[16px] max-sm:text-[22px] max-sm:leading-[28px] max-sm:tracking-[0.2px]" style={{ fontFamily: 'var(--font-lora)' }}>
           Discover our Projects worldwide{" "}
         </h2>
       </div>

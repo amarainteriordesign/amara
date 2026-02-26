@@ -32,7 +32,7 @@ export default function Hero() {
         <div className="flex h-full max-h-full w-full max-w-full items-end overflow-hidden">
           <Image
             className="animate-hero-reveal absolute top-0 left-0 z-[-1] h-full w-full object-cover"
-            src="/images/pages/design/Palm_Trees_Amara_Interior_Design_Miami_Dubai.webp"
+            src="/images/pages/design/Palm_Trees_Amara_Interior_Design_Procurement_Miami_Dubai.webp"
             width={1920}
             height={1080}
             alt="Palm trees luxury design inspiration Amara Interior Design Miami Dubai"
@@ -46,7 +46,7 @@ export default function Hero() {
             </Copy>
 
             <div className="max-h-fit w-full overflow-hidden text-center">
-              <p className="hero-center-text-space text-bg-img bg-[url(/images/pages/home/text-background.webp)] pb-[8px] font-serif text-[32px] leading-[40px] tracking-tighter italic max-sm:text-[26px]">
+              <p className="hero-center-text-space text-bg-img bg-[url(/images/pages/home/Text_Background_Amara_Interior_Design_Procurement_Miami_Dubai.webp)] pb-[8px] font-serif text-[32px] leading-[40px] tracking-tighter italic max-sm:text-[26px]">
                 Inspired by the elements
               </p>
             </div>
