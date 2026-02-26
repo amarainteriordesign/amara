@@ -62,12 +62,12 @@ export default function Menu({ now }: { now: Date }) {
         Contact Us
       </button>
 
-      <div className="absolute top-[402px] left-1/2 flex w-full max-w-[340px] -translate-x-1/2 flex-col items-start">
+      <div className="absolute top-[402px] left-1/2 flex w-full max-w-[340px] -translate-x-1/2 flex-col items-start max-md:hidden">
         <div className="relative flex items-center pb-[10px]">
           <SoundIcon width={22} height={24} color="#262626" />
           <SoundIcon width={22} height={24} color="#262626" className="ml-[-4px]" />
         </div>
-        <p className="pb-[20px] text-justify font-sans text-[18px] leading-[26px] font-medium tracking-[-0.6px] text-[#262626] max-sm:text-[15px] max-sm:leading-[22px]">
+        <p className="pb-[20px] text-justify font-sans text-[18px] leading-[26px] font-medium tracking-[-0.6px] text-[#262626]">
           An immersive journey inspired by the story of the four{" "}
           <span className="text-[#737373]">elements</span>
         </p>

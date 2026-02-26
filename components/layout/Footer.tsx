@@ -59,7 +59,7 @@ export default function Footer({
           <div className="grid grid-cols-3 items-center max-md:flex max-md:flex-col max-md:items-start max-md:gap-[40px]">
             {/* Col 1 — AMARA Cutout (left-aligned) */}
             <div className="justify-self-start">
-              <div className="relative h-[180px] w-[240px] overflow-hidden max-sm:h-[140px] max-sm:w-[180px]">
+              <div className="relative h-[180px] w-[240px] overflow-hidden max-sm:h-[100px] max-sm:w-[130px]">
                 <svg
                   className="absolute top-0 left-0 h-full w-full"
                   width="240"
