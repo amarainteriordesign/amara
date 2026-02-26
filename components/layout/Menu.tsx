@@ -1,6 +1,7 @@
 "use client";
 import Link from "next/link";
 import ArrowIcon from "@/components/icons/arrow-right.svg";
+import SoundIcon from "@/components/icons/sound.svg";
 import { formatTimeForOffset } from "@/helpers/time";
 import React, { useRef } from "react";
 import { useWindowSize } from "@/hooks/useWindowSize";
@@ -61,30 +62,31 @@ export default function Menu({ now }: { now: Date }) {
         Contact Us
       </button>
 
-      <div className="mx-auto flex w-full max-w-[340px] justify-between gap-[20px] pt-[130px]">
-        {[
-          {
-            title: "Dubai",
-            offset: 4,
-          },
-          {
-            title: "Miami",
-            offset: -5,
-          },
-          {
-            title: "Paris",
-            offset: 1,
-          },
-        ].map((item) => (
-          <div className="flex items-baseline gap-[8px]" key={item.title}>
-            <p className="font-sans text-[14px] leading-[20px] font-normal tracking-[-0.7px] text-[#737373]">
-              {now && formatTimeForOffset(now, item.offset)}
-            </p>
-            <p className="font-sans text-[14px] leading-[20px] font-medium tracking-[-0.6px] text-[#262626]">
-              {item.title}
-            </p>
-          </div>
-        ))}
+      <div className="absolute right-[25px] bottom-[80px] flex max-w-[340px] flex-col items-start max-sm:right-[20px] max-sm:bottom-[60px] max-sm:max-w-[260px]">
+        <div className="relative flex items-center pb-[16px]">
+          <SoundIcon width={24} height={26} color="#262626" />
+          <SoundIcon width={24} height={26} color="#262626" className="ml-[-4px]" />
+        </div>
+        <p className="pb-[24px] font-sans text-[22px] leading-[30px] font-medium tracking-[-0.6px] text-[#262626] max-sm:text-[18px] max-sm:leading-[26px]">
+          An immersive journey inspired by the story of the four{" "}
+          <span className="text-[#737373]">elements</span>
+        </p>
+        <div className="flex w-full max-w-[340px] items-center gap-[20px]">
+          {[
+            { title: "Dubai", offset: 4 },
+            { title: "Miami", offset: -5 },
+            { title: "Paris", offset: 1 },
+          ].map((item) => (
+            <div className="flex items-baseline gap-[6px]" key={item.title}>
+              <p className="font-sans text-[14px] leading-[20px] font-normal tracking-[-0.7px] text-[#737373]">
+                {now && formatTimeForOffset(now, item.offset)}
+              </p>
+              <p className="font-sans text-[14px] leading-[20px] font-medium tracking-[-0.6px] text-[#262626]">
+                {item.title}
+              </p>
+            </div>
+          ))}
+        </div>
       </div>
 
       <svg
