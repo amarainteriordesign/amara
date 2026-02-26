@@ -12,6 +12,13 @@ export default function Menu({ now }: { now: Date }) {
   const router = useRouter();
   const pathname = usePathname();
   const containerRef = useRef<HTMLDivElement>(null);
+  const isMobile = (screenSize?.width || 0) < 768;
+
+  const logoScale = isMobile ? 0.3 : 0.75;
+  const logoY = isMobile ? 310 : 365;
+  const logoHeight = Math.round(217 * logoScale);
+  const contactBtnY = isMobile ? 320 : 487;
+  const menuHeight = isMobile ? 450 : 610;
 
   function navigateToContactUs() {
     router.push("/landing#contact-us");
@@ -19,8 +26,9 @@ export default function Menu({ now }: { now: Date }) {
 
   function onMenuClick(event: React.MouseEvent<HTMLDivElement, MouseEvent>) {
     const topMenuPosition = containerRef.current?.getBoundingClientRect().top || 0;
-    if (event.clientY - topMenuPosition >= 365 && event.clientY - topMenuPosition <= 528) {
-      if (event.clientX >= 25 && event.clientX <= 256) {
+    const logoBottom = logoY + logoHeight;
+    if (event.clientY - topMenuPosition >= logoY && event.clientY - topMenuPosition <= logoBottom) {
+      if (event.clientX >= 25 && event.clientX <= 25 + Math.round(307 * logoScale)) {
         if (pathname !== "/") {
           router.push("/");
         }
@@ -32,7 +40,8 @@ export default function Menu({ now }: { now: Date }) {
     <div
       ref={containerRef}
       onClick={onMenuClick}
-      className="relative h-[610px] w-full px-[25px] pt-[50px] pb-[32px]"
+      className="relative w-full px-[25px] pt-[50px] pb-[32px]"
+      style={{ height: menuHeight }}
     >
       <div className="w-full border-t-[1px] border-[#E8DFD2] pb-[50px]">
         {[
@@ -57,49 +66,71 @@ export default function Menu({ now }: { now: Date }) {
 
       <button
         onClick={navigateToContactUs}
-        className="absolute top-[487px] right-[25px] flex h-[41px] w-[128px] items-center justify-center rounded-[30px] bg-transparent font-sans text-[14px] leading-[41px] text-[#F6EFE5]"
+        className="absolute right-[25px] flex h-[41px] w-[128px] items-center justify-center rounded-[30px] bg-transparent font-sans text-[14px] leading-[41px] text-[#F6EFE5]"
+        style={{ top: contactBtnY }}
       >
         Contact Us
       </button>
 
-      <div className="absolute top-[402px] left-1/2 flex w-full max-w-[340px] -translate-x-1/2 flex-col items-start max-md:hidden">
-        <div className="relative flex items-center pb-[10px]">
-          <SoundIcon width={22} height={24} color="#262626" />
-          <SoundIcon width={22} height={24} color="#262626" className="ml-[-4px]" />
-        </div>
-        <p className="pb-[20px] text-justify font-sans text-[18px] leading-[26px] font-medium tracking-[-0.6px] text-[#262626]">
-          An immersive journey inspired by the story of the four{" "}
-          <span className="text-[#737373]">elements</span>
-        </p>
-        <div className="flex w-full justify-between">
-        {[
-          { title: "Miami", offset: -5 },
-          { title: "Dubai", offset: 4 },
-          { title: "Paris", offset: 1 },
-        ].map((item) => (
-          <div className="flex items-baseline gap-[8px]" key={item.title}>
-            <p className="font-sans text-[14px] leading-[20px] font-normal tracking-[-0.7px] text-[#737373]">
-              {now && formatTimeForOffset(now, item.offset)}
-            </p>
-            <p className="font-sans text-[14px] leading-[20px] font-medium tracking-[-0.6px] text-[#262626]">
-              {item.title}
-            </p>
+      {!isMobile && (
+        <div className="absolute top-[402px] left-1/2 flex w-full max-w-[340px] -translate-x-1/2 flex-col items-start">
+          <div className="relative flex items-center pb-[10px]">
+            <SoundIcon width={22} height={24} color="#262626" />
+            <SoundIcon width={22} height={24} color="#262626" className="ml-[-4px]" />
           </div>
-        ))}
+          <p className="pb-[20px] text-justify font-sans text-[18px] leading-[26px] font-medium tracking-[-0.6px] text-[#262626]">
+            An immersive journey inspired by the story of the four{" "}
+            <span className="text-[#737373]">elements</span>
+          </p>
+          <div className="flex w-full justify-between">
+          {[
+            { title: "Miami", offset: -5 },
+            { title: "Dubai", offset: 4 },
+            { title: "Paris", offset: 1 },
+          ].map((item) => (
+            <div className="flex items-baseline gap-[8px]" key={item.title}>
+              <p className="font-sans text-[14px] leading-[20px] font-normal tracking-[-0.7px] text-[#737373]">
+                {now && formatTimeForOffset(now, item.offset)}
+              </p>
+              <p className="font-sans text-[14px] leading-[20px] font-medium tracking-[-0.6px] text-[#262626]">
+                {item.title}
+              </p>
+            </div>
+          ))}
+          </div>
         </div>
-      </div>
+      )}
+
+      {isMobile && (
+        <div className="absolute left-[25px] right-[25px] flex justify-between" style={{ top: logoY + logoHeight + 15 }}>
+          {[
+            { title: "Dubai", offset: 4 },
+            { title: "Miami", offset: -5 },
+            { title: "Paris", offset: 1 },
+          ].map((item) => (
+            <div className="flex items-baseline gap-[8px]" key={item.title}>
+              <p className="font-sans text-[14px] leading-[20px] font-normal tracking-[-0.7px] text-[#737373]">
+                {now && formatTimeForOffset(now, item.offset)}
+              </p>
+              <p className="font-sans text-[14px] leading-[20px] font-medium tracking-[-0.6px] text-[#262626]">
+                {item.title}
+              </p>
+            </div>
+          ))}
+        </div>
+      )}
 
       <svg
         className="absolute top-0 left-0 z-[-1] h-full w-full"
         width={screenSize?.width || 600}
-        height="610"
-        viewBox={`0 0 ${screenSize?.width || 600} 610`}
+        height={menuHeight}
+        viewBox={`0 0 ${screenSize?.width || 600} ${menuHeight}`}
         xmlns="http://www.w3.org/2000/svg"
       >
         <defs>
           <mask id="menu-mask-mobile" maskUnits="userSpaceOnUse">
-            <rect width={screenSize?.width || 600} height="610" fill="white" />
-            <g transform="translate(25,365) scale(0.75)">
+            <rect width={screenSize?.width || 600} height={menuHeight} fill="white" />
+            <g transform={`translate(25,${logoY}) scale(${logoScale})`}>
               <path
                 d="M99 115.553H153.297L197.032 115V157.592H208V217H163.046V158.367H156.005H148.964L148.422 217H99V115.553Z"
                 fill="black"
@@ -122,7 +153,7 @@ export default function Menu({ now }: { now: Date }) {
               />
             </g>
 
-            <g transform={`translate(${screenSize?.width - 128 - 25}, 487)`}>
+            <g transform={`translate(${(screenSize?.width || 600) - 128 - 25}, ${contactBtnY})`}>
               <rect width="128" height="41" rx="20" fill="black" />
             </g>
           </mask>
@@ -130,7 +161,7 @@ export default function Menu({ now }: { now: Date }) {
 
         <rect
           width={screenSize?.width || 600}
-          height="610"
+          height={menuHeight}
           fill="#F1EBDF"
           mask="url(#menu-mask-mobile)"
         />
