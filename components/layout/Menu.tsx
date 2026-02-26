@@ -101,15 +101,15 @@ export default function Menu({ now }: { now: Date }) {
 
       {viewportWidth > 0 && containerWidth > 0 && (
         <svg
-          className="absolute top-0 left-0 z-[-1]"
+          className="absolute -top-[2px] left-0 z-[-1]"
           width={viewportWidth}
-          height="610"
-          viewBox={`0 0 ${viewportWidth} 610`}
+          height="614"
+          viewBox={`0 0 ${viewportWidth} 614`}
           xmlns="http://www.w3.org/2000/svg"
         >
           <defs>
             <mask id="menu-mask-mobile" maskUnits="userSpaceOnUse">
-              <rect width={viewportWidth} height="610" fill="white" />
+              <rect width={viewportWidth} height="614" fill="white" />
               <g transform="translate(25,374) scale(0.38)">
                 <path
                   d="M99 115.553H153.297L197.032 115V157.592H208V217H163.046V158.367H156.005H148.964L148.422 217H99V115.553Z"
@@ -141,7 +141,7 @@ export default function Menu({ now }: { now: Date }) {
 
           <rect
             width={viewportWidth}
-            height="610"
+            height="614"
             fill="#F1EBDF"
             mask="url(#menu-mask-mobile)"
           />
