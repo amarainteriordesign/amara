@@ -84,7 +84,7 @@ export default function QuoteAbout() {
     });
   });
 
-  const text = "Designing spaces to be felt, not just seen.";
+  const text = "Spaces aligned with energy. Grounded in nature. Designed for balance.";
 
   return (
     <>
