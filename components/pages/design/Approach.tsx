@@ -109,10 +109,8 @@ export default function Approach() {
                   </h3>
                   <ul className="mt-[16px] space-y-[8px]">
                     {[
-                      "Interior design concept development aligned with client brief and lifestyle",
-                      "Curated moodboards defining material palette, textures, and overall aesthetic direction",
-                      "Preliminary space planning and layout studies to optimize flow and functionality",
-                      "Initial material and finish direction for cohesive design identity",
+                      "Design concept & vision",
+                      "Moodboards & space planning",
                     ].map((item, i) => (
                       <li key={i} className="flex items-start gap-[8px] font-sans text-[14px] leading-[22px] text-[#4a4a4a]">
                         <span className="mt-[9px] block h-[5px] w-[5px] shrink-0 rounded-full bg-[#4a4a4a]" />
@@ -128,10 +126,8 @@ export default function Approach() {
                   </h3>
                   <ul className="mt-[16px] space-y-[8px]">
                     {[
-                      "Detailed space planning with fully coordinated layouts",
-                      "Final selection of interior finishes, materials, and surfaces",
-                      "Integrated architectural and decorative lighting design",
-                      "Preliminary FF&E selection aligned with design concept and budget",
+                      "Coordinated layouts & finishes",
+                      "Lighting & FF&E selection",
                     ].map((item, i) => (
                       <li key={i} className="flex items-start gap-[8px] font-sans text-[14px] leading-[22px] text-[#4a4a4a]">
                         <span className="mt-[9px] block h-[5px] w-[5px] shrink-0 rounded-full bg-[#4a4a4a]" />
@@ -147,10 +143,8 @@ export default function Approach() {
                   </h3>
                   <ul className="mt-[16px] space-y-[8px]">
                     {[
-                      "Complete interior design drawing package (layouts, RCP, lighting, finishes)",
-                      "Custom joinery design with technical detailing",
-                      "High-quality 3D renderings for design visualization",
-                      "Final FF&E specification for procurement and installation",
+                      "Technical drawings & joinery",
+                      "Final FF&E & renderings",
                     ].map((item, i) => (
                       <li key={i} className="flex items-start gap-[8px] font-sans text-[14px] leading-[22px] text-[#4a4a4a]">
                         <span className="mt-[9px] block h-[5px] w-[5px] shrink-0 rounded-full bg-[#4a4a4a]" />
