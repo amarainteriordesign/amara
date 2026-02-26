@@ -253,7 +253,7 @@ export default function Header({ isDark = false }: { isDark?: boolean }) {
                 onClick={onLogoClick}
                 className={
                   (isDark ? "dark" : "") +
-                  " logo font-sans text-[22px] leading-[26px] font-medium tracking-[-0.5px] text-[#BCB19B]"
+                  " logo font-sans text-[16px] leading-[20px] font-medium tracking-[-0.5px] text-[#BCB19B]"
                 }
               >
                 <span className={"header-logo " + (isDark ? "!text-white" : "text-[#FFF]")}>Amara</span>{" "}
