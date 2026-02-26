@@ -106,7 +106,7 @@ export default function ExpandingImage({ quote, linkTo = "/design" }: ExpandingI
   });
 
   return (
-    <section className="flex w-full max-w-full flex-col items-center gap-[113px] overflow-hidden bg-gradient-to-b from-[#1A1A1E] from-50% to-[#e8dfd2] to-50% px-[84px] pt-[179px] pb-[71px] max-md:flex-col-reverse max-md:gap-[104px] max-md:px-[20px] max-md:pt-[76px] max-md:pb-[40px] max-sm:px-[11px]">
+    <section className="flex w-full max-w-full flex-col items-center gap-[113px] overflow-hidden bg-gradient-to-b from-[#f1ebdf] from-50% to-[#e8dfd2] to-50% px-[84px] pt-[179px] pb-[71px] max-md:flex-col-reverse max-md:gap-[104px] max-md:px-[20px] max-md:pt-[76px] max-md:pb-[40px] max-sm:px-[11px]">
       {quote && (
         <p className="text-gradient-vertical max-w-[565px] text-center font-serif text-[28px] leading-[37px] font-normal tracking-[-0.8px] max-sm:max-w-[311px] max-sm:max-w-[320px] max-sm:text-[18px] max-sm:leading-[28px] max-sm:tracking-[-0.5px]">
           {quote}
