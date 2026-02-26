@@ -62,6 +62,7 @@ export default function Header({ isDark = false }: { isDark?: boolean }) {
     if (!heroSection) return;
 
     const setWhite = () => {
+      gsap.to(".logo", { color: "#BCB19B", duration: 0.3 });
       gsap.to(".header-logo", { color: "#FFF", duration: 0.3 });
       gsap.to(".header-logo-text", { color: "#bcb19b", duration: 0.3 });
       if (plusIconRef.current) {
@@ -73,6 +74,7 @@ export default function Header({ isDark = false }: { isDark?: boolean }) {
     };
 
     const setDark = () => {
+      gsap.to(".logo", { color: "#262626", duration: 0.3 });
       gsap.to(".header-logo", { color: "#262626", duration: 0.3 });
       gsap.to(".header-logo-text", { color: "#262626", duration: 0.3 });
       if (plusIconRef.current) {
