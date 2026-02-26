@@ -29,7 +29,7 @@ export default function AboutUs() {
           <h2 className="text-normal pb-[24px] text-[38px] leading-[46px] tracking-[0.8px] text-[#2a2a2a] max-sm:pb-[20px] max-sm:text-[24px] max-sm:leading-[30px] max-sm:tracking-[0.4px]" style={{ fontFamily: 'var(--font-lora)' }}>
             Designing Between Miami, Dubai & Beyond
           </h2>
-          <p className="text-normal text-[15px] leading-[24px] tracking-[-0.3px] text-[#4a4a4a] max-sm:text-[14px] max-sm:leading-[22px]" style={{ fontFamily: 'var(--font-lora)' }}>
+          <p className="text-normal text-[15px] leading-[24px] tracking-[-0.3px] text-[#4a4a4a] max-sm:text-[14px] max-sm:leading-[22px]" style={{ fontFamily: 'var(--font-lora)', textAlign: 'justify' }}>
             From the vibrant rhythm of Miami to the refined elegance of Paris and the bold energy of
             Dubai, Amara redefines interior design through a distinct voice. We are a boutique
             powerhouse blending artistic depth with technical mastery, crafting spaces that feel
