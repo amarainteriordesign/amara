@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function ProcessProcurement() {
   return (
     <section className="w-full bg-[#f1ebdf] py-[100px] max-md:py-[60px] max-sm:py-[40px]">
@@ -14,9 +16,9 @@ export default function ProcessProcurement() {
             From briefing to detailed design, we transform your vision into a cohesive luxury interior design concept rooted in lifestyle, spatial planning, and refined material direction. The concept is then developed into a fully coordinated design package with finalized layouts, finishes, lighting strategy, and technical drawings for seamless project execution worldwide.
           </p>
           <div className="mt-[32px] max-sm:mt-[24px]">
-            <button className="inline-block h-[39px] rounded-[35px] border-[1px] border-[#26262699] px-[16px] font-sans text-[12px] leading-[39px] font-medium tracking-[0.2px] text-[#262626] max-sm:h-[32px] max-sm:px-[14px] max-sm:text-[11px] max-sm:leading-[32px]">
+            <Link href="/procurement" className="inline-block h-[39px] rounded-[35px] border-[1px] border-[#26262699] px-[16px] font-sans text-[12px] leading-[39px] font-medium tracking-[0.2px] text-[#262626] max-sm:h-[32px] max-sm:px-[14px] max-sm:text-[11px] max-sm:leading-[32px]">
               FIND OUT MORE →
-            </button>
+            </Link>
           </div>
         </div>
 

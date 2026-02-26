@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export default function PrinciplesProcurement() {
   return (
@@ -24,9 +25,9 @@ export default function PrinciplesProcurement() {
                 From briefing to design, we translate your vision into a cohesive luxury interior concept and coordinated design package, with finalized layouts, material and finish direction, lighting strategy, and technical drawings, ready for execution before procurement.
               </p>
               <div className="mt-[28px]">
-                <button className="inline-block h-[39px] rounded-[35px] border-[1px] border-[#26262699] px-[16px] font-sans text-[12px] leading-[39px] font-medium tracking-[0.2px] text-[#262626]">
+                <Link href="/design" className="inline-block h-[39px] rounded-[35px] border-[1px] border-[#26262699] px-[16px] font-sans text-[12px] leading-[39px] font-medium tracking-[0.2px] text-[#262626]">
                   EXPLORE OUR FULL DESIGN PROCESS
-                </button>
+                </Link>
               </div>
             </div>
 
@@ -103,9 +104,9 @@ export default function PrinciplesProcurement() {
                 From briefing to final concept, we deliver a complete luxury interior design package with space planning, material specifications, lighting design, and technical drawings ready for construction.
               </p>
               <div className="mt-[28px]">
-                <button className="inline-block h-[32px] rounded-[35px] border-[1px] border-[#26262699] px-[14px] font-sans text-[11px] leading-[32px] font-medium tracking-[0.2px] text-[#262626]">
+                <Link href="/design" className="inline-block h-[32px] rounded-[35px] border-[1px] border-[#26262699] px-[14px] font-sans text-[11px] leading-[32px] font-medium tracking-[0.2px] text-[#262626]">
                   EXPLORE OUR FULL DESIGN PROCESS
-                </button>
+                </Link>
               </div>
             </div>
 
