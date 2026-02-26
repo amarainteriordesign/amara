@@ -142,12 +142,12 @@ export default function ContactUs() {
                     <h3 className="font-sans text-[14px] leading-[20px] font-normal tracking-[2px] text-[#262626] uppercase">
                       {office.title}
                     </h3>
-                    <p className="mt-[12px] font-sans text-[14px] leading-[20px] font-normal text-[#666]">
+                    <a href={`tel:${office.phone.replace(/[\s()]/g, "")}`} className="mt-[12px] block font-sans text-[14px] leading-[20px] font-normal text-[#666]">
                       {office.phone}
-                    </p>
-                    <p className="mt-[8px] font-sans text-[14px] leading-[20px] font-normal text-[#666]">
+                    </a>
+                    <a href={`mailto:${office.email}`} className="mt-[8px] block font-sans text-[14px] leading-[20px] font-normal text-[#666]">
                       {office.email}
-                    </p>
+                    </a>
                   </div>
                 ))}
               </div>
