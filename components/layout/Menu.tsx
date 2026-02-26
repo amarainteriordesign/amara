@@ -62,7 +62,7 @@ export default function Menu({ now }: { now: Date }) {
         Contact Us
       </button>
 
-      <div className="mx-auto flex w-full max-w-[400px] flex-col items-start pt-[40px]">
+      <div className="mx-auto flex w-full max-w-[340px] flex-col items-start pt-[40px]">
         <div className="relative flex items-center pb-[10px]">
           <SoundIcon width={22} height={24} color="#262626" />
           <SoundIcon width={22} height={24} color="#262626" className="ml-[-4px]" />
@@ -73,7 +73,7 @@ export default function Menu({ now }: { now: Date }) {
         </p>
       </div>
 
-      <div className="mx-auto flex w-full max-w-[400px] justify-between">
+      <div className="mx-auto flex w-full max-w-[340px] justify-between">
         {[
           { title: "Miami", offset: -5 },
           { title: "Dubai", offset: 4 },
