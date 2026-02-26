@@ -18,7 +18,7 @@ export default function Menu({ now }: { now: Date }) {
 
   function onMenuClick(event: React.MouseEvent<HTMLDivElement, MouseEvent>) {
     const topMenuPosition = containerRef.current?.getBoundingClientRect().top || 0;
-    if (event.clientY - topMenuPosition >= 324 && event.clientY - topMenuPosition <= 406) {
+    if (event.clientY - topMenuPosition >= 374 && event.clientY - topMenuPosition <= 456) {
       if (event.clientX >= 25 && event.clientX <= 143) {
         if (pathname !== "/") {
           router.push("/");
@@ -56,7 +56,7 @@ export default function Menu({ now }: { now: Date }) {
 
       <button
         onClick={navigateToContactUs}
-        className="absolute top-[366px] right-[25px] flex h-[41px] w-[128px] items-center justify-center rounded-[30px] bg-transparent font-sans text-[14px] leading-[20px] text-[#F6EFE5]"
+        className="absolute top-[416px] right-[25px] flex h-[41px] w-[128px] items-center justify-center rounded-[30px] bg-transparent font-sans text-[14px] leading-[20px] text-[#F6EFE5]"
       >
         Contact Us
       </button>
@@ -90,14 +90,14 @@ export default function Menu({ now }: { now: Date }) {
       <svg
         className="absolute top-0 left-0 z-[-1] h-full w-full"
         width={screenSize?.width || 600}
-        height="524"
-        viewBox={`0 0 ${screenSize?.width || 600} 524`}
+        height="574"
+        viewBox={`0 0 ${screenSize?.width || 600} 574`}
         xmlns="http://www.w3.org/2000/svg"
       >
         <defs>
           <mask id="menu-mask-mobile" maskUnits="userSpaceOnUse">
-            <rect width={screenSize?.width || 600} height="524" fill="white" />
-            <g transform="translate(25,324) scale(0.38)">
+            <rect width={screenSize?.width || 600} height="574" fill="white" />
+            <g transform="translate(25,374) scale(0.38)">
               <path
                 d="M99 115.553H153.297L197.032 115V157.592H208V217H163.046V158.367H156.005H148.964L148.422 217H99V115.553Z"
                 fill="black"
@@ -120,7 +120,7 @@ export default function Menu({ now }: { now: Date }) {
               />
             </g>
 
-            <g transform={`translate(${screenSize?.width - 128 - 25}, 366)`}>
+            <g transform={`translate(${screenSize?.width - 128 - 25}, 416)`}>
               <rect width="128" height="41" rx="20" fill="black" />
             </g>
           </mask>
@@ -128,7 +128,7 @@ export default function Menu({ now }: { now: Date }) {
 
         <rect
           width={screenSize?.width || 600}
-          height="524"
+          height="574"
           fill="#F1EBDF"
           mask="url(#menu-mask-mobile)"
         />
