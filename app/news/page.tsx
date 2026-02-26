@@ -38,7 +38,7 @@ export default async function News() {
 
       <Contact />
 
-      <ImageFooter image="/images/pages/news/ocean2.png" />
+      <ImageFooter image="/images/pages/news/ocean2.webp" />
     </>
   );
 }

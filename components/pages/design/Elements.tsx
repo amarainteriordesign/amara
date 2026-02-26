@@ -51,7 +51,7 @@ export default function Elements() {
 
       <div className="elements-image-anim relative h-[80vh] w-full max-w-[1272px]">
         <Image
-          src="/images/pages/design/elements.png"
+          src="/images/pages/design/elements.webp"
           alt="Design philosophy elements Amara Interior Design Miami Dubai"
           width={1272}
           height={704}

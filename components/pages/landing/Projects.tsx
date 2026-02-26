@@ -13,17 +13,17 @@ gsap.registerPlugin(ScrollTrigger);
 const slides: Slide[] = [
   {
     id: "project-1",
-    img: "/images/pages/home/project1.png",
+    img: "/images/pages/home/project1.webp",
     alt: "Project 1",
   },
   {
     id: "project-2",
-    img: "/images/pages/home/project2.png",
+    img: "/images/pages/home/project2.webp",
     alt: "Project 2",
   },
   {
     id: "project-3",
-    img: "/images/pages/home/project3.png",
+    img: "/images/pages/home/project3.webp",
     alt: "Project 3",
   },
 ];

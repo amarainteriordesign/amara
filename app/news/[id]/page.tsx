@@ -95,7 +95,7 @@ export default async function InsideNews({ params }: NewsPageProps) {
 
       <OtherBlogs blogs={serializedRelatedBlogs} />
 
-      <ImageFooter image={serializedBlog.footerImageUrl || "/images/pages/news/ocean2.png"} />
+      <ImageFooter image={serializedBlog.footerImageUrl || "/images/pages/news/ocean2.webp"} />
     </>
   );
 }

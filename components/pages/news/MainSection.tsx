@@ -20,7 +20,7 @@ export default function MainSection({ blogs }: { blogs: SerializedBlog[] }) {
     <section className="mx-auto w-full max-w-[1440px] px-[20px] pt-[40px] max-sm:px-[12px] max-sm:pt-[82px]">
       <div className="max-xmd:pl-0 max-xmd:gap-[60px] flex w-full items-center justify-center gap-[160px] pb-[221px] pl-[100px] max-md:flex-col max-sm:gap-[48px] max-sm:pb-[116px]">
         <Image
-          src="/images/pages/news/drawing.png"
+          src="/images/pages/news/drawing.webp"
           alt="Architectural sketch Amara Interior Design news"
           height={320}
           width={320}

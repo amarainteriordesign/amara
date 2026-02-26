@@ -139,7 +139,7 @@ export default function Moments() {
         <div className="moment-right-anim-container aspect-[0.69] w-full max-w-[566px] self-end max-sm:max-w-[251px]">
           <div className="relative h-full w-full overflow-hidden">
             <Image
-              src="/images/pages/home/design1.png"
+              src="/images/pages/home/design1.webp"
               alt="Bespoke luxury interior design detail Amara Miami Dubai"
               width={1500}
               height={1900}

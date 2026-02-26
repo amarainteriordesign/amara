@@ -64,7 +64,7 @@ export default function HeroAbout() {
         <div className="flex h-full max-h-full w-full max-w-full items-end overflow-hidden">
           <Image
             className="animate-hero-reveal absolute top-0 left-0 z-[-1] h-full w-full object-cover object-bottom"
-            src="/images/pages/studio/hero.png"
+            src="/images/pages/studio/hero.webp"
             width={1440}
             height={809}
             alt="Amara Interior Design studio about us Miami Dubai"
@@ -84,7 +84,7 @@ export default function HeroAbout() {
             </div>
             <div className="flex flex-col items-center gap-[25px] max-sm:gap-[35px]">
               <Image
-                src="/images/pages/studio/logo.png"
+                src="/images/pages/studio/logo.webp"
                 alt="Amara Interior Design logo"
                 width={307}
                 height={217}

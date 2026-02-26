@@ -214,7 +214,7 @@ export default function Elements() {
         >
           <div className="relative h-full w-full">
             <Image
-              src="/images/pages/home/elements-1.png"
+              src="/images/pages/home/elements-1.webp"
               alt="Natural materials interior design Amara Miami Dubai"
               width={1000}
               height={600}
@@ -233,7 +233,7 @@ export default function Elements() {
         >
           <div className="relative h-full w-full">
             <Image
-              src="/images/pages/home/elements-2.png"
+              src="/images/pages/home/elements-2.webp"
               alt="Earth tones luxury interior Amara Interior Design"
               width={1000}
               height={600}
@@ -252,7 +252,7 @@ export default function Elements() {
         >
           <div className="relative h-full w-full">
             <Image
-              src="/images/pages/home/element-3.png"
+              src="/images/pages/home/element-3.webp"
               alt="Refined textures bespoke interior design Amara"
               width={1000}
               height={600}
@@ -271,7 +271,7 @@ export default function Elements() {
         >
           <div className="relative h-full w-full">
             <Image
-              src="/images/pages/home/elements-4.png"
+              src="/images/pages/home/elements-4.webp"
               alt="Light and balance luxury design Amara Miami Dubai"
               width={1000}
               height={600}

@@ -27,7 +27,7 @@ export default function TeamLanding() {
         >
           <div className="relative flex h-[63vh] flex-col justify-between gap-[20px] rounded-[8px] max-md:h-[76vh] max-sm:h-[427px]">
             <Image
-              src="/images/pages/studio/eloise.png"
+              src="/images/pages/studio/eloise.webp"
               alt="ELOISE CHAUVIERE"
               width={417}
               height={515}
@@ -77,7 +77,7 @@ export default function TeamLanding() {
 
           <div className="relative flex h-[63vh] flex-col justify-between gap-[20px] rounded-[8px] max-md:h-[76vh] max-sm:h-[427px]">
             <Image
-              src="/images/pages/studio/ines.png"
+              src="/images/pages/studio/ines.webp"
               alt="INES BAKKALI"
               width={417}
               height={515}

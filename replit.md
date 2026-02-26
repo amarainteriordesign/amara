@@ -108,6 +108,11 @@ All images follow this naming pattern:
 - **Heading Hierarchy**: Every page has exactly one `<h1>` in the hero section, with proper `h1→h2→h3` progression (no skipped levels)
 
 ## Recent Changes
+- **2025-02-26**: Converted all used images from PNG/JPG to WebP
+  - 31 images converted using cwebp (quality 85) across design/, home/, news/, projects/, studio/
+  - Updated all code references in 23 component/page files
+  - Original PNG/JPG files deleted after conversion
+  - All images now use WebP format for better page load performance
 - **2025-02-26**: Consolidated studio components into about-us
   - Moved `components/pages/studio/Hero.tsx` to `components/pages/about-us/HeroAbout.tsx`
   - Removed unused `components/pages/studio/` directory (ContactUs, Experiences, Work, Story were not imported)

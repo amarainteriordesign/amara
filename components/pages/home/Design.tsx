@@ -115,13 +115,13 @@ export default function Design() {
             style={{ willChange: "transform" }}
           >
             {[
-              { img: "/images/pages/home/design1.png", title: "Water and golden object" },
-              { img: "/images/pages/home/design2.png", title: "Relaxing in stone bathtub" },
+              { img: "/images/pages/home/design1.webp", title: "Water and golden object" },
+              { img: "/images/pages/home/design2.webp", title: "Relaxing in stone bathtub" },
               {
-                img: "/images/pages/home/design3.png",
+                img: "/images/pages/home/design3.webp",
                 title: "Outdoor leisure area with fire pit",
               },
-              { img: "/images/pages/home/design4.png", title: "Water and golden object" },
+              { img: "/images/pages/home/design4.webp", title: "Water and golden object" },
             ].map((item, index) => (
               <div
                 key={"design" + index}

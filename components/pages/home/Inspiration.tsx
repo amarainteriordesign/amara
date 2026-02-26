@@ -102,7 +102,7 @@ export default function Inspiration() {
         ref={videoRef}
         className="absolute top-0 left-0 z-[-1] h-full w-full object-cover"
         src="/videos/ocean.mp4"
-        poster="/images/pages/home/ocean-poster.png"
+        poster="/images/pages/home/ocean-poster.webp"
         muted={isMuted}
         suppressHydrationWarning
         loop

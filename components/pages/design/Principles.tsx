@@ -224,7 +224,7 @@ export default function Principles() {
         <div className="relative flex h-full max-h-full w-full max-w-full items-center justify-center overflow-hidden">
           <div className="overlow-hidden absolute">
             <Image
-              src="/images/pages/design/principles-bg.png"
+              src="/images/pages/design/principles-bg.webp"
               width={1000}
               height={2000}
               alt="Interior design principles Amara Miami Dubai"
@@ -235,7 +235,7 @@ export default function Principles() {
           <div className="relative z-[1] h-[345px] max-h-full w-[321px] max-w-full overflow-hidden max-sm:h-[165px] max-sm:w-[165px]">
             <div className="absolute h-full w-full overflow-hidden">
               <Image
-                src="/images/pages/design/principles.jpg"
+                src="/images/pages/design/principles.webp"
                 width={500}
                 height={1000}
                 alt="Luxury design principles Amara Interior Design"
