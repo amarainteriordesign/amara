@@ -36,13 +36,13 @@ export default function Hero() {
 
           <div className="absolute top-1/2 z-[1] flex max-h-fit w-full -translate-y-1/2 flex-col items-center justify-center overflow-hidden p-[20px]">
             <Copy delay={1.7} animateOnScroll={false}>
-              <h1 className="text-center font-serif text-[32px] leading-[40px] font-normal tracking-tighter text-[#FFF] max-sm:text-[26px]">
+              <h1 className="text-center font-serif text-[32px] leading-[40px] font-normal tracking-tighter text-[#FFF] max-sm:text-[22px] max-sm:leading-[30px]">
                 Where Design Comes to Life
               </h1>
             </Copy>
 
             <div className="max-h-fit w-full overflow-hidden text-center">
-              <p className="hero-center-text-space text-bg-img bg-[url(/images/pages/home/Text_Background_Amara_Interior_Design_Procurement_Miami_Dubai.webp)] pb-[8px] font-serif text-[32px] leading-[40px] tracking-tighter italic max-sm:text-[26px]">
+              <p className="hero-center-text-space text-bg-img bg-[url(/images/pages/home/Text_Background_Amara_Interior_Design_Procurement_Miami_Dubai.webp)] pb-[8px] font-serif text-[32px] leading-[40px] tracking-tighter italic max-sm:text-[22px] max-sm:leading-[30px]">
                 Inspired by the elements
               </p>
             </div>
