@@ -8,10 +8,10 @@ import Linkedin from "@/components/icons/linkedin.svg";
 import Instagram from "@/components/icons/instagram.svg";
 
 const NAV_LINKS = [
-  { name: "PROJECTS", url: "/projects" },
+  { name: "ABOUT US", url: "/about-us" },
   { name: "DESIGN", url: "/design" },
   { name: "PROCUREMENT", url: "/procurement" },
-  { name: "ABOUT US", url: "/about-us" },
+  { name: "PROJECTS", url: "/projects" },
   { name: "NEWS", url: "/blog" },
 ];
 

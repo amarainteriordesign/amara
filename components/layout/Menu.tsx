@@ -35,10 +35,10 @@ export default function Menu({ now }: { now: Date }) {
     >
       <div className="w-full border-t-[1px] border-[#E8DFD2] pb-[99px]">
         {[
-          { name: "Projects", url: "/projects" },
+          { name: "About Us", url: "/about-us" },
           { name: "Design", url: "/design" },
           { name: "Procurement", url: "/procurement" },
-          { name: "About Us", url: "/about-us" },
+          { name: "Projects", url: "/projects" },
           { name: "News", url: "/blog" },
         ].map((page, i) => (
           <Link
