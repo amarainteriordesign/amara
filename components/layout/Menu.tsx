@@ -31,7 +31,7 @@ export default function Menu({ now }: { now: Date }) {
     <div
       ref={containerRef}
       onClick={onMenuClick}
-      className="relative h-[580px] w-full px-[25px] pt-[50px] pb-[32px]"
+      className="relative h-[610px] w-full px-[25px] pt-[50px] pb-[32px]"
     >
       <div className="w-full border-t-[1px] border-[#E8DFD2] pb-[99px]">
         {[
@@ -56,7 +56,7 @@ export default function Menu({ now }: { now: Date }) {
 
       <button
         onClick={navigateToContactUs}
-        className="absolute top-[416px] right-[25px] flex h-[41px] w-[128px] items-center justify-center rounded-[30px] bg-transparent font-sans text-[14px] leading-[20px] text-[#F6EFE5]"
+        className="absolute top-[416px] right-[25px] flex h-[41px] w-[128px] items-center justify-center rounded-[30px] bg-transparent font-sans text-[14px] leading-[41px] text-[#F6EFE5]"
       >
         Contact Us
       </button>
@@ -90,13 +90,13 @@ export default function Menu({ now }: { now: Date }) {
       <svg
         className="absolute top-0 left-0 z-[-1] h-full w-full"
         width={screenSize?.width || 600}
-        height="580"
-        viewBox={`0 0 ${screenSize?.width || 600} 580`}
+        height="610"
+        viewBox={`0 0 ${screenSize?.width || 600} 610`}
         xmlns="http://www.w3.org/2000/svg"
       >
         <defs>
           <mask id="menu-mask-mobile" maskUnits="userSpaceOnUse">
-            <rect width={screenSize?.width || 600} height="580" fill="white" />
+            <rect width={screenSize?.width || 600} height="610" fill="white" />
             <g transform="translate(25,374) scale(0.38)">
               <path
                 d="M99 115.553H153.297L197.032 115V157.592H208V217H163.046V158.367H156.005H148.964L148.422 217H99V115.553Z"
@@ -128,7 +128,7 @@ export default function Menu({ now }: { now: Date }) {
 
         <rect
           width={screenSize?.width || 600}
-          height="580"
+          height="610"
           fill="#F1EBDF"
           mask="url(#menu-mask-mobile)"
         />
