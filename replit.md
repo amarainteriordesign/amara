@@ -30,10 +30,8 @@ Amara is a Next.js 15 application built with TypeScript, featuring a modern web 
 ├── hooks/              # Custom React hooks
 ├── lib/                # Library configurations
 ├── public/             # Static assets
-│   ├── audio/
 │   ├── fonts/
-│   ├── images/
-│   └── videos/
+│   └── images/
 ├── styles/             # Global styles and Sass files
 └── types/              # TypeScript type definitions
 ```
