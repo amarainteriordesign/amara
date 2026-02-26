@@ -138,9 +138,9 @@ export default function Contact() {
             </div>
 
             <div className="flex w-[33%] flex-col justify-between px-[30px] py-[30px] max-md:w-full max-md:px-[24px] max-md:py-[24px] max-sm:px-[16px] max-sm:py-[20px]">
-              <div className="mt-[10px]">
+              <div>
                 {OFFICES.map((office, i) => (
-                  <div key={office.title} className={i > 0 ? "mt-[40px]" : ""}>
+                  <div key={office.title} className={i > 0 ? "mt-[40px]" : "mt-[6px]"}>
                     <h3 className="font-sans text-[14px] leading-[20px] font-normal tracking-[2px] text-[#262626] uppercase">
                       {office.title}
                     </h3>
