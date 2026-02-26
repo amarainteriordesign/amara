@@ -179,7 +179,7 @@ export default function ContactUs() {
                   {FORM_TITLE}
                 </h2>
 
-                <form id="contact-form-landing" onSubmit={handleSubmit} autoComplete="off" className="flex flex-col gap-[16px]">
+                <form id="contact-form-landing" onSubmit={handleSubmit} autoComplete="on" className="flex flex-col gap-[16px]">
                   <div>
                     <label htmlFor="landing-contact-name" className="sr-only">Name</label>
                     <input
@@ -189,7 +189,7 @@ export default function ContactUs() {
                       placeholder="Name"
                       value={formData.name}
                       onChange={handleChange}
-                      autoComplete="off"
+                      autoComplete="name"
                       suppressHydrationWarning
                       className={`w-full border-b bg-transparent py-[12px] font-sans text-[14px] leading-[20px] font-normal text-[#0a0a0a] placeholder-[#595959] transition-colors outline-none ${
                         validationErrors.name ? "border-red-500" : "border-[#444]"
@@ -211,7 +211,7 @@ export default function ContactUs() {
                       placeholder="Email"
                       value={formData.email}
                       onChange={handleChange}
-                      autoComplete="off"
+                      autoComplete="email"
                       suppressHydrationWarning
                       className={`w-full border-b bg-transparent py-[12px] font-sans text-[14px] leading-[20px] font-normal text-[#0a0a0a] placeholder-[#595959] transition-colors outline-none ${
                         validationErrors.email ? "border-red-500" : "border-[#444]"
@@ -233,7 +233,7 @@ export default function ContactUs() {
                       placeholder="Phone number"
                       value={formData.phone}
                       onChange={handleChange}
-                      autoComplete="off"
+                      autoComplete="tel"
                       suppressHydrationWarning
                       className={`w-full border-b bg-transparent py-[12px] font-sans text-[14px] leading-[20px] font-normal text-[#0a0a0a] placeholder-[#595959] transition-colors outline-none ${
                         validationErrors.phone ? "border-red-500" : "border-[#444]"
