@@ -15,10 +15,10 @@ export default function Menu({ now }: { now: Date }) {
   const isMobile = (screenSize?.width || 0) < 768;
 
   const logoScale = isMobile ? 0.3 : 0.75;
-  const logoY = isMobile ? 310 : 365;
+  const logoY = isMobile ? 340 : 365;
   const logoHeight = Math.round(217 * logoScale);
-  const contactBtnY = isMobile ? 320 : 487;
-  const menuHeight = isMobile ? 450 : 610;
+  const contactBtnY = isMobile ? 350 : 487;
+  const menuHeight = isMobile ? 480 : 610;
 
   function navigateToContactUs() {
     router.push("/landing#contact-us");
@@ -102,7 +102,8 @@ export default function Menu({ now }: { now: Date }) {
       )}
 
       {isMobile && (
-        <div className="absolute left-[25px] right-[25px] flex justify-between" style={{ top: logoY + logoHeight + 15 }}>
+        <div className="absolute bottom-[32px] left-0 right-0 flex justify-center">
+          <div className="flex w-full max-w-[340px] justify-between" style={{}}>
           {[
             { title: "Dubai", offset: 4 },
             { title: "Miami", offset: -5 },
@@ -117,6 +118,7 @@ export default function Menu({ now }: { now: Date }) {
               </p>
             </div>
           ))}
+          </div>
         </div>
       )}
 
