@@ -31,13 +31,14 @@ export default function Menu({ now }: { now: Date }) {
     <div
       ref={containerRef}
       onClick={onMenuClick}
-      className="relative h-[524px] w-full px-[25px] pt-[50px] pb-[32px]"
+      className="relative h-[574px] w-full px-[25px] pt-[50px] pb-[32px]"
     >
       <div className="w-full border-t-[1px] border-[#E8DFD2] pb-[99px]">
         {[
           { name: "Projects", url: "/projects" },
-          { name: "About Us", url: "/about-us" },
           { name: "Design", url: "/design" },
+          { name: "Procurement", url: "/procurement" },
+          { name: "About Us", url: "/about-us" },
           { name: "News", url: "/blog" },
         ].map((page, i) => (
           <Link
