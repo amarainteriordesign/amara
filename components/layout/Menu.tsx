@@ -13,7 +13,7 @@ export default function Menu({ now }: { now: Date }) {
 
   useEffect(() => {
     function updateMeasurements() {
-      setViewportWidth(window.innerWidth);
+      setViewportWidth(document.documentElement.clientWidth);
     }
     updateMeasurements();
     window.addEventListener("resize", updateMeasurements);
