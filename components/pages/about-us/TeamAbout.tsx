@@ -37,17 +37,17 @@ export default function TeamAbout() {
                 <PhotoOverlay name="ELOISE CHAUVIERE" title="Managing Director" position="top" links={{ whatsapp: "https://api.whatsapp.com/send?phone=13055604373", linkedin: "https://www.linkedin.com/in/eloïse-chauviere-44b93b159" }} />
               </div>
               <div className="mt-[60px]">
-                <h3 className="pb-[12px] font-sans text-[14px] leading-[20px] font-medium tracking-[1.8px] text-[#262626] uppercase">Eloise Chauviere</h3>
+                <h3 className="pb-[12px] font-sans text-[14px] leading-[20px] font-semibold tracking-[1.8px] text-[#262626] uppercase">Inès Bakkali</h3>
                 <p className="font-sans text-[16px] leading-[28px] font-normal tracking-[-0.2px] text-[#262626]" style={{ textAlign: 'justify' }}>
-                  Strategic and detail-driven, Eloise bridges concept and execution. As Managing Director, she leads company operations, client strategy, international logistics and procurement, ensuring every project is delivered efficiently and to the highest standard.
+                  Creative and design-led, Inès leads the creative vision at Amara. As Design Director, she oversees concept development, spatial planning, and material selection, ensuring each project is cohesive, functional, and thoughtfully executed.
                 </p>
               </div>
             </div>
             <div className="w-[52%]">
               <div className="pt-[20px]">
-                <h3 className="pb-[12px] font-sans text-[14px] leading-[20px] font-medium tracking-[1.8px] text-[#262626] uppercase">Inès Bakkali</h3>
+                <h3 className="pb-[12px] font-sans text-[14px] leading-[20px] font-semibold tracking-[1.8px] text-[#262626] uppercase">Eloise Chauviere</h3>
                 <p className="font-sans text-[16px] leading-[28px] font-normal tracking-[-0.2px] text-[#262626]" style={{ textAlign: 'justify' }}>
-                  Creative and design-led, Inès leads the creative vision at Amara. As Design Director, she oversees concept development, spatial planning, and material selection, ensuring each project is cohesive, functional, and thoughtfully executed.
+                  Strategic and detail-driven, Eloise bridges concept and execution. As Managing Director, she leads company operations, client strategy, international logistics and procurement, ensuring every project is delivered efficiently and to the highest standard.
                 </p>
               </div>
               <div className="mt-[60px]">
@@ -66,7 +66,7 @@ export default function TeamAbout() {
             <PhotoOverlay name="ELOISE CHAUVIERE" title="Managing Director" position="top" links={{ whatsapp: "https://api.whatsapp.com/send?phone=13055604373", linkedin: "https://www.linkedin.com/in/eloïse-chauviere-44b93b159" }} />
           </div>
           <div>
-            <h3 className="pb-[12px] font-sans text-[14px] leading-[20px] font-medium tracking-[1.8px] text-[#262626] uppercase">Eloise Chauviere</h3>
+            <h3 className="pb-[12px] font-sans text-[14px] leading-[20px] font-semibold tracking-[1.8px] text-[#262626] uppercase">Eloise Chauviere</h3>
             <p className="font-sans text-[14px] leading-[24px] font-normal tracking-[-0.2px] text-[#262626]" style={{ textAlign: 'justify' }}>Strategic and detail-driven, Eloise bridges concept and execution. As Managing Director, she leads company operations, client strategy, international logistics and procurement, ensuring every project is delivered efficiently and to the highest standard.</p>
           </div>
           <div className="relative h-[500px] w-full overflow-hidden rounded-[8px] max-sm:h-[400px]">
@@ -74,7 +74,7 @@ export default function TeamAbout() {
             <PhotoOverlay name="INES BAKKALI" title="Design Director" position="bottom" links={{ whatsapp: "https://api.whatsapp.com/send?phone=13055604373", linkedin: "https://www.linkedin.com/in/inesbakkali/" }} />
           </div>
           <div>
-            <h3 className="pb-[12px] font-sans text-[14px] leading-[20px] font-medium tracking-[1.8px] text-[#262626] uppercase">Inès Bakkali</h3>
+            <h3 className="pb-[12px] font-sans text-[14px] leading-[20px] font-semibold tracking-[1.8px] text-[#262626] uppercase">Inès Bakkali</h3>
             <p className="font-sans text-[14px] leading-[24px] font-normal tracking-[-0.2px] text-[#262626]" style={{ textAlign: 'justify' }}>Creative and design-led, Inès leads the creative vision at Amara. As Design Director, she oversees concept development, spatial planning, and material selection, ensuring each project is cohesive, functional, and thoughtfully executed.</p>
           </div>
         </div>
