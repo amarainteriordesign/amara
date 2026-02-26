@@ -87,7 +87,18 @@ export default function Header({ isDark = false }: { isDark?: boolean }) {
 
     const heroBottom = heroSection.getBoundingClientRect().bottom;
     if (heroBottom <= 0) {
-      setDark();
+      gsap.set(".header-logo", { color: "#262626" });
+      gsap.set(".header-logo-text", { color: "#262626" });
+      gsap.set(".logo", { color: "#262626" });
+      if (plusIconRef.current) {
+        gsap.set(plusIconRef.current, { fill: "#262626", fillOpacity: 1 });
+      }
+      if (gradientRef.current) {
+        gsap.set(gradientRef.current, { opacity: 0 });
+      }
+    } else {
+      gsap.set(".header-logo", { color: "#FFF" });
+      gsap.set(".header-logo-text", { color: "#BCB19B" });
     }
 
     ScrollTrigger.create({
@@ -248,8 +259,8 @@ export default function Header({ isDark = false }: { isDark?: boolean }) {
                   " logo font-sans text-[16px] leading-[20px] font-medium tracking-[-0.5px] text-[#BCB19B]"
                 }
               >
-                <span className="header-logo text-[#FFF]">Amara</span>{" "}
-                <span className="header-logo-text text-[#BCB19B]">Interior Design Studio</span>
+                <span className="header-logo">Amara</span>{" "}
+                <span className="header-logo-text">Interior Design Studio</span>
               </Link>
             </div>
 
