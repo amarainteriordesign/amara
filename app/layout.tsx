@@ -66,13 +66,6 @@ const diranista = localFont({
   display: "swap",
 });
 
-// font-calvino
-const calvino = localFont({
-  src: "../public/fonts/calvino/calvino-regular.ttf",
-  variable: "--font-calvino",
-  display: "swap",
-});
-
 // font-snell-roundhand
 const snellRoundhand = localFont({
   src: "../public/fonts/snell-roundhand/snell-roundhand-regular.ttf",
@@ -180,7 +173,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         />
       </head>
       <body
-        className={`${helveticaNeue.variable} ${libreBaskerville.variable} ${libreCaslonDisplay.variable} ${lora.variable} ${diranista.variable} ${calvino.variable} ${snellRoundhand.variable} ${madeMirageThin.variable} max-w-screen overflow-x-hidden antialiased`}
+        className={`${helveticaNeue.variable} ${libreBaskerville.variable} ${libreCaslonDisplay.variable} ${lora.variable} ${diranista.variable} ${snellRoundhand.variable} ${madeMirageThin.variable} max-w-screen overflow-x-hidden antialiased`}
         suppressHydrationWarning
       >
         <noscript>
