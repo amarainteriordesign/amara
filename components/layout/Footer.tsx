@@ -32,9 +32,10 @@ export default function Footer({
   desertImage = "/images/pages/home/Footer_Desert_Amara_Interior_Design_Procurement_Miami_Dubai.webp",
   bgColor = "#F1EBDF",
 }: FooterProps) {
-  const [now, setNow] = useState<Date>(new Date());
+  const [now, setNow] = useState<Date | null>(null);
 
   useEffect(() => {
+    setNow(new Date());
     const intervalId = setInterval(() => setNow(new Date()), 30000);
     return () => clearInterval(intervalId);
   }, []);
@@ -148,7 +149,7 @@ export default function Footer({
             {CITIES.map((item) => (
               <div className="flex items-baseline gap-[8px]" key={item.title}>
                 <p className="font-sans text-[14px] leading-[20px] font-normal tracking-[-0.4px] text-[#9B9284]">
-                  {formatTimeForOffset(now, item.offset)}
+                  {now && formatTimeForOffset(now, item.offset)}
                 </p>
                 <p className="font-sans text-[14px] leading-[20px] font-medium tracking-[-0.6px] text-[#4A4A40]">
                   {item.title}

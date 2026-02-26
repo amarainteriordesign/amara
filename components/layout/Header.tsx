@@ -25,7 +25,7 @@ export default function Header() {
   const menuContainerRef = useRef<HTMLDivElement>(null);
   const menuTriggerRef = useRef<HTMLButtonElement>(null);
 
-  const [now, setNow] = useState<Date>(new Date());
+  const [now, setNow] = useState<Date | null>(null);
   const [showPreloader, setShowPreloader] = useState(isInitialLoad);
   const mobileMenuTl = useRef<gsap.core.Timeline>(null);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -43,8 +43,8 @@ export default function Header() {
     }
   }
 
-  // Interval Effect
   useEffect(() => {
+    setNow(new Date());
     const intervalId = setInterval(() => setNow(new Date()), 30000);
     return () => clearInterval(intervalId);
   }, []);

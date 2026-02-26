@@ -7,7 +7,7 @@ import React, { useRef } from "react";
 import { useWindowSize } from "@/hooks/useWindowSize";
 import { usePathname, useRouter } from "next/navigation";
 
-export default function Menu({ now }: { now: Date }) {
+export default function Menu({ now }: { now: Date | null }) {
   const screenSize = useWindowSize();
   const router = useRouter();
   const pathname = usePathname();

@@ -20,7 +20,7 @@ type ImageFooterProps = {
 export default function ImageFooter({
   image,
 }: ImageFooterProps) {
-  const [now, setNow] = useState<Date>(new Date());
+  const [now, setNow] = useState<Date | null>(null);
   const lenis = useLenis();
   const screenSize = useWindowSize();
   const router = useRouter();
@@ -62,8 +62,8 @@ export default function ImageFooter({
     }
   }, [lenis]);
 
-  // Interval Effect
   useEffect(() => {
+    setNow(new Date());
     const intervalId = setInterval(() => setNow(new Date()), 30000);
     return () => clearInterval(intervalId);
   }, []);
@@ -304,7 +304,7 @@ export default function ImageFooter({
                 ].map((item) => (
                   <div className="flex items-baseline gap-[8px]" key={item.title}>
                     <p className="font-sans text-[14px] leading-[20px] font-normal tracking-[-0.4px] text-[#737373]">
-                      {formatTimeForOffset(now, item.offset)}
+                      {now && formatTimeForOffset(now, item.offset)}
                     </p>
                     <p className="font-sans text-[14px] leading-[20px] font-medium tracking-[-0.6px] text-[#262626]">
                       {item.title}
