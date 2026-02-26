@@ -28,10 +28,17 @@ export default function Hero() {
   });
 
   useEffect(() => {
-    const timer = setInterval(() => {
+    let timer: ReturnType<typeof setInterval>;
+    const initialDelay = setTimeout(() => {
       setCurrentIndex((prev) => (prev + 1) % CAROUSEL_IMAGES.length);
+      timer = setInterval(() => {
+        setCurrentIndex((prev) => (prev + 1) % CAROUSEL_IMAGES.length);
+      }, CAROUSEL_INTERVAL);
     }, CAROUSEL_INTERVAL);
-    return () => clearInterval(timer);
+    return () => {
+      clearTimeout(initialDelay);
+      clearInterval(timer);
+    };
   }, []);
 
   return (
