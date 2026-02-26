@@ -85,25 +85,17 @@ export default function Header({ isDark = false }: { isDark?: boolean }) {
       }
     };
 
+    const heroBottom = heroSection.getBoundingClientRect().bottom;
+    if (heroBottom <= 0) {
+      setDark();
+    }
+
     ScrollTrigger.create({
       trigger: heroSection,
       start: "bottom top",
       onEnter: setDark,
       onLeaveBack: setWhite,
     });
-
-    const teamSection = document.getElementById("team-landing");
-    if (teamSection) {
-      ScrollTrigger.create({
-        trigger: teamSection,
-        start: "top top",
-        end: "bottom top",
-        onEnter: setWhite,
-        onLeaveBack: setDark,
-        onLeave: setDark,
-        onEnterBack: setWhite,
-      });
-    }
   }, []);
 
   // Timelines initialization
