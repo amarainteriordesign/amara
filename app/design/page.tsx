@@ -27,9 +27,11 @@ export default function DesignPage() {
 
         <Design />
 
-        <ExpandingImage linkTo="/about-us" />
+        <div className="bg-[#e8dfd2]">
+          <ExpandingImage linkTo="/about-us" />
 
-        <Approach />
+          <Approach />
+        </div>
 
         <div className="bg-[#F1EBDF]">
           <Projects />
