@@ -6,7 +6,7 @@ export default function AboutLanding() {
           Your Luxury Interior Designers in Miami
         </h2>
         <p className="font-sans text-[16px] leading-[28px] font-normal tracking-[-0.2px] text-[#4a4a4a] max-sm:text-[14px] max-sm:leading-[24px]">
-          We are a Miami-based luxury full-service interior design boutique firm specializing in high-end residential and commercial projects. From waterfront estates and penthouses to hospitality and investment properties, we provide tailored interior design solutions, including concept development, space planning, custom furniture design and sourcing, and project coordination to deliver refined spaces from concept to completion.
+          We are a Miami-based luxury full-service interior design boutique firm specializing in high-end residential and commercial projects. From waterfront estates and penthouses to hospitality and investment properties, we provide tailored interior design solutions, including concept development, space planning, custom furniture design and procurement, and project coordination to deliver refined spaces from concept to completion.
         </p>
         <div className="pt-[40px] max-sm:pt-[28px]">
           <a

@@ -93,7 +93,7 @@ All images follow this naming pattern:
 `DescriptionShort_Amara_Interior_Design_Procurement_Miami_Dubai.webp`
 - Example: `Aerial_Container_Cargo_Ship_Amara_Interior_Design_Procurement_Miami_Dubai.webp`
 - Format: WebP preferred
-- Images stored in `public/images/pages/sourcing/`
+- Images stored in `public/images/pages/procurement/`
 
 ## SEO Configuration
 - **Production Domain**: `https://amarainteriordesign.com` (set via `NEXT_PUBLIC_SITE_URL` env var)

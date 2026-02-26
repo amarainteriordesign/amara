@@ -1,8 +1,8 @@
 import Header from "@/components/layout/Header";
-import Hero from "@/components/pages/sourcing/Hero";
-import AboutSourcing from "@/components/pages/sourcing/AboutSourcing";
-import PrinciplesSourcing from "@/components/pages/sourcing/PrinciplesSourcing";
-import BoutiqueGrid from "@/components/pages/sourcing/BoutiqueGrid";
+import Hero from "@/components/pages/procurement/Hero";
+import AboutProcurement from "@/components/pages/procurement/AboutProcurement";
+import PrinciplesProcurement from "@/components/pages/procurement/PrinciplesProcurement";
+import BoutiqueGrid from "@/components/pages/procurement/BoutiqueGrid";
 import Contact from "@/components/pages/home/Contact";
 import Footer from "@/components/layout/Footer";
 import type { Metadata } from "next";
@@ -10,7 +10,7 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Procurement",
   description:
-    "Amara procurement services – luxury furniture, materials, and design elements sourced globally for high-end residential and commercial projects.",
+    "Amara procurement services – luxury furniture, materials, and design elements procured globally for high-end residential and commercial projects.",
   alternates: {
     canonical: "/procurement",
   },
@@ -23,9 +23,9 @@ export default function Procurement() {
 
       <Hero />
 
-      <AboutSourcing />
+      <AboutProcurement />
 
-      <PrinciplesSourcing />
+      <PrinciplesProcurement />
 
       <BoutiqueGrid />
 

@@ -1,4 +1,4 @@
-export default function ProcessSourcing() {
+export default function ProcessProcurement() {
   return (
     <section className="w-full bg-[#f1ebdf] py-[100px] max-md:py-[60px] max-sm:py-[40px]">
       <div className="mx-auto max-w-[1100px] px-[60px] max-md:px-[40px] max-sm:px-[20px]">
@@ -22,7 +22,7 @@ export default function ProcessSourcing() {
 
         <div>
           <h2 className="font-display text-[36px] leading-[44px] tracking-[0.5px] text-[#262626] max-sm:text-[26px] max-sm:leading-[34px]">
-            SOURCING PROCESS
+            PROCUREMENT PROCESS
           </h2>
           <p className="mt-[6px] font-display text-[14px] tracking-[1.5px] text-[#9a9082] max-sm:text-[12px]">
             Procurement & Delivery

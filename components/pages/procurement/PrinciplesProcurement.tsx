@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-export default function PrinciplesSourcing() {
+export default function PrinciplesProcurement() {
   return (
     <section className="bg-[#e8dfd2] w-full">
       <div className="mx-auto max-w-[1440px] px-[24px] pt-[40px] pb-[40px] text-center max-md:pt-[48px] max-md:pb-[30px]">
@@ -113,20 +113,20 @@ export default function PrinciplesSourcing() {
               <div className="relative flex h-[280px] w-full items-center justify-center overflow-hidden">
                 <div className="absolute inset-0">
                   <Image
-                    src="/images/pages/sourcing/boat-water.webp"
+                    src="/images/pages/procurement/boat-water.webp"
                     width={1000}
                     height={2000}
-                    alt="Global procurement and sourcing Amara Interior Design Miami Dubai"
+                    alt="Global procurement Amara Interior Design Miami Dubai"
                     className="h-full w-full object-cover blur-[30px]"
                   />
                 </div>
                 <div className="relative z-[1] h-[165px] w-[165px] overflow-hidden">
                   <div className="absolute h-full w-full overflow-hidden">
                     <Image
-                      src="/images/pages/sourcing/boat-water.webp"
+                      src="/images/pages/procurement/boat-water.webp"
                       width={500}
                       height={1000}
-                      alt="Global procurement and sourcing Amara Interior Design Miami Dubai"
+                      alt="Global procurement Amara Interior Design Miami Dubai"
                       className="h-full w-full object-cover"
                     />
                   </div>
@@ -199,10 +199,10 @@ export default function PrinciplesSourcing() {
           <div className="relative flex h-full w-full items-center justify-center overflow-hidden">
             <div className="absolute inset-0">
               <Image
-                src="/images/pages/sourcing/boat-water.webp"
+                src="/images/pages/procurement/boat-water.webp"
                 width={1000}
                 height={2000}
-                alt="Global procurement and sourcing Amara Interior Design Miami Dubai"
+                alt="Global procurement Amara Interior Design Miami Dubai"
                 className="h-full w-full object-cover blur-[30px]"
               />
             </div>
@@ -210,10 +210,10 @@ export default function PrinciplesSourcing() {
             <div className="relative z-[1] h-[345px] max-h-[60%] w-[321px] max-w-[70%] overflow-hidden max-sm:h-[165px] max-sm:w-[165px]">
               <div className="absolute h-full w-full overflow-hidden">
                 <Image
-                  src="/images/pages/sourcing/boat-water.webp"
+                  src="/images/pages/procurement/boat-water.webp"
                   width={500}
                   height={1000}
-                  alt="Global procurement and sourcing Amara Interior Design Miami Dubai"
+                  alt="Global procurement Amara Interior Design Miami Dubai"
                   className="h-full w-full object-cover"
                 />
               </div>

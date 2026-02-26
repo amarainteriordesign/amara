@@ -1,4 +1,4 @@
-export default function AboutSourcing() {
+export default function AboutProcurement() {
   return (
     <section className="w-full bg-[#e8dfd2]">
       <div className="mx-auto max-w-[900px] px-[60px] pt-[80px] pb-[40px] text-center max-md:px-[40px] max-md:pt-[60px] max-md:pb-[30px] max-sm:px-[20px] max-sm:pt-[40px] max-sm:pb-[20px]">
@@ -9,7 +9,7 @@ export default function AboutSourcing() {
           International FF&E Procurement & Installation
         </h2>
         <p className="mt-[40px] font-sans max-md:mt-[30px] text-[16px] leading-[28px] font-normal tracking-[-0.2px] text-[#4a4a4a] max-sm:text-[14px] max-sm:leading-[24px]">
-          At Amara Interior Design, sourcing is a structured and strategic process. We provide international furniture sourcing and FF&E procurement services for luxury residential, hospitality, and commercial projects worldwide. Working directly with trusted global manufacturers and partners, we manage quotations, production follow up, quality control, and international logistics. From supplier coordination to consolidated container shipping, last mile delivery, and onsite installation, we oversee the entire procurement process to ensure consistency, transparency, and reliable project timelines.
+          At Amara Interior Design, procurement is a structured and strategic process. We provide international furniture procurement and FF&E services for luxury residential, hospitality, and commercial projects worldwide. Working directly with trusted global manufacturers and partners, we manage quotations, production follow up, quality control, and international logistics. From supplier coordination to consolidated container shipping, last mile delivery, and onsite installation, we oversee the entire procurement process to ensure consistency, transparency, and reliable project timelines.
         </p>
         <div className="pt-[40px] max-sm:pt-[28px]">
           <a
