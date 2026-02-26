@@ -8,7 +8,7 @@ import ScrollTrigger from "gsap/ScrollTrigger";
 
 gsap.registerPlugin(ScrollTrigger);
 
-export default function Hero() {
+export default function HeroAbout() {
   useGSAP(() => {
     const tl = gsap.timeline({ defaults: { ease: "power3.inOut", duration: 1 } });
 
@@ -73,12 +73,12 @@ export default function Hero() {
             <div className="flex flex-col items-center">
               <Copy delay={1.7} animateOnScroll={false}>
                 <h1 className="text-center font-serif text-[28px] leading-[36px] font-normal tracking-[-0.8px] text-[#FFF] max-sm:text-[24px] max-sm:tracking-[-0.6px]">
-                  Design Begins with People
+                  Where Design Comes to Life
                 </h1>
               </Copy>
               <div className="max-h-fit w-full overflow-hidden text-center">
                 <p className="hero-center-text-space text-bg-img bg-[url(/images/pages/home/text-background.webp)] text-center font-serif text-[28px] leading-[36px] tracking-[-0.8px] italic max-sm:text-[24px] max-sm:tracking-[-0.6px]">
-                  Their Rituals, Their Rhythm, Their Dreams
+                  Residential. Commercial. Wellness.
                 </p>
               </div>
             </div>
@@ -91,8 +91,8 @@ export default function Hero() {
                 className="object-contain max-sm:h-[153px] max-sm:w-[217px]"
               />
               <Copy delay={1.8} animateOnScroll={false}>
-                <p className="text-center font-sans text-[12px] leading-[20px] font-normal tracking-[0.3px] text-[#FFF] uppercase">
-                  Rooted in human stories
+                <p className="pb-[8px] font-sans text-[12px] leading-[20px] font-normal tracking-[4px] text-white uppercase max-sm:pb-[12px] max-sm:text-[10px]" style={{ textShadow: '0 4px 20px rgba(0,0,0,0.7), 0 2px 8px rgba(0,0,0,0.5)' }}>
+                  MIAMI - DUBAI - PARIS
                 </p>
               </Copy>
             </div>

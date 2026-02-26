@@ -1,5 +1,5 @@
 import Header from "@/components/layout/Header";
-import Hero from "@/components/pages/studio/Hero";
+import HeroAbout from "@/components/pages/about-us/HeroAbout";
 import AboutSection from "@/components/pages/about-us/AboutSection";
 import ExpandingImageAbout from "@/components/pages/about-us/ExpandingImageAbout";
 import ContactAbout from "@/components/pages/about-us/ContactAbout";
@@ -25,7 +25,7 @@ export default function AboutUs() {
     <>
       <Header isDark={true} />
 
-      <Hero />
+      <HeroAbout />
 
       <AboutSection />
 

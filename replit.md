@@ -108,6 +108,12 @@ All images follow this naming pattern:
 - **Heading Hierarchy**: Every page has exactly one `<h1>` in the hero section, with proper `h1→h2→h3` progression (no skipped levels)
 
 ## Recent Changes
+- **2025-02-26**: Consolidated studio components into about-us
+  - Moved `components/pages/studio/Hero.tsx` to `components/pages/about-us/HeroAbout.tsx`
+  - Removed unused `components/pages/studio/` directory (ContactUs, Experiences, Work, Story were not imported)
+  - Updated About Us hero text: "Where Design Comes to Life", "Residential. Commercial. Wellness.", "MIAMI - DUBAI - PARIS"
+  - Updated About Us section heading to "About Our Studio"
+  - Note: `public/images/pages/studio/` retained (used by multiple pages)
 - **2025-01-13**: Added Google Tag Manager
   - GTM script and noscript fallback added to root layout
   - Loads automatically on all pages
