@@ -3,7 +3,7 @@ import Image from "next/image";
 export default function AboutUs() {
   return (
     <section className="bg-[#e8dfd2] py-[80px] max-md:py-[60px] max-sm:py-[40px]">
-      <div className="mx-auto flex max-w-[1200px] items-center gap-[60px] px-[60px] max-md:flex-col max-md:gap-[40px] max-md:px-[40px] max-sm:gap-[30px] max-sm:px-[17px]">
+      <div className="mx-auto flex max-w-[1200px] items-center gap-[60px] px-[60px] max-md:flex-col-reverse max-md:gap-[40px] max-md:px-[40px] max-sm:gap-[30px] max-sm:px-[17px]">
         <div className="w-[50%] shrink-0 max-md:w-full">
           <Image
             src="/images/pages/home/Studio_Interior_Amara_Interior_Design_Procurement_Miami_Dubai.webp"
