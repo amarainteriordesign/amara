@@ -9,7 +9,7 @@ export default function Approach() {
           className="text-bg-img inline bg-[url(/images/pages/home/Text_Background_Amara_Interior_Design_Procurement_Miami_Dubai.webp)] !bg-top pb-[9px] italic text-[44px] leading-[52px] tracking-[0.2px] max-md:text-[36px] max-md:leading-[44px] max-sm:text-[32px] max-sm:leading-[40px]"
           style={{ fontFamily: 'var(--font-lora)', WebkitTextFillColor: 'transparent' }}
         >
-          Our Approach
+          Our Services
         </h3>
       </div>
 
