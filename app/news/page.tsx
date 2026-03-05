@@ -1,7 +1,7 @@
 export const revalidate = 300;
 
 import Header from "@/components/layout/Header";
-import ImageFooter from "@/components/layout/ImageFooter";
+import Footer from "@/components/layout/Footer";
 import Hero from "@/components/pages/news/Hero";
 import Contact from "@/components/common/Contact";
 import MainSection from "@/components/pages/news/MainSection";
@@ -38,7 +38,7 @@ export default async function News() {
 
       <Contact />
 
-      <ImageFooter image="/images/pages/news/News_Ocean_Footer_Amara_Interior_Design_Procurement_Miami_Dubai.webp" />
+      <Footer />
     </>
   );
 }

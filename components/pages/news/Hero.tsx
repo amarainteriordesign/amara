@@ -2,17 +2,17 @@
 import Image from "next/image";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
-import InsightsIcon from "@/components/icons/hero-insights.svg";
+import Copy from "@/components/common/Copy/Copy";
 
 gsap.registerPlugin(useGSAP);
 
 export default function Hero() {
   useGSAP(() => {
-    const tl = gsap.timeline({ defaults: { ease: "power3.inOut", duration: 1 } });
-
-    tl.to(".hero-bottom-text-anim", { y: 300, duration: 0 });
-    tl.to(".hero-bottom-text-anim", { opacity: 1, delay: 1.5, duration: 0 });
-    tl.to(".hero-bottom-text-anim", { y: 0 });
+    gsap.fromTo(
+      ".hero-overlay",
+      { opacity: 0 },
+      { opacity: 1, duration: 1.5, delay: 0.5, ease: "power2.out" }
+    );
 
     gsap.to(".animate-hero-reveal", {
       scale: 1,
@@ -23,22 +23,33 @@ export default function Hero() {
   });
 
   return (
-    <section className={`max-xmd:min-h-screen relative min-h-[calc(100vh+80px)] w-full`}>
+    <section className="relative min-h-screen w-full max-md:min-h-screen">
       <div className="sticky top-0 z-[1] h-screen w-full max-w-full overflow-hidden">
         <div className="flex h-full max-h-full w-full max-w-full items-end overflow-hidden">
           <Image
-            className="animate-hero-reveal absolute top-0 left-0 z-[-1] h-full w-full object-cover"
-            src="/images/pages/news/News_Ocean_Hero_Amara_Interior_Design_Procurement_Miami_Dubai.webp"
+            className="animate-hero-reveal absolute top-0 left-0 z-[-1] h-full w-full scale-[1.3] object-cover"
+            src="/images/pages/home/Footer_Desert_Amara_Interior_Design_Procurement_Miami_Dubai.webp"
             width={1920}
             height={1080}
-            alt="Interior design news and insights Amara Miami Dubai"
+            alt="Beach landscape Amara Interior Design news Miami Dubai"
             priority
-            sizes="100vw"
           />
 
-          <h1 className="sr-only">Interior Design News and Insights</h1>
-          <div className="hero-bottom-text-anim absolute right-0 bottom-0 left-0 px-[10px] pb-[26px] max-sm:px-[5px]">
-            <InsightsIcon />
+          <div className="absolute inset-0 z-0 bg-black/30" />
+
+          <div className="hero-overlay absolute top-1/2 z-[1] flex max-h-fit w-full -translate-y-1/2 flex-col items-center justify-center overflow-hidden p-[20px]">
+            <Copy animateOnScroll={false} delay={1.55}>
+              <h1 className="pb-[12px] text-center text-[56px] leading-[64px] font-normal tracking-[-0.5px] capitalize text-[#FFF] max-sm:pb-[8px] max-sm:text-[40px] max-sm:leading-[48px]" style={{ fontFamily: 'var(--font-lora)' }}>
+                <span className="text-white">Notes on What</span>{" "}
+                <span className="text-white">Inspires Us.</span>
+              </h1>
+            </Copy>
+
+            <Copy delay={1.8} animateOnScroll={false}>
+              <p className="pb-[8px] text-center font-sans text-[16px] leading-[24px] font-normal tracking-[4px] text-white uppercase max-sm:pb-[12px] max-sm:text-[12px]" style={{ textShadow: '0 4px 20px rgba(0,0,0,0.7), 0 2px 8px rgba(0,0,0,0.5)' }}>
+                Residential & Commercial - Wellness & Balance
+              </p>
+            </Copy>
           </div>
         </div>
       </div>

@@ -2,7 +2,7 @@
 export const revalidate = 300;
 
 import Header from "@/components/layout/Header";
-import ImageFooter from "@/components/layout/ImageFooter";
+import Footer from "@/components/layout/Footer";
 import Hero from "@/components/pages/projects/Hero";
 import Quote from "@/components/pages/projects/Quote";
 import Contact from "@/components/common/Contact";
@@ -60,7 +60,7 @@ export default async function Projects() {
 
       <Contact />
 
-      <ImageFooter image="/images/pages/home/Hero_Bedroom_Amara_Interior_Design_Procurement_Miami_Dubai.webp" />
+      <Footer />
     </>
   );
 }

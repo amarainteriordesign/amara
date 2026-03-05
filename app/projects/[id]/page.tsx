@@ -1,6 +1,6 @@
 export const revalidate = 300;
 
-import ImageFooter from "@/components/layout/ImageFooter";
+import Footer from "@/components/layout/Footer";
 import Header from "@/components/layout/Header";
 import Contact from "@/components/common/Contact";
 import Hero from "@/components/pages/project/Hero";
@@ -127,9 +127,7 @@ export default async function Project({ params }: ProjectPageProps) {
 
       <Contact />
 
-      <ImageFooter
-        image={serializedProject.footerFullWidthImageUrl}
-      />
+      <Footer />
     </>
   );
 }

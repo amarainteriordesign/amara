@@ -1,7 +1,7 @@
 export const revalidate = 300;
 
 import Header from "@/components/layout/Header";
-import ImageFooter from "@/components/layout/ImageFooter";
+import Footer from "@/components/layout/Footer";
 import InsideBlogSection from "@/components/pages/news/InsideBlogSection";
 import { fetchAllBlogs, fetchBlogBySlug } from "@/lib/blog";
 import { notFound } from "next/navigation";
@@ -153,7 +153,7 @@ export default async function InsideNews({ params }: NewsPageProps) {
 
       <OtherBlogs blogs={serializedRelatedBlogs} />
 
-      <ImageFooter image={serializedBlog.footerImageUrl || "/images/pages/news/News_Ocean_Footer_Amara_Interior_Design_Procurement_Miami_Dubai.webp"} />
+      <Footer />
     </>
   );
 }
