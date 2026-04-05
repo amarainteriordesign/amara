@@ -1,5 +1,12 @@
 import Image from "next/image";
-import Linkedin from "@/components/icons/linkedin.svg";
+function EmailIcon() {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#FFF" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+      <rect width="20" height="16" x="2" y="4" rx="2" />
+      <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
+    </svg>
+  );
+}
 
 function WhatsAppIcon() {
   return (
@@ -45,6 +52,12 @@ export default function TeamLanding() {
               </div>
               <div className="flex items-center gap-[9px] self-end">
                 <a
+                  href="mailto:info@amarainteriordesign.com?subject=Interior%20Design%20Inquiry&body=Hello%20Amara%20Team%2C%0A%0AI%20am%20interested%20in%20your%20interior%20design%20services.%20Please%20contact%20me%20to%20discuss%20my%20project.%0A%0AThank%20you."
+                  className="flex h-[40px] w-[40px] items-center justify-center rounded-[50%] border-[1px] border-[#FFF] bg-[#ADADAD4D]"
+                >
+                  <EmailIcon />
+                </a>
+                <a
                   href="https://api.whatsapp.com/send?phone=13055604373"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -52,18 +65,11 @@ export default function TeamLanding() {
                 >
                   <WhatsAppIcon />
                 </a>
-                <a
-                  href="https://www.linkedin.com/in/eloïse-chauviere-44b93b159"
-                  target="_blank"
-                  className="flex h-[40px] w-[40px] items-center justify-center rounded-[50%] border-[1px] border-[#FFF] bg-[#ADADAD4D]"
-                >
-                  <Linkedin width={16} height={16} color="#FFF" />
-                </a>
               </div>
             </div>
           </div>
 
-          <div className="flex h-[63vh] flex-col items-center justify-center gap-[40px] rounded-[8px] px-[40px] max-md:order-first max-md:h-auto max-md:gap-[30px] max-md:px-[20px] max-md:py-[40px] max-sm:h-auto max-sm:gap-[24px] max-sm:px-[16px] max-sm:py-[30px]">
+          <div className="flex h-[63vh] flex-col items-center justify-center gap-[40px] rounded-[8px] px-[40px] max-md:h-auto max-md:gap-[30px] max-md:px-[20px] max-md:py-[40px] max-sm:h-auto max-sm:gap-[24px] max-sm:px-[16px] max-sm:py-[30px]">
             {STATS.map((stat, i) => (
               <div key={i} className="text-center">
                 <p className="font-display text-[48px] leading-[1] font-normal tracking-[-1px] text-[#262626] uppercase max-sm:text-[36px]">
@@ -96,19 +102,18 @@ export default function TeamLanding() {
               </div>
               <div className="flex items-center gap-[9px] self-start max-md:self-end">
                 <a
+                  href="mailto:info@amarainteriordesign.com?subject=Interior%20Design%20Inquiry&body=Hello%20Amara%20Team%2C%0A%0AI%20am%20interested%20in%20your%20interior%20design%20services.%20Please%20contact%20me%20to%20discuss%20my%20project.%0A%0AThank%20you."
+                  className="flex h-[40px] w-[40px] items-center justify-center rounded-[50%] border-[1px] border-[#FFF] bg-[#ADADAD4D]"
+                >
+                  <EmailIcon />
+                </a>
+                <a
                   href="https://api.whatsapp.com/send?phone=13055604373"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex h-[40px] w-[40px] items-center justify-center rounded-[50%] border-[1px] border-[#FFF] bg-[#ADADAD4D]"
                 >
                   <WhatsAppIcon />
-                </a>
-                <a
-                  href="https://www.linkedin.com/in/inesbakkali/"
-                  target="_blank"
-                  className="flex h-[40px] w-[40px] items-center justify-center rounded-[50%] border-[1px] border-[#FFF] bg-[#ADADAD4D]"
-                >
-                  <Linkedin width={16} height={16} color="#FFF" />
                 </a>
               </div>
             </div>

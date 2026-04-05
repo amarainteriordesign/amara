@@ -14,7 +14,7 @@ export default function ContactSection() {
   const [formData, setFormData] = useState({
     email: "",
     phone: "",
-    message: "",
+    message: "Hello, I am interested in your interior design services.",
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitStatus, setSubmitStatus] = useState<"idle" | "success" | "error">("idle");

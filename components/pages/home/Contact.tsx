@@ -24,7 +24,7 @@ export default function Contact() {
     name: "",
     email: "",
     phone: "",
-    message: "",
+    message: "Hello, I am interested in your interior design services.",
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitStatus, setSubmitStatus] = useState<"idle" | "success" | "error">("idle");
@@ -147,7 +147,7 @@ export default function Contact() {
                     <a href={`tel:${office.phone.replace(/[\s()]/g, "")}`} className="mt-[12px] block font-sans text-[14px] leading-[20px] font-normal text-[#666]">
                       {office.phone}
                     </a>
-                    <a href={`mailto:${office.email}`} className="mt-[8px] block font-sans text-[14px] leading-[20px] font-normal text-[#666]">
+                    <a href={`mailto:${office.email}?subject=Interior%20Design%20Inquiry&body=Hello%20Amara%20Team%2C%0A%0AI%20am%20interested%20in%20your%20interior%20design%20services.%20Please%20contact%20me%20to%20discuss%20my%20project.%0A%0AThank%20you.`} className="mt-[8px] block font-sans text-[14px] leading-[20px] font-normal text-[#666]">
                       {office.email}
                     </a>
                   </div>

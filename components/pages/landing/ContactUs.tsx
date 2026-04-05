@@ -24,7 +24,7 @@ export default function ContactUs() {
     name: "",
     email: "",
     phone: "",
-    message: "",
+    message: "Hello, I am interested in your interior design services.",
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitStatus, setSubmitStatus] = useState<"idle" | "success" | "error">("idle");
@@ -105,7 +105,7 @@ export default function ContactUs() {
           name: "",
           email: "",
           phone: "",
-          message: "",
+          message: "Hello, I am interested in your interior design services.",
         });
         setValidationErrors({});
         setTimeout(() => setSubmitStatus("idle"), 3000);
@@ -123,9 +123,9 @@ export default function ContactUs() {
   return (
     <section id="contact-us" className="relative w-full bg-[#F1EBDF]">
       <div className="relative z-[2] w-full max-md:h-auto">
-        <div className="px-[20px] pt-[60px] pb-[60px] max-sm:px-[12px] max-sm:pt-[20px] max-sm:pb-[30px]">
-          <div className="mx-auto flex max-w-[1200px] gap-[0px] max-md:flex-col">
-            <div className="w-[33%] shrink-0 px-[5px] py-[10px] max-md:order-3 max-md:w-full max-md:px-[5px] max-md:py-[5px]">
+        <div className="px-[20px] py-[80px] max-sm:px-[12px] max-sm:py-[40px]">
+          <div className="mx-auto flex max-w-[1200px] gap-[0px] rounded-[20px] bg-[#E8E0D6] max-md:flex-col">
+            <div className="w-[33%] shrink-0 px-[5px] py-[10px] max-md:order-3 max-md:w-full max-md:px-[5px] max-md:py-[5px] max-sm:hidden">
               <Image
                 src="/images/pages/landing/Contact_Image_Amara_Interior_Design_Procurement_Miami_Dubai.webp"
                 width={400}
@@ -145,7 +145,7 @@ export default function ContactUs() {
                     <a href={`tel:${office.phone.replace(/[\s()]/g, "")}`} className="mt-[12px] block font-sans text-[14px] leading-[20px] font-normal text-[#666]">
                       {office.phone}
                     </a>
-                    <a href={`mailto:${office.email}`} className="mt-[8px] block font-sans text-[14px] leading-[20px] font-normal text-[#666]">
+                    <a href={`mailto:${office.email}?subject=Interior%20Design%20Inquiry&body=Hello%20Amara%20Team%2C%0A%0AI%20am%20interested%20in%20your%20interior%20design%20services.%20Please%20contact%20me%20to%20discuss%20my%20project.%0A%0AThank%20you.`} className="mt-[8px] block font-sans text-[14px] leading-[20px] font-normal text-[#666]">
                       {office.email}
                     </a>
                   </div>
@@ -175,7 +175,7 @@ export default function ContactUs() {
 
             <div className="flex w-[33%] flex-col justify-between px-[30px] py-[30px] max-md:order-1 max-md:w-full max-md:px-[24px] max-md:py-[24px] max-sm:px-[16px] max-sm:py-[16px]">
               <div>
-                <h2 className="mb-[24px] text-[22px] leading-[28px] font-normal tracking-[-0.8px] text-[#0a0a0a] max-sm:text-[18px]" style={{ fontFamily: 'var(--font-lora)' }}>
+                <h2 className="mb-[24px] text-[28px] leading-[36px] font-normal tracking-[-0.3px] text-[#0a0a0a] max-sm:text-[22px] max-sm:leading-[30px]" style={{ fontFamily: 'var(--font-lora)' }}>
                   {FORM_TITLE}
                 </h2>
 
