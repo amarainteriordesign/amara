@@ -10,9 +10,9 @@ import Footer from "@/components/layout/Footer";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Amara Interior Design Studio | Luxury Residential & Hospitality | Miami, Dubai, Paris",
+  title: "Amara Interior Design Studio | Miami, Dubai & Paris",
   description:
-    "Amara is a luxury interior design and procurement studio in Miami, Dubai, and Paris specializing in bespoke residential and hospitality spaces with curated materials and artisan craftsmanship.",
+    "Amara is a luxury interior design & procurement studio in Miami, Dubai & Paris. Bespoke residential, hospitality and commercial interiors worldwide.",
   alternates: {
     canonical: "/landing",
   },

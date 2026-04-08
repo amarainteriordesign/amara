@@ -12,9 +12,9 @@ import Footer from "@/components/layout/Footer";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "About Us",
+  title: "About Us | Amara Interior Design Studio",
   description:
-    "Meet the Amara Interior Design team. Luxury bespoke interiors crafted with natural materials, refined details, and timeless design in Miami, Dubai, and Paris.",
+    "Meet the Amara Interior Design team — luxury bespoke interiors with natural materials and timeless design in Miami, Dubai & Paris.",
   alternates: {
     canonical: "/about-us",
   },

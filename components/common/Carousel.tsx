@@ -115,6 +115,7 @@ export default function Carousel({
           src={slide.img}
           width={604}
           height={420}
+          sizes="(max-width: 768px) 315px, 604px"
           alt={slide.alt || `Slide ${index + 1}`}
           className={`will-change transition-scale h-full w-full object-cover duration-300 ease-in-out hover:scale-125 ${imageClassName}`}
         />

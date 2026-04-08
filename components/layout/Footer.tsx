@@ -57,7 +57,7 @@ export default function Footer({
       <footer className="w-full px-[42px] pt-[60px] pb-[30px] max-md:px-[20px] max-md:pt-[40px]" style={{ backgroundColor: bgColor }}>
         <div className="mx-auto max-w-[1440px]">
           {/* Main row: 3 equal columns */}
-          <div className="grid grid-cols-3 items-center max-md:flex max-md:flex-col max-md:items-start max-md:gap-[40px]">
+          <div className="grid grid-cols-3 items-center max-md:flex max-md:flex-col max-md:items-center max-md:gap-[40px]">
             {/* Col 1 — AMARA Cutout (left-aligned) */}
             <div className="justify-self-start">
               <div className="relative h-[180px] w-[240px] overflow-hidden max-sm:h-[70px] max-sm:w-[95px]">
@@ -89,7 +89,7 @@ export default function Footer({
             </div>
 
             {/* Col 2 — Nav links (centered) */}
-            <nav className="flex flex-col items-center gap-[8px] justify-self-center max-md:items-start">
+            <nav className="flex flex-col items-center gap-[8px] justify-self-center max-md:items-center">
               {NAV_LINKS.map((link) => (
                 <Link
                   key={link.url}
@@ -105,7 +105,7 @@ export default function Footer({
             <div className="flex justify-end pr-[130px] max-lg:pr-[60px] max-md:pr-0">
             <div className="flex gap-[12px]">
               <a
-                href="mailto:info@amarainteriordesign.com"
+                href="mailto:info@amarainteriordesign.com?subject=Interior%20Design%20Inquiry&body=Hello%20Amara%20Team%2C%0A%0AI%20am%20interested%20in%20your%20interior%20design%20services.%20Please%20contact%20me%20to%20discuss%20my%20project.%0A%0AThank%20you."
                 aria-label="Email"
                 className="flex h-[48px] w-[48px] items-center justify-center rounded-full border border-[#9B9284] transition-opacity hover:opacity-70"
               >

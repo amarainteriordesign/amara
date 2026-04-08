@@ -8,7 +8,7 @@ import Footer from "@/components/layout/Footer";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Procurement",
+  title: "Procurement | Amara Interior Design",
   description:
     "Amara procurement services – luxury furniture, materials, and design elements procured globally for high-end residential and commercial projects.",
   alternates: {

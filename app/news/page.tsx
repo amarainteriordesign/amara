@@ -10,9 +10,9 @@ import type { SerializedBlog } from "@/types/blog";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "News",
+  title: "News | Amara Interior Design",
   description:
-    "Insights, inspiration, and stories about luxury interior design, architecture, and procurement by Amara Interior Design. Trends from Miami, Dubai, and Paris.",
+    "Insights and inspiration on luxury interior design, architecture and procurement by Amara. Design trends from Miami, Dubai & Paris.",
   alternates: {
     canonical: "/news",
   },

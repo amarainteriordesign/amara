@@ -13,9 +13,9 @@ import { Project } from "@/types/project";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Projects",
+  title: "Projects | Amara Interior Design",
   description:
-    "Explore Amara Interior Design projects worldwide. Luxury residential and hospitality interiors featuring authentic materials, natural light, and bespoke procurement in Miami, Dubai, and beyond.",
+    "Explore Amara Interior Design projects worldwide. Luxury residential & hospitality interiors in Miami, Dubai and beyond.",
   alternates: {
     canonical: "/projects",
   },
