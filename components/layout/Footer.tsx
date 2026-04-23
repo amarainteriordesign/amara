@@ -130,7 +130,7 @@ export default function Footer({
                 <Instagram width={16} height={16} color="#4A4A40" />
               </a>
               <a
-                href="https://wa.me/971585487150"
+                href="https://api.whatsapp.com/send?phone=13055604373"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="WhatsApp"
