@@ -9,9 +9,15 @@ function chunk<T>(arr: T[], size: number): T[][] {
 
 function BatchRow({ batch }: { batch: ProjectType[] }) {
   const [a, b, c, d] = batch;
+  const hasSecondRow = Boolean(c || d);
 
   return (
-    <div className="relative flex w-full flex-col gap-[13px] md:h-[1250px] md:max-slg:h-[950px]">
+    <div
+      className={
+        "relative flex w-full flex-col gap-[13px] " +
+        (hasSecondRow ? "md:h-[1250px] md:max-slg:h-[950px]" : "md:h-fit")
+      }
+    >
       <div className="flex w-full flex-col items-start justify-center gap-[13px] md:flex-row md:gap-[93px] md:max-xmd:gap-[40px]">
         {a && (
           <div className="h-[70vh] w-full max-sm:h-[352px] md:h-[593px] md:max-w-[561px] md:max-xmd:h-[415px] md:max-xmd:max-w-[392px]">
