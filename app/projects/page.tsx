@@ -30,21 +30,11 @@ export default async function Projects() {
     console.error("Failed to fetch projects from Firebase:", error);
   }
 
-  // Sort projects: active first (isSoon: false), then coming soon (isSoon: true)
-  const sortedProjects = [...projects].sort((a, b) => {
-    if (a.isSoon === b.isSoon) return 0;
-    return a.isSoon ? 1 : -1;
-  });
+  // Gallery shows every active project; the layout extends in 4-tile batches.
+  const galleryProjects = projects.filter((p) => !p.isSoon);
 
-  // Allocate projects to sections
-  // Gallery gets first 5 projects (active + coming soon if needed)
-  const galleryProjects = sortedProjects.slice(0, 5);
-
-  // DiscoverProjects gets remaining coming soon projects (not already in gallery)
-  const usedProjectIds = new Set(galleryProjects.map((p) => p.id));
-  const discoverProjects = sortedProjects
-    .filter((p) => p.isSoon && !usedProjectIds.has(p.id))
-    .slice(0, 3);
+  // "Unfold the story" still only shows coming-soon projects, capped at 3.
+  const discoverProjects = projects.filter((p) => p.isSoon).slice(0, 3);
 
   return (
     <>

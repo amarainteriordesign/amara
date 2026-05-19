@@ -1,95 +1,114 @@
 import Project from "@/components/common/Project";
 import { Project as ProjectType } from "@/types/project";
 
-export default function Gallery({ projects }: { projects: ProjectType[] }) {
-  // Projects are already sorted and allocated by the parent page
-  const availableProjects = projects;
+function chunk<T>(arr: T[], size: number): T[][] {
+  const out: T[][] = [];
+  for (let i = 0; i < arr.length; i += size) out.push(arr.slice(i, i + size));
+  return out;
+}
+
+function BatchRow({ batch }: { batch: ProjectType[] }) {
+  const [a, b, c, d] = batch;
 
   return (
-    <section className="mx-auto flex w-full max-w-[1440px] flex-col items-center gap-[126px] px-[20px] max-md:gap-[13px]">
-      {/* First featured project */}
-      {availableProjects[0] && (
-        <div className="h-[1013px] w-full max-w-[864px] max-md:h-[85vh] max-md:max-w-full max-sm:h-[537px]">
+    <div className="relative flex w-full flex-col gap-[13px] md:h-[1250px] md:max-slg:h-[950px]">
+      <div className="flex w-full flex-col items-start justify-center gap-[13px] md:flex-row md:gap-[93px] md:max-xmd:gap-[40px]">
+        {a && (
+          <div className="h-[70vh] w-full max-sm:h-[352px] md:h-[593px] md:max-w-[561px] md:max-xmd:h-[415px] md:max-xmd:max-w-[392px]">
+            <Project
+              src={a.mainImageUrl}
+              location={a.location}
+              title={a.title}
+              href={`/projects/${a.id}`}
+              width={1000}
+              height={1000}
+              alt={a.title}
+              isSoon={a.isSoon}
+            />
+          </div>
+        )}
+
+        {b && (
+          <div className="h-[70vh] w-full max-sm:h-[352px] md:h-[367px] md:max-w-[491px] md:max-xmd:h-[256px] md:max-xmd:max-w-[343px]">
+            <Project
+              src={b.mainImageUrl}
+              location={b.location}
+              title={b.title}
+              href={`/projects/${b.id}`}
+              width={1000}
+              height={850}
+              alt={b.title}
+              tined={true}
+              isSoon={b.isSoon}
+            />
+          </div>
+        )}
+      </div>
+
+      {(c || d) && (
+        <div className="flex w-full flex-col items-end justify-center gap-[13px] md:absolute md:top-[503px] md:flex-row md:gap-[95px] md:max-xmd:top-[340px] md:max-xmd:gap-[40px]">
+          {c && (
+            <div className="h-[70vh] w-full max-sm:h-[352px] md:mb-[86px] md:h-[420px] md:max-w-[487px] md:max-xmd:h-[294px] md:max-xmd:max-w-[340px]">
+              <Project
+                src={c.mainImageUrl}
+                location={c.location}
+                title={c.title}
+                href={`/projects/${c.id}`}
+                width={1000}
+                height={850}
+                alt={c.title}
+                tined={true}
+                isSoon={c.isSoon}
+              />
+            </div>
+          )}
+
+          {d && (
+            <div className="h-[70vh] w-full max-sm:h-[352px] md:h-[715px] md:max-w-[707px] md:max-xmd:h-[500px] md:max-xmd:max-w-[494px]">
+              <Project
+                src={d.mainImageUrl}
+                location={d.location}
+                title={d.title}
+                href={`/projects/${d.id}`}
+                width={1200}
+                height={1050}
+                alt={d.title}
+                isSoon={d.isSoon}
+              />
+            </div>
+          )}
+        </div>
+      )}
+    </div>
+  );
+}
+
+export default function Gallery({ projects }: { projects: ProjectType[] }) {
+  if (projects.length === 0) return null;
+
+  const [featured, ...rest] = projects;
+  const batches = chunk(rest, 4);
+
+  return (
+    <section className="mx-auto flex w-full max-w-[1440px] flex-col items-center gap-[13px] px-[20px] md:gap-[126px]">
+      {featured && (
+        <div className="h-[85vh] w-full max-sm:h-[537px] md:h-[1013px] md:max-w-[864px]">
           <Project
-            src={availableProjects[0].previewImageUrl || availableProjects[0].mainImageUrl}
-            alt={availableProjects[0].title}
+            src={featured.previewImageUrl || featured.mainImageUrl}
+            alt={featured.title}
             width={864}
             height={1013}
-            location={availableProjects[0].location}
-            title={availableProjects[0].title}
-            href={`/projects/${availableProjects[0].id}`}
-            isSoon={availableProjects[0].isSoon}
+            location={featured.location}
+            title={featured.title}
+            href={`/projects/${featured.id}`}
+            isSoon={featured.isSoon}
           />
         </div>
       )}
 
-      <div className="max-slg:h-[950px] relative flex h-[1250px] w-full flex-col gap-[13px] max-md:h-fit">
-        <div className="max-xmd:gap-[40px] flex w-full items-start justify-center gap-[93px] max-md:flex-col max-md:gap-[13px]">
-          {availableProjects[1] && (
-            <div className="max-xmd:h-[415px] max-xmd:max-w-[392px] h-[593px] w-full max-w-[561px] max-md:h-[70vh] max-md:max-w-full max-sm:h-[352px]">
-              <Project
-                src={availableProjects[1].mainImageUrl}
-                location={availableProjects[1].location}
-                title={availableProjects[1].title}
-                href={`/projects/${availableProjects[1].id}`}
-                width={1000}
-                height={1000}
-                alt={availableProjects[1].title}
-                isSoon={availableProjects[1].isSoon}
-              />
-            </div>
-          )}
-
-          {availableProjects[2] && (
-            <div className="max-xmd:h-[256px] max-xmd:max-w-[343px] h-[367px] w-full max-w-[491px] max-md:h-[70vh] max-md:max-w-full max-sm:h-[352px]">
-              <Project
-                src={availableProjects[2].mainImageUrl}
-                location={availableProjects[2].location}
-                title={availableProjects[2].title}
-                href={`/projects/${availableProjects[2].id}`}
-                width={1000}
-                height={850}
-                alt={availableProjects[2].title}
-                tined={true}
-                isSoon={availableProjects[2].isSoon}
-              />
-            </div>
-          )}
-        </div>
-
-        <div className="max-xmd:top-[340px] max-xmd:gap-[40px] absolute top-[503px] flex w-full items-end justify-center gap-[95px] max-md:static max-md:flex-col max-md:gap-[13px]">
-          {availableProjects[3] && (
-            <div className="max-xmd:h-[294px] max-xmd:max-w-[340px] mb-[86px] h-[420px] w-full max-w-[487px] max-md:mb-0 max-md:h-[70vh] max-md:max-w-full max-sm:h-[352px]">
-              <Project
-                src={availableProjects[3].mainImageUrl}
-                location={availableProjects[3].location}
-                title={availableProjects[3].title}
-                href={`/projects/${availableProjects[3].id}`}
-                width={1000}
-                height={850}
-                alt={availableProjects[3].title}
-                tined={true}
-                isSoon={availableProjects[3].isSoon}
-              />
-            </div>
-          )}
-
-          {availableProjects[4] && (
-            <div className="max-xmd:max-w-[494px] max-xmd:h-[500px] h-[715px] w-full max-w-[707px] max-md:h-[70vh] max-md:max-w-full max-sm:h-[352px]">
-              <Project
-                src={availableProjects[4].mainImageUrl}
-                location={availableProjects[4].location}
-                title={availableProjects[4].title}
-                href={`/projects/${availableProjects[4].id}`}
-                width={1200}
-                height={1050}
-                alt={availableProjects[4].title}
-                isSoon={availableProjects[4].isSoon}
-              />
-            </div>
-          )}
-        </div>
-      </div>
+      {batches.map((batch, i) => (
+        <BatchRow key={i} batch={batch} />
+      ))}
     </section>
   );
 }
