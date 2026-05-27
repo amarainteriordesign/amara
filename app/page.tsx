@@ -28,7 +28,7 @@ export default function Home() {
 
       <Services />
 
-      <Projects />
+      <Projects clickable />
 
       <ClientsCarousel />
 
